@@ -1,0 +1,12 @@
+D:\ProjektyZS\Denik\Denik\obj\Release\ResolveAssemblyReference.cache
+D:\ProjektyZS\Denik\Denik\obj\Release\Denik.outcomeForm.resources
+D:\ProjektyZS\Denik\Denik\obj\Release\Denik.initFailureForm.resources
+D:\ProjektyZS\Denik\Denik\obj\Release\Denik.Properties.Resources.resources
+D:\ProjektyZS\Denik\Denik\obj\Release\Denik.csproj.GenerateResource.Cache
+D:\ProjektyZS\Denik\Denik\bin\Release\Denik.exe.config
+D:\ProjektyZS\Denik\Denik\bin\Release\Denik.exe
+D:\ProjektyZS\Denik\Denik\bin\Release\Denik.pdb
+D:\ProjektyZS\Denik\Denik\obj\Release\Denik.exe
+D:\ProjektyZS\Denik\Denik\obj\Release\Denik.pdb
+D:\ProjektyZS\Denik\Denik\obj\Release\Denik.incomeForm.resources
+D:\ProjektyZS\Denik\Denik\obj\Release\Denik.MainForm.resources

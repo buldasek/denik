@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="fontDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>282, 17</value>
+  </metadata>
+  <metadata name="mainMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="vytvořitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 22</value>
+  </data>
+  <data name="vytvořitToolStripMenuItem.Text" xml:space="preserve">
+    <value>Vytvořit deník</value>
+  </data>
+  <data name="otevřítDeníkToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 22</value>
+  </data>
+  <data name="otevřítDeníkToolStripMenuItem.Text" xml:space="preserve">
+    <value>Otevřít</value>
+  </data>
+  <data name="změnitJménoDeníkuToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 22</value>
+  </data>
+  <data name="změnitJménoDeníkuToolStripMenuItem.Text" xml:space="preserve">
+    <value>Změnit jméno deníku</value>
+  </data>
+  <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>185, 6</value>
+  </data>
+  <data name="tiskDeníkuToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 22</value>
+  </data>
+  <data name="tiskDeníkuToolStripMenuItem.Text" xml:space="preserve">
+    <value>Tisk deníku</value>
+  </data>
+  <data name="toolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>185, 6</value>
+  </data>
+  <data name="konecToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 22</value>
+  </data>
+  <data name="konecToolStripMenuItem.Text" xml:space="preserve">
+    <value>Konec</value>
+  </data>
+  <data name="souborToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 20</value>
+  </data>
+  <data name="souborToolStripMenuItem.Text" xml:space="preserve">
+    <value>Soubor</value>
+  </data>
+  <data name="nastaveníToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>12, 20</value>
+  </data>
+  <data name="mainMenu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="mainMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>766, 24</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="mainMenu.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="mainMenu.Text" xml:space="preserve">
+    <value>Soubor</value>
+  </data>
+  <data name="&gt;&gt;mainMenu.Name" xml:space="preserve">
+    <value>mainMenu</value>
+  </data>
+  <data name="&gt;&gt;mainMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mainMenu.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;mainMenu.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnIncome.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnIncome.Location" type="System.Drawing.Point, System.Drawing">
+    <value>623, 27</value>
+  </data>
+  <data name="btnIncome.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 88</value>
+  </data>
+  <data name="btnIncome.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="btnIncome.Text" xml:space="preserve">
+    <value>Příjmový doklad</value>
+  </data>
+  <data name="&gt;&gt;btnIncome.Name" xml:space="preserve">
+    <value>btnIncome</value>
+  </data>
+  <data name="&gt;&gt;btnIncome.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnIncome.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnIncome.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="btnExpense.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnExpense.Location" type="System.Drawing.Point, System.Drawing">
+    <value>486, 27</value>
+  </data>
+  <data name="btnExpense.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 88</value>
+  </data>
+  <data name="btnExpense.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="btnExpense.Text" xml:space="preserve">
+    <value>Výdajový doklad</value>
+  </data>
+  <data name="&gt;&gt;btnExpense.Name" xml:space="preserve">
+    <value>btnExpense</value>
+  </data>
+  <data name="&gt;&gt;btnExpense.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnExpense.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnExpense.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lbPageId.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbPageId.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 92</value>
+  </data>
+  <data name="lbPageId.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 23</value>
+  </data>
+  <data name="lbPageId.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="lbPageId.Text" xml:space="preserve">
+    <value>1. stranka</value>
+  </data>
+  <data name="&gt;&gt;lbPageId.Name" xml:space="preserve">
+    <value>lbPageId</value>
+  </data>
+  <data name="&gt;&gt;lbPageId.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbPageId.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbPageId.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btnPrevPage.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnPrevPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>324, 92</value>
+  </data>
+  <data name="btnPrevPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnPrevPage.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnPrevPage.Text" xml:space="preserve">
+    <value>Zpět</value>
+  </data>
+  <data name="&gt;&gt;btnPrevPage.Name" xml:space="preserve">
+    <value>btnPrevPage</value>
+  </data>
+  <data name="&gt;&gt;btnPrevPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnPrevPage.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnPrevPage.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btnNextPage.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnNextPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>405, 92</value>
+  </data>
+  <data name="btnNextPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnNextPage.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnNextPage.Text" xml:space="preserve">
+    <value>Další</value>
+  </data>
+  <data name="&gt;&gt;btnNextPage.Name" xml:space="preserve">
+    <value>btnNextPage</value>
+  </data>
+  <data name="&gt;&gt;btnNextPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnNextPage.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnNextPage.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="contextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 4</value>
+  </data>
+  <data name="&gt;&gt;contextMenuStrip1.Name" xml:space="preserve">
+    <value>contextMenuStrip1</value>
+  </data>
+  <data name="&gt;&gt;contextMenuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="gridHistory.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="Column1.HeaderText" xml:space="preserve">
+    <value>Poř. číslo</value>
+  </data>
+  <data name="Column2.HeaderText" xml:space="preserve">
+    <value>Datum</value>
+  </data>
+  <data name="checkNumber.HeaderText" xml:space="preserve">
+    <value>Číslo dokladu</value>
+  </data>
+  <data name="content.HeaderText" xml:space="preserve">
+    <value>Obsah zápisu</value>
+  </data>
+  <data name="incomes.HeaderText" xml:space="preserve">
+    <value>Příjmy</value>
+  </data>
+  <data name="expenses.HeaderText" xml:space="preserve">
+    <value>Výdaje</value>
+  </data>
+  <data name="remain.HeaderText" xml:space="preserve">
+    <value>Zůstatek</value>
+  </data>
+  <data name="note.HeaderText" xml:space="preserve">
+    <value>Poznámka</value>
+  </data>
+  <data name="gridHistory.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 194</value>
+  </data>
+  <data name="gridHistory.Size" type="System.Drawing.Size, System.Drawing">
+    <value>766, 322</value>
+  </data>
+  <data name="gridHistory.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;gridHistory.Name" xml:space="preserve">
+    <value>gridHistory</value>
+  </data>
+  <data name="&gt;&gt;gridHistory.Type" xml:space="preserve">
+    <value>Denik.FastDataGridView, Denik, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;gridHistory.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gridHistory.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <metadata name="printDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>398, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>766, 516</value>
+  </data>
+  <data name="&gt;&gt;fontDialog1.Name" xml:space="preserve">
+    <value>fontDialog1</value>
+  </data>
+  <data name="&gt;&gt;fontDialog1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FontDialog, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;souborToolStripMenuItem.Name" xml:space="preserve">
+    <value>souborToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;souborToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;vytvořitToolStripMenuItem.Name" xml:space="preserve">
+    <value>vytvořitToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;vytvořitToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;otevřítDeníkToolStripMenuItem.Name" xml:space="preserve">
+    <value>otevřítDeníkToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;otevřítDeníkToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;změnitJménoDeníkuToolStripMenuItem.Name" xml:space="preserve">
+    <value>změnitJménoDeníkuToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;změnitJménoDeníkuToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem1.Name" xml:space="preserve">
+    <value>toolStripMenuItem1</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tiskDeníkuToolStripMenuItem.Name" xml:space="preserve">
+    <value>tiskDeníkuToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;tiskDeníkuToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem2.Name" xml:space="preserve">
+    <value>toolStripMenuItem2</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;konecToolStripMenuItem.Name" xml:space="preserve">
+    <value>konecToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;konecToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nastaveníToolStripMenuItem.Name" xml:space="preserve">
+    <value>nastaveníToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;nastaveníToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Column1.Name" xml:space="preserve">
+    <value>Column1</value>
+  </data>
+  <data name="&gt;&gt;Column1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Column2.Name" xml:space="preserve">
+    <value>Column2</value>
+  </data>
+  <data name="&gt;&gt;Column2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkNumber.Name" xml:space="preserve">
+    <value>checkNumber</value>
+  </data>
+  <data name="&gt;&gt;checkNumber.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;content.Name" xml:space="preserve">
+    <value>content</value>
+  </data>
+  <data name="&gt;&gt;content.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;incomes.Name" xml:space="preserve">
+    <value>incomes</value>
+  </data>
+  <data name="&gt;&gt;incomes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;expenses.Name" xml:space="preserve">
+    <value>expenses</value>
+  </data>
+  <data name="&gt;&gt;expenses.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;remain.Name" xml:space="preserve">
+    <value>remain</value>
+  </data>
+  <data name="&gt;&gt;remain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;note.Name" xml:space="preserve">
+    <value>note</value>
+  </data>
+  <data name="&gt;&gt;note.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;printDialog1.Name" xml:space="preserve">
+    <value>printDialog1</value>
+  </data>
+  <data name="&gt;&gt;printDialog1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PrintDialog, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MainForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>
