@@ -14,7 +14,7 @@ namespace Denik
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ExperimentalForm());
+            Application.Run(new MainForm());
         }
     }
 }

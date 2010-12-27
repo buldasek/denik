@@ -52,6 +52,8 @@
             this.btnPrevPage = new System.Windows.Forms.Button();
             this.btnNextPage = new System.Windows.Forms.Button();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.printDialog1 = new System.Windows.Forms.PrintDialog();
+            this.printerSettings = new System.Windows.Forms.ToolStripMenuItem();
             this.gridHistory = new Denik.FastDataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -61,7 +63,8 @@
             this.expenses = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.remain = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.note = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.printDialog1 = new System.Windows.Forms.PrintDialog();
+            this.nastaveníToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.nastaveníDeníkuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mainMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridHistory)).BeginInit();
             this.SuspendLayout();
@@ -70,7 +73,8 @@
             // 
             this.mainMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.souborToolStripMenuItem,
-            this.nastaveníToolStripMenuItem});
+            this.nastaveníToolStripMenuItem,
+            this.nastaveníToolStripMenuItem1});
             resources.ApplyResources(this.mainMenu, "mainMenu");
             this.mainMenu.Name = "mainMenu";
             // 
@@ -81,6 +85,7 @@
             this.otevřítDeníkToolStripMenuItem,
             this.změnitJménoDeníkuToolStripMenuItem,
             this.toolStripMenuItem1,
+            this.printerSettings,
             this.tiskDeníkuToolStripMenuItem,
             this.toolStripMenuItem2,
             this.konecToolStripMenuItem});
@@ -166,6 +171,16 @@
             // 
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
+            // 
+            // printDialog1
+            // 
+            this.printDialog1.UseEXDialog = true;
+            // 
+            // printerSettings
+            // 
+            this.printerSettings.Name = "printerSettings";
+            resources.ApplyResources(this.printerSettings, "printerSettings");
+            this.printerSettings.Click += new System.EventHandler(this.printerSettings_Click);
             // 
             // gridHistory
             // 
@@ -278,21 +293,30 @@
             this.note.Name = "note";
             this.note.ReadOnly = true;
             // 
-            // printDialog1
+            // nastaveníToolStripMenuItem1
             // 
-            this.printDialog1.UseEXDialog = true;
+            this.nastaveníToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.nastaveníDeníkuToolStripMenuItem});
+            this.nastaveníToolStripMenuItem1.Name = "nastaveníToolStripMenuItem1";
+            resources.ApplyResources(this.nastaveníToolStripMenuItem1, "nastaveníToolStripMenuItem1");
+            // 
+            // nastaveníDeníkuToolStripMenuItem
+            // 
+            this.nastaveníDeníkuToolStripMenuItem.Name = "nastaveníDeníkuToolStripMenuItem";
+            resources.ApplyResources(this.nastaveníDeníkuToolStripMenuItem, "nastaveníDeníkuToolStripMenuItem");
+            this.nastaveníDeníkuToolStripMenuItem.Click += new System.EventHandler(this.nastaveníDeníkuToolStripMenuItem_Click);
             // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.mainMenu);
-            this.Controls.Add(this.btnNextPage);
-            this.Controls.Add(this.lbPageId);
-            this.Controls.Add(this.btnPrevPage);
             this.Controls.Add(this.btnExpense);
+            this.Controls.Add(this.lbPageId);
+            this.Controls.Add(this.btnNextPage);
             this.Controls.Add(this.btnIncome);
             this.Controls.Add(this.gridHistory);
+            this.Controls.Add(this.btnPrevPage);
             this.MainMenuStrip = this.mainMenu;
             this.Name = "MainForm";
             this.Shown += new System.EventHandler(this.MainForm_Shown);
@@ -334,6 +358,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn remain;
         private System.Windows.Forms.DataGridViewTextBoxColumn note;
         public System.Windows.Forms.PrintDialog printDialog1;
+        private System.Windows.Forms.ToolStripMenuItem printerSettings;
+        private System.Windows.Forms.ToolStripMenuItem nastaveníToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem nastaveníDeníkuToolStripMenuItem;
 
     }
 }

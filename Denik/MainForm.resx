@@ -145,6 +145,12 @@
   <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
     <value>185, 6</value>
   </data>
+  <data name="printerSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 22</value>
+  </data>
+  <data name="printerSettings.Text" xml:space="preserve">
+    <value>Nastavení tiskárny</value>
+  </data>
   <data name="tiskDeníkuToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>188, 22</value>
   </data>
@@ -169,11 +175,23 @@
   <data name="nastaveníToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>12, 20</value>
   </data>
+  <data name="nastaveníDeníkuToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 22</value>
+  </data>
+  <data name="nastaveníDeníkuToolStripMenuItem.Text" xml:space="preserve">
+    <value>Nastavení deníku</value>
+  </data>
+  <data name="nastaveníToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 20</value>
+  </data>
+  <data name="nastaveníToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Nastavení</value>
+  </data>
   <data name="mainMenu.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
   <data name="mainMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>766, 24</value>
+    <value>892, 24</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="mainMenu.TabIndex" type="System.Int32, mscorlib">
@@ -199,10 +217,10 @@
     <value>NoControl</value>
   </data>
   <data name="btnIncome.Location" type="System.Drawing.Point, System.Drawing">
-    <value>623, 27</value>
+    <value>139, 27</value>
   </data>
   <data name="btnIncome.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 88</value>
+    <value>126, 29</value>
   </data>
   <data name="btnIncome.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -220,16 +238,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnIncome.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="btnExpense.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="btnExpense.Location" type="System.Drawing.Point, System.Drawing">
-    <value>486, 27</value>
+    <value>0, 27</value>
   </data>
   <data name="btnExpense.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 88</value>
+    <value>133, 29</value>
   </data>
   <data name="btnExpense.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -247,13 +265,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnExpense.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>2</value>
   </data>
   <data name="lbPageId.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="lbPageId.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 92</value>
+    <value>383, 33</value>
   </data>
   <data name="lbPageId.Size" type="System.Drawing.Size, System.Drawing">
     <value>81, 23</value>
@@ -280,10 +298,10 @@
     <value>NoControl</value>
   </data>
   <data name="btnPrevPage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>324, 92</value>
+    <value>268, 27</value>
   </data>
   <data name="btnPrevPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+    <value>54, 29</value>
   </data>
   <data name="btnPrevPage.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -301,16 +319,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnPrevPage.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>7</value>
   </data>
   <data name="btnNextPage.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="btnNextPage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>405, 92</value>
+    <value>328, 27</value>
   </data>
   <data name="btnNextPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+    <value>49, 29</value>
   </data>
   <data name="btnNextPage.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -328,7 +346,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnNextPage.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -342,6 +360,9 @@
   <data name="&gt;&gt;contextMenuStrip1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <metadata name="printDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>398, 17</value>
+  </metadata>
   <data name="gridHistory.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
@@ -370,10 +391,10 @@
     <value>Poznámka</value>
   </data>
   <data name="gridHistory.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 194</value>
+    <value>0, 62</value>
   </data>
   <data name="gridHistory.Size" type="System.Drawing.Size, System.Drawing">
-    <value>766, 322</value>
+    <value>892, 509</value>
   </data>
   <data name="gridHistory.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -388,11 +409,8 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;gridHistory.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
-  <metadata name="printDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>398, 17</value>
-  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -400,7 +418,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>766, 516</value>
+    <value>892, 571</value>
   </data>
   <data name="&gt;&gt;fontDialog1.Name" xml:space="preserve">
     <value>fontDialog1</value>
@@ -462,6 +480,18 @@
   <data name="&gt;&gt;nastaveníToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;printDialog1.Name" xml:space="preserve">
+    <value>printDialog1</value>
+  </data>
+  <data name="&gt;&gt;printDialog1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PrintDialog, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;printerSettings.Name" xml:space="preserve">
+    <value>printerSettings</value>
+  </data>
+  <data name="&gt;&gt;printerSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;Column1.Name" xml:space="preserve">
     <value>Column1</value>
   </data>
@@ -510,11 +540,17 @@
   <data name="&gt;&gt;note.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;printDialog1.Name" xml:space="preserve">
-    <value>printDialog1</value>
+  <data name="&gt;&gt;nastaveníToolStripMenuItem1.Name" xml:space="preserve">
+    <value>nastaveníToolStripMenuItem1</value>
   </data>
-  <data name="&gt;&gt;printDialog1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PrintDialog, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;nastaveníToolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nastaveníDeníkuToolStripMenuItem.Name" xml:space="preserve">
+    <value>nastaveníDeníkuToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;nastaveníDeníkuToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>MainForm</value>

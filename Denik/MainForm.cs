@@ -8,9 +8,6 @@ using System.Diagnostics;
 
 namespace Denik
 {
-
-    
-
     public partial class MainForm : Form
     {
         private string settingsFile = "settings.xml";
@@ -30,9 +27,6 @@ namespace Denik
 
             //Printer printer = new Printer();
             //printer.print();
-
-            Application.Exit();
-            
         }
 
         public void setPage(int pageId)
@@ -283,6 +277,8 @@ namespace Denik
         private void MainForm_Shown(object sender, EventArgs e)
         {
             LoadSettings();
+
+            EnsureRecordVisibility(m_mainDiary.RecordsCount - 1);
         }
 
         private void otevřítDeníkToolStripMenuItem_Click(object sender, EventArgs e)
@@ -308,7 +304,7 @@ namespace Denik
             if (iform.DialogResult == DialogResult.OK)
             {
                 m_mainDiary.AppendRecord(newRecord);
-                EnsureRecordVisibility(m_mainDiary.RecordsCount() - 1);
+                EnsureRecordVisibility(m_mainDiary.RecordsCount - 1);
             }
         }
 
@@ -321,7 +317,7 @@ namespace Denik
             if (oform.DialogResult == DialogResult.OK)
             {
                 m_mainDiary.AppendRecord(newRecord);
-                EnsureRecordVisibility(m_mainDiary.RecordsCount() - 1);
+                EnsureRecordVisibility(m_mainDiary.RecordsCount - 1);
             }
         }
 
@@ -345,6 +341,19 @@ namespace Denik
             {
                 m_mainDiary.ReplaceRecord(recordToChange, curRecord);
             }
+        }
+
+        private void printerSettings_Click(object sender, EventArgs e)
+        {
+            PrintDialog pd = new PrintDialog();
+            pd.Document = inoutParentForm.printer.printDoc;
+            pd.ShowDialog();
+        }
+
+        private void nastaveníDeníkuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DiarySettings ds = new DiarySettings();
+            ds.ShowDialog();
         }
 
     }

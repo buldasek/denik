@@ -11,6 +11,7 @@ using System.Diagnostics;
 
 namespace Denik
 {
+    
     class NumberConvertor   //todo move to different file
     {
         static private string[] numbers1to19 = { "", "jedna", "dva", "tři", "čtyři", "pět"
@@ -30,11 +31,10 @@ namespace Denik
             if (value == 0)
                 return "nula";
 
-            if (value > 1000)
+            if (value >= 1000)
             {
                 int thousands  = value /1000;
                 result = numberHundreds[thousands / 100];
-                string tensRes;
                 int tens = thousands % 100;
                 if (tens!=0)
                 {
@@ -77,58 +77,92 @@ namespace Denik
     }
 
 
-    class Printer
+    public class Printer
     {
         //private static PrintDialog m_printDialog = new PrintDialog();
         private static PrintDocument m_printDoc = new PrintDocument();
         private Record m_recToPrint;
+        private int curPage;
 
-        public void print(Record rcToPrint)
+        public PrintDocument printDoc
+        {
+            get { return m_printDoc; }
+        }
+
+        public void printOutcomeOne(Record rcToPrint)
         {
             m_printDoc.DocumentName = "Tisk deniku...";
-            m_printDoc.PrintPage += new PrintPageEventHandler(OnPrintPage);
-            m_printDoc.DefaultPageSettings.PaperSize = new System.Drawing.Printing.PaperSize("PaperA55", 583, 827);
+            m_printDoc.PrintPage += new PrintPageEventHandler(OnPrintOutcome);
+            m_printDoc.DefaultPageSettings.PaperSize = new System.Drawing.Printing.PaperSize("PaperA6", 583, 827);
             m_recToPrint = rcToPrint;
-            //PrintDialog m_printDialog = new PrintDialog();
+            m_printDoc.DefaultPageSettings.Landscape = false;
 
-            //m_printDialog.Document = printDoc;
-            //m_printDialog.ShowDialog();
-            // Send print message
             try { m_printDoc.Print(); }
             catch (Exception) { MessageBox.Show("ajajaj printing"); }
+
+            m_printDoc.PrintPage -= new PrintPageEventHandler(OnPrintOutcome);
         }
-        //
-        // Event Handler
-        //
-        private void OnPrintPage(object sender, PrintPageEventArgs ppea)
+
+        public void printOutcomeTwiceTwoPage(Record rcToPrint)
         {
-            Graphics g = ppea.Graphics;
-            
-            Bitmap im = new Bitmap("dokladstabulkou.bmp");
+            m_printDoc.DocumentName = "Tisk deniku...";
+            m_printDoc.PrintPage += new PrintPageEventHandler(OnPrintOutcomeTwiceTwo);
+            m_printDoc.DefaultPageSettings.PaperSize = new System.Drawing.Printing.PaperSize("PaperA6", 583, 827);
+            m_recToPrint = rcToPrint;
+            m_printDoc.DefaultPageSettings.Landscape = false;
+            curPage = 0;
 
-            g.DrawImage(im, 0, 0, g.VisibleClipBounds.Width,g.VisibleClipBounds.Height);
+            try { m_printDoc.Print(); }
+            catch (Exception) { MessageBox.Show("ajajaj printing"); }
+
+            m_printDoc.PrintPage -= new PrintPageEventHandler(OnPrintOutcomeTwiceTwo);
+        }
+
+        //public void printOutcomeTwiceOnePage(Record rcToPrint)
+        //{
+        //    m_printDoc.DocumentName = "Tisk deniku...";
+        //    m_printDoc.PrintPage += new PrintPageEventHandler(OnPrintOutcomeTwiceOne);
+        //    m_printDoc.DefaultPageSettings.PaperSize = new System.Drawing.Printing.PaperSize("PaperA5", 827, 1166);
+        //    m_recToPrint = rcToPrint;
+        //    m_printDoc.DefaultPageSettings.Landscape = false;
+
+        //    try { m_printDoc.Print(); }
+        //    catch (Exception) { MessageBox.Show("ajajaj printing"); }
+
+        //    m_printDoc.PrintPage -= new PrintPageEventHandler(OnPrintOutcomeTwiceOne);
+        //}
+
+        public void PrintIncome(Record rcToPrint)
+        {
+            m_printDoc.DocumentName = "Tisk deniku...";
+            m_printDoc.PrintPage += new PrintPageEventHandler(OnPrintIncome);
+            m_printDoc.DefaultPageSettings.PaperSize = new System.Drawing.Printing.PaperSize("PaperA6", 583, 827);
+            m_recToPrint = rcToPrint;
+            m_printDoc.DefaultPageSettings.Landscape = false;
+            curPage = 0;
+
+            try { m_printDoc.Print(); }
+            catch (Exception) { MessageBox.Show("ajajaj printing"); }
+
+            m_printDoc.PrintPage -= new PrintPageEventHandler(OnPrintIncome);
+        }
+
+        //TODO ten offset asi moc nefunguje   
+        private void PrintOutcome(Graphics g, int yOffset, int width, int height)
+        {
+            g.ResetTransform();
+
+            Bitmap im = new Bitmap("dokladstabulkou.bmp");//Prijmovydokladstabulkou.bmp Stvrzenka.bmp
+            g.DrawImage(im, 0, yOffset, width, g.VisibleClipBounds.Height + yOffset);
             g.RotateTransform(90);
-
             g.TranslateTransform(0, -g.VisibleClipBounds.Height);
-            g.ScaleTransform((g.VisibleClipBounds.Width) / im.Height, (g.VisibleClipBounds.Height) / im.Width);
+       
+            g.ScaleTransform(((float)height) / im.Height, ((float)(width)) / im.Width);
 
             StringFormat DrawFormat = new StringFormat();
             DrawFormat.Alignment = StringAlignment.Center;
             DrawFormat.LineAlignment = StringAlignment.Center;
-            g.DrawString("hello word", new Font(FontFamily.GenericMonospace, 10), new SolidBrush(Color.Black), new Point(00, 00));
-            for (int i = 0; i < im.Width; i += 10)
-            {
-                g.DrawLine(new Pen(Color.Black), 0, i, 10, i);
-                g.DrawString(i.ToString(), new Font(FontFamily.GenericMonospace, 10), new SolidBrush(Color.Black), new Point(10, i), DrawFormat);
-            }
 
-            for (int i = 0; i < im.Height; i += 10)
-            {
-                g.DrawLine(new Pen(Color.Black), i, 0, i, 10);
-                if (i % 50 == 0)
-
-                    g.DrawString(i.ToString(), new Font(FontFamily.GenericMonospace, 10), new SolidBrush(Color.Black), new Point(i, 10), DrawFormat);
-            }
 
             Font defaultTextFont = new Font(FontFamily.GenericMonospace, 10, FontStyle.Bold);
             Brush textBrush = new SolidBrush(Color.Black);
@@ -137,33 +171,226 @@ namespace Denik
             StringFormat CenterAlText = new StringFormat();
             CenterAlText.Alignment = StringAlignment.Center;
 
-            g.DrawString("Výdajový pokladní doklad", new Font(FontFamily.GenericSerif, 13, FontStyle.Bold), textBrush, new Point(260, 15), LeftAlText);
-            g.DrawString("číslo", defaultTextFont, textBrush, new Point(260, 45), LeftAlText);
-            g.DrawString(m_recToPrint.TypeID.ToString(), defaultTextFont, textBrush, new Point(315, 45), LeftAlText);
-            g.DrawString("ze dne", defaultTextFont, textBrush, new Point(260, 60), LeftAlText);
-            g.DrawString(m_recToPrint.Date, defaultTextFont, textBrush, new Point(325, 60), LeftAlText);
+            g.DrawString("Výdajový pokladní doklad", new Font(FontFamily.GenericSerif, 13, FontStyle.Bold), textBrush, new Point(260, 15 + yOffset), LeftAlText);
+            PrintCommon(g, yOffset, false);            
 
-            g.DrawString("Vyplaceno: ", defaultTextFont, textBrush, new Point(10, 88), LeftAlText);
-            g.DrawString("Částka: ", new Font(FontFamily.GenericMonospace, 13, FontStyle.Bold), textBrush, new Point(10, 105), LeftAlText);
-            g.DrawString("Slovy: ", defaultTextFont, textBrush, new Point(10, 125), LeftAlText);
-            g.DrawString("Účel platby: ", defaultTextFont, textBrush, new Point(10, 142), LeftAlText);
+            g.DrawString("Podpis pokladníka", defaultTextFont, textBrush, new Point(85, 197 + yOffset), CenterAlText);
+            g.DrawString("Podpis příjemce", defaultTextFont, textBrush, new Point(250, 197 + yOffset), CenterAlText);
 
-            g.DrawString("Podpis pokladníka", defaultTextFont, textBrush, new Point(85, 197), CenterAlText);
-            g.DrawString("Podpis příjemce", defaultTextFont, textBrush, new Point(250, 197), CenterAlText);
-            g.DrawString("Příjemce hotovosti", defaultTextFont, textBrush, new Point(423, 197), CenterAlText);
+            g.DrawString(m_recToPrint.PayedTo, defaultTextFont, textBrush, new Point(423, 180 + yOffset), CenterAlText);
+            g.DrawString("Příjemce hotovosti", defaultTextFont, textBrush, new Point(423, 197 + yOffset), CenterAlText);
+            g.ResetTransform();
+        }
+        
+        //offset nejspis nefunguje
+        private void PrintIncome(Graphics g, int yOffset, int width, int height)
+        {
+            g.ResetTransform();
+         
+            Bitmap im;
+
+            im = new Bitmap("Prijmovydokladstabulkou.bmp");//Prijmovydokladstabulkou.bmp Stvrzenka.bmp
+            g.DrawImage(im, yOffset, 0, width + yOffset, height);
+            g.RotateTransform(90);
+
+            g.TranslateTransform(0, -g.VisibleClipBounds.Height);
+
+            g.ScaleTransform((height) / (float)im.Height, (width) / (float)im.Width);
+
+            StringFormat DrawFormat = new StringFormat();
+            DrawFormat.Alignment = StringAlignment.Center;
+            DrawFormat.LineAlignment = StringAlignment.Center;
+
+
+            Font defaultTextFont = new Font(FontFamily.GenericMonospace, 10, FontStyle.Bold);
+            Brush textBrush = new SolidBrush(Color.Black);
+            StringFormat LeftAlText = new StringFormat();
+            LeftAlText.Alignment = StringAlignment.Near;
+            StringFormat CenterAlText = new StringFormat();
+            CenterAlText.Alignment = StringAlignment.Center;
+
+            g.DrawString("Příjmový pokladní doklad", new Font(FontFamily.GenericSerif, 13, FontStyle.Bold),
+                        textBrush, new Point(260, 15 + yOffset), LeftAlText);
+            PrintCommon(g, yOffset, false);
+            
+            g.DrawString("Podpis pokladníka", defaultTextFont, textBrush, new Point(423, 197+ yOffset), CenterAlText);
+
+        }
+
+        private void printIncomeReceipt(Graphics g, int yOffset, int width, int height)
+        {
+            Bitmap im;
+            g.ResetTransform();
+            im = new Bitmap("Stvrzenka.bmp");//Prijmovydokladstabulkou.bmp Stvrzenka.bmp
+            g.DrawImage(im, yOffset, 0, width + yOffset, height);
+            g.RotateTransform(90);
+
+            g.ScaleTransform(height / (float)im.Height, width / (float)im.Width);
+            g.TranslateTransform(0, -g.VisibleClipBounds.Height);
+            
+            StringFormat DrawFormat = new StringFormat();
+            DrawFormat.Alignment = StringAlignment.Center;
+            DrawFormat.LineAlignment = StringAlignment.Center;
+
+
+            Font defaultTextFont = new Font(FontFamily.GenericMonospace, 10, FontStyle.Bold);
+            Brush textBrush = new SolidBrush(Color.Black);
+            StringFormat LeftAlText = new StringFormat();
+            LeftAlText.Alignment = StringAlignment.Near;
+            StringFormat CenterAlText = new StringFormat();
+            CenterAlText.Alignment = StringAlignment.Center;
+
+            g.DrawString("Stvrzenka", new Font(FontFamily.GenericSerif, 13, FontStyle.Bold), textBrush,
+                        new Point(260, 15+ yOffset), LeftAlText);
+            PrintCommon(g, yOffset, true);
+
+            g.DrawString("Podpis pokladníka", defaultTextFont, textBrush, new Point(423, 197+ yOffset), CenterAlText);
+        }
+
+        private void PrintCommon(Graphics g, int yOffset, bool onlyUpper)
+        {
+            Font defaultTextFont = new Font(FontFamily.GenericMonospace, 10, FontStyle.Bold);
+            Brush textBrush = new SolidBrush(Color.Black);
+            StringFormat LeftAlText = new StringFormat();
+            LeftAlText.Alignment = StringAlignment.Near;
+            StringFormat CenterAlText = new StringFormat();
+            CenterAlText.Alignment = StringAlignment.Center;
+
+            g.DrawString("číslo " + m_recToPrint.TypeID.ToString(), defaultTextFont, textBrush, new Point(260, 45 + yOffset), LeftAlText);
+            g.DrawString("ze dne " + m_recToPrint.Date, defaultTextFont, textBrush, new Point(260, 60 + yOffset), LeftAlText);
+
+            g.DrawString("Vyplaceno: " + m_recToPrint.CustName, defaultTextFont, textBrush, new Point(10, 88 + yOffset), LeftAlText);
+            g.DrawString("Částka: " + m_recToPrint.Cost.ToString() + ",00", new Font(FontFamily.GenericMonospace, 13, FontStyle.Bold), 
+                            textBrush, new Point(10, 105 + yOffset), LeftAlText);
+            g.DrawString("Slovy: ==" + NumberConvertor.ConvertIntToString((int)m_recToPrint.Cost)+" Kč==",
+                            defaultTextFont, textBrush, new Point(10, 125 + yOffset), LeftAlText);
+            g.DrawString("Účel platby: " + m_recToPrint.Content, defaultTextFont, textBrush, new Point(10, 142 + yOffset), LeftAlText);
 
             CenterAlText.LineAlignment = StringAlignment.Center;
-            g.DrawString("Text", defaultTextFont, textBrush, new Point(70, 224), CenterAlText);
-            g.DrawString("Účt. předpis (Má dáti-účet)", defaultTextFont, textBrush, new Point(255, 224), CenterAlText);
-            g.DrawString("Kč", defaultTextFont, textBrush, new Point(437, 224), CenterAlText);
+            if (!onlyUpper)
+            {
+                g.DrawString("Text", defaultTextFont, textBrush, new Point(70, 224 + yOffset), CenterAlText);
+                g.DrawString("Účt. předpis (Má dáti-účet)", defaultTextFont, textBrush, new Point(255, 224 + yOffset), CenterAlText);
+                g.DrawString("Kč", defaultTextFont, textBrush, new Point(437, 224 + yOffset), CenterAlText);
 
-            LeftAlText.LineAlignment = StringAlignment.Center;
-            g.DrawString("Schválil:", defaultTextFont, textBrush, new Point(10, 317), LeftAlText);
-            g.DrawString("Zaúčtoval:", defaultTextFont, textBrush, new Point(195, 317), LeftAlText);
-            g.DrawString("Dne:", defaultTextFont, textBrush, new Point(383, 317), LeftAlText);
+                LeftAlText.LineAlignment = StringAlignment.Center;
+                g.DrawString("Schválil:", defaultTextFont, textBrush, new Point(10, 317 + yOffset), LeftAlText);
+                g.DrawString("Zaúčtoval:", defaultTextFont, textBrush, new Point(195, 317 + yOffset), LeftAlText);
+                g.DrawString("Dne: ", defaultTextFont, textBrush, new Point(383, 317 + yOffset), LeftAlText);
+            }
+        }
+
+        //
+        // Event Handler
+        //
+        private void OnPrintOutcome(object sender, PrintPageEventArgs ppea)
+        {
+            PrintOutcome(ppea.Graphics, 0, (int)ppea.Graphics.VisibleClipBounds.Width, (int)ppea.Graphics.VisibleClipBounds.Height);
+        }
+
+        //private void OnPrintOutcomeTwiceOne(object sender, PrintPageEventArgs ppea)
+        //{
+        //    PrintOutcome(ppea.Graphics, 0, (int)ppea.Graphics.VisibleClipBounds.Width, (int)ppea.Graphics.VisibleClipBounds.Height, true);
+        //    ppea.Graphics.ResetTransform();
+        //    PrintOutcome(ppea.Graphics, (int)ppea.Graphics.VisibleClipBounds.Width/2, 
+        //                    (int)ppea.Graphics.VisibleClipBounds.Width, (int)ppea.Graphics.VisibleClipBounds.Height, true);
+        //}
+
+        private void OnPrintOutcomeTwiceTwo(object sender, PrintPageEventArgs ppea)
+        {
+            //todo nejak lepe udelat pocitani stranek
+            PrintOutcome(ppea.Graphics, 0, (int)ppea.Graphics.VisibleClipBounds.Width, (int)ppea.Graphics.VisibleClipBounds.Height);
+            if (curPage==0)
+            {
+                ppea.HasMorePages = true;
+                curPage = 1;
+            }
             
         }
 
+        private void OnPrintIncome(object sender, PrintPageEventArgs ppea)
+        {
+            if (curPage == 0)
+            {
+                curPage = 1;
+                ppea.HasMorePages = true;
+                PrintIncome(ppea.Graphics, 0, (int)ppea.Graphics.VisibleClipBounds.Width, (int)ppea.Graphics.VisibleClipBounds.Height);
+            }
+            else
+                printIncomeReceipt(ppea.Graphics, 0, (int)ppea.Graphics.VisibleClipBounds.Width
+                    , (int)ppea.Graphics.VisibleClipBounds.Height);
+        }
+
+        //private void OnPrintPage(object sender, PrintPageEventArgs ppea)
+        //{
+        //    Graphics g = ppea.Graphics;
+        //    Bitmap im;
+
+        //    if (m_recToPrint.Type == Record.RecordType.Expense)
+        //    {
+        //        im = new Bitmap("dokladstabulkou.bmp");//Prijmovydokladstabulkou.bmp Stvrzenka.bmp
+        //        g.DrawImage(im, 0, 0, g.VisibleClipBounds.Width, g.VisibleClipBounds.Height);
+        //    }
+        //    else
+        //    {
+        //        im = new Bitmap("Prijmovydokladstabulkou.bmp");//Prijmovydokladstabulkou.bmp Stvrzenka.bmp
+        //        g.DrawImage(im, 0, 0, g.VisibleClipBounds.Width / 2, g.VisibleClipBounds.Height);
+        //        im = new Bitmap("Stvrzenka.bmp");//Prijmovydokladstabulkou.bmp Stvrzenka.bmp
+        //        g.DrawImage(im, g.VisibleClipBounds.Width / 2, 0, g.VisibleClipBounds.Width / 2, g.VisibleClipBounds.Height);
+        //    }
+        //    g.RotateTransform(90);
+
+        //    g.TranslateTransform(0, -g.VisibleClipBounds.Height);
+        //    if (m_recToPrint.Type == Record.RecordType.Expense)
+        //        g.ScaleTransform((g.VisibleClipBounds.Width) / im.Height, (g.VisibleClipBounds.Height) / im.Width);
+        //    else
+        //        g.ScaleTransform((g.VisibleClipBounds.Width) / im.Height, (g.VisibleClipBounds.Height/2) / im.Width);
+
+        //    StringFormat DrawFormat = new StringFormat();
+        //    DrawFormat.Alignment = StringAlignment.Center;
+        //    DrawFormat.LineAlignment = StringAlignment.Center;
+
+
+        //    Font defaultTextFont = new Font(FontFamily.GenericMonospace, 10, FontStyle.Bold);
+        //    Brush textBrush = new SolidBrush(Color.Black);
+        //    StringFormat LeftAlText = new StringFormat();
+        //    LeftAlText.Alignment = StringAlignment.Near;
+        //    StringFormat CenterAlText = new StringFormat();
+        //    CenterAlText.Alignment = StringAlignment.Center;
+
+        //    if (m_recToPrint.Type == Record.RecordType.Expense)
+        //    {
+        //        g.DrawString("Výdajový pokladní doklad", new Font(FontFamily.GenericSerif, 13, FontStyle.Bold), textBrush, new Point(260, 15), LeftAlText);
+        //        (g, 0);
+        //    }
+        //    else
+        //    {
+        //        g.DrawString("Příjmový pokladní doklad", new Font(FontFamily.GenericSerif, 13, FontStyle.Bold),
+        //                    textBrush, new Point(260, 15 + (int)g.VisibleClipBounds.Height / 2), LeftAlText);
+        //        g.DrawString("Stvrzenka", new Font(FontFamily.GenericSerif, 13, FontStyle.Bold), textBrush, 
+        //                    new Point(260, 15), LeftAlText);
+        //        PrintUpper(g, 0);
+        //        PrintUpper(g, (int)(g.VisibleClipBounds.Height / 2));
+        //    }
+
+        //    if (m_recToPrint.Type == Record.RecordType.Expense)
+        //    {
+        //        g.DrawString("Podpis pokladníka", defaultTextFont, textBrush, new Point(85, 197), CenterAlText);
+        //        g.DrawString("Podpis příjemce", defaultTextFont, textBrush, new Point(250, 197), CenterAlText);
+
+        //        g.DrawString(m_recToPrint.PayedTo, defaultTextFont, textBrush, new Point(423, 180), CenterAlText);
+        //        g.DrawString("Příjemce hotovosti", defaultTextFont, textBrush, new Point(423, 197), CenterAlText);
+
+        //    }
+        //    else
+        //    {
+        //        g.DrawString("Podpis pokladníka", defaultTextFont, textBrush, new Point(423, 197), CenterAlText);
+        //        g.DrawString("Podpis pokladníka", defaultTextFont, textBrush, new Point(423, 197 + (int)g.VisibleClipBounds.Height / 2), CenterAlText);
+
+        //    }
+
+        ////ppea.HasMorePages
+        //}
     }
 
 }

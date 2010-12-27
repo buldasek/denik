@@ -5,6 +5,9 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+//
+// todo - zrusen tisk na jednu stranku obojiho, pri tisku na dve stranky zjistit jestli
+// nejde zjistit aktualni stranku
 
 namespace Denik
 {
@@ -30,7 +33,7 @@ namespace Denik
             dataRec.CustName = cbFrom.Text;
             dataRec.Content = cbContent.Text;
             dataRec.NoteToNumber = edNote.Text;
-            dataRec.Type = Record.RecordType.Income;
+            dataRec.Type = Record.RecordType.Expense;
             dataRec.PayedTo = cbOther.Text;
 
             return true;
@@ -56,6 +59,8 @@ namespace Denik
         {
             if (finishOK() != true)
                 return;
+            Printer printer = new Printer();
+            printer.printOutcomeOne(dataRec);
 
             DialogResult = DialogResult.OK;
             Close();
@@ -66,6 +71,8 @@ namespace Denik
         {
             if (finishOK() != true)
                 return;
+            Printer printer = new Printer();
+            printer.printOutcomeTwiceTwoPage(dataRec);
 
             DialogResult = DialogResult.OK;
             Close();

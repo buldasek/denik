@@ -186,8 +186,8 @@ namespace Denik
 
         public void ReplaceRecord(Record newRecord, int pos)
         {
-            Debug.Assert(pos < RecordsCount());
-            if (pos >= RecordsCount())
+            Debug.Assert(pos < RecordsCount);
+            if (pos >= RecordsCount)
                 return;
 
             m_records[pos] = newRecord;
@@ -195,9 +195,12 @@ namespace Denik
 
         }
 
-        public int RecordsCount()
+        public int RecordsCount
         {
-            return m_records.Count;
+            get
+            {
+                return m_records.Count;
+            }
         }
 
         public String Directory

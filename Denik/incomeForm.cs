@@ -73,7 +73,7 @@ namespace Denik
                 return;
 
             Printer printer = new Printer();
-            printer.print(dataRec);
+            printer.PrintIncome(dataRec);
             DialogResult = DialogResult.OK;
             Close();
         }
@@ -86,15 +86,5 @@ namespace Denik
 
     }
 
-    public class inoutParentForm : Form
-    {
-        private Record m_record;
 
-        protected Record dataRec
-        {
-            get { return m_record; }
-            set { m_record = value; }
-        }
-        
-    }
 }
