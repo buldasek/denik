@@ -118,56 +118,56 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <metadata name="fontDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>282, 17</value>
+    <value>267, 17</value>
   </metadata>
   <metadata name="mainMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>0, 0</value>
+    <value>163, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="vytvořitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>188, 22</value>
+    <value>174, 22</value>
   </data>
   <data name="vytvořitToolStripMenuItem.Text" xml:space="preserve">
     <value>Vytvořit deník</value>
   </data>
   <data name="otevřítDeníkToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>188, 22</value>
+    <value>174, 22</value>
   </data>
   <data name="otevřítDeníkToolStripMenuItem.Text" xml:space="preserve">
     <value>Otevřít</value>
   </data>
   <data name="změnitJménoDeníkuToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>188, 22</value>
+    <value>174, 22</value>
   </data>
   <data name="změnitJménoDeníkuToolStripMenuItem.Text" xml:space="preserve">
     <value>Změnit jméno deníku</value>
   </data>
   <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>185, 6</value>
+    <value>171, 6</value>
   </data>
   <data name="printerSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>188, 22</value>
+    <value>174, 22</value>
   </data>
   <data name="printerSettings.Text" xml:space="preserve">
     <value>Nastavení tiskárny</value>
   </data>
   <data name="tiskDeníkuToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>188, 22</value>
+    <value>174, 22</value>
   </data>
   <data name="tiskDeníkuToolStripMenuItem.Text" xml:space="preserve">
     <value>Tisk deníku</value>
   </data>
   <data name="toolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>185, 6</value>
+    <value>171, 6</value>
   </data>
   <data name="konecToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>188, 22</value>
+    <value>174, 22</value>
   </data>
   <data name="konecToolStripMenuItem.Text" xml:space="preserve">
     <value>Konec</value>
   </data>
   <data name="souborToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 20</value>
+    <value>53, 20</value>
   </data>
   <data name="souborToolStripMenuItem.Text" xml:space="preserve">
     <value>Soubor</value>
@@ -176,13 +176,19 @@
     <value>12, 20</value>
   </data>
   <data name="nastaveníDeníkuToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>165, 22</value>
+    <value>161, 22</value>
   </data>
   <data name="nastaveníDeníkuToolStripMenuItem.Text" xml:space="preserve">
     <value>Nastavení deníku</value>
   </data>
+  <data name="nasteveníRazítkaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>161, 22</value>
+  </data>
+  <data name="nasteveníRazítkaToolStripMenuItem.Text" xml:space="preserve">
+    <value>Nastevení razítka</value>
+  </data>
   <data name="nastaveníToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 20</value>
+    <value>69, 20</value>
   </data>
   <data name="nastaveníToolStripMenuItem1.Text" xml:space="preserve">
     <value>Nastavení</value>
@@ -361,7 +367,7 @@
     <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <metadata name="printDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>398, 17</value>
+    <value>376, 17</value>
   </metadata>
   <data name="gridHistory.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -456,6 +462,12 @@
   <data name="&gt;&gt;toolStripMenuItem1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;printerSettings.Name" xml:space="preserve">
+    <value>printerSettings</value>
+  </data>
+  <data name="&gt;&gt;printerSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;tiskDeníkuToolStripMenuItem.Name" xml:space="preserve">
     <value>tiskDeníkuToolStripMenuItem</value>
   </data>
@@ -480,17 +492,23 @@
   <data name="&gt;&gt;nastaveníToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;nastaveníToolStripMenuItem1.Name" xml:space="preserve">
+    <value>nastaveníToolStripMenuItem1</value>
+  </data>
+  <data name="&gt;&gt;nastaveníToolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nastaveníDeníkuToolStripMenuItem.Name" xml:space="preserve">
+    <value>nastaveníDeníkuToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;nastaveníDeníkuToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;printDialog1.Name" xml:space="preserve">
     <value>printDialog1</value>
   </data>
   <data name="&gt;&gt;printDialog1.Type" xml:space="preserve">
     <value>System.Windows.Forms.PrintDialog, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;printerSettings.Name" xml:space="preserve">
-    <value>printerSettings</value>
-  </data>
-  <data name="&gt;&gt;printerSettings.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Column1.Name" xml:space="preserve">
     <value>Column1</value>
@@ -540,16 +558,10 @@
   <data name="&gt;&gt;note.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;nastaveníToolStripMenuItem1.Name" xml:space="preserve">
-    <value>nastaveníToolStripMenuItem1</value>
+  <data name="&gt;&gt;nasteveníRazítkaToolStripMenuItem.Name" xml:space="preserve">
+    <value>nasteveníRazítkaToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;nastaveníToolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;nastaveníDeníkuToolStripMenuItem.Name" xml:space="preserve">
-    <value>nastaveníDeníkuToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;nastaveníDeníkuToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;nasteveníRazítkaToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

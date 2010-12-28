@@ -12,3 +12,4 @@ D:\ProjektyZS\Denik\Denik\obj\Debug\Denik.incomeForm.resources
 D:\ProjektyZS\Denik\Denik\obj\Debug\Denik.MainForm.resources
 D:\ProjektyZS\Denik\Denik\obj\Debug\Denik.ExperimentalForm.resources
 D:\ProjektyZS\denik\Denik\obj\Debug\Denik.DiarySettings.resources
+D:\ProjektyZS\denik\Denik\obj\Debug\Denik.StampForm.resources

@@ -22,7 +22,7 @@ namespace Denik
         {
             InitializeComponent();
 
-            Settings.GlobalSettings.init(settingsFile);
+            Settings.Storage.init(settingsFile);
             gridHistory.Rows.Add(pageSize);
 
             //Printer printer = new Printer();
@@ -180,14 +180,17 @@ namespace Denik
              */
             if (m_mainDiary == null)
                 return;
-            GlobalSettings.addString("Directory", m_mainDiary.Directory);
-            GlobalSettings.push();
+            Settings.Settings.Store();
+
+            //Storage.addString("Directory", m_mainDiary.Directory);
+           // Storage.push();
 
         }
 
         private void LoadSettings()
         {
-            string directory = GlobalSettings.readString("Directory");
+            //string directory = Storage.readString("Directory");
+            Settings.Settings.Load();
             /* string directory = "";*/
 
              do
@@ -206,12 +209,12 @@ namespace Denik
                  }
                  catch { }*/
 
-                 if (directory == "")
+                 if (Settings.Settings.DiaryDirectory == "")
                  {
                      initFailureForm fform = new initFailureForm();
                      if (fform.ShowDialog() == DialogResult.Cancel)
                      {
-                         Close();
+                         Application.Exit();    //todo lepeji ukoncit!!
                          return;
                      }
                      else if (fform.DialogResult == DialogResult.Retry)
@@ -221,7 +224,7 @@ namespace Denik
                          dlg.Filter = "Deníky (*.pkl)|*.pkl";
                          if (dlg.ShowDialog() == DialogResult.OK)
                          {
-                             directory = dlg.FileName;
+                             Settings.Settings.DiaryDirectory = dlg.FileName;
                          }
                      }
                      else
@@ -231,14 +234,14 @@ namespace Denik
                  }
                  try
                  {
-                     m_mainDiary = new Diary(directory);
+                     m_mainDiary = new Diary(Settings.Settings.DiaryDirectory);
                  }
                  catch
                  {
                      MessageBox.Show("Zadaný deník se nepodařilo otevřít.", "Chyba");
-                     directory = "";
+                     Settings.Settings.DiaryDirectory = "";
                  }
-             } while (directory == "");
+             } while (Settings.Settings.DiaryDirectory == "");
             m_mainDiary.SetPageSize(pageSize);
             
             UpdateCurrentPage();
@@ -277,8 +280,8 @@ namespace Denik
         private void MainForm_Shown(object sender, EventArgs e)
         {
             LoadSettings();
-
-            EnsureRecordVisibility(m_mainDiary.RecordsCount - 1);
+            if (m_mainDiary!=null) // todo tohle by nemelo byt nutne pokud to predtim poradne ukoncim
+                EnsureRecordVisibility(m_mainDiary.RecordsCount - 1);
         }
 
         private void otevřítDeníkToolStripMenuItem_Click(object sender, EventArgs e)
@@ -352,22 +355,19 @@ namespace Denik
 
         private void nastaveníDeníkuToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DiarySettings ds = new DiarySettings();
+            DiarySettings ds = new DiarySettings(m_mainDiary);
             ds.ShowDialog();
+
+            m_mainDiary.UpdateRecords();
+            UpdateCurrentPage();
+        }
+
+        private void nasteveníRazítkaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            StampForm sf = new StampForm();
+            sf.ShowDialog();
         }
 
     }
-    public class FastDataGridView : DataGridView
-    {
-        public FastDataGridView()
-        {
-            DoubleBuffered = true;
-        }
-        protected override void OnCursorChanged(EventArgs e)
-        {
-            base.OnCursorChanged(e);
-            bool bDefault = Cursor == Cursors.Default;
-            DoubleBuffered = bDefault;
-        }
-    }
+    
 }

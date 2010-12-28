@@ -42,10 +42,13 @@
             this.otevřítDeníkToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.změnitJménoDeníkuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
+            this.printerSettings = new System.Windows.Forms.ToolStripMenuItem();
             this.tiskDeníkuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
             this.konecToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nastaveníToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nastaveníToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.nastaveníDeníkuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnIncome = new System.Windows.Forms.Button();
             this.btnExpense = new System.Windows.Forms.Button();
             this.lbPageId = new System.Windows.Forms.Label();
@@ -53,7 +56,6 @@
             this.btnNextPage = new System.Windows.Forms.Button();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
-            this.printerSettings = new System.Windows.Forms.ToolStripMenuItem();
             this.gridHistory = new Denik.FastDataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -63,8 +65,7 @@
             this.expenses = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.remain = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.note = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nastaveníToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.nastaveníDeníkuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nasteveníRazítkaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mainMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridHistory)).BeginInit();
             this.SuspendLayout();
@@ -113,6 +114,12 @@
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             resources.ApplyResources(this.toolStripMenuItem1, "toolStripMenuItem1");
             // 
+            // printerSettings
+            // 
+            this.printerSettings.Name = "printerSettings";
+            resources.ApplyResources(this.printerSettings, "printerSettings");
+            this.printerSettings.Click += new System.EventHandler(this.printerSettings_Click);
+            // 
             // tiskDeníkuToolStripMenuItem
             // 
             this.tiskDeníkuToolStripMenuItem.Name = "tiskDeníkuToolStripMenuItem";
@@ -133,6 +140,20 @@
             // 
             this.nastaveníToolStripMenuItem.Name = "nastaveníToolStripMenuItem";
             resources.ApplyResources(this.nastaveníToolStripMenuItem, "nastaveníToolStripMenuItem");
+            // 
+            // nastaveníToolStripMenuItem1
+            // 
+            this.nastaveníToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.nastaveníDeníkuToolStripMenuItem,
+            this.nasteveníRazítkaToolStripMenuItem});
+            this.nastaveníToolStripMenuItem1.Name = "nastaveníToolStripMenuItem1";
+            resources.ApplyResources(this.nastaveníToolStripMenuItem1, "nastaveníToolStripMenuItem1");
+            // 
+            // nastaveníDeníkuToolStripMenuItem
+            // 
+            this.nastaveníDeníkuToolStripMenuItem.Name = "nastaveníDeníkuToolStripMenuItem";
+            resources.ApplyResources(this.nastaveníDeníkuToolStripMenuItem, "nastaveníDeníkuToolStripMenuItem");
+            this.nastaveníDeníkuToolStripMenuItem.Click += new System.EventHandler(this.nastaveníDeníkuToolStripMenuItem_Click);
             // 
             // btnIncome
             // 
@@ -175,12 +196,6 @@
             // printDialog1
             // 
             this.printDialog1.UseEXDialog = true;
-            // 
-            // printerSettings
-            // 
-            this.printerSettings.Name = "printerSettings";
-            resources.ApplyResources(this.printerSettings, "printerSettings");
-            this.printerSettings.Click += new System.EventHandler(this.printerSettings_Click);
             // 
             // gridHistory
             // 
@@ -293,18 +308,11 @@
             this.note.Name = "note";
             this.note.ReadOnly = true;
             // 
-            // nastaveníToolStripMenuItem1
+            // nasteveníRazítkaToolStripMenuItem
             // 
-            this.nastaveníToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.nastaveníDeníkuToolStripMenuItem});
-            this.nastaveníToolStripMenuItem1.Name = "nastaveníToolStripMenuItem1";
-            resources.ApplyResources(this.nastaveníToolStripMenuItem1, "nastaveníToolStripMenuItem1");
-            // 
-            // nastaveníDeníkuToolStripMenuItem
-            // 
-            this.nastaveníDeníkuToolStripMenuItem.Name = "nastaveníDeníkuToolStripMenuItem";
-            resources.ApplyResources(this.nastaveníDeníkuToolStripMenuItem, "nastaveníDeníkuToolStripMenuItem");
-            this.nastaveníDeníkuToolStripMenuItem.Click += new System.EventHandler(this.nastaveníDeníkuToolStripMenuItem_Click);
+            this.nasteveníRazítkaToolStripMenuItem.Name = "nasteveníRazítkaToolStripMenuItem";
+            resources.ApplyResources(this.nasteveníRazítkaToolStripMenuItem, "nasteveníRazítkaToolStripMenuItem");
+            this.nasteveníRazítkaToolStripMenuItem.Click += new System.EventHandler(this.nasteveníRazítkaToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -361,6 +369,7 @@
         private System.Windows.Forms.ToolStripMenuItem printerSettings;
         private System.Windows.Forms.ToolStripMenuItem nastaveníToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem nastaveníDeníkuToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem nasteveníRazítkaToolStripMenuItem;
 
     }
 }

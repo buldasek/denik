@@ -1,4 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DiarrySettings>
-  <Directory>D:\ProjektyZS\Deník\rok2010.pkl</Directory>
-</DiarrySettings>
+<DiarySettings>
+  <Stamp0>Jen jedna řádka</Stamp0>
+  <Stamp1>ad</Stamp1>
+  <Stamp2>dd</Stamp2>
+  <Stamp3>gggggggggggggg</Stamp3>
+  <Stamp4>OOOOOOOOOOO</Stamp4>
+  <Stamp5>sagssssssssssssss</Stamp5>
+  <DiaryDirectory>D:\ProjektyZS\denik\data\rok2010.pkl</DiaryDirectory>
+  <pokus>
+    <hint>hihi</hint>
+    <counter>5</counter>
+  </pokus>
+</DiarySettings>

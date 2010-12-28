@@ -131,7 +131,10 @@ namespace Denik
         public int RemainLimit { set { m_remainLimit = value; } get { return m_remainLimit; } }
         public int InitRemain { set { m_initRemain = value; } get { return m_initRemain; } }
 
-        private void UpdateRecords()
+        public int[] TypeCounts { get { return m_typeCounts; } }
+        public int[] InitTypeCounts { get { return m_typeInitCounts; } }
+
+        public void UpdateRecords()
         {
             int[] typesCount = new int[Record.TypeCount];
             for (int i = 0; i < Record.TypeCount; i++)
@@ -160,9 +163,14 @@ namespace Denik
             }
         }
 
-        public void AppendRecord(Record newRecord)
+        public void AppendRecordNoUpdate(Record newRecord)
         {
             m_records.Add(newRecord);
+        }
+
+        public void AppendRecord(Record newRecord)
+        {
+            AppendRecordNoUpdate(newRecord);
             UpdateRecords();
             /*
             newRecord.OverallID = m_typeCounts[0] + m_typeCounts[1]-1;
@@ -273,8 +281,8 @@ namespace Denik
             
             String[] lines = str.Split('\n');
             int recordCount = int.Parse(lines[0]);
-            m_typeCounts[0] = m_typeInitCounts[0] = int.Parse(lines[1])+1;
-            m_typeCounts[1] = m_typeInitCounts[1] = int.Parse(lines[2])+1;
+            m_typeCounts[0] = m_typeInitCounts[0] = int.Parse(lines[1]);
+            m_typeCounts[1] = m_typeInitCounts[1] = int.Parse(lines[2]);
             
             int overalID = m_typeCounts[0] + m_typeCounts[1]-1;
 
@@ -298,22 +306,25 @@ namespace Denik
 
                 Record newRec = new Record();
                 newRec.FromString(nextRecord.ToString());
-                newRec.OverallID = overalID++;
-                if (newRec.Type  == Record.RecordType.Expense)
-                {
-                    remain-= newRec.Cost;
-                }
-                else
-                {
-                    remain+= newRec.Cost;
-                }
+                //AppendRecordNoUpdate(newRec);
+                //newRec.OverallID = overalID++;
+                //if (newRec.Type  == Record.RecordType.Expense)
+                //{
+                //    remain-= newRec.Cost;
+                //}
+                //else
+                //{
+                //    remain+= newRec.Cost;
+                //}
 
-                newRec.TypeID = m_typeCounts[(int)newRec.Type]++;
-                newRec.Remaining = remain;
+                //newRec.TypeID = m_typeCounts[(int)newRec.Type]++;
+                //newRec.Remaining = remain;
 
                 m_records.Add(newRec);
                 recordOffset += 12;
             }
+
+            UpdateRecords();
 
         }
 

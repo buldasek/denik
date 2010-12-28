@@ -6,13 +6,19 @@ using System.Diagnostics;
 
 namespace Settings
 {
-    class SetingsImpl
+    public interface Storable
+    {
+        XmlElement convertToElement(string name, XmlDocument doc);
+        void convertFromNode(XmlNode element);
+    }
+
+    class SetingsStorageImpl
     {
         private XmlDocument m_mainDoc = new XmlDocument();
         //XmlDocument private Dictionary<string, string> m_settingsItems;
         private string m_directory;
 
-        public SetingsImpl(String directory)
+        public SetingsStorageImpl(String directory)
         {
             m_directory = directory;
             try
@@ -43,7 +49,6 @@ namespace Settings
                 return "";
             else
                 return elems[0].InnerText;
-
         }
 
         private bool removeValue(string name)
@@ -56,6 +61,28 @@ namespace Settings
             }
 
             return result;
+        }
+
+        public void addStorable(string name, Storable item)
+        {
+            removeValue(name);
+            XmlElement elem = item.convertToElement(name, m_mainDoc);
+
+            m_mainDoc.DocumentElement.AppendChild(elem);
+        }
+
+        public void readStorable(string name, Storable item, out bool ok)
+        {
+            XmlNodeList elems = m_mainDoc.GetElementsByTagName(name);
+            ok = elems.Count != 0;
+
+            if (elems.Count == 0)
+                return;
+            else
+            {
+                item.convertFromNode(elems[0]);
+                return;
+            }
         }
 
         public void addString(string name, string value)
@@ -133,9 +160,12 @@ namespace Settings
            */
         }
     }
-    public static class GlobalSettings
+
+
+
+    public static class Storage
     {
-        private static SetingsImpl m_settings = null;
+        private static SetingsStorageImpl m_settings = null;
 
         public static void init(string settingsFileName)
         {
@@ -144,7 +174,7 @@ namespace Settings
                 Debug.Assert(false, "Try to reinit settings");
                 return;
             }
-            m_settings = new SetingsImpl(settingsFileName);
+            m_settings = new SetingsStorageImpl(settingsFileName);
         }
 
         public static void addString(string name, string value)
@@ -184,6 +214,143 @@ namespace Settings
 
             m_settings.push();
         }
+
+        public static void addStringArray(string name, string[] value)
+        {
+            if (m_settings == null)
+            {
+                Debug.Assert(false, "Try to use uninitialized settings");
+                return;
+            }
+
+            m_settings.addStringArray(name, value);
+        }
+
+        public static string[] readStringArray(string name)
+        {
+            if (m_settings == null)
+            {
+                Debug.Assert(false, "Try to use uninitialized settings");
+                return new string[0];
+            }
+
+            return m_settings.readStringArray(name);
+        }
+
+        public static void addStorable(string name, Storable item)
+        {
+            if (m_settings == null)
+            {
+                Debug.Assert(false, "Try to use uninitialized settings");
+                return ;
+            }
+
+            m_settings.addStorable(name, item);
+        }
+
+        public static void readStorable(string name, ref Storable item)
+        {
+            if (m_settings == null)
+            {
+                Debug.Assert(false, "Try to use uninitialized settings");
+                return ;
+            }
+
+            bool ok;
+            m_settings.readStorable(name, item, out ok);
+        }
+
+    }
+
+    public struct HintItem: Storable
+    {
+        public string m_hint;
+        public Int64 m_counter;
+
+
         
+        //#region Storable Members
+
+        XmlElement Storable.convertToElement(string name, XmlDocument doc)
+        {
+            XmlElement elem = doc.CreateElement(name);
+            XmlElement child = doc.CreateElement("hint");
+            child.InnerText = m_hint;
+            elem.AppendChild(child);
+            child = doc.CreateElement("counter");
+            child.InnerText = m_counter.ToString();
+            elem.AppendChild(child);
+
+            return elem;
+
+        }
+
+        void Storable.convertFromNode(XmlNode elem)
+        {
+            XmlElement child = elem["hint"];
+            if (child != null)
+                m_hint = child.InnerText;
+            child = elem["counter"];
+            try
+            {
+                m_counter = Int64.Parse(child.InnerText);
+            }
+            catch
+            {
+                m_counter = 0;
+            }
+        }
+
+        //#endregion
+    }
+
+    public static class Settings
+    {
+        private static string[] m_stamp = new string[0];
+        private static string[] m_ = new string[0];
+        private static string m_diaryDirectory = "";
+
+        public static void Store()
+        {
+            Storage.addStringArray("Stamp", Stamp);
+            Storage.addString("DiaryDirectory", DiaryDirectory);
+
+            HintItem hi;// = new HintItem();
+            hi.m_counter = 5;
+            hi.m_hint = "hihi";
+            Storage.addStorable("pokus", hi);
+
+
+            Storage.push();
+        }
+
+        public static void Load()
+        {
+            Stamp = Storage.readStringArray("Stamp");
+            DiaryDirectory = Storage.readString("DiaryDirectory");
+
+            HintItem hi; // = new HintItem();
+            hi.m_hint = "hoho";
+            hi.m_counter = 2;
+            Storable st = (Storable)hi;
+            Storage.readStorable("pokus", ref st);
+            Type typ = st.GetType();
+            
+        }
+
+        public static string[] Stamp
+        {
+            set { m_stamp = value; }
+            get { return m_stamp; }
+        }
+
+        public static string DiaryDirectory
+        {
+            set { m_diaryDirectory = value; }
+            get { return m_diaryDirectory; }
+        }
+
+        
+
     }
 }

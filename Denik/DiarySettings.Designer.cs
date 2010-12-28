@@ -5,7 +5,6 @@
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -13,10 +12,7 @@
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
+           
             base.Dispose(disposing);
         }
 
@@ -38,10 +34,12 @@
             this.edWarnLimit = new System.Windows.Forms.TextBox();
             this.edRemainLimit = new System.Windows.Forms.TextBox();
             this.edDiaryHeader = new System.Windows.Forms.TextBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            this.ndIncomeCount = new System.Windows.Forms.NumericUpDown();
+            this.ndOutcomeCount = new System.Windows.Forms.NumericUpDown();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.ndIncomeCount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ndOutcomeCount)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -132,39 +130,61 @@
             this.edDiaryHeader.Size = new System.Drawing.Size(320, 20);
             this.edDiaryHeader.TabIndex = 11;
             // 
-            // numericUpDown1
+            // ndIncomeCount
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(214, 9);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
+            this.ndIncomeCount.Location = new System.Drawing.Point(214, 9);
+            this.ndIncomeCount.Maximum = new decimal(new int[] {
             1000000,
             0,
             0,
             0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown1.TabIndex = 12;
-            this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.ndIncomeCount.Name = "ndIncomeCount";
+            this.ndIncomeCount.Size = new System.Drawing.Size(120, 20);
+            this.ndIncomeCount.TabIndex = 12;
+            this.ndIncomeCount.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // numericUpDown2
+            // ndOutcomeCount
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(214, 37);
-            this.numericUpDown2.Maximum = new decimal(new int[] {
+            this.ndOutcomeCount.Location = new System.Drawing.Point(214, 37);
+            this.ndOutcomeCount.Maximum = new decimal(new int[] {
             1000000,
             0,
             0,
             0});
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown2.TabIndex = 13;
-            this.numericUpDown2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.ndOutcomeCount.Name = "ndOutcomeCount";
+            this.ndOutcomeCount.Size = new System.Drawing.Size(120, 20);
+            this.ndOutcomeCount.TabIndex = 13;
+            this.ndOutcomeCount.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(158, 184);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(85, 24);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "OK";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(249, 184);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(85, 24);
+            this.button2.TabIndex = 15;
+            this.button2.Text = "Zrušit";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // DiarySettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(343, 190);
-            this.Controls.Add(this.numericUpDown2);
-            this.Controls.Add(this.numericUpDown1);
+            this.ClientSize = new System.Drawing.Size(341, 219);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.ndOutcomeCount);
+            this.Controls.Add(this.ndIncomeCount);
             this.Controls.Add(this.edDiaryHeader);
             this.Controls.Add(this.edRemainLimit);
             this.Controls.Add(this.edWarnLimit);
@@ -177,8 +197,8 @@
             this.Controls.Add(this.label1);
             this.Name = "DiarySettings";
             this.Text = "Nastavení deníku";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ndIncomeCount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ndOutcomeCount)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -196,7 +216,9 @@
         private System.Windows.Forms.TextBox edWarnLimit;
         private System.Windows.Forms.TextBox edRemainLimit;
         private System.Windows.Forms.TextBox edDiaryHeader;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.NumericUpDown ndIncomeCount;
+        private System.Windows.Forms.NumericUpDown ndOutcomeCount;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
