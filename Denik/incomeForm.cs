@@ -31,9 +31,12 @@ namespace Denik
             }
             dataRec.CustName = cbFrom.Text;
             dataRec.Content = cbContent.Text;
-            dataRec.NoteToNumber = edNote.Text;
+            dataRec.Note = edNote.Text;
             dataRec.Type = Record.RecordType.Income;
-            
+
+            Settings.Settings.addHint("IncomeNote", dataRec.NoteToNumber);
+            Settings.Settings.addHint("IncomeName", dataRec.CustName);
+            Settings.Settings.addHint("IncomeFor", dataRec.Content);
 
             return true; 
         }
@@ -49,7 +52,17 @@ namespace Denik
             cbFrom.Text = dataRec.CustName;
             cbContent.Text = dataRec.Content;
             edNote.Text = dataRec.Note;
-            //cbOther.Text = dataRec.PayedTo;
+
+            string[] hintList;
+            hintList = Settings.Settings.getHints("IncomeNote");
+            foreach (string item in hintList)
+                cbNoteToNumber.Items.Add(item);
+            hintList = Settings.Settings.getHints("IncomeName");
+            foreach (string item in hintList)
+                cbFrom.Items.Add(item);
+            hintList = Settings.Settings.getHints("IncomeFor");
+            foreach (string item in hintList)
+                cbContent.Items.Add(item);
 
         }
 

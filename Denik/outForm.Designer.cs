@@ -61,6 +61,10 @@
             // 
             // cbNoteToNumber
             // 
+            this.cbNoteToNumber.AutoCompleteCustomSource.AddRange(new string[] {
+            "ddddf"});
+            this.cbNoteToNumber.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbNoteToNumber.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbNoteToNumber.FormattingEnabled = true;
             this.cbNoteToNumber.Location = new System.Drawing.Point(221, 41);
             this.cbNoteToNumber.Name = "cbNoteToNumber";
@@ -69,6 +73,8 @@
             // 
             // cbOther
             // 
+            this.cbOther.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbOther.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbOther.FormattingEnabled = true;
             this.cbOther.Location = new System.Drawing.Point(159, 268);
             this.cbOther.Name = "cbOther";
@@ -148,6 +154,8 @@
             // 
             // cbContent
             // 
+            this.cbContent.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbContent.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbContent.FormattingEnabled = true;
             this.cbContent.Location = new System.Drawing.Point(17, 203);
             this.cbContent.Name = "cbContent";
@@ -166,6 +174,8 @@
             // 
             // cbFrom
             // 
+            this.cbFrom.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbFrom.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbFrom.FormattingEnabled = true;
             this.cbFrom.Location = new System.Drawing.Point(18, 151);
             this.cbFrom.Name = "cbFrom";

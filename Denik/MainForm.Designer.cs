@@ -49,6 +49,7 @@
             this.nastaveníToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nastaveníToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.nastaveníDeníkuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nasteveníRazítkaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnIncome = new System.Windows.Forms.Button();
             this.btnExpense = new System.Windows.Forms.Button();
             this.lbPageId = new System.Windows.Forms.Label();
@@ -65,7 +66,7 @@
             this.expenses = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.remain = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.note = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nasteveníRazítkaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nastaveníDoplňováníToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mainMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridHistory)).BeginInit();
             this.SuspendLayout();
@@ -145,7 +146,8 @@
             // 
             this.nastaveníToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.nastaveníDeníkuToolStripMenuItem,
-            this.nasteveníRazítkaToolStripMenuItem});
+            this.nasteveníRazítkaToolStripMenuItem,
+            this.nastaveníDoplňováníToolStripMenuItem});
             this.nastaveníToolStripMenuItem1.Name = "nastaveníToolStripMenuItem1";
             resources.ApplyResources(this.nastaveníToolStripMenuItem1, "nastaveníToolStripMenuItem1");
             // 
@@ -154,6 +156,12 @@
             this.nastaveníDeníkuToolStripMenuItem.Name = "nastaveníDeníkuToolStripMenuItem";
             resources.ApplyResources(this.nastaveníDeníkuToolStripMenuItem, "nastaveníDeníkuToolStripMenuItem");
             this.nastaveníDeníkuToolStripMenuItem.Click += new System.EventHandler(this.nastaveníDeníkuToolStripMenuItem_Click);
+            // 
+            // nasteveníRazítkaToolStripMenuItem
+            // 
+            this.nasteveníRazítkaToolStripMenuItem.Name = "nasteveníRazítkaToolStripMenuItem";
+            resources.ApplyResources(this.nasteveníRazítkaToolStripMenuItem, "nasteveníRazítkaToolStripMenuItem");
+            this.nasteveníRazítkaToolStripMenuItem.Click += new System.EventHandler(this.nasteveníRazítkaToolStripMenuItem_Click);
             // 
             // btnIncome
             // 
@@ -308,11 +316,11 @@
             this.note.Name = "note";
             this.note.ReadOnly = true;
             // 
-            // nasteveníRazítkaToolStripMenuItem
+            // nastaveníDoplňováníToolStripMenuItem
             // 
-            this.nasteveníRazítkaToolStripMenuItem.Name = "nasteveníRazítkaToolStripMenuItem";
-            resources.ApplyResources(this.nasteveníRazítkaToolStripMenuItem, "nasteveníRazítkaToolStripMenuItem");
-            this.nasteveníRazítkaToolStripMenuItem.Click += new System.EventHandler(this.nasteveníRazítkaToolStripMenuItem_Click);
+            this.nastaveníDoplňováníToolStripMenuItem.Name = "nastaveníDoplňováníToolStripMenuItem";
+            resources.ApplyResources(this.nastaveníDoplňováníToolStripMenuItem, "nastaveníDoplňováníToolStripMenuItem");
+            this.nastaveníDoplňováníToolStripMenuItem.Click += new System.EventHandler(this.nastaveníDoplňováníToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -370,6 +378,7 @@
         private System.Windows.Forms.ToolStripMenuItem nastaveníToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem nastaveníDeníkuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nasteveníRazítkaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem nastaveníDoplňováníToolStripMenuItem;
 
     }
 }

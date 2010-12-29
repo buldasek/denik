@@ -368,6 +368,13 @@ namespace Denik
             sf.ShowDialog();
         }
 
+        private void nastaveníDoplňováníToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AutocompleteSettingsForm acsf = new AutocompleteSettingsForm();
+
+            acsf.ShowDialog();
+        }
+
     }
     
 }

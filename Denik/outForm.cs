@@ -32,10 +32,15 @@ namespace Denik
             }
             dataRec.CustName = cbFrom.Text;
             dataRec.Content = cbContent.Text;
-            dataRec.NoteToNumber = edNote.Text;
+            dataRec.Note = edNote.Text;
             dataRec.Type = Record.RecordType.Expense;
             dataRec.PayedTo = cbOther.Text;
 
+            Settings.Settings.addHint("OutcomeNote", dataRec.NoteToNumber);
+            Settings.Settings.addHint("OutcomeName", dataRec.CustName);
+            Settings.Settings.addHint("OutcomeFor", dataRec.Content);
+            Settings.Settings.addHint("OutcomeRecipient", dataRec.PayedTo);
+            
             return true;
         }
 
@@ -50,9 +55,23 @@ namespace Denik
             edMoney.Text = dataRec.Cost.ToString();        //todo kontrola konverze
             cbFrom.Text = dataRec.CustName;
             cbContent.Text = dataRec.Content;
-            edNote.Text = dataRec.NoteToNumber;
+            edNote.Text = dataRec.Note;
             cbOther.Text = dataRec.PayedTo;
 
+            string[] hintList;
+            hintList = Settings.Settings.getHints("OutcomeNote");
+            foreach (string item in hintList)
+                cbNoteToNumber.Items.Add(item);
+            hintList = Settings.Settings.getHints("OutcomeName");
+            foreach (string item in hintList)
+                cbFrom.Items.Add(item);
+            hintList = Settings.Settings.getHints("OutcomeFor");
+            foreach (string item in hintList)
+                cbContent.Items.Add(item);
+            hintList = Settings.Settings.getHints("OutcomeRecipient");
+            foreach (string item in hintList)
+                cbOther.Items.Add(item);
+            
         }
 
         private void btnPrint_Click(object sender, EventArgs e)

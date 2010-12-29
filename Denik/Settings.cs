@@ -10,7 +10,7 @@ namespace Settings
     {
         XmlElement convertToElement(string name, XmlDocument doc);
 
-        static Object convertFromNode(XmlNode node);
+        bool convertFromNode(XmlNode node);
     }
 
     class SetingsStorageImpl
@@ -82,18 +82,17 @@ namespace Settings
             m_mainDoc.DocumentElement.AppendChild(elem);
         }
 
-        static public Object readStorable(string name, Object defaultObject, out bool ok)
+        public void readStorable(Storable newObject, string name, out bool ok)
         {
             XmlNodeList elems = m_mainDoc.GetElementsByTagName(name);
             ok = elems.Count != 0;
 
             if (elems.Count == 0)
-                return defaultObject;
+                 return ;
             else
             {
-                item.convertFromNode(elems[0]);
-                return defaultObject;
-            }
+                ok = (ok & newObject.convertFromNode(elems[0]));                
+            }           
         }
 
         public void addString(string name, string value)
@@ -127,22 +126,22 @@ namespace Settings
             }
         }
 
-        public Object [] readStorableArray(string name)
-        {
-            List<Object> result = new List<object>();
-            for (int i=0; ; i++)
-            {
-                String itemName = name + i.ToString();
-                bool ok;
-                Object itemValue = readStorable(itemName, out ok);
-                if (ok)
-                    result.Add(itemValue);
-                else
-                    break;
-            }
+        //public Storable [] readStorableArray(string name)
+        //{
+        //    List<Object> result = new List<object>();
+        //    for (int i=0; ; i++)
+        //    {
+        //        String itemName = name + i.ToString();
+        //        bool ok;
+        //        Object itemValue = readStorable(itemName, out ok);
+        //        if (ok)
+        //            result.Add(itemValue);
+        //        else
+        //            break;
+        //    }
 
-            return result.ToArray();
-        }
+        //    return result.ToArray();
+        //}
 
         public void addStringArray(string name, string[] value)
         {
@@ -282,8 +281,9 @@ namespace Settings
             m_settings.addStorable(name, item);
         }
 
-        public static Object readStorable(string name, Object defaultObject)
+        public static T readStorable<T>(string name, T defaultObject) where T: Storable, new()
         {
+            T newItem = new T();
             if (m_settings == null)
             {
                 Debug.Assert(false, "Try to use uninitialized settings");
@@ -291,10 +291,14 @@ namespace Settings
             }
 
             bool ok;
-            return m_settings.readStorable(name, defaultObject, out ok);
+            m_settings.readStorable(newItem, name, out ok);
+            if (ok)
+                return newItem;
+            else
+                return defaultObject;
         }
 
-        public static void addStorableArray(string name, Object [] value)
+        public static void addStorableArray(string name, Storable [] value)
         {
             if (m_settings == null)
             {
@@ -305,15 +309,28 @@ namespace Settings
             m_settings.addStorableArray(name, value);
         }
 
-        public static Object[] readStorableArray(string name)
+        public static T[] readStorableArray<T>(string name) where T:Storable, new()
         {
             if (m_settings == null)
-            {
+            { 
                 Debug.Assert(false, "Try to use uninitialized settings");
-                return new Object[0];
+                return new T[0];
             }
 
-            return m_settings.readStorableArray(name);
+            List<T> result = new List<T>();
+            for (int i = 0; ; i++)
+            {
+                String itemName = name + i.ToString();
+                T newItem = new T();
+                bool ok;
+                m_settings.readStorable(newItem, itemName, out ok);
+                if (ok)
+                    result.Add(newItem);
+                else
+                    break;
+            }
+
+            return result.ToArray();
 
         }
 
@@ -330,6 +347,18 @@ namespace Settings
             
             #region Storable Members
 
+            public HintItem():this("", 0)
+            {
+                
+            }
+
+            public HintItem(String hint, int counter)
+            {
+                m_hint = hint;
+                m_counter = counter;
+            }
+            
+
             XmlElement Storable.convertToElement(string name, XmlDocument doc)
             {
                 XmlElement elem = doc.CreateElement(name);
@@ -344,23 +373,22 @@ namespace Settings
 
             }
 
-            static Object Storable.convertFromNode(XmlNode elem)
+            bool Storable.convertFromNode(XmlNode elem)
             {
-                HintItem hi = new HintItem();
                 XmlElement child = elem["hint"];
                 if (child != null)
-                    hi.m_hint = child.InnerText;
+                    m_hint = child.InnerText;
                 child = elem["counter"];
                 try
                 {
-                    hi.m_counter = Int64.Parse(child.InnerText);
+                    m_counter = Int64.Parse(child.InnerText);
                 }
                 catch
                 {
-                    hi.m_counter = 0;
+                    m_counter = 0;
+                    return false;
                 }
-
-                return hi;
+                return true;
             }
 
             #endregion
@@ -375,27 +403,78 @@ namespace Settings
             m_items = new List<HintItem>();
         }
 
-        void store()
-        {
-            Storage.addStorableArray(m_name, m_items);
+        public void appendHint(string hint)
+        {  
+            for (int i = 0; i < m_items.Count; i++)
+                if (hint.CompareTo(m_items[i].m_hint) == 0)
+                {
+                    return;
+                }
+
+            m_items.Add(new HintItem(hint, 0));
         }
 
-        void load()
+        public void removeHint(string hint)
         {
-            m_items = (List<HintItem>) Storage.readStorableArray(m_name);
+            for (int i = 0; i < m_items.Count; i++)
+                if (hint.CompareTo(m_items[i].m_hint) == 0)
+                    m_items.RemoveAt(i);
+        }
+
+        public string[] hints()
+        {
+            List<string> result = new List<string>();
+            foreach (HintItem hi in m_items)
+                result.Add(hi.m_hint);
+
+            result.Sort();
+
+            return result.ToArray();
+        }
+
+        public void store()
+        {
+            Storage.addStorableArray(m_name, m_items.ToArray());
+        }
+
+        public void load()
+        {
+            m_items = new List<HintItem>(Storage.readStorableArray<HintItem>(m_name));
+        }
+
+        public string Name
+        {
+            get { return m_name; }
         }
     }
 
     public static class Settings
     {
         private static string[] m_stamp = new string[0];
-        private static string[] m_ = new string[0];
         private static string m_diaryDirectory = "";
+
+        private static Dictionary<string, HintsHolder> m_hints = new Dictionary<string,HintsHolder>();
+
+        private static string [] m_hintClasses = {"IncomeNote", "IncomeName", "IncomeFor", "OutcomeNote",
+                                                        "OutcomeName", "OutcomeFor", "OutcomeRecipient"};
+        
+
+        static Settings()
+        {
+            foreach(string hintClass in m_hintClasses)
+            {
+                m_hints.Add(hintClass, new HintsHolder(hintClass));
+            }
+            
+        }
 
         public static void Store()
         {
             Storage.addStringArray("Stamp", Stamp);
             Storage.addString("DiaryDirectory", DiaryDirectory);
+
+            foreach (string hintClass in m_hintClasses)
+                m_hints[hintClass].store();
 
             Storage.push();
         }
@@ -405,7 +484,8 @@ namespace Settings
             Stamp = Storage.readStringArray("Stamp");
             DiaryDirectory = Storage.readString("DiaryDirectory");
 
-                        
+            foreach (string hintClass in m_hintClasses)
+                m_hints[hintClass].load();
         }
 
         public static string[] Stamp
@@ -420,7 +500,39 @@ namespace Settings
             get { return m_diaryDirectory; }
         }
 
-        
+        public static void addHint(string hintClass, string hint)
+        {
+            Debug.Assert(Array.IndexOf(m_hintClasses, hintClass)!=-1);
 
+            int i = hint.Length-1;
+            while (hint[i] == ' ')
+                i--;
+            string newHint = hint.Substring(0, i + 1);
+
+            if (newHint == "")
+                return;
+
+            HintsHolder hi;
+            if (m_hints.TryGetValue(hintClass, out hi))
+                hi.appendHint(newHint);
+        }
+
+        public static void removeHint(string hintClass, string hint)
+        {
+            Debug.Assert(Array.IndexOf(m_hintClasses, hintClass) != -1);
+            HintsHolder hi;
+            if (m_hints.TryGetValue(hintClass, out hi))
+                hi.removeHint(hint);
+        }
+
+        public static string[] getHints(string hintClass)
+        {
+            Debug.Assert(Array.IndexOf(m_hintClasses, hintClass) != -1);
+            HintsHolder hi;
+            if (m_hints.TryGetValue(hintClass, out hi))
+                return hi.hints();
+            else
+                return new string[0];
+        }
     }
 }
