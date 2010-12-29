@@ -9,7 +9,8 @@ namespace Settings
     public interface Storable
     {
         XmlElement convertToElement(string name, XmlDocument doc);
-        void convertFromNode(XmlNode element);
+
+        static Object convertFromNode(XmlNode node);
     }
 
     class SetingsStorageImpl
@@ -63,6 +64,16 @@ namespace Settings
             return result;
         }
 
+        private void removeArray(string name)
+        {
+            for (int i = 0; ; i++)
+            {
+                String toRemoveName = name + i.ToString();
+                if (!removeValue(toRemoveName))
+                    break;
+            }
+        }
+
         public void addStorable(string name, Storable item)
         {
             removeValue(name);
@@ -71,17 +82,17 @@ namespace Settings
             m_mainDoc.DocumentElement.AppendChild(elem);
         }
 
-        public void readStorable(string name, Storable item, out bool ok)
+        static public Object readStorable(string name, Object defaultObject, out bool ok)
         {
             XmlNodeList elems = m_mainDoc.GetElementsByTagName(name);
             ok = elems.Count != 0;
 
             if (elems.Count == 0)
-                return;
+                return defaultObject;
             else
             {
                 item.convertFromNode(elems[0]);
-                return;
+                return defaultObject;
             }
         }
 
@@ -105,15 +116,38 @@ namespace Settings
                 return defaultValue;
         }
 
+        public void addStorableArray(string name, Storable[] value)
+        {
+            removeArray(name);
+
+            for (int i = 0; i < value.Length; i++)
+            {
+                String itemName = name + i.ToString();
+                addStorable(itemName, value[i]);
+            }
+        }
+
+        public Object [] readStorableArray(string name)
+        {
+            List<Object> result = new List<object>();
+            for (int i=0; ; i++)
+            {
+                String itemName = name + i.ToString();
+                bool ok;
+                Object itemValue = readStorable(itemName, out ok);
+                if (ok)
+                    result.Add(itemValue);
+                else
+                    break;
+            }
+
+            return result.ToArray();
+        }
+
         public void addStringArray(string name, string[] value)
         {
             //todo udelat nejaky array descriptor?
-            for (int i = 0; ; i++)
-            {
-                String toRemoveName = name + i.ToString();
-                if (!removeValue(toRemoveName))
-                    break;
-            }
+            removeArray(name);
 
             for (int i = 0; i < value.Length; i++)
             {
@@ -248,7 +282,19 @@ namespace Settings
             m_settings.addStorable(name, item);
         }
 
-        public static void readStorable(string name, ref Storable item)
+        public static Object readStorable(string name, Object defaultObject)
+        {
+            if (m_settings == null)
+            {
+                Debug.Assert(false, "Try to use uninitialized settings");
+                return defaultObject;
+            }
+
+            bool ok;
+            return m_settings.readStorable(name, defaultObject, out ok);
+        }
+
+        public static void addStorableArray(string name, Object [] value)
         {
             if (m_settings == null)
             {
@@ -256,52 +302,88 @@ namespace Settings
                 return ;
             }
 
-            bool ok;
-            m_settings.readStorable(name, item, out ok);
+            m_settings.addStorableArray(name, value);
+        }
+
+        public static Object[] readStorableArray(string name)
+        {
+            if (m_settings == null)
+            {
+                Debug.Assert(false, "Try to use uninitialized settings");
+                return new Object[0];
+            }
+
+            return m_settings.readStorableArray(name);
+
         }
 
     }
 
-    public struct HintItem: Storable
+
+
+    public class HintsHolder
     {
-        public string m_hint;
-        public Int64 m_counter;
-
-
-        
-        //#region Storable Members
-
-        XmlElement Storable.convertToElement(string name, XmlDocument doc)
+        private class HintItem: Storable
         {
-            XmlElement elem = doc.CreateElement(name);
-            XmlElement child = doc.CreateElement("hint");
-            child.InnerText = m_hint;
-            elem.AppendChild(child);
-            child = doc.CreateElement("counter");
-            child.InnerText = m_counter.ToString();
-            elem.AppendChild(child);
+            public string m_hint;
+            public Int64 m_counter;
+            
+            #region Storable Members
 
-            return elem;
+            XmlElement Storable.convertToElement(string name, XmlDocument doc)
+            {
+                XmlElement elem = doc.CreateElement(name);
+                XmlElement child = doc.CreateElement("hint");
+                child.InnerText = m_hint;
+                elem.AppendChild(child);
+                child = doc.CreateElement("counter");
+                child.InnerText = m_counter.ToString();
+                elem.AppendChild(child);
 
+                return elem;
+
+            }
+
+            static Object Storable.convertFromNode(XmlNode elem)
+            {
+                HintItem hi = new HintItem();
+                XmlElement child = elem["hint"];
+                if (child != null)
+                    hi.m_hint = child.InnerText;
+                child = elem["counter"];
+                try
+                {
+                    hi.m_counter = Int64.Parse(child.InnerText);
+                }
+                catch
+                {
+                    hi.m_counter = 0;
+                }
+
+                return hi;
+            }
+
+            #endregion
         }
 
-        void Storable.convertFromNode(XmlNode elem)
+        private string m_name;
+        private List<HintItem> m_items;
+
+        public HintsHolder(string name)
         {
-            XmlElement child = elem["hint"];
-            if (child != null)
-                m_hint = child.InnerText;
-            child = elem["counter"];
-            try
-            {
-                m_counter = Int64.Parse(child.InnerText);
-            }
-            catch
-            {
-                m_counter = 0;
-            }
+            m_name = name;
+            m_items = new List<HintItem>();
         }
 
-        //#endregion
+        void store()
+        {
+            Storage.addStorableArray(m_name, m_items);
+        }
+
+        void load()
+        {
+            m_items = (List<HintItem>) Storage.readStorableArray(m_name);
+        }
     }
 
     public static class Settings
@@ -315,12 +397,6 @@ namespace Settings
             Storage.addStringArray("Stamp", Stamp);
             Storage.addString("DiaryDirectory", DiaryDirectory);
 
-            HintItem hi;// = new HintItem();
-            hi.m_counter = 5;
-            hi.m_hint = "hihi";
-            Storage.addStorable("pokus", hi);
-
-
             Storage.push();
         }
 
@@ -329,13 +405,7 @@ namespace Settings
             Stamp = Storage.readStringArray("Stamp");
             DiaryDirectory = Storage.readString("DiaryDirectory");
 
-            HintItem hi; // = new HintItem();
-            hi.m_hint = "hoho";
-            hi.m_counter = 2;
-            Storable st = (Storable)hi;
-            Storage.readStorable("pokus", ref st);
-            Type typ = st.GetType();
-            
+                        
         }
 
         public static string[] Stamp
