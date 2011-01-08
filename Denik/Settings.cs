@@ -434,12 +434,14 @@ namespace Settings
 
         public void store()
         {
-            Storage.addStorableArray(m_name, m_items.ToArray());
+          //  Storage.addStorableArray(m_name, m_items.ToArray());
         }
 
         public void load()
         {
-            m_items = new List<HintItem>(Storage.readStorableArray<HintItem>(m_name));
+            //m_items = new List<HintItem>(Storage.readStorableArray<HintItem>(m_name));
+            for (int i = 0; i < 150; i++)
+                m_items.Add(new HintItem(Denik.NumberConvertor.ConvertIntToString(i),0));
         }
 
         public string Name
@@ -505,7 +507,7 @@ namespace Settings
             Debug.Assert(Array.IndexOf(m_hintClasses, hintClass)!=-1);
 
             int i = hint.Length-1;
-            while (hint[i] == ' ')
+            while (i>0 && hint[i] == ' ')
                 i--;
             string newHint = hint.Substring(0, i + 1);
 

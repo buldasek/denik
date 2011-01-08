@@ -46,7 +46,6 @@
             this.tiskDeníkuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
             this.konecToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nastaveníToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nastaveníToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.nastaveníDeníkuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nasteveníRazítkaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -57,6 +56,9 @@
             this.btnNextPage = new System.Windows.Forms.Button();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
+            this.nastaveníDoplňováníToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveDialogDiary = new System.Windows.Forms.SaveFileDialog();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.gridHistory = new Denik.FastDataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -66,7 +68,6 @@
             this.expenses = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.remain = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.note = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nastaveníDoplňováníToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mainMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridHistory)).BeginInit();
             this.SuspendLayout();
@@ -75,7 +76,6 @@
             // 
             this.mainMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.souborToolStripMenuItem,
-            this.nastaveníToolStripMenuItem,
             this.nastaveníToolStripMenuItem1});
             resources.ApplyResources(this.mainMenu, "mainMenu");
             this.mainMenu.Name = "mainMenu";
@@ -98,6 +98,7 @@
             // 
             this.vytvořitToolStripMenuItem.Name = "vytvořitToolStripMenuItem";
             resources.ApplyResources(this.vytvořitToolStripMenuItem, "vytvořitToolStripMenuItem");
+            this.vytvořitToolStripMenuItem.Click += new System.EventHandler(this.vytvořitToolStripMenuItem_Click);
             // 
             // otevřítDeníkToolStripMenuItem
             // 
@@ -109,6 +110,7 @@
             // 
             this.změnitJménoDeníkuToolStripMenuItem.Name = "změnitJménoDeníkuToolStripMenuItem";
             resources.ApplyResources(this.změnitJménoDeníkuToolStripMenuItem, "změnitJménoDeníkuToolStripMenuItem");
+            this.změnitJménoDeníkuToolStripMenuItem.Click += new System.EventHandler(this.změnitJménoDeníkuToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
@@ -136,11 +138,6 @@
             this.konecToolStripMenuItem.Name = "konecToolStripMenuItem";
             resources.ApplyResources(this.konecToolStripMenuItem, "konecToolStripMenuItem");
             this.konecToolStripMenuItem.Click += new System.EventHandler(this.konecToolStripMenuItem_Click);
-            // 
-            // nastaveníToolStripMenuItem
-            // 
-            this.nastaveníToolStripMenuItem.Name = "nastaveníToolStripMenuItem";
-            resources.ApplyResources(this.nastaveníToolStripMenuItem, "nastaveníToolStripMenuItem");
             // 
             // nastaveníToolStripMenuItem1
             // 
@@ -204,6 +201,17 @@
             // printDialog1
             // 
             this.printDialog1.UseEXDialog = true;
+            // 
+            // nastaveníDoplňováníToolStripMenuItem
+            // 
+            this.nastaveníDoplňováníToolStripMenuItem.Name = "nastaveníDoplňováníToolStripMenuItem";
+            resources.ApplyResources(this.nastaveníDoplňováníToolStripMenuItem, "nastaveníDoplňováníToolStripMenuItem");
+            this.nastaveníDoplňováníToolStripMenuItem.Click += new System.EventHandler(this.nastaveníDoplňováníToolStripMenuItem_Click);
+            // 
+            // saveDialogDiary
+            // 
+            resources.ApplyResources(this.saveDialogDiary, "saveDialogDiary");
+            this.saveDialogDiary.FileOk += new System.ComponentModel.CancelEventHandler(this.saveFileDialog1_FileOk);
             // 
             // gridHistory
             // 
@@ -316,12 +324,6 @@
             this.note.Name = "note";
             this.note.ReadOnly = true;
             // 
-            // nastaveníDoplňováníToolStripMenuItem
-            // 
-            this.nastaveníDoplňováníToolStripMenuItem.Name = "nastaveníDoplňováníToolStripMenuItem";
-            resources.ApplyResources(this.nastaveníDoplňováníToolStripMenuItem, "nastaveníDoplňováníToolStripMenuItem");
-            this.nastaveníDoplňováníToolStripMenuItem.Click += new System.EventHandler(this.nastaveníDoplňováníToolStripMenuItem_Click);
-            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
@@ -351,7 +353,6 @@
         private System.Windows.Forms.MenuStrip mainMenu;
         private System.Windows.Forms.ToolStripMenuItem souborToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem vytvořitToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem nastaveníToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem otevřítDeníkToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem změnitJménoDeníkuToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
@@ -379,6 +380,8 @@
         private System.Windows.Forms.ToolStripMenuItem nastaveníDeníkuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nasteveníRazítkaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nastaveníDoplňováníToolStripMenuItem;
+        private System.Windows.Forms.SaveFileDialog saveDialogDiary;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
 
     }
 }

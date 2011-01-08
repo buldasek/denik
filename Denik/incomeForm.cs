@@ -45,6 +45,10 @@ namespace Denik
         {
             InitializeComponent();
 
+            Result = InOutFormResult.Cancel;
+
+            lbHeader.Text = lbHeader.Text + " " + dataRecord.TypeID.ToString();
+
             dataRec = dataRecord;
             cbNoteToNumber.Text = dataRec.NoteToNumber;
             edDate.Text = dataRec.Date;
@@ -76,7 +80,8 @@ namespace Denik
             if (finishOK() != true)
                 return;
 
-            DialogResult = DialogResult.OK;
+            Result = InOutFormResult.OK;
+            
             Close();
         }
 
@@ -85,15 +90,14 @@ namespace Denik
             if (finishOK() != true)
                 return;
 
-            Printer printer = new Printer();
-            printer.PrintIncome(dataRec);
-            DialogResult = DialogResult.OK;
+            Result = InOutFormResult.PrintOnce;
             Close();
         }
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            DialogResult = DialogResult.Abort;
+            Result = InOutFormResult.Cancel;
+            
             Close();
         }
 

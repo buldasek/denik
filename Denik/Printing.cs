@@ -12,7 +12,7 @@ using System.Diagnostics;
 namespace Denik
 {
     
-    class NumberConvertor   //todo move to different file
+    public class NumberConvertor   //todo move to different file
     {
         static private string[] numbers1to19 = { "", "jedna", "dva", "tři", "čtyři", "pět"
             , "šest", "sedm", "osm", "devět", "deset", "jedenáct", "dvanáct",

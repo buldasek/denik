@@ -61,7 +61,7 @@ namespace Denik
 
         private void EnsureRecordVisibility(int recordId)
         {
-            if (recordId / pageSize < m_mainDiary.PageCount && recordId / pageSize >= 0)
+            if (recordId % pageSize < m_mainDiary.PageCount && recordId % pageSize >= 0)
             {
                 setPage(recordId / pageSize);
                 gridHistory.CurrentCell = gridHistory[0, recordId % pageSize];
@@ -147,6 +147,7 @@ namespace Denik
                 if (dlg.ShowDialog() == DialogResult.OK)
                 {
                     newDiary = new Diary(dlg.FileName);
+                    newDiary.SetPageSize(pageSize);
                 }
             }
             catch
@@ -158,6 +159,7 @@ namespace Denik
             if (newDiary != null)
                 m_mainDiary = newDiary;
 
+            EnsureRecordVisibility(m_mainDiary.RecordsCount - 1);
             UpdateCurrentPage();
         }
 
@@ -212,12 +214,13 @@ namespace Denik
                  if (Settings.Settings.DiaryDirectory == "")
                  {
                      initFailureForm fform = new initFailureForm();
-                     if (fform.ShowDialog() == DialogResult.Cancel)
+                     fform.ShowDialog();
+                     if (fform.Result == initFailureForm.InitFailureResults.Cancel)
                      {
                          Application.Exit();    //todo lepeji ukoncit!!
                          return;
                      }
-                     else if (fform.DialogResult == DialogResult.Retry)
+                     else if (fform.Result == initFailureForm.InitFailureResults.Open)
                      {
                          OpenFileDialog dlg = new OpenFileDialog();
                          dlg.InitialDirectory = Application.StartupPath; //todo
@@ -229,12 +232,13 @@ namespace Denik
                      }
                      else
                      {
-                         // todo new denik
+                         tryCreateNewDiary();
                      }
                  }
                  try
                  {
                      m_mainDiary = new Diary(Settings.Settings.DiaryDirectory);
+                     m_mainDiary.SetPageSize(pageSize);
                  }
                  catch
                  {
@@ -302,26 +306,47 @@ namespace Denik
         private void btnIncome_Click(object sender, EventArgs e)
         {
             Record newRecord = new Record();    //todo kdo nastavi defaulty?
+            newRecord.TypeID = m_mainDiary.TypeCounts[(int)Record.RecordType.Income]+1;
             incomeForm iform = new incomeForm(newRecord);
             iform.ShowDialog();
-            if (iform.DialogResult == DialogResult.OK)
+            if (iform.Result != inoutParentForm.InOutFormResult.Cancel)
             {
                 m_mainDiary.AppendRecord(newRecord);
                 EnsureRecordVisibility(m_mainDiary.RecordsCount - 1);
+                UpdateCurrentPage();
             }
+            if (iform.Result == inoutParentForm.InOutFormResult.PrintOnce)
+            {
+                Printer printer = new Printer();
+                printer.PrintIncome(m_mainDiary.GetRecord(m_mainDiary.RecordsCount - 1));
+            }
+            
         }
 
         private void btnExpense_Click(object sender, EventArgs e)
         {
             Record newRecord = new Record();    //todo kdo nastavi defaulty?
+            newRecord.TypeID = m_mainDiary.TypeCounts[(int)Record.RecordType.Expense]+1;
 
             outcomeForm oform = new outcomeForm(newRecord);
             oform.ShowDialog();
-            if (oform.DialogResult == DialogResult.OK)
+            if (oform.Result != inoutParentForm.InOutFormResult.Cancel)
             {
                 m_mainDiary.AppendRecord(newRecord);
                 EnsureRecordVisibility(m_mainDiary.RecordsCount - 1);
+                UpdateCurrentPage();
             }
+            if (oform.Result == inoutParentForm.InOutFormResult.PrintOnce)
+            {
+                Printer printer = new Printer();
+                printer.printOutcomeOne(m_mainDiary.GetRecord(m_mainDiary.RecordsCount-1));
+            }
+            if (oform.Result == inoutParentForm.InOutFormResult.PrintTwice)
+            {
+                Printer printer = new Printer();
+                printer.printOutcomeTwiceTwoPage(m_mainDiary.GetRecord(m_mainDiary.RecordsCount - 1));
+            }
+
         }
 
         private void gridHistory_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -373,6 +398,73 @@ namespace Denik
             AutocompleteSettingsForm acsf = new AutocompleteSettingsForm();
 
             acsf.ShowDialog();
+        }
+
+        private void změnitJménoDeníkuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (saveDialogDiary.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    m_mainDiary.Directory = saveDialogDiary.FileName;
+                    Settings.Settings.DiaryDirectory = saveDialogDiary.FileName;
+                }
+                catch
+                {
+                    MessageBox.Show("Deník se nepodařilo přesunout.", "Chyba!", MessageBoxButtons.OK,
+                        MessageBoxIcon.Error);
+
+                }
+            }
+        }
+
+        private void saveFileDialog1_FileOk(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+
+        }
+
+        //Try to create new item, returns null if unsuccesful, sets Setting.DiaryDirectory
+        private Diary tryCreateNewDiary()
+        {
+            Diary newDiary = new Diary();
+            newDiary.SetPageSize(pageSize);
+            string directory = "";
+
+            DiarySettings fds = new DiarySettings(newDiary);
+            fds.ShowDialog();
+            if (fds.DialogResult == DialogResult.OK)
+            {
+                if (saveDialogDiary.ShowDialog() == DialogResult.OK)
+                {
+                    directory = saveDialogDiary.FileName;
+                    newDiary.Directory = directory;
+                }
+
+            }
+
+            try
+            {
+                newDiary = new Diary(directory);
+                newDiary.SetPageSize(pageSize);
+            }
+            catch
+            {
+                return null;
+            }
+
+            Settings.Settings.DiaryDirectory = directory;
+            return newDiary;
+        }
+
+        private void vytvořitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Diary newDiary = tryCreateNewDiary();
+            if (newDiary != null)
+            {
+                m_mainDiary = newDiary;
+                EnsureRecordVisibility(m_mainDiary.RecordsCount - 1);
+                UpdateCurrentPage();
+            }
         }
 
     }

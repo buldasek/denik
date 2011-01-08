@@ -13,6 +13,9 @@ namespace Denik
 {
     public partial class outcomeForm : inoutParentForm
     {
+
+
+
         private bool finishOK()
         {
             //todo pridat do seznamu
@@ -48,7 +51,11 @@ namespace Denik
         {
             InitializeComponent();
 
+            Result = InOutFormResult.Cancel;
+
             dataRec = dataRecord;
+
+            lbHeader.Text = lbHeader.Text + " " + dataRecord.TypeID.ToString();
 
             cbNoteToNumber.Text = dataRec.NoteToNumber;
             edDate.Text = dataRec.Date;
@@ -78,10 +85,8 @@ namespace Denik
         {
             if (finishOK() != true)
                 return;
-            Printer printer = new Printer();
-            printer.printOutcomeOne(dataRec);
-
-            DialogResult = DialogResult.OK;
+           
+            Result = InOutFormResult.PrintOnce;
             Close();
         }
 
@@ -90,10 +95,10 @@ namespace Denik
         {
             if (finishOK() != true)
                 return;
-            Printer printer = new Printer();
-            printer.printOutcomeTwiceTwoPage(dataRec);
+            
 
-            DialogResult = DialogResult.OK;
+            Result = InOutFormResult.PrintTwice;
+            
             Close();
         }
 
@@ -102,13 +107,15 @@ namespace Denik
             if (finishOK() != true)
                 return;
 
-            DialogResult = DialogResult.OK;
+            Result = InOutFormResult.OK;
+            
             Close();
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            DialogResult = DialogResult.Abort;
+            Result = InOutFormResult.Cancel;
+            
             Close();
         }
     }

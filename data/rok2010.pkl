@@ -1,4831 +1,5246 @@
-402
+403
 6
 0
 354730
-Základní škola rok 2010
-360000
+ZÃ¡kladnÃ­ Å¡kola rok 2010
 330000
+360000
+
 7
 7
 1800
 356530
-0
+Income
 4.1.
-4.1.2010
-/10/ZŠ 
-Radka Sudová
-školné ŠD leden - èerven 2010
+4.1.
+/10/ZÅ  
+Radka SudovÃ¡
+Å¡kolnÃ© Å D leden - Äerven 2010
 
  
+
 8
 8
 1800
 358330
-0
+Income
 4.1.
-4.1.2010
-/10/ZŠ 
-Jakub Lepší
-školné ŠD leden - èerven 2010
+4.1.
+/10/ZÅ  
+Jakub LepÅ¡Ã­
+Å¡kolnÃ© Å D leden - Äerven 2010
 
  
+
 9
 9
 1800
 360130
-0
+Income
 5.1.
-5.1.2010
-/10/ZŠ 
+5.1.
+/10/ZÅ  
 Miroslav Faist
-školné ŠD leden - èerven 2010
+Å¡kolnÃ© Å D leden - Äerven 2010
 
  
+
 10
 10
 1800
 361930
-0
+Income
 5.1.
-5.1.2010
-/10/ZŠ 
-Jindøich Nedvìd
-školné ŠD leden - èerven 2010
+5.1.
+/10/ZÅ  
+JindÅ™ich NedvÄ›d
+Å¡kolnÃ© Å D leden - Äerven 2010
 
  
+
 11
 11
 1800
 363730
-0
+Income
 5.1.
-5.1.2010
-/10/ZŠ 
-Martina Plánièková
-školné ŠD leden - èerven 2010
+5.1.
+/10/ZÅ  
+Martina PlÃ¡niÄkovÃ¡
+Å¡kolnÃ© Å D leden - Äerven 2010
 
  
+
 12
 12
 1800
 365530
-0
+Income
 5.1.
-5.1.2010
-/10/ZŠ 
-Alexandra Herzová
-školné ŠD leden - èerven 2010
+5.1.
+/10/ZÅ  
+Alexandra HerzovÃ¡
+Å¡kolnÃ© Å D leden - Äerven 2010
 
  
+
 13
 13
 3600
 369130
-0
+Income
 5.1.
-5.1.2010
-/10/ZŠ 
-Tereza a Petr Sládkovi
-školné ŠD leden - èerven 2010
+5.1.
+/10/ZÅ  
+Tereza a Petr SlÃ¡dkovi
+Å¡kolnÃ© Å D leden - Äerven 2010
  
  
+
 14
 14
 1800
 370930
-0
+Income
 5.1.
-5.1.2010
-/10/ZŠ 
-Markéta Èerná
-školné ŠD leden - èerven 2010
+5.1.
+/10/ZÅ  
+MarkÃ©ta ÄŒernÃ¡
+Å¡kolnÃ© Å D leden - Äerven 2010
 
  
+
 15
 1
 1000
 369930
-1
+Expense
 6.1.
-6.1.2010
-/10/ZŠ
-Èeská pošta
-poštovné
+6.1.
+/10/ZÅ 
+ÄŒeskÃ¡ poÅ¡ta
+poÅ¡tovnÃ©
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 16
 15
 1800
 371730
-0
+Income
 6.1.
-6.1.2010
-/10/ZŠ 
-Lucie Kováøíková
-školné ŠD leden - èerven 2010
+6.1.
+/10/ZÅ  
+Lucie KovÃ¡Å™Ã­kovÃ¡
+Å¡kolnÃ© Å D leden - Äerven 2010
 
  
+
 17
 16
 1800
 373530
-0
+Income
 6.1.
-6.1.2010
-/10/ZŠ 
-Kateøina Dvoøáková
-školné ŠD leden - èerven 2010
+6.1.
+/10/ZÅ  
+KateÅ™ina DvoÅ™Ã¡kovÃ¡
+Å¡kolnÃ© Å D leden - Äerven 2010
 
  
+
 18
 17
 1800
 375330
-0
+Income
 6.1.
-6.1.2010
-/10/ZŠ 
-Petr Strolenı
-školné ŠD leden - èerven 2010
+6.1.
+/10/ZÅ  
+Petr StrolenÃ½
+Å¡kolnÃ© Å D leden - Äerven 2010
 
  
+
 19
 18
 1800
 377130
-0
+Income
 6.1.
-6.1.2010
-/10/ZŠ 
-David Vávra
-školné ŠD leden - èerven 2010
+6.1.
+/10/ZÅ  
+David VÃ¡vra
+Å¡kolnÃ© Å D leden - Äerven 2010
 
  
+
 20
 19
 70000
 447130
-0
+Income
 6.1.
-6.1.2010
-/10/ZŠ 
-Jana Venzarová
-pøevod hotovosti z pokladny ŠJ
+6.1.
+/10/ZÅ  
+Jana VenzarovÃ¡
+pÅ™evod hotovosti z pokladny Å J
 
  
+
 21
 2
 1240
 445890
-1
+Expense
 6.1.
-6.1.2010
-/10/ZŠ
-Kaufland ÈR KT
-Katy èokoláda, pralinky 
+6.1.
+/10/ZÅ 
+Kaufland ÄŒR KT
+Katy ÄokolÃ¡da, pralinky 
  
  
+
 22
 20
 1800
 447690
-0
+Income
 6.1.
-6.1.2010
-/10/ZŠ 
-Václav Husinec
-školné ŠD leden - èerven 2010
+6.1.
+/10/ZÅ  
+VÃ¡clav Husinec
+Å¡kolnÃ© Å D leden - Äerven 2010
 
  
+
 23
 21
 1800
 449490
-0
+Income
 6.1.
-6.1.2010
-/10/ZŠ 
-Matìj Kabrt
-školné ŠD leden - èerven 2010
+6.1.
+/10/ZÅ  
+MatÄ›j Kabrt
+Å¡kolnÃ© Å D leden - Äerven 2010
  
  
+
 24
 22
 1800
 451290
-0
+Income
 6.1.
-6.1.2010
-/10/ZŠ 
-František Touš
-školné ŠD leden - èerven 2010
+6.1.
+/10/ZÅ  
+FrantiÅ¡ek TouÅ¡
+Å¡kolnÃ© Å D leden - Äerven 2010
  
  
+
 25
 23
 1800
 453090
-0
+Income
 6.1.
-6.1.2010
-/10/ZŠ 
-Lenka Radová
-školné ŠD leden - èerven 2010
+6.1.
+/10/ZÅ  
+Lenka RadovÃ¡
+Å¡kolnÃ© Å D leden - Äerven 2010
  
  
+
 26
 24
 1800
 454890
-0
+Income
 6.1.
-6.1.2010
-/10/ZŠ 
-Martina Šímová
-školné ŠD leden - èerven 2010
+6.1.
+/10/ZÅ  
+Martina Å Ã­movÃ¡
+Å¡kolnÃ© Å D leden - Äerven 2010
  
  
+
 27
 25
 1800
 456690
-0
+Income
 6.1.
-6.1.2010
-/10/ZŠ 
-Milan Novák
-školné ŠD leden - èerven 2010
+6.1.
+/10/ZÅ  
+Milan NovÃ¡k
+Å¡kolnÃ© Å D leden - Äerven 2010
  
  
+
 28
 26
 1800
 458490
-0
+Income
 6.1.
-6.1.2010
-/10/ZŠ 
-Nikola Forstlová
-školné ŠD leden - èerven 2010
+6.1.
+/10/ZÅ  
+Nikola ForstlovÃ¡
+Å¡kolnÃ© Å D leden - Äerven 2010
  
  
+
 29
 27
 1800
 460290
-0
+Income
 6.1.
-6.1.2010
-/10/ZŠ 
-Petra Zadinová
-školné ŠD leden - èerven 2010
+6.1.
+/10/ZÅ  
+Petra ZadinovÃ¡
+Å¡kolnÃ© Å D leden - Äerven 2010
  
  
+
 30
 28
 3600
 463890
-0
+Income
 6.1.
-6.1.2010
-/10/ZŠ 
-Milan a Ondøej Novákovi
-školné ŠD leden - èerven 2010
+6.1.
+/10/ZÅ  
+Milan a OndÅ™ej NovÃ¡kovi
+Å¡kolnÃ© Å D leden - Äerven 2010
  
  
+
 31
 29
 1800
 465690
-0
+Income
 6.1.
-6.1.2010
-/10/ZŠ 
-Lucie Smetanová
-školné ŠD leden - èerven 2010
+6.1.
+/10/ZÅ  
+Lucie SmetanovÃ¡
+Å¡kolnÃ© Å D leden - Äerven 2010
  
  
+
 32
 30
 14310
 480000
-0
+Income
 6.1.
-6.1.2010
-/10/ZŠ 
-Lukáš Hlaváè
-nájem 12/2009
+6.1.
+/10/ZÅ  
+LukÃ¡Å¡ HlavÃ¡Ä
+nÃ¡jem 12/2009
  
  
+
 33
 31
 50530
 530530
-0
+Income
 6.1.
-6.1.2010
-/10/ZŠ 
-Lukáš Hlaváè
-vodné a stoèné za rok 2009
+6.1.
+/10/ZÅ  
+LukÃ¡Å¡ HlavÃ¡Ä
+vodnÃ© a stoÄnÃ© za rok 2009
  
  
+
 34
 3
 230000
 300530
-1
+Expense
 6.1.
-6.1.2010
-/10/ZŠ
-Jan Bulánek
-pøevod hotovosti na bìnı úèet
+6.1.
+/10/ZÅ 
+Jan BulÃ¡nek
+pÅ™evod hotovosti na bÄ›Å¾nÃ½ ÃºÄet
  
  
+
 35
 32
 1800
 302330
-0
+Income
 6.1.
-6.1.2010
-/10/ZŠ 
-Martin Hanzlík
-školné ŠD leden - èerven 2010
+6.1.
+/10/ZÅ  
+Martin HanzlÃ­k
+Å¡kolnÃ© Å D leden - Äerven 2010
  
  
+
 36
 33
 170000
 472330
-0
+Income
 8.1.
-8.1.2010
-/10/ZŠ 
-Jana Venzarová
-pøevod hotovosti z pokladny ŠJ
+8.1.
+/10/ZÅ  
+Jana VenzarovÃ¡
+pÅ™evod hotovosti z pokladny Å J
  
  
+
 37
 4
 990
 471340
-1
+Expense
 11.1.
-8.1.2010
-/10/ZŠ
-Levné knihy a.s.
-kniha - Naše vlast
+11.1.
+/10/ZÅ 
+LevnÃ© knihy a.s.
+kniha - NaÅ¡e vlast
  
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 38
 34
 3600
 474940
-0
+Income
 11.1.
-11.1.2010
-/10/ZŠ 
-Karolína a Jiøí Hrachovcovi
-školné ŠD leden - èerven 2010
+11.1.
+/10/ZÅ  
+KarolÃ­na a JiÅ™Ã­ Hrachovcovi
+Å¡kolnÃ© Å D leden - Äerven 2010
 
  
+
 39
 35
 1800
 476740
-0
+Income
 11.1.
-11.1.2010
-/10/ZŠ 
+11.1.
+/10/ZÅ  
 Jakub Venzara
-školné ŠD leden - èerven 2010
+Å¡kolnÃ© Å D leden - Äerven 2010
 
  
+
 40
 36
 3800
 480540
-0
+Income
 11.1.
-11.1.2010
-/10/ZŠ 
-Kristına a Michal Kubaòovi
-školné ŠD leden - èerven 2010
+11.1.
+/10/ZÅ  
+KristÃ½na a Michal KubaÅˆovi
+Å¡kolnÃ© Å D leden - Äerven 2010
 
  
+
 41
 5
 7960
 472580
-1
+Expense
 13.1.
-12.1.2010
-/10/ZŠ
+13.1.
+/10/ZÅ 
 Superplast s.r.o.
-Náhradní díly-sanitární tech.
+NÃ¡hradnÃ­ dÃ­ly-sanitÃ¡rnÃ­ tech.
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 42
 6
 2240
 470340
-1
+Expense
 13.1.
-12.1.2010
-/10/ZŠ
-FERRUM Plzeò s.r.o.
-árovky, nıty
+13.1.
+/10/ZÅ 
+FERRUM PlzeÅˆ s.r.o.
+Å½Ã¡rovky, nÃ½ty
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 43
 7
 27120
 443220
-1
+Expense
 13.1.
-12.1.2010
-/10/ZŠ
-FOXINTERIER døevoprodej
-Materiál-lamino, panty, šrouby
+13.1.
+/10/ZÅ 
+FOXINTERIER dÅ™evoprodej
+MateriÃ¡l-lamino, panty, Å¡rouby
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 44
 37
 3600
 446820
-0
+Income
 13.1.
-13.1.2010
-/10/ZŠ 
-Šimon a Aneka Peškovi
-školné ŠD leden - èerven 2010
+13.1.
+/10/ZÅ  
+Å imon a AneÅ¾ka PeÅ¡kovi
+Å¡kolnÃ© Å D leden - Äerven 2010
 
  
+
 45
 8
 140
 446680
-1
+Expense
 13.1.
-13.1.2010
-/10/ZŠ
-Èeská pošta
-poštovné
+13.1.
+/10/ZÅ 
+ÄŒeskÃ¡ poÅ¡ta
+poÅ¡tovnÃ©
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 46
 9
 22930
 423750
-1
+Expense
 13.1.
-07.1.2010
-/10/ZŠ
+13.1.
+/10/ZÅ 
 ProComputer, s.r.o.
 DR3100 - drum
 Brother
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 47
 38
 1800
 425550
-0
+Income
 14.1.
-14.1.2010
-/10/ZŠ 
-Vít Volf
-školné ŠD leden - èerven 2010
+14.1.
+/10/ZÅ  
+VÃ­t Volf
+Å¡kolnÃ© Å D leden - Äerven 2010
 
  
+
 48
 10
 120
 425430
-1
+Expense
 14.1.
-13.1.2010
-/10/ZŠ
-ZKD Plzeò, Drogerie Nepomuk
-vazací stuha
+14.1.
+/10/ZÅ 
+ZKD PlzeÅˆ, Drogerie Nepomuk
+vazacÃ­ stuha
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 49
 11
 260
 425170
-1
+Expense
 14.1.
-14.1.2010
-/10/ZŠ
-Èeská pošta
-poštovné
+14.1.
+/10/ZÅ 
+ÄŒeskÃ¡ poÅ¡ta
+poÅ¡tovnÃ©
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 50
 39
 1800
 426970
-0
+Income
 14.1.
-14.1.2010
-/10/ZŠ 
+14.1.
+/10/ZÅ  
 Pavel Venc
-školné ŠD leden - èerven 2010
+Å¡kolnÃ© Å D leden - Äerven 2010
 
  
+
 51
 40
 1800
 428770
-0
+Income
 15.1.
-15.1.2010
-/10/ZŠ 
-Tomáš Mareš
-školné ŠD leden - èerven 2010
+15.1.
+/10/ZÅ  
+TomÃ¡Å¡ MareÅ¡
+Å¡kolnÃ© Å D leden - Äerven 2010
 
  
+
 52
 12
 1890
 426880
-1
+Expense
 18.1.
-15.1.2010
-/10/ZŠ
-Marcela Cuplová - barvy
-Barva, váleèek
+18.1.
+/10/ZÅ 
+Marcela CuplovÃ¡ - barvy
+Barva, vÃ¡leÄek
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 53
 13
 130
 426750
-1
+Expense
 18.1.
-15.1.2010
-/10/ZŠ
+18.1.
+/10/ZÅ 
 Vrabec a Vrabec s.r.o.
-spojovací materiál
+spojovacÃ­ materiÃ¡l
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 54
 41
 1000
 427750
-0
+Income
 18.1.
-18.1.2010
-/10/ZŠ 
+18.1.
+/10/ZÅ  
 Hortai Michal
-prodej hlodavcù
+prodej hlodavcÅ¯
 
  
+
 55
 42
 1800
 429550
-0
+Income
 18.1.
-18.1.2010
-/10/ZŠ 
-Michal Novák
-školné ŠD leden - èerven 2010
+18.1.
+/10/ZÅ  
+Michal NovÃ¡k
+Å¡kolnÃ© Å D leden - Äerven 2010
  gaga
  
+
 56
 43
 1800
 431350
-0
+Income
 19.1.
-19.1.2010
-/10/ZŠ 
-Zdenìk Pavlík
-školné ŠD leden - èerven 2010
+19.1.
+/10/ZÅ  
+ZdenÄ›k PavlÃ­k
+Å¡kolnÃ© Å D leden - Äerven 2010
 
  
+
 57
 44
 1800
 433150
-0
+Income
 19.1.
-19.1.2010
-/10/ZŠ 
-Jana Hlaváèová
-školné ŠD leden - èerven 2010
+19.1.
+/10/ZÅ  
+Jana HlavÃ¡ÄovÃ¡
+Å¡kolnÃ© Å D leden - Äerven 2010
 
  
+
 58
 45
 1800
 434950
-0
+Income
 19.1.
-19.1.2010
-/10/ZŠ 
-Miluše Slivoòová
-školné ŠD leden - èerven 2010
+19.1.
+/10/ZÅ  
+MiluÅ¡e SlivoÅˆovÃ¡
+Å¡kolnÃ© Å D leden - Äerven 2010
 
  
+
 59
 46
 1800
 436750
-0
+Income
 19.1.
-19.1.2010
-/10/ZŠ 
-František Hošálek
-školné ŠD leden - èerven 2010
+19.1.
+/10/ZÅ  
+FrantiÅ¡ek HoÅ¡Å¥Ã¡lek
+Å¡kolnÃ© Å D leden - Äerven 2010
 
  
+
 60
 14
 3560
 433190
-1
+Expense
 19.1.
-19.1.2010
-/10/ZŠ
-Ferrum Plzeò spol. s.r.o.
-vruty, sprej, pìna, sluneènice
+19.1.
+/10/ZÅ 
+Ferrum PlzeÅˆ spol. s.r.o.
+vruty, sprej, pÄ›na, sluneÄnice
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 61
 47
 720
 433910
-0
+Income
 19.1.
-19.1.2010
-/10/ZŠ 
+19.1.
+/10/ZÅ  
 Josef Toman
-sluneènice
+sluneÄnice
 
  
+
 62
 48
 3600
 437510
-0
+Income
 19.1.
-19.1.2010
-/10/ZŠ 
-Jakub a Nicola Štilipovi
-školné ŠD leden - èerven 2010
+19.1.
+/10/ZÅ  
+Jakub a Nicola Å tilipovi
+Å¡kolnÃ© Å D leden - Äerven 2010
 
  
+
 63
 15
 2660
 434850
-1
+Expense
 19.1.
-19.1.2010
-/10/ZŠ
-FERRUM Plzeò s.r.o.
-montání pìna
+19.1.
+/10/ZÅ 
+FERRUM PlzeÅˆ s.r.o.
+montÃ¡Å¾nÃ­ pÄ›na
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 64
 16
 880
 433970
-1
+Expense
 19.1.
-19.1.2010
-/10/ZŠ
-Vodoinstalatérství Mrázek
-WC - sedátko
+19.1.
+/10/ZÅ 
+VodoinstalatÃ©rstvÃ­ MrÃ¡zek
+WC - sedÃ¡tko
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 65
 49
 1800
 435770
-0
+Income
 21.1.
-21.1.2010
-/10/ZŠ 
+21.1.
+/10/ZÅ  
 Martin Murko
-školné ŠD leden - èerven 2010
+Å¡kolnÃ© Å D leden - Äerven 2010
 
  
+
 66
 50
 1800
 437570
-0
+Income
 21.1.
-21.1.2010
-/10/ZŠ 
-Gabriela Pecháèková
-školné ŠD leden - èerven 2010
+21.1.
+/10/ZÅ  
+Gabriela PechÃ¡ÄkovÃ¡
+Å¡kolnÃ© Å D leden - Äerven 2010
 
  
+
 67
 51
 110000
 547570
-0
+Income
 21.1.
-21.1.2010
-/10/ZŠ 
-Jana Venzarová
-pøevod hotovosti z pokladny ŠJ
+21.1.
+/10/ZÅ  
+Jana VenzarovÃ¡
+pÅ™evod hotovosti z pokladny Å J
 
  
+
 68
 17
 1000
 546570
-1
+Expense
 21.1.
-21.1.2010
-/10/ZŠ
-Èeská pošta
-poštovné
+21.1.
+/10/ZÅ 
+ÄŒeskÃ¡ poÅ¡ta
+poÅ¡tovnÃ©
  
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 69
 52
 1800
 548370
-0
+Income
 21.1.
-21.1.2010
-/10/ZŠ 
-Jan Boublík
-školné ŠD leden - èerven 2010
+21.1.
+/10/ZÅ  
+Jan BoublÃ­k
+Å¡kolnÃ© Å D leden - Äerven 2010
 
  
+
 70
 53
 1800
 550170
-0
+Income
 22.1.
-22.1.2010
-/10/ZŠ 
-Matìj Suda
-školné ŠD leden - èerven 2010
+22.1.
+/10/ZÅ  
+MatÄ›j Suda
+Å¡kolnÃ© Å D leden - Äerven 2010
 
  
+
 71
 54
 1800
 551970
-0
+Income
 22.1.
-22.1.2010
-/10/ZŠ 
-Lucie Kubicová
-školné ŠD leden - èerven 2010
+22.1.
+/10/ZÅ  
+Lucie KubicovÃ¡
+Å¡kolnÃ© Å D leden - Äerven 2010
 
  
+
 72
 55
 1800
 553770
-0
+Income
 22.1.
-22.1.2010
-/10/ZŠ 
+22.1.
+/10/ZÅ  
 Roman Roub
-školné ŠD leden - èerven 2010
+Å¡kolnÃ© Å D leden - Äerven 2010
 
  
+
 73
 18
 380
 553390
-1
+Expense
 22.1.
-22.1.2010
-/10/ZŠ
-Petr Dio, Prùm. zb. Plánice
+22.1.
+/10/ZÅ 
+Petr Dio, PrÅ¯m. zb. PlÃ¡nice
 baterie
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 74
 56
 1800
 555190
-0
+Income
 25.1.
-25.1.2010
-/10/ZŠ 
+25.1.
+/10/ZÅ  
 Vladislav Habada
-školné ŠD leden - èerven 2010
+Å¡kolnÃ© Å D leden - Äerven 2010
 
  
+
 75
 57
 300
 555490
-0
+Income
 25.1.
-25.1.2010
-/10/ZŠ 
+25.1.
+/10/ZÅ  
 Jan Kresl
-školné ŠD leden 2010
+Å¡kolnÃ© Å D leden 2010
 
  
+
 76
 58
 600
 556090
-0
+Income
 25.1.
-25.1.2010
-/10/ZŠ 
-Nikola a Veronika Bulínová
-školné ŠD leden - èerven 2010
+25.1.
+/10/ZÅ  
+Nikola a Veronika BulÃ­novÃ¡
+Å¡kolnÃ© Å D leden - Äerven 2010
 
  
+
 77
 59
 1800
 557890
-0
+Income
 26.1.
-26.1.2010
-/10/ZŠ 
-Jaroslav Koláø
-školné ŠD leden - èerven 2010
+26.1.
+/10/ZÅ  
+Jaroslav KolÃ¡Å™
+Å¡kolnÃ© Å D leden - Äerven 2010
 
  
+
 78
 60
 63500
 621390
-0
+Income
 1.2.
-1.2.2010
-/10/ZŠ 
+1.2.
+/10/ZÅ  
 Jan Bouberle
-platby doplò. èinnost Tv
+platby doplÅˆ. Äinnost Tv
 leden
  
+
 79
 19
 180
 621210
-1
+Expense
 1.2.
-1.2.2010
-/10/ZŠ
-Èeská pošta
-poštovné
+1.2.
+/10/ZÅ 
+ÄŒeskÃ¡ poÅ¡ta
+poÅ¡tovnÃ©
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 80
 61
 1800
 623010
-0
+Income
 1.2.
-1.2.2010
-/10/ZŠ 
-Kristına Guíková
-školné ŠD leden - èerven 2010
+1.2.
+/10/ZÅ  
+KristÃ½na GuÅ¾Ã­kovÃ¡
+Å¡kolnÃ© Å D leden - Äerven 2010
 
  
+
 81
 62
 1800
 624810
-0
+Income
 1.2.
-1.2.2010
-/10/ZŠ 
-Marek Jílek
-školné ŠD leden - èerven 2010
+1.2.
+/10/ZÅ  
+Marek JÃ­lek
+Å¡kolnÃ© Å D leden - Äerven 2010
 
  
+
 82
 20
 80000
 544810
-1
+Expense
 2.2.
-2.2.2010
-/10/ZŠ
-Jana Pouzarová
-ekonomické sluby 1/10
+2.2.
+/10/ZÅ 
+Jana PouzarovÃ¡
+ekonomickÃ© sluÅ¾by 1/10
+
 
 
 83
 21
 200
 544610
-1
+Expense
 2.2.
-2.2.2010
-/10/ZŠ
+2.2.
+/10/ZÅ 
 Vladislav Toman-SATO, KT
 pojistka 10 ks
  
  
+
 84
 22
 3970
 540640
-1
+Expense
 2.2.
-2.2.2010
-/10/ZŠ
-Josef Pøerost, Sklenáøství KT
-drátosklo 2 ks
+2.2.
+/10/ZÅ 
+Josef PÅ™erost, SklenÃ¡Å™stvÃ­ KT
+drÃ¡tosklo 2 ks
+
 
 
 85
 23
 2010
 538630
-1
+Expense
 2.2.
-2.2.2010
-/10/ZŠ
-Franèík s.r.o., Ústaleè
-døevokyt, barva
+2.2.
+/10/ZÅ 
+FranÄÃ­k s.r.o., ÃšstaleÄ
+dÅ™evokyt, barva
+
 
 
 86
 63
 29000
 567630
-0
+Income
 2.2.
-2.2.2010
-/10/ZŠ 
-Margita Praáková
-platby doplò. èinnost Tv
+2.2.
+/10/ZÅ  
+Margita PraÅ¾Ã¡kovÃ¡
+platby doplÅˆ. Äinnost Tv
 
  
+
 87
 64
 79000
 646630
-0
+Income
 3.2.
-3.2.2010
-/10/ZŠ 
-Jaroslava Tomanová
-platby doplò. èinnost Tv
+3.2.
+/10/ZÅ  
+Jaroslava TomanovÃ¡
+platby doplÅˆ. Äinnost Tv
 
  
+
 88
 65
 300000
 946630
-0
+Income
 3.2.
-3.2.2010
-/10/ZŠ 
-Jana Venzarová
-pøevod hotovosti z pokladny ŠJ
+3.2.
+/10/ZÅ  
+Jana VenzarovÃ¡
+pÅ™evod hotovosti z pokladny Å J
  
  
+
 89
 24
 550000
 396630
-1
+Expense
 3.2.
-3.2.2010
-/10/ZŠ
-Mgr. Zdeòka Huspeková
-pøevod hotovosti na bìnı úèet
+3.2.
+/10/ZÅ 
+Mgr. ZdeÅˆka HuspekovÃ¡
+pÅ™evod hotovosti na bÄ›Å¾nÃ½ ÃºÄet
+
 
 
 90
 25
 100
 396530
-1
+Expense
 3.2.
-3.2.2010
-/10/ZŠ
-Èeská pošta
-poštovné
+3.2.
+/10/ZÅ 
+ÄŒeskÃ¡ poÅ¡ta
+poÅ¡tovnÃ©
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 91
 26
 140
 396390
-1
+Expense
 4.2.
-4.2.2010
-/10/ZŠ
-Èeská pošta
-poštovné
+4.2.
+/10/ZÅ 
+ÄŒeskÃ¡ poÅ¡ta
+poÅ¡tovnÃ©
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 92
 66
 32000
 428390
-0
+Income
 5.2.
-5.2.2010
-/10/ZŠ 
+5.2.
+/10/ZÅ  
 Miroslav Zeman
-platby doplò. èinnost Tv
+platby doplÅˆ. Äinnost Tv
 
  
+
 93
 67
 2250
 430640
-0
+Income
 8.2.
-8.2.2010
-/10/ZŠ 
-Jaroslava Tomanová
-platby doplò. èinnost Tv
+8.2.
+/10/ZÅ  
+Jaroslava TomanovÃ¡
+platby doplÅˆ. Äinnost Tv
 
  
+
 94
 27
 2180
 428460
-1
+Expense
 9.2.
-9.2.2010
-/10/ZŠ
+9.2.
+/10/ZÅ 
 OBI Klatovy
-Alex sprej na nábytek
+Alex sprej na nÃ¡bytek
  
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 95
 28
 1000
 427460
-1
+Expense
 10.2.
-10.2.2010
-/10/ZŠ
-Èeská pošta
-poštovné
+10.2.
+/10/ZÅ 
+ÄŒeskÃ¡ poÅ¡ta
+poÅ¡tovnÃ©
  
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 96
 68
 60000
 487460
-0
+Income
 10.2.
-10.2.2010
-/10/ZŠ 
-Hana Procházková MŠ Plánice
-pøevod hotovosti z pokladny MŠ
+10.2.
+/10/ZÅ  
+Hana ProchÃ¡zkovÃ¡ MÅ  PlÃ¡nice
+pÅ™evod hotovosti z pokladny MÅ 
 
  
+
 97
 29
 260
 487200
-1
+Expense
 15.2.
-15.2.2010
-/10/ZŠ
-Èeská pošta
-poštovné
+15.2.
+/10/ZÅ 
+ÄŒeskÃ¡ poÅ¡ta
+poÅ¡tovnÃ©
  
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 98
 69
 440
 487640
-0
+Income
 16.2.
-16.2.2010
-/10/ZŠ 
+16.2.
+/10/ZÅ  
 Josef Toman
-prodej sešitù
+prodej seÅ¡itÅ¯
 
  
+
 99
 70
 14310
 501950
-0
+Income
 16.2.
-16.2.2010
-/10/ZŠ 
-Lukáš Hlaváè
-nájem 1/2010
+16.2.
+/10/ZÅ  
+LukÃ¡Å¡ HlavÃ¡Ä
+nÃ¡jem 1/2010
 
  
+
 100
 30
 300
 501650
-1
+Expense
 16.2.
-16.2.2010
-/10/ZŠ
-Václav Drozda - elektro
+16.2.
+/10/ZÅ 
+VÃ¡clav Drozda - elektro
 Baterie 3 V
  
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 101
 31
 1690
 499960
-1
+Expense
 16.2.
-16.2.2010
-/10/ZŠ
-Makro Plzeò
-Obálky C6 500 ks
+16.2.
+/10/ZÅ 
+Makro PlzeÅˆ
+ObÃ¡lky C6 500 ks
  
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 102
 32
 100
 499860
-1
+Expense
 18.2.
-18.2.2010
-/10/ZŠ
-Èeská pošta
-poštovné
+18.2.
+/10/ZÅ 
+ÄŒeskÃ¡ poÅ¡ta
+poÅ¡tovnÃ©
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 103
 33
 900
 498960
-1
+Expense
 19.2.
-19.2.2010
-/10/ZŠ
-FERRUM Plzeò s.r.o.
-Kotouè 115x1x22
+19.2.
+/10/ZÅ 
+FERRUM PlzeÅˆ s.r.o.
+KotouÄ 115x1x22
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 104
 34
 490
 498470
-1
+Expense
 19.2.
-19.2.2010
-/10/ZŠ
-Šimek proficentrum s.r.o
-Zámek zásuvkovı cr8
+19.2.
+/10/ZÅ 
+Å imek proficentrum s.r.o
+ZÃ¡mek zÃ¡suvkovÃ½ cr8
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 105
 35
 4050
 494420
-1
+Expense
 19.2.
-19.2.2010
-/10/ZŠ
-Marcela Cuplová - barvy
-Tabulová barva
+19.2.
+/10/ZÅ 
+Marcela CuplovÃ¡ - barvy
+TabulovÃ¡ barva
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 106
 71
 150000
 644420
-0
+Income
 19.2.
-19.2.2010
-/10/ZŠ 
-Jana Venzarová
-pøevod hotovosti z pokladny ŠJ
+19.2.
+/10/ZÅ  
+Jana VenzarovÃ¡
+pÅ™evod hotovosti z pokladny Å J
 
  
+
 107
 72
 37500
 681920
-0
+Income
 1.3.
-1.3.2010
-/10/ZŠ 
+1.3.
+/10/ZÅ  
 Jan Bouberle
-platby doplò. èinnost Tv
+platby doplÅˆ. Äinnost Tv
 
  
+
 108
 36
 230000
 451920
-1
+Expense
 1.3.
-1.3.2010
-/10/ZŠ
-Mgr. Benešová Jitka
-pøevod hotovosti na bìnı úèet
+1.3.
+/10/ZÅ 
+Mgr. BeneÅ¡ovÃ¡ Jitka
+pÅ™evod hotovosti na bÄ›Å¾nÃ½ ÃºÄet
+
 
 
 109
 73
 100500
 552420
-0
+Income
 1.3.
-1.3.2010
-/10/ZŠ 
-Jaroslava Tomanová
-platby doplò. èinnost Tv
+1.3.
+/10/ZÅ  
+Jaroslava TomanovÃ¡
+platby doplÅˆ. Äinnost Tv
 
  
+
 110
 74
 32500
 584920
-0
+Income
 1.3.
-1.3.2010
-/10/ZŠ 
+1.3.
+/10/ZÅ  
 Miroslav Zeman
-platby doplò. èinnost Tv
+platby doplÅˆ. Äinnost Tv
 
  
+
 111
 37
 1310
 583610
-1
+Expense
 2.3.
-2.3.2010
-/10/ZŠ
-Šimek proficentrum s.r.o
-brusnı papír
+2.3.
+/10/ZÅ 
+Å imek proficentrum s.r.o
+brusnÃ½ papÃ­r
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 112
 38
 4210
 579400
-1
+Expense
 2.3.
-2.3.2010
-/10/ZŠ
-Marcela Cuplová - barvy
-Barvy na tabule+váleèek
+2.3.
+/10/ZÅ 
+Marcela CuplovÃ¡ - barvy
+Barvy na tabule+vÃ¡leÄek
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 113
 75
 15000
 594400
-0
+Income
 2.3.
-2.3.2010
-/10/ZŠ 
-Margita Praáková
-platby doplò. èinnost Tv
+2.3.
+/10/ZÅ  
+Margita PraÅ¾Ã¡kovÃ¡
+platby doplÅˆ. Äinnost Tv
 
  
+
 114
 39
 80000
 514400
-1
+Expense
 2.3.
-2.3.2010
-/10/ZŠ
-Jana Pouzarová
-ekonomické sluby 2/10
+2.3.
+/10/ZÅ 
+Jana PouzarovÃ¡
+ekonomickÃ© sluÅ¾by 2/10
+
 
 
 115
 40
 690
 513710
-1
+Expense
 2.3.
-2.3.2010
-/10/ZŠ
+2.3.
+/10/ZÅ 
 Prima HOBBY KT
-drát
+drÃ¡t
+
 
 
 116
 41
 180
 513530
-1
+Expense
 3.3.
-3.3.2010
-/10/ZŠ
-Èeská pošta
-poštovné
+3.3.
+/10/ZÅ 
+ÄŒeskÃ¡ poÅ¡ta
+poÅ¡tovnÃ©
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 117
 42
 38250
 475280
-1
+Expense
 3.3.
-3.3.2010
-/10/ZŠ
-Oldøich Sıkora
-provedení provozních revizí PZ
+3.3.
+/10/ZÅ 
+OldÅ™ich SÃ½kora
+provedenÃ­ provoznÃ­ch revizÃ­ PZ
+
 
 
 118
 43
 3750
 471530
-1
+Expense
 3.3.
-3.3.2010
-/10/ZŠ
-Dagmar Šolová - papír, hraèky
-Bílé køídy - 5x100 ks
+3.3.
+/10/ZÅ 
+Dagmar Å olovÃ¡ - papÃ­r, hraÄky
+BÃ­lÃ© kÅ™Ã­dy - 5x100 ks
  
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 119
 44
 12000
 459530
-1
+Expense
 4.3.
-4.3.2010
-/10/ZŠ
-Josef Klouda - servis el. zaøíz.
-Pamìt 128MB SDRAM 
+4.3.
+/10/ZÅ 
+Josef Klouda - servis el. zaÅ™Ã­z.
+PamÄ›t 128MB SDRAM 
 bar. tisk
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 120
 45
 480
 459050
-1
+Expense
 4.3.
-4.3.2010
-/10/ZŠ
-Petr Dio, Prùm. zb. Plánice
-zásuvka
+4.3.
+/10/ZÅ 
+Petr Dio, PrÅ¯m. zb. PlÃ¡nice
+zÃ¡suvka
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 121
 46
 100
 458950
-1
+Expense
 5.3.
-5.3.2010
-/10/ZŠ
-Èeská pošta
-poštovné
+5.3.
+/10/ZÅ 
+ÄŒeskÃ¡ poÅ¡ta
+poÅ¡tovnÃ©
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 122
 76
 1000
 459950
-0
+Income
 5.3.
-5.3.2010
-/10/ZŠ 
+5.3.
+/10/ZÅ  
 Karel Strnad
-prodej cvrèkù
+prodej cvrÄkÅ¯
 
  
+
 123
 47
 17090
 442860
-1
+Expense
 8.3.
-8.3.2010
-/10/ZŠ
+8.3.
+/10/ZÅ 
 IceTech s.r.o. Praha
-laminovací fólie A4 10x100 ks
+laminovacÃ­ fÃ³lie A4 10x100 ks
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 124
 48
 2860
 440000
-1
+Expense
 9.3.
-9.3.2010
-/10/ZŠ
+9.3.
+/10/ZÅ 
 KAUFLAND s.r.o. KT
-Toal. papír - 128 ks
+Toal. papÃ­r - 128 ks
 Tv
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 125
 49
 1000
 439000
-1
+Expense
 9.3.
-9.3.2010
-/10/ZŠ
-Èeská pošta
-poštovné
+9.3.
+/10/ZÅ 
+ÄŒeskÃ¡ poÅ¡ta
+poÅ¡tovnÃ©
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 126
 50
 2400
 436600
-1
+Expense
 9.3.
-9.3.2010
-/10/ZŠ
+9.3.
+/10/ZÅ 
 Nakl. Hanami, Miroslav
-publ. Vyjm.sl., Èj a metodika
+publ. Vyjm.sl., ÄŒj a metodika
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 127
 51
 21450
 415150
-1
+Expense
 9.3.
-9.3.2010
-/10/ZŠ
+9.3.
+/10/ZÅ 
 Rudolf Prantner
-mzda - danì
+mzda - danÄ›
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 128
 52
 460
 414690
-1
+Expense
 10.3.
-10.3.2010
-/10/ZŠ
-Èeská pošta
-poštovné
+10.3.
+/10/ZÅ 
+ÄŒeskÃ¡ poÅ¡ta
+poÅ¡tovnÃ©
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 129
 77
 1200
 415890
-0
+Income
 12.3.
-12.3.2010
-/10/ZŠ 
-Erika Tomanová
-školné ŠD bøezen - èerven 2010
+12.3.
+/10/ZÅ  
+Erika TomanovÃ¡
+Å¡kolnÃ© Å D bÅ™ezen - Äerven 2010
 
  
+
 130
 53
 1550
 414340
-1
+Expense
 12.3.
-12.3.2010
-/10/ZŠ
-Petr Dio, Prùm. zb. Plánice
-zámek zadlabávací
+12.3.
+/10/ZÅ 
+Petr Dio, PrÅ¯m. zb. PlÃ¡nice
+zÃ¡mek zadlabÃ¡vacÃ­
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 131
 78
 150000
 564340
-0
+Income
 12.3.
-12.3.2010
-/10/ZŠ 
-Jana Venzarová
-pøevod hotovosti z pokladny ŠJ
+12.3.
+/10/ZÅ  
+Jana VenzarovÃ¡
+pÅ™evod hotovosti z pokladny Å J
 
  
+
 132
 54
 900
 563440
-1
+Expense
 12.3.
-12.3.2010
-/10/ZŠ
+12.3.
+/10/ZÅ 
 Radmil Podlaha,Distribuce a prodej knih
-kniha 150 her pro dìti - UP
+kniha 150 her pro dÄ›ti - UP
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 133
 55
 1840
 561600
-1
+Expense
 15.3.
-15.3.2010
-/10/ZŠ
-FOXINTERIER døevoprodej
-Soklové nohy a vruty
+15.3.
+/10/ZÅ 
+FOXINTERIER dÅ™evoprodej
+SoklovÃ© nohy a vruty
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 134
 56
 5250
 556350
-1
+Expense
 16.3.
-16.3.2010
-/10/ZŠ
-Jitka Horová IÈ: 47564130
+16.3.
+/10/ZÅ 
+Jitka HorovÃ¡ IÄŒ: 47564130
 Publ. Atelier ..; 2ks raznice
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 135
 57
 7140
 549210
-1
+Expense
 16.3.
-16.3.2010
-/10/ZŠ
-Franèík s.r.o., Ústaleè
-Barva, štìtce, malíøské válce
+16.3.
+/10/ZÅ 
+FranÄÃ­k s.r.o., ÃšstaleÄ
+Barva, Å¡tÄ›tce, malÃ­Å™skÃ© vÃ¡lce
 2 doklady
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 136
 58
 1910
 547300
-1
+Expense
 16.3.
-16.3.2010
-/10/ZŠ
+16.3.
+/10/ZÅ 
 INNA obch. spol. KT
-Vrták, vytahovaè høebíkù
+VrtÃ¡k, vytahovaÄ hÅ™ebÃ­kÅ¯
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 137
 59
 56690
 490610
-1
+Expense
 17.3.
-17.3.2010
-/10/ZŠ
+17.3.
+/10/ZÅ 
 Radialka SBS Kt
-2 balíky - materiál na skøíòky
+2 balÃ­ky - materiÃ¡l na skÅ™Ã­Åˆky
  
  
+
 138
 60
 22490
 468120
-1
+Expense
 18.3.
-18.3.2010
-/10/ZŠ
-JAKNAWIFI.CZ - Šumperk
-Krimpovací kleštì, UTP mater.
+18.3.
+/10/ZÅ 
+JAKNAWIFI.CZ - Å umperk
+KrimpovacÃ­ kleÅ¡tÄ›, UTP mater.
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 139
 61
 210
 467910
-1
+Expense
 18.3.
-18.3.2010
-/10/ZŠ
-Petr Dio, Prùm. zb. Plánice
+18.3.
+/10/ZÅ 
+Petr Dio, PrÅ¯m. zb. PlÃ¡nice
 baterie 9 V
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 140
 62
 3390
 464520
-1
+Expense
 19.3.
-19.3.2010
-/10/ZŠ
-Klatovská prádelna s.r.o.
-praní prádla ŠJ
+19.3.
+/10/ZÅ 
+KlatovskÃ¡ prÃ¡delna s.r.o.
+pranÃ­ prÃ¡dla Å J
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 141
 63
 560
 463960
-1
+Expense
 19.3.
-19.3.2010
-/10/ZŠ
-Ferrum Plzeò spol. s.r.o.
-Hmodinky, podloky
+19.3.
+/10/ZÅ 
+Ferrum PlzeÅˆ spol. s.r.o.
+HmoÅ¾dinky, podloÅ¾ky
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 142
 64
 12890
 451070
-1
+Expense
 19.3.
-19.3.2010
-/10/ZŠ
-ELFETEX Plzeò
-El. materiál
+19.3.
+/10/ZÅ 
+ELFETEX PlzeÅˆ
+El. materiÃ¡l
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 143
 79
 130000
 581070
-0
+Income
 22.3.
-22.3.2010
-/10/ZŠ 
-Jana Venzarová
-pøevod hotovosti z pokladny ŠJ
+22.3.
+/10/ZÅ  
+Jana VenzarovÃ¡
+pÅ™evod hotovosti z pokladny Å J
 
  
+
 144
 80
 11650
 592720
-0
+Income
 22.3.
-22.3.2010
-/10/ZŠ 
-uèitelé ZŠ
-Levné knihy Beránek
+22.3.
+/10/ZÅ  
+uÄitelÃ© ZÅ 
+LevnÃ© knihy BerÃ¡nek
 
  
+
 145
 81
 14600
 607320
-0
+Income
 23.3.
-23.3.2010
-/10/ZŠ 
-Zdenìk Kuílek
-prodej plas. víèek
+23.3.
+/10/ZÅ  
+ZdenÄ›k KuÅ¾Ã­lek
+prodej plas. vÃ­Äek
 
  
+
 146
 65
 990
 606330
-1
+Expense
 24.3.
-24.3.2010
-/10/ZŠ
-Petr Dio, Prùm. zb. Plánice
-èistiè odpadù
+24.3.
+/10/ZÅ 
+Petr Dio, PrÅ¯m. zb. PlÃ¡nice
+ÄistiÄ odpadÅ¯
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 147
 66
 6330
 600000
-1
+Expense
 24.3.
-24.3.2010
-/10/ZŠ
-Ferrum Plzeò spol. s.r.o.
+24.3.
+/10/ZÅ 
+Ferrum PlzeÅˆ spol. s.r.o.
 Pero 8m/11mm
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 148
 67
 990
 599010
-1
+Expense
 24.3.
-24.3.2010
-/10/ZŠ
+24.3.
+/10/ZÅ 
 OBI Klatovy
 Folie 4x5m - 11ks
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 149
 68
 400
 598610
-1
+Expense
 24.3.
-24.3.2010
-/10/ZŠ
-Kaufland ÈR v.o.s.
-Nejlepší PC rady - èasopis
+24.3.
+/10/ZÅ 
+Kaufland ÄŒR v.o.s.
+NejlepÅ¡Ã­ PC rady - Äasopis
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 150
 69
 18600
 580010
-1
+Expense
 25.3.
-25.3.2010
-/10/ZŠ
+25.3.
+/10/ZÅ 
 Interpont s.r.o.
-Kleštì na odpadky
+KleÅ¡tÄ› na odpadky
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 151
 82
 45000
 625010
-0
+Income
 29.3.
-29.3.2010
-/10/ZŠ 
+29.3.
+/10/ZÅ  
 Jan Bouberle
-platby doplò. èinnost Tv
+platby doplÅˆ. Äinnost Tv
 
  
+
 152
 70
 1320
 623690
-1
+Expense
 30.3.
-30.3.2010
-/10/ZŠ
-Šimek proficentrum s.r.o
+30.3.
+/10/ZÅ 
+Å imek proficentrum s.r.o
 spona A53/8 2000 ks
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 153
 71
 2930
 620760
-1
+Expense
 30.3.
-30.3.2010
-/10/ZŠ
-ELFETEX Plzeò
-El. materiál
+30.3.
+/10/ZÅ 
+ELFETEX PlzeÅˆ
+El. materiÃ¡l
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 154
 72
 240
 620520
-1
+Expense
 30.3.
-30.3.2010
-/10/ZŠ
-Milan Vacovskı - kování, zámky
-rozlišovaèe
+30.3.
+/10/ZÅ 
+Milan VacovskÃ½ - kovÃ¡nÃ­, zÃ¡mky
+rozliÅ¡ovaÄe
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 155
 73
 220000
 400520
-1
+Expense
 30.3.
-30.3.2010
-/10/ZŠ
-Jan Bulánek
-záloha na mzdu
+30.3.
+/10/ZÅ 
+Jan BulÃ¡nek
+zÃ¡loha na mzdu
  
  
+
 156
 83
 250000
 650520
-0
+Income
 31.3.
-31.3.2010
-/10/ZŠ 
-Jana Venzarová
-pøevod hotovosti z pokladny ŠJ
+31.3.
+/10/ZÅ  
+Jana VenzarovÃ¡
+pÅ™evod hotovosti z pokladny Å J
 
  
+
 157
 74
 180
 650340
-1
+Expense
 31.3.
-31.3.2010
-/10/ZŠ
-Èeská pošta
-poštovné
+31.3.
+/10/ZÅ 
+ÄŒeskÃ¡ poÅ¡ta
+poÅ¡tovnÃ©
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 158
 75
 1270
 649070
-1
+Expense
 6.4.
-6.4.2010
-/10/ZŠ
+6.4.
+/10/ZÅ 
 Superplast s.r.o.
-vodoinstalaèní materiál
+vodoinstalaÄnÃ­ materiÃ¡l
 
  
+
 159
 76
 200000
 449070
-1
+Expense
 6.4.
-6.4.2010
-/10/ZŠ
-Jan Bulánek
-pøevod hotovosti na bìnı úèet
+6.4.
+/10/ZÅ 
+Jan BulÃ¡nek
+pÅ™evod hotovosti na bÄ›Å¾nÃ½ ÃºÄet
  
  
+
 160
 84
 73500
 522570
-0
+Income
 6.4.
-6.4.2010
-/10/ZŠ 
-Jaroslava Tomanová
-platby doplò. èinnost Tv
+6.4.
+/10/ZÅ  
+Jaroslava TomanovÃ¡
+platby doplÅˆ. Äinnost Tv
 
  
+
 161
 85
 39000
 561570
-0
+Income
 6.4.
-6.4.2010
-/10/ZŠ 
+6.4.
+/10/ZÅ  
 Miroslav Zeman
-platby doplò. èinnost Tv
+platby doplÅˆ. Äinnost Tv
 
  
+
 162
 86
 16500
 578070
-0
+Income
 6.4.
-6.4.2010
-/10/ZŠ 
-Margita Praáková
-platby doplò. èinnost Tv
+6.4.
+/10/ZÅ  
+Margita PraÅ¾Ã¡kovÃ¡
+platby doplÅˆ. Äinnost Tv
 
  
+
 163
 77
 80000
 498070
-1
+Expense
 6.4.
-6.4.2010
-/10/ZŠ
-Jana Pouzarová
-ekonomické sluby 3/10
+6.4.
+/10/ZÅ 
+Jana PouzarovÃ¡
+ekonomickÃ© sluÅ¾by 3/10
 
  
+
 164
 78
 1000
 497070
-1
+Expense
 6.4.
-6.4.2010
-/10/ZŠ
-Èeská pošta
-poštovné
+6.4.
+/10/ZÅ 
+ÄŒeskÃ¡ poÅ¡ta
+poÅ¡tovnÃ©
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 165
 79
 71310
 425760
-1
+Expense
 6.4.
-6.4.2010
-/10/ZŠ
-Jan Bulánek
-záloha na mzdu
+6.4.
+/10/ZÅ 
+Jan BulÃ¡nek
+zÃ¡loha na mzdu
+
 
 
 166
 80
 700
 425060
-1
+Expense
 7.4.
-7.4.2010
-/10/ZŠ
-JFA Reklama - Janoušek
-razítková poduška
+7.4.
+/10/ZÅ 
+JFA Reklama - JanouÅ¡ek
+razÃ­tkovÃ¡ poduÅ¡ka
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 167
 81
 480
 424580
-1
+Expense
 7.4.
-7.4.2010
-/10/ZŠ
-Èeská pošta
-poštovné
+7.4.
+/10/ZÅ 
+ÄŒeskÃ¡ poÅ¡ta
+poÅ¡tovnÃ©
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 168
 82
 620
 423960
-1
+Expense
 9.4.
-9.4.2010
-/10/ZŠ
-Petr Dio, Prùm. zb. Plánice
+9.4.
+/10/ZÅ 
+Petr Dio, PrÅ¯m. zb. PlÃ¡nice
 prodl. kabel 1,5m
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 169
 83
 820
 423140
-1
+Expense
 9.4.
-9.4.2010
-/10/ZŠ
-Èeská pošta
-poštovné
+9.4.
+/10/ZÅ 
+ÄŒeskÃ¡ poÅ¡ta
+poÅ¡tovnÃ©
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 170
 84
 8760
 414380
-1
+Expense
 12.4.
-12.4.2010
-/10/ZŠ
-M.Cuplová,barvy,laky,nástøiky,KT
-barvy, øedidlo
+12.4.
+/10/ZÅ 
+M.CuplovÃ¡,barvy,laky,nÃ¡stÅ™iky,KT
+barvy, Å™edidlo
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 171
 87
 75980
 490360
-0
+Income
 12.4.
-12.4.2010
-/10/ZŠ 
-áci
-doprava ákù 2.st.- Temelín
+12.4.
+/10/ZÅ  
+Å¾Ã¡ci
+doprava Å¾Ã¡kÅ¯ 2.st.- TemelÃ­n
 
  
+
 172
 85
 8810
 481550
-1
+Expense
 14.4.
-14.4.2010
-/10/ZŠ
-PhDr.P.Novotnı Dialog Liberec
+14.4.
+/10/ZÅ 
+PhDr.P.NovotnÃ½ Dialog Liberec
 Prvouka 1.-3.r. + PL
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 173
 88
 150000
 631550
-0
+Income
 16.4.
-16.4.2010
-/10/ZŠ 
-Jana Venzarová
-pøevod hotovosti z pokladny ŠJ
+16.4.
+/10/ZÅ  
+Jana VenzarovÃ¡
+pÅ™evod hotovosti z pokladny Å J
 
  
+
 174
 86
 770
 630780
-1
+Expense
 16.4.
-16.4.2010
-/10/ZŠ
-Èeská pošta
-poštovné
+16.4.
+/10/ZÅ 
+ÄŒeskÃ¡ poÅ¡ta
+poÅ¡tovnÃ©
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 175
 87
 240000
 390780
-1
+Expense
 19.4.
-19.4.2010
-/10/ZŠ
-Mgr. Hana Procházková
-pøevod hotovosti na bìnı úèet
+19.4.
+/10/ZÅ 
+Mgr. Hana ProchÃ¡zkovÃ¡
+pÅ™evod hotovosti na bÄ›Å¾nÃ½ ÃºÄet
+
 
 
 176
 89
 42930
 433710
-0
+Income
 20.4.
-20.4.2010
-/10/ZŠ 
-Lukáš Hlaváè
-nájem 2,3,4/2010
+20.4.
+/10/ZÅ  
+LukÃ¡Å¡ HlavÃ¡Ä
+nÃ¡jem 2,3,4/2010
  
  
+
 177
 88
 4570
 429140
-1
+Expense
 20.4.
-20.4.2010
-/10/ZŠ
+20.4.
+/10/ZÅ 
 Vrabec a Vrabec s.r.o.
-spoj. materiál - šatní skøínì
+spoj. materiÃ¡l - Å¡atnÃ­ skÅ™Ã­nÄ›
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 178
 89
 1000
 428140
-1
+Expense
 20.4.
-20.4.2010
-/10/ZŠ
-Èeská pošta
-poštovné
+20.4.
+/10/ZÅ 
+ÄŒeskÃ¡ poÅ¡ta
+poÅ¡tovnÃ©
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 179
 90
 100000
 528140
-0
+Income
 22.4.
-22.4.2010
-/10/ZŠ 
-Jana Venzarová
-pøevod hotovosti z pokladny ŠJ
+22.4.
+/10/ZÅ  
+Jana VenzarovÃ¡
+pÅ™evod hotovosti z pokladny Å J
 
  
+
 180
 90
 12000
 516140
-1
+Expense
 23.4.
-23.4.2010
-/10/ZŠ
-Jindøich Suchı elezáøství - elektro
-Kování (na šatní skøínky)
+23.4.
+/10/ZÅ 
+JindÅ™ich SuchÃ½ Å¾elezÃ¡Å™stvÃ­ - elektro
+KovÃ¡nÃ­ (na Å¡atnÃ­ skÅ™Ã­nky)
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 181
 91
 690
 515450
-1
+Expense
 23.4.
-23.4.2010
-/10/ZŠ
-Ferrum Plzeò spol. s.r.o.
+23.4.
+/10/ZÅ 
+Ferrum PlzeÅˆ spol. s.r.o.
 Lepidlo PATTEX - 750g
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 182
 92
 180
 515270
-1
+Expense
 26.4.
-26.4.2010
-/10/ZŠ
-Èeská pošta
-poštovné
+26.4.
+/10/ZÅ 
+ÄŒeskÃ¡ poÅ¡ta
+poÅ¡tovnÃ©
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 183
 93
 150
 515120
-1
+Expense
 27.4.
-27.4.2010
-/10/ZŠ
-Milan Vacovskı - kování, zámky
-zástrèka
+27.4.
+/10/ZÅ 
+Milan VacovskÃ½ - kovÃ¡nÃ­, zÃ¡mky
+zÃ¡strÄka
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 184
 94
 2860
 512260
-1
+Expense
 27.4.
-27.4.2010
-/10/ZŠ
-Kaufland ÈR v.o.s.
-toaletní papír
+27.4.
+/10/ZÅ 
+Kaufland ÄŒR v.o.s.
+toaletnÃ­ papÃ­r
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 185
 95
 3200
 509060
-1
+Expense
 28.4.
-28.4.2010
-/10/ZŠ
-Nakladatelství HANEX
-Publikace Hry a hraní pohledem
+28.4.
+/10/ZÅ 
+NakladatelstvÃ­ HANEX
+Publikace Hry a hranÃ­ pohledem
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 186
 96
 430
 508630
-1
+Expense
 29.4.
-29.4.2010
-/10/ZŠ
-Èeská pošta
-poštovné
+29.4.
+/10/ZÅ 
+ÄŒeskÃ¡ poÅ¡ta
+poÅ¡tovnÃ©
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 187
 91
 16800
 525430
-0
+Income
 30.4.
-30.4.2010
-/10/ZŠ 
+30.4.
+/10/ZÅ  
 Jan Bouberle
-platby doplò. èinnost Tv
+platby doplÅˆ. Äinnost Tv
 
  
+
 188
 97
 1920
 523510
-1
+Expense
 30.4.
-30.4.2010
-/10/ZŠ
+30.4.
+/10/ZÅ 
 KINETIC KT
-USB panel do PC skøínì
+USB panel do PC skÅ™Ã­nÄ›
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 189
 92
 2550
 526060
-0
+Income
 30.4.
-30.4.2010
-/10/ZŠ 
-Lukáš Hlaváè
-doplatek vodné, stoèné k 30.4.
+30.4.
+/10/ZÅ  
+LukÃ¡Å¡ HlavÃ¡Ä
+doplatek vodnÃ©, stoÄnÃ© k 30.4.
  
  
+
 190
 98
 44460
 481600
-1
+Expense
 30.4.
-30.4.2010
-/10/ZŠ
+30.4.
+/10/ZÅ 
 ALFA Computer a.s. - Ostrava
 SWITCH D-Link DGS-1024D
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 191
 99
 300
 481300
-1
+Expense
 30.4.
-30.4.2010
-/10/ZŠ
-Milan Vacovskı - kování, zámky
-klíè
+30.4.
+/10/ZÅ 
+Milan VacovskÃ½ - kovÃ¡nÃ­, zÃ¡mky
+klÃ­Ä
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 192
 100
 180
 481120
-1
+Expense
 30.4.
-30.4.2010
-/10/ZŠ
-Èeská pošta
-poštovné
+30.4.
+/10/ZÅ 
+ÄŒeskÃ¡ poÅ¡ta
+poÅ¡tovnÃ©
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 193
 93
 15750
 496870
-0
+Income
 3.5.
-3.5.2010
-/10/ZŠ 
+3.5.
+/10/ZÅ  
 Miroslav Zeman
-platby doplò. èinnost Tv
+platby doplÅˆ. Äinnost Tv
 
  
+
 194
 94
 54450
 551320
-0
+Income
 3.5.
-3.5.2010
-/10/ZŠ 
-Jaroslava Tomanová
-platby doplò. èinnost Tv
+3.5.
+/10/ZÅ  
+Jaroslava TomanovÃ¡
+platby doplÅˆ. Äinnost Tv
 
  
+
 195
 95
 23500
 574820
-0
+Income
 3.5.
-3.5.2010
-/10/ZŠ 
-Margita Praáková
-platby doplò. èinnost Tv
+3.5.
+/10/ZÅ  
+Margita PraÅ¾Ã¡kovÃ¡
+platby doplÅˆ. Äinnost Tv
 
  
+
 196
 101
 20450
 554370
-1
+Expense
 4.5.
-4.5.2010
-/10/ZŠ
-MP Konekt, Bradlecká Lhota 101
-Tonerová kazeta DR3100
+4.5.
+/10/ZÅ 
+MP Konekt, BradleckÃ¡ Lhota 101
+TonerovÃ¡ kazeta DR3100
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 197
 96
 3000
 557370
-0
+Income
 4.5.
-4.5.2010
-/10/ZŠ 
-Jaroslava Tomanová
-platby doplò. èinnost Tv
+4.5.
+/10/ZÅ  
+Jaroslava TomanovÃ¡
+platby doplÅˆ. Äinnost Tv
 
  
+
 198
 97
 46300
 603670
-0
+Income
 4.5.
-4.5.2010
-/10/ZŠ
-áci 1. stupnì
-sešity Pierot
+4.5.
+/10/ZÅ 
+Å¾Ã¡ci 1. stupnÄ›
+seÅ¡ity Pierot
 
  
+
 199
 102
 46300
 557370
-1
+Expense
 4.5.
-4.5.2010
-/10/ZŠ
+4.5.
+/10/ZÅ 
 Pierot Praha
-prodej sešitù Pierot
+prodej seÅ¡itÅ¯ Pierot
 
  
+
 200
 98
 4630
 562000
-0
+Income
 4.5.
-4.5.2010
-/10/ZŠ
+4.5.
+/10/ZÅ 
 Pierot Praha
-provize z prodeje sešitù
+provize z prodeje seÅ¡itÅ¯
 
  
+
 201
 103
 80000
 482000
-1
+Expense
 4.5.
-4.5.2010
-/10/ZŠ
-Jana Pouzarová
-ekonomické sluby 4/10
+4.5.
+/10/ZÅ 
+Jana PouzarovÃ¡
+ekonomickÃ© sluÅ¾by 4/10
 
  
+
 202
 104
 24420
 457580
-1
+Expense
 4.5.
-4.5.2010
-/10/ZŠ
+4.5.
+/10/ZÅ 
 Video-audio servis Praha
-oprava HIFI vìe
+oprava HIFI vÄ›Å¾e
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 203
 105
 4730
 452850
-1
+Expense
 5.5.
-5.5.2010
-/10/ZŠ
+5.5.
+/10/ZÅ 
 Hoang Van Trung Klatovy
-zvìtšovací lupy - 17ks
+zvÄ›tÅ¡ovacÃ­ lupy - 17ks
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 204
 106
 1000
 451850
-1
+Expense
 5.5.
-5.5.2010
-/10/ZŠ
-Petr Dio, Prùm. zb. Plánice
+5.5.
+/10/ZÅ 
+Petr Dio, PrÅ¯m. zb. PlÃ¡nice
 bity
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 205
 107
 1000
 450850
-1
+Expense
 6.5.
-6.5.2010
-/10/ZŠ
-Èeská pošta
-poštovné
+6.5.
+/10/ZÅ 
+ÄŒeskÃ¡ poÅ¡ta
+poÅ¡tovnÃ©
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 206
 99
 39150
 490000
-0
+Income
 7.5.
-7.5.2010
-/10/ZŠ
-áci ZŠ 4.-9.roè.
-pøednáška Svìt. rocková hudba
+7.5.
+/10/ZÅ 
+Å¾Ã¡ci ZÅ  4.-9.roÄ.
+pÅ™ednÃ¡Å¡ka SvÄ›t. rockovÃ¡ hudba
 
  
+
 207
 108
 39150
 450850
-1
+Expense
 7.5.
-7.5.2010
-/10/ZŠ
+7.5.
+/10/ZÅ 
 Mgr. M. Parnahaj, Nejdek
-pøednáška Svìt. rocková hudba
+pÅ™ednÃ¡Å¡ka SvÄ›t. rockovÃ¡ hudba
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 208
 100
 2960
 453810
-0
+Income
 10.5.
-10.5.2010
-/10/ZŠ
-uèitelé ZŠ
-Levné knihy Beránek
+10.5.
+/10/ZÅ 
+uÄitelÃ© ZÅ 
+LevnÃ© knihy BerÃ¡nek
 
  
+
 209
 101
 100000
 553810
-0
+Income
 11.5.
-11.5.2010
-/10/ZŠ
-Jana Venzarová
-pøevod hotovosti z pokladny ŠJ
+11.5.
+/10/ZÅ 
+Jana VenzarovÃ¡
+pÅ™evod hotovosti z pokladny Å J
  
  
+
 210
 102
 6750
 560560
-0
+Income
 12.5.
-12.5.2010
-/10/ZŠ
-Jaroslava Tomanová
-platby doplò. èinnost Tv
+12.5.
+/10/ZÅ 
+Jaroslava TomanovÃ¡
+platby doplÅˆ. Äinnost Tv
 
  
+
 211
 103
 5250
 565810
-0
+Income
 12.5.
-12.5.2010
-/10/ZŠ
+12.5.
+/10/ZÅ 
 Jan Bouberle
-platby doplò. èinnost Tv
+platby doplÅˆ. Äinnost Tv
 
  
+
 212
 104
 2000
 567810
-0
+Income
 13.5.
-13.5.2010
-/10/ZŠ 
+13.5.
+/10/ZÅ  
 ZOO Laguna KT
-prodej cvrèkù a hlodavcù
+prodej cvrÄkÅ¯ a hlodavcÅ¯
 
  
+
 213
 105
 51300
 619110
-0
+Income
 13.5.
-13.5.2010
-/10/ZŠ 
-áci ZŠ a MŠ
-ukázka dravcù
+13.5.
+/10/ZÅ  
+Å¾Ã¡ci ZÅ  a MÅ 
+ukÃ¡zka dravcÅ¯
 
  
+
 214
 109
 51300
 567810
-1
+Expense
 13.5.
-13.5.2010
-/10/ZŠ
-Sokolnictví, ukázky dravcù M. Vondruška
-ukázka dravcù
+13.5.
+/10/ZÅ 
+SokolnictvÃ­, ukÃ¡zky dravcÅ¯ M. VondruÅ¡ka
+ukÃ¡zka dravcÅ¯
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 215
 110
 480
 567330
-1
+Expense
 14.5.
-14.5.2010
-/10/ZŠ
-Jiøí Valenta, Papírnictví, Klatovy
-popisovaèe
+14.5.
+/10/ZÅ 
+JiÅ™Ã­ Valenta, PapÃ­rnictvÃ­, Klatovy
+popisovaÄe
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 216
 111
 2350
 564980
-1
+Expense
 14.5.
-14.5.2010
-/10/ZŠ
-FOXINTERIER døevoprodej
+14.5.
+/10/ZÅ 
+FOXINTERIER dÅ™evoprodej
 hrana s lep. 50 m
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 217
 112
 43820
 521160
-1
+Expense
 14.5.
-14.5.2010
-/10/ZŠ
+14.5.
+/10/ZÅ 
 Superplast s.r.o.
 Sprch. baterie, hadice, sprchy
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 218
 113
 1500
 519660
-1
+Expense
 14.5.
-14.5.2010
-/10/ZŠ
+14.5.
+/10/ZÅ 
 Vrabec a Vrabec s.r.o.
-spoj. materiál
+spoj. materiÃ¡l
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 219
 114
 1520
 518140
-1
+Expense
 15.5.
-15.5.2010
-/10/ZŠ
-Betonové stavby Plánice
+15.5.
+/10/ZÅ 
+BetonovÃ© stavby PlÃ¡nice
 Beton 40 kg
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 220
 115
 7950
 510190
-1
+Expense
 15.5.
-15.5.2010
-/10/ZŠ
-Milan Plánièka, Plánice 41, OÈ
-Dladice, lepidlo, zálivka
+15.5.
+/10/ZÅ 
+Milan PlÃ¡niÄka, PlÃ¡nice 41, OÄŒ
+DlaÅ¾dice, lepidlo, zÃ¡livka
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 221
 116
 990
 509200
-1
+Expense
 17.5.
-17.5.2010
-/10/ZŠ
+17.5.
+/10/ZÅ 
 OBI Klatovy
-Spojovaèka kabelù
+SpojovaÄka kabelÅ¯
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 222
 117
 8500
 500700
-1
+Expense
 18.5.
-18.5.2010
-/10/ZŠ
+18.5.
+/10/ZÅ 
 Mountfield a.s. KT
-vloka,pouzdro,mont.a demontá
+vloÅ¾ka,pouzdro,mont.a demontÃ¡Å¾
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 223
 118
 4570
 496130
-1
+Expense
 18.5.
-18.5.2010
-/10/ZŠ
+18.5.
+/10/ZÅ 
 INNA obch. spol. KT
-vrtáky, kleštì
+vrtÃ¡ky, kleÅ¡tÄ›
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 224
 119
 300
 495830
-1
+Expense
 19.5.
-19.5.2010
-/10/ZŠ
-Petr Dio, Prùm. zb. Plánice
-sádra
+19.5.
+/10/ZÅ 
+Petr Dio, PrÅ¯m. zb. PlÃ¡nice
+sÃ¡dra
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 225
 120
 700
 495130
-1
+Expense
 20.5.
-20.5.2010
-/10/ZŠ
-Jindøich Suchı elezáøství - elektro
-úhelník 7 ks (šatní skøíòky)
+20.5.
+/10/ZÅ 
+JindÅ™ich SuchÃ½ Å¾elezÃ¡Å™stvÃ­ - elektro
+ÃºhelnÃ­k 7 ks (Å¡atnÃ­ skÅ™Ã­Åˆky)
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 226
 121
 5600
 489530
-1
+Expense
 20.5.
-20.5.2010
-/10/ZŠ
+20.5.
+/10/ZÅ 
 Vrabec a Vrabec s.r.o.
-Vruty (šatní skøíòky)
+Vruty (Å¡atnÃ­ skÅ™Ã­Åˆky)
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 227
 122
 1910
 487620
-1
+Expense
 24.5.
-24.5.2010
-/10/ZŠ
-G.A.S. Petroleum - Plánice
-benzín do sekaèky
+24.5.
+/10/ZÅ 
+G.A.S. Petroleum - PlÃ¡nice
+benzÃ­n do sekaÄky
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 228
 123
 3300
 484320
-1
+Expense
 24.5.
-24.5.2010
-/10/ZŠ
+24.5.
+/10/ZÅ 
 Commatel d.r.o. Praha
-Telefonní zásuvky 2 ks
+TelefonnÃ­ zÃ¡suvky 2 ks
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 229
 124
 7040
 477280
-1
+Expense
 24.5.
-24.5.2010
-/10/ZŠ
-FERRUM Plzeò s.r.o.
-prací prášek Tide 22 ks
+24.5.
+/10/ZÅ 
+FERRUM PlzeÅˆ s.r.o.
+pracÃ­ prÃ¡Å¡ek Tide 22 ks
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 230
 125
 860
 476420
-1
+Expense
 24.5.
-24.5.2010
-/10/ZŠ
-FERRUM Plzeò s.r.o.
-Násada, páska, hák
+24.5.
+/10/ZÅ 
+FERRUM PlzeÅˆ s.r.o.
+NÃ¡sada, pÃ¡ska, hÃ¡k
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 231
 106
 13000
 489420
-0
+Income
 25.5.
-25.5.2010
-/10/ZŠ 
+25.5.
+/10/ZÅ  
 Jan Bouberle
-platby doplò. èinnost Tv
+platby doplÅˆ. Äinnost Tv
 
  
+
 232
 107
 9000
 498420
-0
+Income
 25.5.
-25.5.2010
-/10/ZŠ 
-ing. Jana Mantlová
-záloha na šat. zámky (18x50,-)
+25.5.
+/10/ZÅ  
+ing. Jana MantlovÃ¡
+zÃ¡loha na Å¡at. zÃ¡mky (18x50,-)
 
  
+
 233
 108
 7500
 505920
-0
+Income
 25.5.
-25.5.2010
-/10/ZŠ 
-Jitka Bulánková
-záloha na šat. zámky (15x50,-)
+25.5.
+/10/ZÅ  
+Jitka BulÃ¡nkovÃ¡
+zÃ¡loha na Å¡at. zÃ¡mky (15x50,-)
 
  
+
 234
 126
 390
 505530
-1
+Expense
 25.5.
-25.5.2010
-/10/ZŠ
-Kompas-rollo Plánice
-prací prášek 1 ks
+25.5.
+/10/ZÅ 
+Kompas-rollo PlÃ¡nice
+pracÃ­ prÃ¡Å¡ek 1 ks
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 235
 127
 1330
 504200
-1
+Expense
 25.5.
-25.5.2010
-/10/ZŠ
-Šimek proficentrum s.r.o
-zámek, panty, podloky
+25.5.
+/10/ZÅ 
+Å imek proficentrum s.r.o
+zÃ¡mek, panty, podloÅ¾ky
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 236
 128
 1530
 502670
-1
+Expense
 25.5.
-25.5.2010
-/10/ZŠ
+25.5.
+/10/ZÅ 
 Vrabec a Vrabec s.r.o.
-podloky - 500ks
+podloÅ¾ky - 500ks
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 237
 129
 3320
 499350
-1
+Expense
 25.5.
-25.5.2010
-/10/ZŠ
-Marcela Cuplová - barvy
+25.5.
+/10/ZÅ 
+Marcela CuplovÃ¡ - barvy
 barvy
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 238
 130
 560
 498790
-1
+Expense
 26.5.
-26.5.2010
-/10/ZŠ
-Petr Dio, Prùm. zb. Plánice
-šrouby
+26.5.
+/10/ZÅ 
+Petr Dio, PrÅ¯m. zb. PlÃ¡nice
+Å¡rouby
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 239
 109
 7500
 506290
-0
+Income
 26.5.
-26.5.2010
-/10/ZŠ 
-Miroslava Hošálková
-záloha-šat.zámky(11x50,8x25)
+26.5.
+/10/ZÅ  
+Miroslava HoÅ¡Å¥Ã¡lkovÃ¡
+zÃ¡loha-Å¡at.zÃ¡mky(11x50,8x25)
 
  
+
 240
 131
 4950
 501340
-1
+Expense
 26.5.
-26.5.2010
-/10/ZŠ
-Milan Vacovskı - kování, zámky
-Zámková vloka,8 klíèù
+26.5.
+/10/ZÅ 
+Milan VacovskÃ½ - kovÃ¡nÃ­, zÃ¡mky
+ZÃ¡mkovÃ¡ vloÅ¾ka,8 klÃ­ÄÅ¯
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 241
 132
 400
 500940
-1
+Expense
 27.5.
-27.5.2010
-/10/ZŠ
-AUKLAND s.r.o. papír hraèky KT
+27.5.
+/10/ZÅ 
+AUKLAND s.r.o. papÃ­r hraÄky KT
 odkl. mapa - 10 ks
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 242
 133
 70000
 430940
-1
+Expense
 28.5.
-28.5.2010
-/10/ZŠ
-Anna Šafrová 
-Tlakové èištìní vnitøní kanal.
+28.5.
+/10/ZÅ 
+Anna Å afrovÃ¡ 
+TlakovÃ© ÄiÅ¡tÄ›nÃ­ vnitÅ™nÃ­ kanal.
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 243
 134
 180
 430760
-1
+Expense
 31.5.
-31.5.2010
-/10/ZŠ
-Èeská pošta
-poštovné
+31.5.
+/10/ZÅ 
+ÄŒeskÃ¡ poÅ¡ta
+poÅ¡tovnÃ©
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 244
 110
 7500
 438260
-0
+Income
 31.5.
-31.5.2010
-/10/ZŠ 
-Mgr. Jitka Dufková
-záloha na šat. zámky (15x50,-)
+31.5.
+/10/ZÅ  
+Mgr. Jitka DufkovÃ¡
+zÃ¡loha na Å¡at. zÃ¡mky (15x50,-)
 
  
+
 245
 135
 120
 438140
-1
+Expense
 1.6.
-1.6.2010
-/10/ZŠ
-Èeská pošta
-poštovné
+1.6.
+/10/ZÅ 
+ÄŒeskÃ¡ poÅ¡ta
+poÅ¡tovnÃ©
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 246
 111
 35700
 473840
-0
+Income
 1.6.
-1.6.2010
-/10/ZŠ 
-Jaroslava Tomanová
-platby doplò. èinnost Tv
+1.6.
+/10/ZÅ  
+Jaroslava TomanovÃ¡
+platby doplÅˆ. Äinnost Tv
 
  
+
 247
 112
 18000
 491840
-0
+Income
 1.6.
-1.6.2010
-/10/ZŠ 
+1.6.
+/10/ZÅ  
 Miroslav Zeman
-platby doplò. èinnost Tv
+platby doplÅˆ. Äinnost Tv
 
  
+
 248
 136
 80000
 411840
-1
+Expense
 1.6.
-1.6.2010
-/10/ZŠ
-Jana Pouzarová
-ekonomické sluby 5/10
+1.6.
+/10/ZÅ 
+Jana PouzarovÃ¡
+ekonomickÃ© sluÅ¾by 5/10
+
 
 
 249
 113
 86760
 498600
-0
+Income
 1.6.
-1.6.2010
-/10/ZŠ 
-uèitelé ZŠ
+1.6.
+/10/ZÅ  
+uÄitelÃ© ZÅ 
 fotografie
 
  
+
 250
 137
 86760
 411840
-1
+Expense
 1.6.
-1.6.2010
-/10/ZŠ
+1.6.
+/10/ZÅ 
 Kodak Express Klatovy
 fotografie
  
  
+
 251
 138
 600
 411240
-1
+Expense
 1.6.
-1.6.2010
-/10/ZŠ
-Milan Vacovskı - kování, zámky
-2 klíèe
+1.6.
+/10/ZÅ 
+Milan VacovskÃ½ - kovÃ¡nÃ­, zÃ¡mky
+2 klÃ­Äe
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 252
 139
 1220
 410020
-1
+Expense
 1.6.
-1.6.2010
-/10/ZŠ
+1.6.
+/10/ZÅ 
 Vrabec a Vrabec s.r.o.
-Lano ocelové 14 m
+Lano ocelovÃ© 14 m
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 253
 114
 41250
 451270
-0
+Income
 2.6.
-2.6.2010
-/10/ZŠ 
-Margita Praáková
-platby doplò. èinnost Tv
+2.6.
+/10/ZÅ  
+Margita PraÅ¾Ã¡kovÃ¡
+platby doplÅˆ. Äinnost Tv
 
  
+
 254
 115
 100000
 551270
-0
+Income
 2.6.
-2.6.2010
-/10/ZŠ 
-Jana Venzarová
-pøevod hotovosti z pokladny ŠJ
+2.6.
+/10/ZÅ  
+Jana VenzarovÃ¡
+pÅ™evod hotovosti z pokladny Å J
 
  
+
 255
 116
 290000
 841270
-0
+Income
 3.6.
-3.6.2010
-/10/ZŠ 
-Jana Venzarová
-pøevod hotovosti z pokladny ŠJ
+3.6.
+/10/ZÅ  
+Jana VenzarovÃ¡
+pÅ™evod hotovosti z pokladny Å J
 
  
+
 256
 140
 200000
 641270
-1
+Expense
 3.6.
-3.6.2010
-/10/ZŠ
-Mgr. Benešová Jitka
-pøevod hotovosti na bìnı úèet
+3.6.
+/10/ZÅ 
+Mgr. BeneÅ¡ovÃ¡ Jitka
+pÅ™evod hotovosti na bÄ›Å¾nÃ½ ÃºÄet
 
  
+
 257
 141
 350
 640920
-1
+Expense
 3.6.
-3.6.2010
-/10/ZŠ
-Milan Vacovskı - kování, zámky
-klíè
+3.6.
+/10/ZÅ 
+Milan VacovskÃ½ - kovÃ¡nÃ­, zÃ¡mky
+klÃ­Ä
 
  
+
 258
 142
 180
 640740
-1
+Expense
 4.6.
-4.6.2010
-/10/ZŠ
-Èeská pošta
-poštovné
+4.6.
+/10/ZÅ 
+ÄŒeskÃ¡ poÅ¡ta
+poÅ¡tovnÃ©
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 259
 117
 50850
 691590
-0
+Income
 4.6.
-4.6.2010
-/10/ZŠ 
-uèitelé ZŠ
+4.6.
+/10/ZÅ  
+uÄitelÃ© ZÅ 
 fotografie
  
  
+
 260
 143
 50850
 640740
-1
+Expense
 4.6.
-4.6.2010
-/10/ZŠ
+4.6.
+/10/ZÅ 
 Kodak Express Klatovy
 fotografie
  
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 261
 144
 4180
 636560
-1
+Expense
 4.6.
-4.6.2010
-/10/ZŠ
-Klatovská prádelna s.r.o.
-praní prádla
+4.6.
+/10/ZÅ 
+KlatovskÃ¡ prÃ¡delna s.r.o.
+pranÃ­ prÃ¡dla
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 262
 145
 100
 636460
-1
+Expense
 7.6.
-7.6.2010
-/10/ZŠ
-Èeská pošta
-poštovné
+7.6.
+/10/ZÅ 
+ÄŒeskÃ¡ poÅ¡ta
+poÅ¡tovnÃ©
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 263
 146
 890
 635570
-1
+Expense
 7.6.
-7.6.2010
-/10/ZŠ
+7.6.
+/10/ZÅ 
 Mountfield a.s. KT
-kryt klín. øemene - sekaèka
+kryt klÃ­n. Å™emene - sekaÄka
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 264
 147
 220080
 415490
-1
+Expense
 8.6.
-8.6.2010
-/10/ZŠ
-zamìstnanci ZŠ
+8.6.
+/10/ZÅ 
+zamÄ›stnanci ZÅ 
 mzda 5/2010
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 265
 118
 100000
 515490
-0
+Income
 8.6.
-8.6.2010
-/10/ZŠ 
-Hana Procházková
-pøevod hotovosti z pokladny MŠ
+8.6.
+/10/ZÅ  
+Hana ProchÃ¡zkovÃ¡
+pÅ™evod hotovosti z pokladny MÅ 
 
  
+
 266
 148
 1000
 514490
-1
+Expense
 8.6.
-8.6.2010
-/10/ZŠ
-Èeská pošta
-poštovné
+8.6.
+/10/ZÅ 
+ÄŒeskÃ¡ poÅ¡ta
+poÅ¡tovnÃ©
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 267
 149
 4700
 509790
-1
+Expense
 10.6.
-10.6.2010
-/10/ZŠ
-Král Josef, Plánice
-vysklení a zasklení okna
+10.6.
+/10/ZÅ 
+KrÃ¡l Josef, PlÃ¡nice
+vysklenÃ­ a zasklenÃ­ okna
  
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 268
 150
 4410
 505380
-1
+Expense
 10.6.
-10.6.2010
-/10/ZŠ
+10.6.
+/10/ZÅ 
 Superplast s.r.o.
-vodoinst. materiál
+vodoinst. materiÃ¡l
  
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 269
 151
 2290
 503090
-1
+Expense
 10.6.
-10.6.2010
-/10/ZŠ
+10.6.
+/10/ZÅ 
 Mountfield a.s. KT
-olej motorovı (sekaèka)
+olej motorovÃ½ (sekaÄka)
  
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 270
 119
 15510
 518600
-0
+Income
 14.6.
-14.6.2010
-/10/ZŠ 
-Sdruení rodièù MŠ
-doprava ákù MŠ - Nepomuk
+14.6.
+/10/ZÅ  
+SdruÅ¾enÃ­ rodiÄÅ¯ MÅ 
+doprava Å¾Ã¡kÅ¯ MÅ  - Nepomuk
 
  
+
 271
 152
 450
 518150
-1
+Expense
 14.6.
-14.6.2010
-/10/ZŠ
-Petr Dio, Prùm. zb. Plánice
-šrouby
+14.6.
+/10/ZÅ 
+Petr Dio, PrÅ¯m. zb. PlÃ¡nice
+Å¡rouby
  
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 272
 120
 160000
 678150
-0
+Income
 15.6.
-15.6.2010
-/10/ZŠ 
-Jana Venzarová
-pøevod hotovosti z pokladny ŠJ
+15.6.
+/10/ZÅ  
+Jana VenzarovÃ¡
+pÅ™evod hotovosti z pokladny Å J
 
  
+
 273
 153
 200
 677950
-1
+Expense
 17.6.
-17.6.2010
-/10/ZŠ
-Èeská pošta
-poštovné
+17.6.
+/10/ZÅ 
+ÄŒeskÃ¡ poÅ¡ta
+poÅ¡tovnÃ©
  
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 274
 154
 4320
 673630
-1
+Expense
 17.6.
-17.6.2010
-/10/ZŠ
+17.6.
+/10/ZÅ 
 INNA obch. spol. KT
-Nıtovací kleštì, gola imbus
+NÃ½tovacÃ­ kleÅ¡tÄ›, gola imbus
  
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 275
 155
 1460
 672170
-1
+Expense
 18.6.
-18.6.2010
-/10/ZŠ
-Šimek proficentrum s.r.o
+18.6.
+/10/ZÅ 
+Å imek proficentrum s.r.o
 vruty
  
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 276
 121
 150230
 822400
-0
+Income
 21.6.
-21.6.2010
-/10/ZŠ 
-Jitka Bulánková
-doprava ákù 2.st.-Jiní Èechy
+21.6.
+/10/ZÅ  
+Jitka BulÃ¡nkovÃ¡
+doprava Å¾Ã¡kÅ¯ 2.st.-JiÅ¾nÃ­ ÄŒechy
 
  
+
 277
 156
 240000
 582400
-1
+Expense
 21.6.
-21.6.2010
-/10/ZŠ
-Mgr. Benešová Jitka
-pøevod hotovosti na bìnı úèet
+21.6.
+/10/ZÅ 
+Mgr. BeneÅ¡ovÃ¡ Jitka
+pÅ™evod hotovosti na bÄ›Å¾nÃ½ ÃºÄet
  
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 278
 122
 3400
 585800
-0
+Income
 21.6.
-21.6.2010
-/10/ZŠ 
-áci ZŠ
-èást.úhrada nákl. na šk.èasop.
+21.6.
+/10/ZÅ  
+Å¾Ã¡ci ZÅ 
+ÄÃ¡st.Ãºhrada nÃ¡kl. na Å¡k.Äasop.
 
  
+
 279
 123
 12240
 598040
-0
+Income
 21.6.
-21.6.2010
-/10/ZŠ 
-Sdruení rodièù MŠ
-doprava ákù MŠ - Nal. H.
+21.6.
+/10/ZÅ  
+SdruÅ¾enÃ­ rodiÄÅ¯ MÅ 
+doprava Å¾Ã¡kÅ¯ MÅ  - NalÅ¾. H.
 
  
+
 280
 157
 1120
 596920
-1
+Expense
 21.6.
-21.6.2010
-/10/ZŠ
+21.6.
+/10/ZÅ 
 Poprokan s.r.o.
-Pøipínáèky nást. 8 bal.
+PÅ™ipÃ­nÃ¡Äky nÃ¡st. 8 bal.
  
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 281
 158
 4080
 592840
-1
+Expense
 21.6.
-21.6.2010
-/10/ZŠ
-AUKLAND s.r.o. papír hraèky KT
-špendlíky, lepící hmota
+21.6.
+/10/ZÅ 
+AUKLAND s.r.o. papÃ­r hraÄky KT
+Å¡pendlÃ­ky, lepÃ­cÃ­ hmota
  
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 282
 159
 1450
 591390
-1
+Expense
 21.6.
-21.6.2010
-/10/ZŠ
-Papírnictví Semerád KT 
-špendlíky na nástìnku
+21.6.
+/10/ZÅ 
+PapÃ­rnictvÃ­ SemerÃ¡d KT 
+Å¡pendlÃ­ky na nÃ¡stÄ›nku
  
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 283
 160
 240
 591150
-1
+Expense
 22.6.
-22.6.2010
-/10/ZŠ
-Petr Dio, Prùm. zb. Plánice
-aran. hmota
+22.6.
+/10/ZÅ 
+Petr Dio, PrÅ¯m. zb. PlÃ¡nice
+aranÅ¾. hmota
  
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 284
 124
 25580
 616730
-0
+Income
 23.6.
-23.6.2010
-/10/ZŠ 
-áci 1. stupnì
-doprava ákù 1. st. - Nepomuk
+23.6.
+/10/ZÅ  
+Å¾Ã¡ci 1. stupnÄ›
+doprava Å¾Ã¡kÅ¯ 1. st. - Nepomuk
 
  
+
 285
 125
 2280
 619010
-0
+Income
 23.6.
-23.6.2010
-/10/ZŠ 
-áci ZŠ
-èást.úhrada nákl. na šk.èasop.
+23.6.
+/10/ZÅ  
+Å¾Ã¡ci ZÅ 
+ÄÃ¡st.Ãºhrada nÃ¡kl. na Å¡k.Äasop.
 
  
+
 286
 126
 16850
 635860
-0
+Income
 23.6.
-23.6.2010
-/10/ZŠ 
-Sdruení rodièù MŠ
-doprava ákù 1. st.- Krùtìnice
+23.6.
+/10/ZÅ  
+SdruÅ¾enÃ­ rodiÄÅ¯ MÅ 
+doprava Å¾Ã¡kÅ¯ 1. st.- KrÅ¯tÄ›nice
  
  
+
 287
 127
 500
 636360
-0
+Income
 24.6.
-24.6.2010
-/10/ZŠ 
-Mgr. Zdeòka Huspeková
-poškozené uèebnice Èj, Aj
+24.6.
+/10/ZÅ  
+Mgr. ZdeÅˆka HuspekovÃ¡
+poÅ¡kozenÃ© uÄebnice ÄŒj, Aj
 
  
+
 288
 161
 530
 635830
-1
+Expense
 24.6.
-24.6.2010
-/10/ZŠ
-Petr Dio, Prùm. zb. Plánice
-lepící guma
+24.6.
+/10/ZÅ 
+Petr Dio, PrÅ¯m. zb. PlÃ¡nice
+lepÃ­cÃ­ guma
  
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 289
 162
 900
 634930
-1
+Expense
 24.6.
-24.6.2010
-/10/ZŠ
-Petr Dio, Prùm. zb. Plánice
-napínáèky
+24.6.
+/10/ZÅ 
+Petr Dio, PrÅ¯m. zb. PlÃ¡nice
+napÃ­nÃ¡Äky
  
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 290
 128
 40
 634970
-0
+Income
 24.6.
-24.6.2010
-/10/ZŠ 
-áci ZŠ
-èást.úhrada nákl. na šk.èasop.
+24.6.
+/10/ZÅ  
+Å¾Ã¡ci ZÅ 
+ÄÃ¡st.Ãºhrada nÃ¡kl. na Å¡k.Äasop.
  
  
+
 291
 163
 1450
 633520
-1
+Expense
 24.6.
-24.6.2010
-/10/ZŠ
-Papírnictví Semerád KT 
-špendlíky
+24.6.
+/10/ZÅ 
+PapÃ­rnictvÃ­ SemerÃ¡d KT 
+Å¡pendlÃ­ky
  
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 292
 164
 7500
 626020
-1
+Expense
 25.6.
-25.6.2010
-/10/ZŠ
-Mgr. Dušan Kuèera
-Publikace "Škola v Plánici..."
+25.6.
+/10/ZÅ 
+Mgr. DuÅ¡an KuÄera
+Publikace "Å kola v PlÃ¡nici..."
 3 kusy
  
+
 293
 165
 1240
 624780
-1
+Expense
 25.6.
-25.6.2010
-/10/ZŠ
+25.6.
+/10/ZÅ 
 Poprokan s.r.o. KT
-lepicí guma bílá
+lepicÃ­ guma bÃ­lÃ¡
  
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 294
 129
 27000
 651780
-0
+Income
 28.6.
-28.6.2010
-/10/ZŠ 
+28.6.
+/10/ZÅ  
 Jan Bouberle
-platby doplò. èinnost Tv
+platby doplÅˆ. Äinnost Tv
 
  
+
 295
 130
 7800
 659580
-0
+Income
 28.6.
-28.6.2010
-/10/ZŠ 
-návštìvníci školní vıstavy
-sponz. pøíspìvky chov. kr.
+28.6.
+/10/ZÅ  
+nÃ¡vÅ¡tÄ›vnÃ­ci Å¡kolnÃ­ vÃ½stavy
+sponz. pÅ™Ã­spÄ›vky chov. kr.
 
  
+
 296
 131
 35000
 694580
-0
+Income
 28.6.
-28.6.2010
-/10/ZŠ 
-áci ZŠ
-ubytování Zátoò (vılet)
+28.6.
+/10/ZÅ  
+Å¾Ã¡ci ZÅ 
+ubytovÃ¡nÃ­ ZÃ¡toÅˆ (vÃ½let)
 
  
+
 297
 132
 3000
 697580
-0
+Income
 28.6.
-28.6.2010
-/10/ZŠ 
-uèitelé ZŠ
-ubytování Zátoò (vılet)
+28.6.
+/10/ZÅ  
+uÄitelÃ© ZÅ 
+ubytovÃ¡nÃ­ ZÃ¡toÅˆ (vÃ½let)
 
  
+
 298
 133
 42260
 739840
-0
+Income
 28.6.
-28.6.2010
-/10/ZŠ 
-áci ZŠ
-doprava ákù 4.-6.- Techmánie
+28.6.
+/10/ZÅ  
+Å¾Ã¡ci ZÅ 
+doprava Å¾Ã¡kÅ¯ 4.-6.- TechmÃ¡nie
 
  
+
 299
 134
 120000
 859840
-0
+Income
 28.6.
-28.6.2010
-/10/ZŠ 
-Jana Venzarová
-pøevod hotovosti z pokladny ŠJ
+28.6.
+/10/ZÅ  
+Jana VenzarovÃ¡
+pÅ™evod hotovosti z pokladny Å J
 
  
+
 300
 166
 400000
 459840
-1
+Expense
 28.6.
-28.6.2010
-/10/ZŠ
-Mgr. Zdeòka Huspeková
-pøevod hotovosti na bìnı úèet
+28.6.
+/10/ZÅ 
+Mgr. ZdeÅˆka HuspekovÃ¡
+pÅ™evod hotovosti na bÄ›Å¾nÃ½ ÃºÄet
  
  
+
 301
 135
 38020
 497860
-0
+Income
 28.6.
-28.6.2010
-/10/ZŠ 
-áci 1.-3. tøídy
-doprava ákù 1. st.- Zoo Plzeò
+28.6.
+/10/ZÅ  
+Å¾Ã¡ci 1.-3. tÅ™Ã­dy
+doprava Å¾Ã¡kÅ¯ 1. st.- Zoo PlzeÅˆ
 
  
+
 302
 136
 100
 497960
-0
+Income
 29.6.
-29.6.2010
-/10/ZŠ 
-Mgr. Jitka Benešová
-poškozená uèebnice M 3/3
+29.6.
+/10/ZÅ  
+Mgr. Jitka BeneÅ¡ovÃ¡
+poÅ¡kozenÃ¡ uÄebnice M 3/3
 
  
+
 303
 167
 500
 497460
-1
+Expense
 29.6.
-29.6.2010
-/10/ZŠ
-Karolína Votıpková
-vrácení zálohy na šatní zámek 
+29.6.
+/10/ZÅ 
+KarolÃ­na VotÃ½pkovÃ¡
+vrÃ¡cenÃ­ zÃ¡lohy na Å¡atnÃ­ zÃ¡mek 
  
  
+
 304
 137
 239000
 736460
-0
+Income
 30.6.
-30.6.2010
-/10/ZŠ 
-Jana Venzarová
-pøevod hotovosti z pokladny ŠJ
+30.6.
+/10/ZÅ  
+Jana VenzarovÃ¡
+pÅ™evod hotovosti z pokladny Å J
 
  
+
 305
 168
 200000
 536460
-1
+Expense
 30.6.
-30.6.2010
-/10/ZŠ
-Jan Bulánek
-pøevod hotovosti na bìnı úèet
+30.6.
+/10/ZÅ 
+Jan BulÃ¡nek
+pÅ™evod hotovosti na bÄ›Å¾nÃ½ ÃºÄet
  
  
+
 306
 138
 570
 537030
-0
+Income
 30.6.
-30.6.2010
-/10/ZŠ 
-Mgr. Jolana Kloudová
-poškozené uèebnice Hv 4 (3 ks)
+30.6.
+/10/ZÅ  
+Mgr. Jolana KloudovÃ¡
+poÅ¡kozenÃ© uÄebnice Hv 4 (3 ks)
 
  
+
 307
 139
 50000
 587030
-0
+Income
 30.6.
-30.6.2010
-/10/ZŠ 
-Hana Procházková
-pøevod hotovosti z pokladny MŠ
+30.6.
+/10/ZÅ  
+Hana ProchÃ¡zkovÃ¡
+pÅ™evod hotovosti z pokladny MÅ 
 
  
+
 308
 140
 5700
 592730
-0
+Income
 30.6.
-30.6.2010
-/10/ZŠ 
-Margita Praáková
-platby doplò. èinnost Tv
+30.6.
+/10/ZÅ  
+Margita PraÅ¾Ã¡kovÃ¡
+platby doplÅˆ. Äinnost Tv
  
  
+
 309
 169
 390
 592340
-1
+Expense
 30.6.
-30.6.2010
-/10/ZŠ
-Franèík s.r.o., Ústaleè
+30.6.
+/10/ZÅ 
+FranÄÃ­k s.r.o., ÃšstaleÄ
 mucholapky 8 ks
  
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 310
 170
 1800
 590540
-1
+Expense
 30.6.
-30.6.2010
-/10/ZŠ
-Kaufland ÈR v.o.s.
+30.6.
+/10/ZÅ 
+Kaufland ÄŒR v.o.s.
 Chip CS - odb. lit.
  
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 311
 141
 45500
 636040
-0
+Income
 30.6.
-30.6.2010
-/10/ZŠ 
-Jaroslava Tomanová
-platby doplò. èinnost Tv
+30.6.
+/10/ZÅ  
+Jaroslava TomanovÃ¡
+platby doplÅˆ. Äinnost Tv
 
  
+
 312
 171
 1000
 635040
-1
+Expense
 1.7.
-1.7.2010
-/10/ZŠ
-Èeská pošta
-poštovné
+1.7.
+/10/ZÅ 
+ÄŒeskÃ¡ poÅ¡ta
+poÅ¡tovnÃ©
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 313
 172
 160000
 475040
-1
+Expense
 2.7.
-2.7.2010
-/10/ZŠ
-Jana Pouzarová
-ekonomické sluby 6,7/10
+2.7.
+/10/ZÅ 
+Jana PouzarovÃ¡
+ekonomickÃ© sluÅ¾by 6,7/10
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 314
 142
 6420
 481460
-0
+Income
 2.7.
-2.7.2010
-/10/ZŠ 
+2.7.
+/10/ZÅ  
 Josef Toman
-prodej sešitù
+prodej seÅ¡itÅ¯
  
  
+
 315
 173
 260
 481200
-1
+Expense
 2.7.
-2.7.2010
-/10/ZŠ
-Èeská pošta
-poštovné
+2.7.
+/10/ZÅ 
+ÄŒeskÃ¡ poÅ¡ta
+poÅ¡tovnÃ©
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 316
 174
 2000
 479200
-1
+Expense
 8.7.
-8.7.2010
-/10/ZŠ
-G.A.S. Petroleum - Plánice
-benzín do sekaèky
+8.7.
+/10/ZÅ 
+G.A.S. Petroleum - PlÃ¡nice
+benzÃ­n do sekaÄky
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 317
 175
 2180
 477020
-1
+Expense
 11.7.
-11.7.2010
-/10/ZŠ
+11.7.
+/10/ZÅ 
 OBI Klatovy
-spray na nábytek
+spray na nÃ¡bytek
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 318
 176
 25470
 451550
-1
+Expense
 15.7.
-15.7.2010
-/10/ZŠ
-zamìstnanci ZŠ
+15.7.
+/10/ZÅ 
+zamÄ›stnanci ZÅ 
 mzda 6/2010
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 319
 177
 2200
 449350
-1
+Expense
 15.7.
-15.7.2010
-/10/ZŠ
-Fink vıroba krm. smìsí Nezvìstice
-krmivo pro èinèily
+15.7.
+/10/ZÅ 
+Fink vÃ½roba krm. smÄ›sÃ­ NezvÄ›stice
+krmivo pro ÄinÄily
  
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 320
 178
 4090
 445260
-1
+Expense
 23.7.
-23.7.2010
-/10/ZŠ
+23.7.
+/10/ZÅ 
 Drogerie SAVITA, KT
-leš. pasta na podlahu
+leÅ¡Å¥. pasta na podlahu
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 321
 179
 11550
 433710
-1
+Expense
 23.7.
-23.7.2010
-/10/ZŠ
+23.7.
+/10/ZÅ 
 drogerie PRAMYKO, KT
-leš. pasta na podlahu
+leÅ¡Å¥. pasta na podlahu
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 322
 180
 780
 432930
-1
+Expense
 23.7.
-23.7.2010
-/10/ZŠ
+23.7.
+/10/ZÅ 
 Poprokan s.r.o.
-pokladní doklady - tiskopisy
+pokladnÃ­ doklady - tiskopisy
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 323
 181
 1240
 431690
-1
+Expense
 23.7.
-23.7.2010
-/10/ZŠ
+23.7.
+/10/ZÅ 
 INNA obch. spol. KT
-Kotouèe øezné na nerez
+KotouÄe Å™eznÃ© na nerez
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 324
 182
 920
 430770
-1
+Expense
 30.7.
-30.7.2010
-/10/ZŠ
-ELFETEX Plzeò
+30.7.
+/10/ZÅ 
+ELFETEX PlzeÅˆ
 Trubice 18 W - 2 ks
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 325
 143
 29300
 460070
-0
+Income
 10.8.
-10.8.2010
-/10/ZŠ 
-Jaroslava Tomanová
-platby doplò. èinnost Tv
+10.8.
+/10/ZÅ  
+Jaroslava TomanovÃ¡
+platby doplÅˆ. Äinnost Tv
 
  
+
 326
 144
 16200
 476270
-0
+Income
 10.8.
-10.8.2010
-/10/ZŠ 
+10.8.
+/10/ZÅ  
 Jan Bouberle
-platby doplò. èinnost Tv
+platby doplÅˆ. Äinnost Tv
 
  
+
 327
 145
 130000
 606270
-0
+Income
 10.8.
-10.8.2010
-/10/ZŠ 
-Jana Venzarová
-pøevod hotovosti z pokladny ŠJ
+10.8.
+/10/ZÅ  
+Jana VenzarovÃ¡
+pÅ™evod hotovosti z pokladny Å J
 
  
+
 328
 146
 29250
 635520
-0
+Income
 10.8.
-10.8.2010
-/10/ZŠ 
-Margita Praáková
-platby doplò. èinnost Tv
+10.8.
+/10/ZÅ  
+Margita PraÅ¾Ã¡kovÃ¡
+platby doplÅˆ. Äinnost Tv
 
  
+
 329
 183
 4750
 630770
-1
+Expense
 10.8.
-10.8.2010
-/10/ZŠ
-Kaufland ÈR v.o.s.
-toal. papír (48 ks)
+10.8.
+/10/ZÅ 
+Kaufland ÄŒR v.o.s.
+toal. papÃ­r (48 ks)
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 330
 147
 1800
 632570
-0
+Income
 10.8.
-10.8.2010
-/10/ZŠ 
-Jaroslava Tomanová
-platby doplò. èinnost Tv
+10.8.
+/10/ZÅ  
+Jaroslava TomanovÃ¡
+platby doplÅˆ. Äinnost Tv
 
  
+
 331
 184
 140
 632430
-1
+Expense
 10.8.
-10.8.2010
-/10/ZŠ
-Èeská pošta
-poštovné
+10.8.
+/10/ZÅ 
+ÄŒeskÃ¡ poÅ¡ta
+poÅ¡tovnÃ©
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 332
 185
 1650
 630780
-1
+Expense
 13.8.
-13.8.2010
-/10/ZŠ
+13.8.
+/10/ZÅ 
 Vrabec a Vrabec s.r.o.
 Spoj. material
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 333
 186
 670
 630110
-1
+Expense
 18.8.
-18.8.2010
-/10/ZŠ
+18.8.
+/10/ZÅ 
 Vrabec a Vrabec s.r.o.
-Trhací nıty
+TrhacÃ­ nÃ½ty
  
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 334
 187
 1830
 628280
-1
+Expense
 18.8.
-18.8.2010
-/10/ZŠ
-Václav Drozda - elektro
-kabel a zásuvky
+18.8.
+/10/ZÅ 
+VÃ¡clav Drozda - elektro
+kabel a zÃ¡suvky
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 335
 188
 4590
 623690
-1
+Expense
 24.8.
-24.8.2010
-/10/ZŠ
-FERRUM Plzeò s.r.o.
-Mop, hrábì, šroubovák ...
+24.8.
+/10/ZÅ 
+FERRUM PlzeÅˆ s.r.o.
+Mop, hrÃ¡bÄ›, Å¡roubovÃ¡k ...
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 336
 189
 2890
 620800
-1
+Expense
 26.8.
-26.8.2010
-/10/ZŠ
-Papírnictví Semerád KT 
+26.8.
+/10/ZÅ 
+PapÃ­rnictvÃ­ SemerÃ¡d KT 
 kronika
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 337
 148
 3720
 624520
-0
+Income
 26.8.
-26.8.2010
-/10/ZŠ 
-Kovošrot Nepomuk s.r.o.
-eleznı odpad
+26.8.
+/10/ZÅ  
+KovoÅ¡rot Nepomuk s.r.o.
+Å¾eleznÃ½ odpad
 
  
+
 338
 149
 1000
 625520
-0
+Income
 26.8.
-26.8.2010
-/10/ZŠ 
+26.8.
+/10/ZÅ  
 ZOO Laguna KT
-prodej cvrèkù a hlodavcù
+prodej cvrÄkÅ¯ a hlodavcÅ¯
 
  
+
 339
 190
 10000
 615520
-1
+Expense
 27.8.
-28.8.2010
-/10/ZŠ
-Hien Dang Xuan, Mnich. Hradištì
-Látka na závìsy
+27.8.
+/10/ZÅ 
+Hien Dang Xuan, Mnich. HradiÅ¡tÄ›
+LÃ¡tka na zÃ¡vÄ›sy
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 340
 191
 220000
 395520
-1
+Expense
 30.8.
-30.8.2010
-/10/ZŠ
-Mgr. Zdeòka Huspeková
-pøevod hotovosti na bìnı úèet
+30.8.
+/10/ZÅ 
+Mgr. ZdeÅˆka HuspekovÃ¡
+pÅ™evod hotovosti na bÄ›Å¾nÃ½ ÃºÄet
  
+
 
 341
 150
 160000
 555520
-0
+Income
 30.8.
-30.8.2010
-/10/ZŠ 
-Jana Venzarová
-pøevod hotovosti z pokladny ŠJ
+30.8.
+/10/ZÅ  
+Jana VenzarovÃ¡
+pÅ™evod hotovosti z pokladny Å J
 
  
+
 342
 192
 650
 554870
-1
+Expense
 31.8.
-31.8.2010
-/10/ZŠ
+31.8.
+/10/ZÅ 
 Poprokan s.r.o.
 obal 13 ks
+
 
 
 343
 151
 1200
 556070
-0
+Income
 1.9.
-1.9.2010
-/10/ZŠ 
-Radka Sudová
-školné ŠD záøí - prosinec 2010
+1.9.
+/10/ZÅ  
+Radka SudovÃ¡
+Å¡kolnÃ© Å D zÃ¡Å™Ã­ - prosinec 2010
 
  
+
 344
 152
 9300
 565370
-0
+Income
 1.9.
-1.9.2010
-/10/ZŠ 
-Martina Šindeláøová
-platby doplò. èinnost Tv
+1.9.
+/10/ZÅ  
+Martina Å indelÃ¡Å™ovÃ¡
+platby doplÅˆ. Äinnost Tv
 
  
+
 345
 153
 57240
 622610
-0
+Income
 1.9.
-1.9.2010
-/10/ZŠ 
-Martina Šindeláøová
-nájem 6,7,8,9/2010
+1.9.
+/10/ZÅ  
+Martina Å indelÃ¡Å™ovÃ¡
+nÃ¡jem 6,7,8,9/2010
 
  
+
 346
 154
 1200
 623810
-0
+Income
 1.9.
-1.9.2010
-/10/ZŠ 
-Zdenìk Pavlík
-školné ŠD záøí - prosinec 2010
+1.9.
+/10/ZÅ  
+ZdenÄ›k PavlÃ­k
+Å¡kolnÃ© Å D zÃ¡Å™Ã­ - prosinec 2010
 
  
+
 347
 155
 1200
 625010
-0
+Income
 1.9.
-1.9.2010
-/10/ZŠ 
+1.9.
+/10/ZÅ  
 Pavel Venc
-školné ŠD záøí - prosinec 2010
+Å¡kolnÃ© Å D zÃ¡Å™Ã­ - prosinec 2010
 
  
+
 348
 156
 1200
 626210
-0
+Income
 1.9.
-1.9.2010
-/10/ZŠ 
-Matyáš Bareš
-školné ŠD záøí - prosinec 2010
+1.9.
+/10/ZÅ  
+MatyÃ¡Å¡ BareÅ¡
+Å¡kolnÃ© Å D zÃ¡Å™Ã­ - prosinec 2010
  
  
+
 349
 157
 1200
 627410
-0
+Income
 1.9.
-1.9.2010
-/10/ZŠ 
-Matìj Frána
-školné ŠD záøí - prosinec 2010
+1.9.
+/10/ZÅ  
+MatÄ›j FrÃ¡na
+Å¡kolnÃ© Å D zÃ¡Å™Ã­ - prosinec 2010
 
  
+
 350
 158
 1200
 628610
-0
+Income
 1.9.
-1.9.2010
-/10/ZŠ 
-Valerie Broíková
-školné ŠD záøí - prosinec 2010
+1.9.
+/10/ZÅ  
+Valerie BroÅ¾Ã­kovÃ¡
+Å¡kolnÃ© Å D zÃ¡Å™Ã­ - prosinec 2010
 
  
+
 351
 159
 1200
 629810
-0
+Income
 1.9.
-1.9.2010
-/10/ZŠ 
-Markéta Èerná
-školné ŠD záøí - prosinec 2010
+1.9.
+/10/ZÅ  
+MarkÃ©ta ÄŒernÃ¡
+Å¡kolnÃ© Å D zÃ¡Å™Ã­ - prosinec 2010
 
  
+
 352
 160
 1200
 631010
-0
+Income
 1.9.
-1.9.2010
-/10/ZŠ 
-Aneta Apolínová
-školné ŠD záøí - prosinec 2010
+1.9.
+/10/ZÅ  
+Aneta ApolÃ­novÃ¡
+Å¡kolnÃ© Å D zÃ¡Å™Ã­ - prosinec 2010
 
  
+
 353
 193
 410
 630600
-1
+Expense
 1.9.
-1.9.2010
-/10/ZŠ
-Petr Dio, Prùm. zb. Plánice
-Svaø. elektrody, øez. kotouè
+1.9.
+/10/ZÅ 
+Petr Dio, PrÅ¯m. zb. PlÃ¡nice
+SvaÅ™. elektrody, Å™ez. kotouÄ
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 354
 161
 21900
 652500
-0
+Income
 1.9.
-1.9.2010
-/10/ZŠ 
-Margita Praáková
-platby doplò. èinnost Tv
+1.9.
+/10/ZÅ  
+Margita PraÅ¾Ã¡kovÃ¡
+platby doplÅˆ. Äinnost Tv
 
  
+
 355
 162
 2400
 654900
-0
+Income
 1.9.
-1.9.2010
-/10/ZŠ 
-Tomáš a Petr Marešovi
-školné ŠD záøí - prosinec 2010
+1.9.
+/10/ZÅ  
+TomÃ¡Å¡ a Petr MareÅ¡ovi
+Å¡kolnÃ© Å D zÃ¡Å™Ã­ - prosinec 2010
  
  
+
 356
 163
 1200
 656100
-0
+Income
 2.9.
-2.9.2010
-/10/ZŠ 
-David Novák
-školné ŠD záøí - prosinec 2010
+2.9.
+/10/ZÅ  
+David NovÃ¡k
+Å¡kolnÃ© Å D zÃ¡Å™Ã­ - prosinec 2010
 
  
+
 357
 164
 1200
 657300
-0
+Income
 2.9.
-2.9.2010
-/10/ZŠ 
-Šimon Havlík
-školné ŠD záøí - prosinec 2010
+2.9.
+/10/ZÅ  
+Å imon HavlÃ­k
+Å¡kolnÃ© Å D zÃ¡Å™Ã­ - prosinec 2010
 
  
+
 358
 165
 1200
 658500
-0
+Income
 2.9.
-2.9.2010
-/10/ZŠ 
-Vít Volf
-školné ŠD záøí - prosinec 2010
+2.9.
+/10/ZÅ  
+VÃ­t Volf
+Å¡kolnÃ© Å D zÃ¡Å™Ã­ - prosinec 2010
 
  
+
 359
 166
 1200
 659700
-0
+Income
 2.9.
-2.9.2010
-/10/ZŠ 
-Lucie Kováøíková
-školné ŠD záøí - prosinec 2010
+2.9.
+/10/ZÅ  
+Lucie KovÃ¡Å™Ã­kovÃ¡
+Å¡kolnÃ© Å D zÃ¡Å™Ã­ - prosinec 2010
 
  
+
 360
 167
 1200
 660900
-0
+Income
 2.9.
-2.9.2010
-/10/ZŠ 
-Petr Sládek
-školné ŠD záøí - prosinec 2010
+2.9.
+/10/ZÅ  
+Petr SlÃ¡dek
+Å¡kolnÃ© Å D zÃ¡Å™Ã­ - prosinec 2010
 
  
+
 361
 168
 1200
 662100
-0
+Income
 2.9.
-2.9.2010
-/10/ZŠ 
-Adéla Majerová
-školné ŠD záøí - prosinec 2010
+2.9.
+/10/ZÅ  
+AdÃ©la MajerovÃ¡
+Å¡kolnÃ© Å D zÃ¡Å™Ã­ - prosinec 2010
 
  
+
 362
 169
 16650
 678750
-0
+Income
 2.9.
-2.9.2010
-/10/ZŠ 
+2.9.
+/10/ZÅ  
 Jan Bouberle
-platby doplò. èinnost Tv
+platby doplÅˆ. Äinnost Tv
 
  
+
 363
 170
 1200
 679950
-0
+Income
 2.9.
-2.9.2010
-/10/ZŠ 
+2.9.
+/10/ZÅ  
 Jakub Venzara
-školné ŠD záøí - prosinec 2010
+Å¡kolnÃ© Å D zÃ¡Å™Ã­ - prosinec 2010
 
  
+
 364
 171
 138800
 818750
-0
+Income
 2.9.
-2.9.2010
-/10/ZŠ 
-Jaroslava Tomanová
-platby doplò. èinnost Tv
+2.9.
+/10/ZÅ  
+Jaroslava TomanovÃ¡
+platby doplÅˆ. Äinnost Tv
 
  
+
 365
 172
 500
 819250
-0
+Income
 2.9.
-2.9.2010
-/10/ZŠ 
-Terezie Vítková
-záloha na šat. zámek
+2.9.
+/10/ZÅ  
+Terezie VÃ­tkovÃ¡
+zÃ¡loha na Å¡at. zÃ¡mek
 
  
+
 366
 194
 240000
 579250
-1
+Expense
 2.9.
-2.9.2010
-/10/ZŠ
-Jaroslava Tomanová
-pøevod hotovosti na bìnı úèet
+2.9.
+/10/ZÅ 
+Jaroslava TomanovÃ¡
+pÅ™evod hotovosti na bÄ›Å¾nÃ½ ÃºÄet
+
 
 
 367
 195
 1000
 578250
-1
+Expense
 2.9.
-2.9.2010
-/10/ZŠ
-Èeská pošta
-poštovné
+2.9.
+/10/ZÅ 
+ÄŒeskÃ¡ poÅ¡ta
+poÅ¡tovnÃ©
+
 
 
 368
 173
 1200
 579450
-0
+Income
 2.9.
-2.9.2010
-/10/ZŠ 
-Jakub Lepší
-školné ŠD záøí - prosinec 2010
+2.9.
+/10/ZÅ  
+Jakub LepÅ¡Ã­
+Å¡kolnÃ© Å D zÃ¡Å™Ã­ - prosinec 2010
 
  
+
 369
 174
 1200
 580650
-0
+Income
 2.9.
-2.9.2010
-/10/ZŠ 
-Jindøich Nedvìd
-školné ŠD záøí - prosinec 2010
+2.9.
+/10/ZÅ  
+JindÅ™ich NedvÄ›d
+Å¡kolnÃ© Å D zÃ¡Å™Ã­ - prosinec 2010
 
  
+
 370
 196
 350
 580300
-1
+Expense
 2.9.
-2.9.2010
-/10/ZŠ
-Milan Vacovskı - kování, zámky
-klíè
+2.9.
+/10/ZÅ 
+Milan VacovskÃ½ - kovÃ¡nÃ­, zÃ¡mky
+klÃ­Ä
  
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 371
 175
 1200
 581500
-0
+Income
 3.9.
-3.9.2010
-/10/ZŠ 
-Petra Ouøedníková
-školné ŠD záøí - prosinec 2010
+3.9.
+/10/ZÅ  
+Petra OuÅ™ednÃ­kovÃ¡
+Å¡kolnÃ© Å D zÃ¡Å™Ã­ - prosinec 2010
 
  
+
 372
 176
 1200
 582700
-0
+Income
 3.9.
-3.9.2010
-/10/ZŠ 
-Nicol Štilipová
-školné ŠD záøí - prosinec 2010
+3.9.
+/10/ZÅ  
+Nicol Å tilipovÃ¡
+Å¡kolnÃ© Å D zÃ¡Å™Ã­ - prosinec 2010
 
  
+
 373
 177
 1200
 583900
-0
+Income
 3.9.
-3.9.2010
-/10/ZŠ 
-Jakub Štilip
-školné ŠD záøí - prosinec 2010
+3.9.
+/10/ZÅ  
+Jakub Å tilip
+Å¡kolnÃ© Å D zÃ¡Å™Ã­ - prosinec 2010
 
  
+
 374
 178
 1200
 585100
-0
+Income
 3.9.
-3.9.2010
-/10/ZŠ 
-Pavel Sládek
-školné ŠD záøí - prosinec 2010
+3.9.
+/10/ZÅ  
+Pavel SlÃ¡dek
+Å¡kolnÃ© Å D zÃ¡Å™Ã­ - prosinec 2010
 
  
+
 375
 179
 140000
 725100
-0
+Income
 3.9.
-3.9.2010
-/10/ZŠ 
-Jana Venzarová
-pøevod hotovosti z pokladny ŠJ
+3.9.
+/10/ZÅ  
+Jana VenzarovÃ¡
+pÅ™evod hotovosti z pokladny Å J
 
  
+
 376
 197
 240000
 485100
-1
+Expense
 3.9.
-3.9.2010
-/10/ZŠ
-Mgr. Zdeòka Huspeková
-pøevod hotovosti na bìnı úèet
+3.9.
+/10/ZÅ 
+Mgr. ZdeÅˆka HuspekovÃ¡
+pÅ™evod hotovosti na bÄ›Å¾nÃ½ ÃºÄet
+
 
 
 377
 198
 580
 484520
-1
+Expense
 3.9.
-3.9.2010
-/10/ZŠ
-Èeská pošta
-poštovné
+3.9.
+/10/ZÅ 
+ÄŒeskÃ¡ poÅ¡ta
+poÅ¡tovnÃ©
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 378
 199
 1100
 483420
-1
+Expense
 6.9.
-6.9.2010
-/10/ZŠ
-Botex Køivoklát
-vıroba klíèù
+6.9.
+/10/ZÅ 
+Botex KÅ™ivoklÃ¡t
+vÃ½roba klÃ­ÄÅ¯
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 379
 200
 1250
 482170
-1
+Expense
 6.9.
-6.9.2010
-/10/ZŠ
-OBI Plzeò
-náboj lepící
+6.9.
+/10/ZÅ 
+OBI PlzeÅˆ
+nÃ¡boj lepÃ­cÃ­
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 380
 180
 2400
 484570
-0
+Income
 6.9.
-6.9.2010
-/10/ZŠ 
-Nikola a Eva Forstlová
-školné ŠD záøí - prosinec 2010
+6.9.
+/10/ZÅ  
+Nikola a Eva ForstlovÃ¡
+Å¡kolnÃ© Å D zÃ¡Å™Ã­ - prosinec 2010
 
  
+
 381
 181
 1200
 485770
-0
+Income
 6.9.
-6.9.2010
-/10/ZŠ 
-Michaela Sobìhartová
-školné ŠD záøí - prosinec 2010
+6.9.
+/10/ZÅ  
+Michaela SobÄ›hartovÃ¡
+Å¡kolnÃ© Å D zÃ¡Å™Ã­ - prosinec 2010
 
  
+
 382
 182
 1200
 486970
-0
+Income
 6.9.
-6.9.2010
-/10/ZŠ 
-Aneka Pešková
-školné ŠD záøí - prosinec 2010
+6.9.
+/10/ZÅ  
+AneÅ¾ka PeÅ¡kovÃ¡
+Å¡kolnÃ© Å D zÃ¡Å™Ã­ - prosinec 2010
 
  
+
 383
 183
 7000
 493970
-0
+Income
 6.9.
-6.9.2010
-/10/ZŠ 
-Mgr. Renata Pelešková
-záloha na šat. zámek
-3. tø.
+6.9.
+/10/ZÅ  
+Mgr. Renata PeleÅ¡kovÃ¡
+zÃ¡loha na Å¡at. zÃ¡mek
+3. tÅ™.
  
+
 384
 201
 1840
 492130
-1
+Expense
 6.9.
-6.9.2010
-/10/ZŠ
-G.A.S. Petroleum - Plánice
+6.9.
+/10/ZÅ 
+G.A.S. Petroleum - PlÃ¡nice
 benzin Natural 95
 
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 385
 184
 1200
 493330
-0
+Income
 6.9.
-6.9.2010
-/10/ZŠ 
-Lucie Smetanová
-školné ŠD záøí - prosinec 2010
+6.9.
+/10/ZÅ  
+Lucie SmetanovÃ¡
+Å¡kolnÃ© Å D zÃ¡Å™Ã­ - prosinec 2010
 
  
+
 386
 185
 3000
 496330
-0
+Income
 6.9.
-6.9.2010
-/10/ZŠ 
-Mgr. Zdeòka Huspeková
-záloha na šat. zámek
+6.9.
+/10/ZÅ  
+Mgr. ZdeÅˆka HuspekovÃ¡
+zÃ¡loha na Å¡at. zÃ¡mek
 
  
+
 387
 186
 1200
 497530
-0
+Income
 6.9.
-6.9.2010
-/10/ZŠ 
-Vojtìch Maòhal
-školné ŠD záøí - prosinec 2010
+6.9.
+/10/ZÅ  
+VojtÄ›ch MaÅˆhal
+Å¡kolnÃ© Å D zÃ¡Å™Ã­ - prosinec 2010
 
  
+
 388
 187
 1200
 498730
-0
+Income
 6.9.
-6.9.2010
-/10/ZŠ 
-František Touš
-školné ŠD záøí - prosinec 2010
+6.9.
+/10/ZÅ  
+FrantiÅ¡ek TouÅ¡
+Å¡kolnÃ© Å D zÃ¡Å™Ã­ - prosinec 2010
 
  
+
 389
 188
 1200
 499930
-0
+Income
 7.9.
-7.9.2010
-/10/ZŠ 
-Marek Jílek
-školné ŠD záøí - prosinec 2010
+7.9.
+/10/ZÅ  
+Marek JÃ­lek
+Å¡kolnÃ© Å D zÃ¡Å™Ã­ - prosinec 2010
 
  
+
 390
 202
 80000
 419930
-1
+Expense
 7.9.
-7.9.2010
-/10/ZŠ
-Jana Pouzarová
-ekonomické sluby 8/10
+7.9.
+/10/ZÅ 
+Jana PouzarovÃ¡
+ekonomickÃ© sluÅ¾by 8/10
+
 
 
 391
 189
 120000
 539930
-0
+Income
 8.9.
-8.9.2010
-/10/ZŠ 
-Mgr. Renata Pelešková
-plaveckı vıcvik ákù 3. tøídy
+8.9.
+/10/ZÅ  
+Mgr. Renata PeleÅ¡kovÃ¡
+plaveckÃ½ vÃ½cvik Å¾Ã¡kÅ¯ 3. tÅ™Ã­dy
 
  
+
 392
 190
 128000
 667930
-0
+Income
 8.9.
-8.9.2010
-/10/ZŠ 
-Mgr. Jitka Benešová
-plaveckı vıcvik ákù 4. tøídy
+8.9.
+/10/ZÅ  
+Mgr. Jitka BeneÅ¡ovÃ¡
+plaveckÃ½ vÃ½cvik Å¾Ã¡kÅ¯ 4. tÅ™Ã­dy
 
  
+
 393
 191
 2400
 670330
-0
+Income
 8.9.
-8.9.2010
-/10/ZŠ 
-Karolína a Jiøí Hrachovcovi
-školné ŠD záøí - prosinec 2010
+8.9.
+/10/ZÅ  
+KarolÃ­na a JiÅ™Ã­ Hrachovcovi
+Å¡kolnÃ© Å D zÃ¡Å™Ã­ - prosinec 2010
 
  
+
 394
 192
 1200
 671530
-0
+Income
 8.9.
-8.9.2010
-/10/ZŠ 
-Lenka Radová
-školné ŠD záøí - prosinec 2010
+8.9.
+/10/ZÅ  
+Lenka RadovÃ¡
+Å¡kolnÃ© Å D zÃ¡Å™Ã­ - prosinec 2010
 
  
+
 395
 193
 1200
 672730
-0
+Income
 8.9.
-8.9.2010
-/10/ZŠ 
-Kateøina Dvoøáková
-školné ŠD záøí - prosinec 2010
+8.9.
+/10/ZÅ  
+KateÅ™ina DvoÅ™Ã¡kovÃ¡
+Å¡kolnÃ© Å D zÃ¡Å™Ã­ - prosinec 2010
 
  
+
 396
 194
 1200
 673930
-0
+Income
 8.9.
-8.9.2010
-/10/ZŠ 
-Ondøej Novák
-školné ŠD záøí - prosinec 2010
+8.9.
+/10/ZÅ  
+OndÅ™ej NovÃ¡k
+Å¡kolnÃ© Å D zÃ¡Å™Ã­ - prosinec 2010
 
  
+
 397
 203
 240000
 433930
-1
+Expense
 8.9.
-8.9.2010
-/10/ZŠ
-Jan Bulánek
-pøevod hotovosti na bìnı úèet
+8.9.
+/10/ZÅ 
+Jan BulÃ¡nek
+pÅ™evod hotovosti na bÄ›Å¾nÃ½ ÃºÄet
  
  
+
 398
 204
 1470
 432460
-1
+Expense
 8.9.
-8.9.2010
-/10/ZŠ
-Trifoil - Karel Novotnı
-Vystøihovánky - 3 sady
+8.9.
+/10/ZÅ 
+Trifoil - Karel NovotnÃ½
+VystÅ™ihovÃ¡nky - 3 sady
  
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 399
 195
 1200
 433660
-0
+Income
 9.9.
-9.9.2010
-/10/ZŠ 
-Václav Husinec
-školné ŠD záøí - prosinec 2010
+9.9.
+/10/ZÅ  
+VÃ¡clav Husinec
+Å¡kolnÃ© Å D zÃ¡Å™Ã­ - prosinec 2010
 
  
+
 400
 196
 2400
 436060
-0
+Income
 9.9.
-9.9.2010
-/10/ZŠ 
-Michal a Kristına Kubaòovi
-školné ŠD záøí - prosinec 2010
+9.9.
+/10/ZÅ  
+Michal a KristÃ½na KubaÅˆovi
+Å¡kolnÃ© Å D zÃ¡Å™Ã­ - prosinec 2010
 
  
+
 401
 197
 1200
 437260
-0
+Income
 9.9.
-9.9.2010
-/10/ZŠ 
+9.9.
+/10/ZÅ  
 Vladislav Habada
-školné ŠD záøí - prosinec 2010
+Å¡kolnÃ© Å D zÃ¡Å™Ã­ - prosinec 2010
 
  
+
 402
 198
 9000
 446260
-0
+Income
 9.9.
-9.9.2010
-/10/ZŠ 
-Edita Èerná
-záloha na šat. zámky
+9.9.
+/10/ZÅ  
+Edita ÄŒernÃ¡
+zÃ¡loha na Å¡at. zÃ¡mky
  
  
+
 403
 199
 1200
 447460
-0
+Income
 9.9.
-9.9.2010
-/10/ZŠ 
-Matìj Suda
-školné ŠD záøí - prosinec 2010
+9.9.
+/10/ZÅ  
+MatÄ›j Suda
+Å¡kolnÃ© Å D zÃ¡Å™Ã­ - prosinec 2010
 
  
+
 404
 200
 1200
 448660
-0
+Income
 10.9.
-10.9.2010
-/10/ZŠ 
+10.9.
+/10/ZÅ  
 Miroslav Faist
-školné ŠD záøí - prosinec 2010
+Å¡kolnÃ© Å D zÃ¡Å™Ã­ - prosinec 2010
 
  
+
 405
 201
 8500
 457160
-0
+Income
 10.9.
-10.9.2010
-/10/ZŠ 
-Mgr. Miroslava Hošálková
-záloha na šat. zámky (17x50,-)
+10.9.
+/10/ZÅ  
+Mgr. Miroslava HoÅ¡Å¥Ã¡lkovÃ¡
+zÃ¡loha na Å¡at. zÃ¡mky (17x50,-)
  afds
  
+
 406
-1
+205
 12430
 444730
-1
+Expense
 10.9.
-10.9.2010
-/10/ZŠ
+10.9.
+/10/ZÅ 
 asdf
 adsf
 asdf
-viz. pøíloha
+viz. pÅ™Ã­loha
+
 407
-7
+202
 1230
 445960
-0
+Income
 10.9.
-10.9.2010
-/10/ZŠ 
+10.9.
+/10/ZÅ  
 ffff
 123
 ffff
  
+
 408
-2
+206
 12340
 433620
-1
+Expense
 10.9.
-10.9.2010
-/10/ZŠ
+10.9.
+/10/ZÅ 
 Jendula
 UCelicek
 poznamka
 Prijemce
+
+409
+207
+1033
+432587
+Expense
+24.5.
+24.5.
+/ZS/10
+deset
+ÄtrnÃ¡ct
+letadelko
+ÄtyÅ™icetjedna

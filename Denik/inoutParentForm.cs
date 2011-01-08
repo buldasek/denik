@@ -9,6 +9,16 @@ namespace Denik
 {
     public class inoutParentForm : Form
     {
+        public enum InOutFormResult
+        {
+            Cancel = 0,
+            OK = 1,
+            PrintOnce = 2,
+            PrintTwice = 3,
+        };
+
+        public InOutFormResult Result { set; get; }
+
         private Record m_record;
         static private Printer m_globalFormPrinter = new Printer();
 

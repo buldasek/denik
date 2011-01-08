@@ -28,7 +28,18 @@ namespace Denik
 
         public Record()
         {
-
+            m_overallID = 0;
+            m_date = "";
+            m_typeID = 0;
+            m_type = RecordType.Income;
+            m_cost = 0;
+            m_content = "";
+            m_cost = 0;
+            m_remaining = 0;
+            m_note = "";
+            m_payedTo = "";
+            m_custName = "";
+            m_noteToNumber = "";
         }
 
         public Record(int overallID, String date, int typeID, RecordType type, int cost, String content,
@@ -70,7 +81,7 @@ namespace Denik
                 TypeID.ToString() + "\n" +
                 Cost.ToString() + "\n" +
                 Remaining.ToString() + "\n" +
-                Type.ToString() + "\n" +
+                ((int)Type).ToString() + "\n" +
                 Date.ToString() + "\n" +
                 Date.ToString() + "\n" +        //todo ???
                 NoteToNumber + "\n" +           //todo ???
@@ -117,7 +128,16 @@ namespace Denik
 
         public Diary()
         {
-            throw new Exception();
+            for (int i = 0; i < Record.TypeCount; i++)
+            {
+                InitTypeCounts[i] = 0;
+                TypeCounts[i] = 0;
+            }
+
+            InitRemain = 0;
+            RemainWarning = 30000;
+            RemainLimit = 35000;
+            Name = "Nový deník";
         }
 
         public Diary(String directory) 
@@ -136,28 +156,27 @@ namespace Denik
 
         public void UpdateRecords()
         {
-            int[] typesCount = new int[Record.TypeCount];
             for (int i = 0; i < Record.TypeCount; i++)
-                typesCount[i] = m_typeInitCounts[i];
+                m_typeCounts[i] = m_typeInitCounts[i];
 
             Int64 remain = m_initRemain;
             for (int i=0; i<m_records.Count; i++)
             {
                 if (m_records[i].Type == Record.RecordType.Income)
                 {
-                    m_records[i].TypeID = ++typesCount[(int)m_records[i].Type];
+                    m_records[i].TypeID = ++m_typeCounts[(int)m_records[i].Type];
                     remain += m_records[i].Cost;
                 }
                 else
                 {
-                    m_records[i].TypeID = ++typesCount[(int)m_records[i].Type];
+                    m_records[i].TypeID = ++m_typeCounts[(int)m_records[i].Type];
                     remain -= m_records[i].Cost;
                 }
                 m_records[i].Remaining = remain;
             
                 int overallID = 0;
                 for (int j = 0; j < Record.TypeCount; j++)
-                    overallID += typesCount[j];
+                    overallID += m_typeCounts[j];
 
                 m_records[i].OverallID = overallID;
             }
@@ -172,6 +191,8 @@ namespace Denik
         {
             AppendRecordNoUpdate(newRecord);
             UpdateRecords();
+
+            Store(Directory);
             /*
             newRecord.OverallID = m_typeCounts[0] + m_typeCounts[1]-1;
             newRecord.TypeID = m_typeCounts[(int)newRecord.Type]++;
@@ -230,6 +251,18 @@ namespace Denik
             get { return m_dir; }
         }
 
+        public Record GetRecord(int index)
+        {
+            Debug.Assert(index >= 0 && index < RecordsCount);
+            if (index >= 0 && index < RecordsCount)
+                return m_records[index];
+
+            if (m_records.Count == 0)
+                return null;
+
+            return m_records[0];
+        }
+
         public Record[] GetPage(int pageID)
         {
             Record[] result = new Record[m_pageSize];
@@ -265,11 +298,11 @@ namespace Denik
                           m_initRemain.ToString() + "\n" +
                           Name + "\n" +
                           RemainWarning.ToString() + "\n" +
-                          RemainLimit.ToString() + "\n");
+                          RemainLimit.ToString());
 
+            result.Append("\n");
             for (int i = 0; i < m_records.Count; i++)
             {
-                result.Append("\n");
                 result.Append(m_records[i].ToString());
             }
 
@@ -278,7 +311,6 @@ namespace Denik
 
         public void FromString(String str)
         {
-            
             String[] lines = str.Split('\n');
             int recordCount = int.Parse(lines[0]);
             m_typeCounts[0] = m_typeInitCounts[0] = int.Parse(lines[1]);
@@ -287,7 +319,7 @@ namespace Denik
             int overalID = m_typeCounts[0] + m_typeCounts[1]-1;
 
             InitRemain = int.Parse(lines[3]);
-
+            
             Int64 remain = InitRemain;
 
             Name = lines[4];
@@ -338,12 +370,13 @@ namespace Denik
                 sb.Append(str);
             }
             FromString(sb.ToString());
+            sr.Close();
         }
 
         //throws exception
         public void Store(String directory)
         {
-            StreamWriter wr = new StreamWriter(Directory);
+            StreamWriter wr = new StreamWriter(directory, false, Encoding.GetEncoding(1250));
             wr.Write(ToString());
             wr.Close();
         }

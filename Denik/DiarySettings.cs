@@ -42,11 +42,13 @@ namespace Denik
                 MessageBox.Show("Wrong number");
             }
 
+            DialogResult = DialogResult.OK;
             Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            DialogResult = DialogResult.Cancel;
             Close();
         }
     }

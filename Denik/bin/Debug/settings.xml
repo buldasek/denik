@@ -4,21 +4,10 @@
     <hint>hihi</hint>
     <counter>5</counter>
   </pokus>
-  <Stamp0>Jen jedna řádka</Stamp0>
-  <Stamp1>ad</Stamp1>
-  <Stamp2>dd</Stamp2>
-  <Stamp3>gggggggggggggg</Stamp3>
-  <Stamp4>OOOOOOOOOOO</Stamp4>
-  <Stamp5>sagssssssssssssss</Stamp5>
-  <DiaryDirectory>D:\ProjektyZS\denik\data\rok2010.pkl</DiaryDirectory>
   <OutcomeNote0>
-    <hint>Cislo</hint>
-    <counter>0</counter>
-  </OutcomeNote0>
-  <OutcomeNote1>
     <hint>d</hint>
     <counter>0</counter>
-  </OutcomeNote1>
+  </OutcomeNote0>
   <OutcomeName0>
     <hint>Buldacek</hint>
     <counter>0</counter>
@@ -43,4 +32,11 @@
     <hint>ads</hint>
     <counter>0</counter>
   </OutcomeRecipient1>
+  <Stamp0>Jen jedna řádka</Stamp0>
+  <Stamp1>ad</Stamp1>
+  <Stamp2>dd</Stamp2>
+  <Stamp3>gggggggggggggg</Stamp3>
+  <Stamp4>OOOOOOOOOOO</Stamp4>
+  <Stamp5>sagssssssssssssss</Stamp5>
+  <DiaryDirectory>D:\ProjektyZS\denik\data\tmp.pkl</DiaryDirectory>
 </DiarySettings>
