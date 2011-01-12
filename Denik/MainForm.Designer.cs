@@ -31,10 +31,14 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
             this.mainMenu = new System.Windows.Forms.MenuStrip();
             this.souborToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,6 +53,7 @@
             this.nastaveníToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.nastaveníDeníkuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nasteveníRazítkaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nastaveníDoplňováníToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnIncome = new System.Windows.Forms.Button();
             this.btnExpense = new System.Windows.Forms.Button();
             this.lbPageId = new System.Windows.Forms.Label();
@@ -56,7 +61,6 @@
             this.btnNextPage = new System.Windows.Forms.Button();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
-            this.nastaveníDoplňováníToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveDialogDiary = new System.Windows.Forms.SaveFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.gridHistory = new Denik.FastDataGridView();
@@ -160,6 +164,12 @@
             resources.ApplyResources(this.nasteveníRazítkaToolStripMenuItem, "nasteveníRazítkaToolStripMenuItem");
             this.nasteveníRazítkaToolStripMenuItem.Click += new System.EventHandler(this.nasteveníRazítkaToolStripMenuItem_Click);
             // 
+            // nastaveníDoplňováníToolStripMenuItem
+            // 
+            this.nastaveníDoplňováníToolStripMenuItem.Name = "nastaveníDoplňováníToolStripMenuItem";
+            resources.ApplyResources(this.nastaveníDoplňováníToolStripMenuItem, "nastaveníDoplňováníToolStripMenuItem");
+            this.nastaveníDoplňováníToolStripMenuItem.Click += new System.EventHandler(this.nastaveníDoplňováníToolStripMenuItem_Click);
+            // 
             // btnIncome
             // 
             resources.ApplyResources(this.btnIncome, "btnIncome");
@@ -202,12 +212,6 @@
             // 
             this.printDialog1.UseEXDialog = true;
             // 
-            // nastaveníDoplňováníToolStripMenuItem
-            // 
-            this.nastaveníDoplňováníToolStripMenuItem.Name = "nastaveníDoplňováníToolStripMenuItem";
-            resources.ApplyResources(this.nastaveníDoplňováníToolStripMenuItem, "nastaveníDoplňováníToolStripMenuItem");
-            this.nastaveníDoplňováníToolStripMenuItem.Click += new System.EventHandler(this.nastaveníDoplňováníToolStripMenuItem_Click);
-            // 
             // saveDialogDiary
             // 
             resources.ApplyResources(this.saveDialogDiary, "saveDialogDiary");
@@ -239,30 +243,32 @@
             this.expenses,
             this.remain,
             this.note});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridHistory.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridHistory.DefaultCellStyle = dataGridViewCellStyle8;
             this.gridHistory.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.gridHistory.MultiSelect = false;
             this.gridHistory.Name = "gridHistory";
             this.gridHistory.ReadOnly = true;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridHistory.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridHistory.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.gridHistory.RowHeadersVisible = false;
             this.gridHistory.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.gridHistory.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.gridHistory.CellMouseUp += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.gridHistory_CellMouseUp);
             this.gridHistory.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridHistory_CellDoubleClick);
+            this.gridHistory.CellMouseDown += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.gridHistory_CellMouseDown);
             // 
             // Column1
             // 
@@ -284,6 +290,8 @@
             // 
             // checkNumber
             // 
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.checkNumber.DefaultCellStyle = dataGridViewCellStyle4;
             this.checkNumber.FillWeight = 50F;
             resources.ApplyResources(this.checkNumber, "checkNumber");
             this.checkNumber.Name = "checkNumber";
@@ -298,6 +306,8 @@
             // 
             // incomes
             // 
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.incomes.DefaultCellStyle = dataGridViewCellStyle5;
             this.incomes.FillWeight = 80F;
             resources.ApplyResources(this.incomes, "incomes");
             this.incomes.Name = "incomes";
@@ -305,6 +315,8 @@
             // 
             // expenses
             // 
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.expenses.DefaultCellStyle = dataGridViewCellStyle6;
             this.expenses.FillWeight = 80F;
             resources.ApplyResources(this.expenses, "expenses");
             this.expenses.Name = "expenses";
@@ -312,6 +324,8 @@
             // 
             // remain
             // 
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.remain.DefaultCellStyle = dataGridViewCellStyle7;
             this.remain.FillWeight = 90F;
             resources.ApplyResources(this.remain, "remain");
             this.remain.Name = "remain";
@@ -337,7 +351,9 @@
             this.Controls.Add(this.btnPrevPage);
             this.MainMenuStrip = this.mainMenu;
             this.Name = "MainForm";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.Shown += new System.EventHandler(this.MainForm_Shown);
+            this.Move += new System.EventHandler(this.MainForm_Move);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.mainMenu.ResumeLayout(false);
             this.mainMenu.PerformLayout();
@@ -366,14 +382,6 @@
         private System.Windows.Forms.Button btnNextPage;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private FastDataGridView gridHistory;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn checkNumber;
-        private System.Windows.Forms.DataGridViewTextBoxColumn content;
-        private System.Windows.Forms.DataGridViewTextBoxColumn incomes;
-        private System.Windows.Forms.DataGridViewTextBoxColumn expenses;
-        private System.Windows.Forms.DataGridViewTextBoxColumn remain;
-        private System.Windows.Forms.DataGridViewTextBoxColumn note;
         public System.Windows.Forms.PrintDialog printDialog1;
         private System.Windows.Forms.ToolStripMenuItem printerSettings;
         private System.Windows.Forms.ToolStripMenuItem nastaveníToolStripMenuItem1;
@@ -382,6 +390,14 @@
         private System.Windows.Forms.ToolStripMenuItem nastaveníDoplňováníToolStripMenuItem;
         private System.Windows.Forms.SaveFileDialog saveDialogDiary;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn checkNumber;
+        private System.Windows.Forms.DataGridViewTextBoxColumn content;
+        private System.Windows.Forms.DataGridViewTextBoxColumn incomes;
+        private System.Windows.Forms.DataGridViewTextBoxColumn expenses;
+        private System.Windows.Forms.DataGridViewTextBoxColumn remain;
+        private System.Windows.Forms.DataGridViewTextBoxColumn note;
 
     }
 }

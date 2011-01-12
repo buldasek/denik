@@ -40,7 +40,7 @@
             this.edNote = new System.Windows.Forms.TextBox();
             this.edMoney = new System.Windows.Forms.TextBox();
             this.edDate = new System.Windows.Forms.TextBox();
-            this.cbNoteToNumber = new System.Windows.Forms.ComboBox();
+            this.cbNoteToNumber = new System.Windows.Forms.TextBox();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnStore = new System.Windows.Forms.Button();
             this.btnPrint = new System.Windows.Forms.Button();
@@ -103,9 +103,10 @@
             this.cbFrom.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbFrom.FormattingEnabled = true;
             this.cbFrom.Location = new System.Drawing.Point(17, 158);
+            this.cbFrom.MaxLength = 45;
             this.cbFrom.Name = "cbFrom";
             this.cbFrom.Size = new System.Drawing.Size(331, 21);
-            this.cbFrom.TabIndex = 5;
+            this.cbFrom.TabIndex = 1;
             // 
             // cbContent
             // 
@@ -113,9 +114,10 @@
             this.cbContent.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbContent.FormattingEnabled = true;
             this.cbContent.Location = new System.Drawing.Point(16, 210);
+            this.cbContent.MaxLength = 45;
             this.cbContent.Name = "cbContent";
             this.cbContent.Size = new System.Drawing.Size(332, 21);
-            this.cbContent.TabIndex = 7;
+            this.cbContent.TabIndex = 2;
             // 
             // label6
             // 
@@ -140,40 +142,38 @@
             // edNote
             // 
             this.edNote.Location = new System.Drawing.Point(107, 240);
+            this.edNote.MaxLength = 10;
             this.edNote.Name = "edNote";
             this.edNote.Size = new System.Drawing.Size(241, 20);
-            this.edNote.TabIndex = 11;
+            this.edNote.TabIndex = 3;
             // 
             // edMoney
             // 
             this.edMoney.Location = new System.Drawing.Point(115, 107);
             this.edMoney.Name = "edMoney";
             this.edMoney.Size = new System.Drawing.Size(233, 20);
-            this.edMoney.TabIndex = 12;
+            this.edMoney.TabIndex = 0;
             // 
             // edDate
             // 
             this.edDate.Location = new System.Drawing.Point(115, 77);
             this.edDate.Name = "edDate";
             this.edDate.Size = new System.Drawing.Size(233, 20);
-            this.edDate.TabIndex = 13;
+            this.edDate.TabIndex = 8;
             // 
             // cbNoteToNumber
             // 
-            this.cbNoteToNumber.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cbNoteToNumber.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cbNoteToNumber.FormattingEnabled = true;
             this.cbNoteToNumber.Location = new System.Drawing.Point(220, 48);
             this.cbNoteToNumber.Name = "cbNoteToNumber";
             this.cbNoteToNumber.Size = new System.Drawing.Size(128, 21);
-            this.cbNoteToNumber.TabIndex = 19;
+            this.cbNoteToNumber.TabIndex = 7;
             // 
             // btnClose
             // 
             this.btnClose.Location = new System.Drawing.Point(254, 276);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(94, 39);
-            this.btnClose.TabIndex = 23;
+            this.btnClose.TabIndex = 6;
             this.btnClose.Text = "Zrušit";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
@@ -183,7 +183,7 @@
             this.btnStore.Location = new System.Drawing.Point(153, 276);
             this.btnStore.Name = "btnStore";
             this.btnStore.Size = new System.Drawing.Size(95, 39);
-            this.btnStore.TabIndex = 22;
+            this.btnStore.TabIndex = 5;
             this.btnStore.Text = "Uložit";
             this.btnStore.UseVisualStyleBackColor = true;
             this.btnStore.Click += new System.EventHandler(this.btnStore_Click);
@@ -193,7 +193,7 @@
             this.btnPrint.Location = new System.Drawing.Point(15, 276);
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.Size = new System.Drawing.Size(132, 39);
-            this.btnPrint.TabIndex = 21;
+            this.btnPrint.TabIndex = 4;
             this.btnPrint.Text = "Tisk";
             this.btnPrint.UseVisualStyleBackColor = true;
             this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
@@ -220,6 +220,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lbHeader);
             this.Name = "incomeForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = " ";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -240,7 +241,7 @@
         private System.Windows.Forms.TextBox edNote;
         private System.Windows.Forms.TextBox edMoney;
         private System.Windows.Forms.TextBox edDate;
-        private System.Windows.Forms.ComboBox cbNoteToNumber;
+        private System.Windows.Forms.TextBox cbNoteToNumber;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnStore;
         private System.Windows.Forms.Button btnPrint;

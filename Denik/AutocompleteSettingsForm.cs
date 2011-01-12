@@ -16,6 +16,7 @@ namespace Denik
             InitializeComponent();
 
             rbIncome.Checked = true;
+            tabControls.TabPages.Remove(tabNote); //maybe will be used in future
             onFormTypeChanged();
             ///tabControls.TabPages.Remove(tabRecipient);
             //setGridContent("IncomeNote", "OutcomeNote");
@@ -28,9 +29,9 @@ namespace Denik
             grid.Rows.Clear();
             string[] hints;
             if (rbIncome.Checked)
-                hints = Settings.Settings.getHints(incomeVariant);
+                hints = Settings.Settings.SettingsHolder.getHints(incomeVariant);
             else
-                hints = Settings.Settings.getHints(outcomeVariant);
+                hints = Settings.Settings.SettingsHolder.getHints(outcomeVariant);
 
             if (hints.Length < 1)
                 return;
@@ -50,7 +51,7 @@ namespace Denik
 
             foreach (DataGridViewRow row in  grid.SelectedRows)
             {
-                Settings.Settings.removeHint(hiClass, (string) (grid[0, row.Index/*grid.SelectedRows[0].Index*/].Value));
+                Settings.Settings.SettingsHolder.removeHint(hiClass, (string)(grid[0, row.Index/*grid.SelectedRows[0].Index*/].Value));
 
                 grid.Rows.Remove(grid.SelectedRows[0]);
             }
@@ -125,6 +126,16 @@ namespace Denik
         }
 
         private void gridNote_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void gridName_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void gridFor_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

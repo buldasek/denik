@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.IO;
 using System.Diagnostics;
+using System.Xml.Serialization;
 
 namespace Denik
 {
@@ -60,6 +61,22 @@ namespace Denik
             m_noteToNumber = noteToNumber;
         }
 
+        public Record(Record rec)
+        {
+            m_overallID = rec.OverallID;
+            m_date = rec.Date;
+            m_typeID = rec.TypeID;
+            m_type = rec.Type;
+            m_cost = rec.Cost;
+            m_content = rec.Content;
+            m_cost = rec.Cost;
+            m_remaining = rec.Remaining;
+            m_note = rec.Note;
+            m_payedTo = rec.PayedTo;
+            m_custName = rec.CustName;
+            m_noteToNumber = rec.NoteToNumber;
+        }
+
 
         public int OverallID { set { m_overallID = value; } get { return m_overallID; } }
         public String Date { set { m_date = value; } get { return m_date; } }
@@ -79,16 +96,16 @@ namespace Denik
             String result =
                 OverallID.ToString() + "\n" +
                 TypeID.ToString() + "\n" +
-                Cost.ToString() + "\n" +
-                Remaining.ToString() + "\n" +
+                (Cost*10).ToString() + "\n" +
+                (Remaining*10).ToString() + "\n" +
                 ((int)Type).ToString() + "\n" +
-                Date.ToString() + "\n" +
-                Date.ToString() + "\n" +        //todo ???
+                Date + "\n" +
+                Date + "\n" +        //todo ???
                 NoteToNumber + "\n" +           //todo ???
                 CustName + "\n" +
                 Content + "\n" +
                 Note + "\n" +
-                PayedTo.ToString() + "\n";
+                PayedTo + "\n";
 
             return result;
         }
@@ -98,8 +115,8 @@ namespace Denik
             String[] words = str.Split('\n');
             OverallID = int.Parse(words[0]);
             TypeID = int.Parse(words[1]);
-            Cost = int.Parse(words[2]);
-            Remaining = int.Parse(words[3]);
+            Cost = int.Parse(words[2]) / 10;
+            Remaining = int.Parse(words[3]) / 10;
             Type = (Record.RecordType)(int.Parse(words[4]));
             Date = words[5];
             NoteToNumber = words[7];
@@ -138,13 +155,15 @@ namespace Denik
             RemainWarning = 30000;
             RemainLimit = 35000;
             Name = "Nový deník";
+            NoteToNumber = "";
         }
 
-        public Diary(String directory) 
-        {
-            m_dir = directory;
-            Load();
-        }
+       //public Diary(String directory)
+        //{
+            
+            //m_dir = directory;
+            
+        //}
 
         public String Name { set { m_name = value; } get { return m_name; } }
         public int RemainWarning { set { m_remainWarning = value; } get { return m_remainWarning; } }
@@ -153,6 +172,10 @@ namespace Denik
 
         public int[] TypeCounts { get { return m_typeCounts; } }
         public int[] InitTypeCounts { get { return m_typeInitCounts; } }
+        public string NoteToNumber { set; get; }
+
+        //just for serialization, should not be used directly, does not ensure update
+        public Record[] Records { set { m_records = new List<Record>(value); } get { return m_records.ToArray(); } }
 
         public void UpdateRecords()
         {
@@ -190,6 +213,7 @@ namespace Denik
         public void AppendRecord(Record newRecord)
         {
             AppendRecordNoUpdate(newRecord);
+            UpdateInfoFromRecord(newRecord);
             UpdateRecords();
 
             Store(Directory);
@@ -213,15 +237,42 @@ namespace Denik
             m_records.Add(newRecord);*/
         }
 
-        public void ReplaceRecord(Record newRecord, int pos)
+        public void ReplaceRecord(int pos, Record newRecord)
         {
             Debug.Assert(pos < RecordsCount);
             if (pos >= RecordsCount)
                 return;
 
             m_records[pos] = newRecord;
-            
 
+            UpdateInfoFromRecord(newRecord);
+            UpdateRecords();
+            Store(Directory);
+        }
+
+        public void InsertRecord(int pos, Record record)
+        {
+            Debug.Assert(pos >= 0 && pos < RecordsCount);
+            if (pos > RecordsCount || pos < 0)
+                return;
+
+            m_records.Insert(pos, record);
+
+            UpdateInfoFromRecord(record);
+            UpdateRecords();
+            Store(Directory);
+        }
+
+        public void RemoveRecord(int pos)
+        {
+            Debug.Assert(pos >= 0 && pos < RecordsCount);
+            if (pos >= RecordsCount || pos <0)
+                return;
+
+            m_records.RemoveAt(pos);
+
+            UpdateRecords();
+            Store(Directory);
         }
 
         public int RecordsCount
@@ -309,22 +360,27 @@ namespace Denik
             return result.ToString();
         }
 
-        public void FromString(String str)
+        private void UpdateInfoFromRecord(Record record)
+        {
+            NoteToNumber = record.NoteToNumber;
+        }
+
+        private void FromStringv1d0(String str)
         {
             String[] lines = str.Split('\n');
             int recordCount = int.Parse(lines[0]);
             m_typeCounts[0] = m_typeInitCounts[0] = int.Parse(lines[1]);
             m_typeCounts[1] = m_typeInitCounts[1] = int.Parse(lines[2]);
-            
-            int overalID = m_typeCounts[0] + m_typeCounts[1]-1;
 
-            InitRemain = int.Parse(lines[3]);
-            
+            int overalID = m_typeCounts[0] + m_typeCounts[1] - 1;
+
+            InitRemain = int.Parse(lines[3])/10;
+
             Int64 remain = InitRemain;
 
             Name = lines[4];
-            RemainLimit = int.Parse(lines[5]);
-            RemainWarning = int.Parse(lines[6]);
+            RemainLimit = int.Parse(lines[5])/10;
+            RemainWarning = int.Parse(lines[6])/10;
 
             int recordOffset = 7;
             for (recordCount--; recordCount >= 0; recordCount--)
@@ -355,30 +411,59 @@ namespace Denik
                 m_records.Add(newRec);
                 recordOffset += 12;
             }
-
-            UpdateRecords();
-
         }
 
-        public void Load()
+        public static Diary FromString(String str)
         {
-            StreamReader sr = new StreamReader(Directory, Encoding.GetEncoding(1250));
-            StringBuilder sb = new StringBuilder();
-            while (!sr.EndOfStream)
+            Diary result;
+            if (str[0] != '<')
             {
-                string str = sr.ReadLine() + '\n';
-                sb.Append(str);
+                result =  new Diary();
+                result.FromStringv1d0(str);
             }
-            FromString(sb.ToString());
-            sr.Close();
+            else
+            {
+                using (StringReader sr = new StringReader(str))
+                {
+                    XmlSerializer xs = new XmlSerializer(typeof(Diary));
+                    result = (Diary)xs.Deserialize(new StringReader(str));
+                }
+            }
+
+            result.UpdateRecords();
+         
+            return result;
+        }
+
+        public static Diary Load(string dir)
+        {
+            using (StreamReader sr = new StreamReader(dir, Encoding.GetEncoding(1250)))
+            {
+                StringBuilder sb = new StringBuilder();
+                while (!sr.EndOfStream)
+                {
+                    string str = sr.ReadLine() + '\n';
+                    sb.Append(str);
+                }
+
+                Diary result = FromString(sb.ToString());
+                result.m_dir = dir;
+
+                return result;
+            }
+            //sr.Close();
+
         }
 
         //throws exception
         public void Store(String directory)
         {
-            StreamWriter wr = new StreamWriter(directory, false, Encoding.GetEncoding(1250));
-            wr.Write(ToString());
-            wr.Close();
+            using(StreamWriter wr = new StreamWriter(directory, false, Encoding.GetEncoding(1250)))
+            {
+                XmlSerializer sr = new XmlSerializer(typeof(Diary));
+                sr.Serialize(wr, this);;
+                //wr.Close();
+            }
         }
     }
     class DataStore

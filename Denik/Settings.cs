@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using System.Xml;
 using System.Diagnostics;
+using System.Xml.Serialization;
+using System.IO;
+using System.Drawing;
+using System.Windows.Forms;
 
 
 namespace Settings
@@ -340,16 +344,15 @@ namespace Settings
 
     public class HintsHolder
     {
-        private class HintItem: Storable
+        public class HintItem//: Storable
         {
             public string m_hint;
             public Int64 m_counter;
             
-            #region Storable Members
-
-            public HintItem():this("", 0)
+            public HintItem()
+                : this("", 0)
             {
-                
+
             }
 
             public HintItem(String hint, int counter)
@@ -358,45 +361,50 @@ namespace Settings
                 m_counter = counter;
             }
             
+            //XmlElement Storable.convertToElement(string name, XmlDocument doc)
+            //{
+            //    XmlElement elem = doc.CreateElement(name);
+            //    XmlElement child = doc.CreateElement("hint");
+            //    child.InnerText = m_hint;
+            //    elem.AppendChild(child);
+            //    child = doc.CreateElement("counter");
+            //    child.InnerText = m_counter.ToString();
+            //    elem.AppendChild(child);
 
-            XmlElement Storable.convertToElement(string name, XmlDocument doc)
-            {
-                XmlElement elem = doc.CreateElement(name);
-                XmlElement child = doc.CreateElement("hint");
-                child.InnerText = m_hint;
-                elem.AppendChild(child);
-                child = doc.CreateElement("counter");
-                child.InnerText = m_counter.ToString();
-                elem.AppendChild(child);
+            //    return elem;
 
-                return elem;
+            //}
 
-            }
+            //bool Storable.convertFromNode(XmlNode elem)
+            //{
+            //    XmlElement child = elem["hint"];
+            //    if (child != null)
+            //        m_hint = child.InnerText;
+            //    child = elem["counter"];
+            //    try
+            //    {
+            //        m_counter = Int64.Parse(child.InnerText);
+            //    }
+            //    catch
+            //    {
+            //        m_counter = 0;
+            //        return false;
+            //    }
+            //    return true;
+            //}
 
-            bool Storable.convertFromNode(XmlNode elem)
-            {
-                XmlElement child = elem["hint"];
-                if (child != null)
-                    m_hint = child.InnerText;
-                child = elem["counter"];
-                try
-                {
-                    m_counter = Int64.Parse(child.InnerText);
-                }
-                catch
-                {
-                    m_counter = 0;
-                    return false;
-                }
-                return true;
-            }
-
-            #endregion
+            //#endregion
         }
 
         private string m_name;
+
         private List<HintItem> m_items;
 
+        public HintsHolder() 
+        {
+            m_name = "";
+            m_items = new List<HintItem>();
+        }
         public HintsHolder(string name)
         {
             m_name = name;
@@ -421,6 +429,7 @@ namespace Settings
                     m_items.RemoveAt(i);
         }
 
+
         public string[] hints()
         {
             List<string> result = new List<string>();
@@ -432,77 +441,110 @@ namespace Settings
             return result.ToArray();
         }
 
-        public void store()
+        /// <summary>
+        /// Should not be accessed directly, just for serialization
+        /// </summary>
+        /// 
+        public HintItem[] hintItems
         {
-          //  Storage.addStorableArray(m_name, m_items.ToArray());
+            get
+            {
+                return m_items.ToArray();
+            }
+            set
+            {
+                m_items = new List<HintItem>(value);
+            }
         }
 
-        public void load()
-        {
-            //m_items = new List<HintItem>(Storage.readStorableArray<HintItem>(m_name));
-            for (int i = 0; i < 150; i++)
-                m_items.Add(new HintItem(Denik.NumberConvertor.ConvertIntToString(i),0));
-        }
+        //public void store()
+        //{
+        //}
+
+        //public void load()
+        //{
+        //    for (int i = 0; i < 150; i++)
+        //        m_items.Add(new HintItem(Denik.NumberConvertor.ConvertIntToString(i),0));
+        //}
 
         public string Name
         {
+            set { m_name = value; }
             get { return m_name; }
         }
     }
 
-    public static class Settings
+    public class SettingsImpl
     {
-        private static string[] m_stamp = new string[0];
-        private static string m_diaryDirectory = "";
+        private string[] m_stamp = new string[0];
+        private string m_diaryDirectory = "";
 
-        private static Dictionary<string, HintsHolder> m_hints = new Dictionary<string,HintsHolder>();
+        private Dictionary<string, HintsHolder> m_hints = new Dictionary<string,HintsHolder>();
 
-        private static string [] m_hintClasses = {"IncomeNote", "IncomeName", "IncomeFor", "OutcomeNote",
-                                                        "OutcomeName", "OutcomeFor", "OutcomeRecipient"};
-        
+        private static string [] m_hintClasses = {"IncomeName", "IncomeFor", "OutcomeName", "OutcomeFor", "OutcomeRecipient"};
 
-        static Settings()
+        public SettingsImpl()
         {
-            foreach(string hintClass in m_hintClasses)
+            foreach (string hintClass in m_hintClasses)
             {
                 m_hints.Add(hintClass, new HintsHolder(hintClass));
             }
-            
+
+            MainWindowPos = new Rectangle(0, 0, 0,0);            
         }
 
-        public static void Store()
+        //Should not be access directly, just for serialization
+        public HintsHolder[] hintHolders
         {
-            Storage.addStringArray("Stamp", Stamp);
-            Storage.addString("DiaryDirectory", DiaryDirectory);
-
-            foreach (string hintClass in m_hintClasses)
-                m_hints[hintClass].store();
-
-            Storage.push();
+            get
+            {
+                HintsHolder[] result = new HintsHolder[m_hints.Count];
+                int i = 0;
+                foreach (KeyValuePair<string, HintsHolder> hh in m_hints)
+                {
+                    foreach(string hc in m_hintClasses)
+                        if (hc.Equals(hh.Key))
+                        {
+                            result[i++] = hh.Value;
+                            break;
+                        }
+                }
+                return result;
+            }
+            set
+            {
+                m_hints = new Dictionary<string, HintsHolder>();
+                foreach (HintsHolder hh in value)
+                {
+                    foreach (string hc in m_hintClasses)
+                        if (hc.Equals(hh.Name))
+                        {
+                            m_hints.Add(hh.Name, hh);
+                            break;
+                        }
+                }
+            }
         }
 
-        public static void Load()
-        {
-            Stamp = Storage.readStringArray("Stamp");
-            DiaryDirectory = Storage.readString("DiaryDirectory");
-
-            foreach (string hintClass in m_hintClasses)
-                m_hints[hintClass].load();
-        }
-
-        public static string[] Stamp
+        public string[] Stamp
         {
             set { m_stamp = value; }
             get { return m_stamp; }
         }
 
-        public static string DiaryDirectory
+        public Rectangle MainWindowPos
+        {
+            set;
+            get;
+        }
+
+        public string DiaryDirectory
         {
             set { m_diaryDirectory = value; }
             get { return m_diaryDirectory; }
         }
 
-        public static void addHint(string hintClass, string hint)
+        public void addHint(string hintClass, string hint)
         {
             Debug.Assert(Array.IndexOf(m_hintClasses, hintClass)!=-1);
 
@@ -513,28 +555,60 @@ namespace Settings
 
             if (newHint == "")
                 return;
-
+            
             HintsHolder hi;
             if (m_hints.TryGetValue(hintClass, out hi))
                 hi.appendHint(newHint);
         }
 
-        public static void removeHint(string hintClass, string hint)
+        public void removeHint(string hintClass, string hint)
         {
-            Debug.Assert(Array.IndexOf(m_hintClasses, hintClass) != -1);
+            Debug.Assert(Array.IndexOf(m_hintClasses, hintClass) != -1, "Wrong hintClass");
             HintsHolder hi;
             if (m_hints.TryGetValue(hintClass, out hi))
                 hi.removeHint(hint);
         }
 
-        public static string[] getHints(string hintClass)
+        public string[] getHints(string hintClass)
         {
-            Debug.Assert(Array.IndexOf(m_hintClasses, hintClass) != -1);
+            Debug.Assert(Array.IndexOf(m_hintClasses, hintClass) != -1, "Wrong hintClass");
             HintsHolder hi;
             if (m_hints.TryGetValue(hintClass, out hi))
                 return hi.hints();
             else
                 return new string[0];
         }
+    }
+
+    public static class Settings
+    {
+        public static SettingsImpl SettingsHolder = new SettingsImpl();
+        public static void Load()
+        {
+            using (StreamReader sr = new StreamReader("main_settings.xml"))
+            {
+                try
+                {
+                    XmlSerializer xs = new XmlSerializer(typeof(SettingsImpl));
+                    SettingsHolder = (SettingsImpl)xs.Deserialize(sr);
+                }
+                catch 
+                {
+                    MessageBox.Show("Došlo k poškození pomocných souborů, veškerá nastavení budou ztracena.",
+                        "Chyba", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        public static void Store()
+        {
+            using (StreamWriter sw = new StreamWriter("main_settings.xml"))
+            {
+                XmlSerializer xs = new XmlSerializer(typeof(SettingsImpl));
+                xs.Serialize(sw, SettingsHolder);
+            }
+            //sw.Close();
+        }
+
     }
 }

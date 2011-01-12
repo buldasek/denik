@@ -39,10 +39,10 @@ namespace Denik
             dataRec.Type = Record.RecordType.Expense;
             dataRec.PayedTo = cbOther.Text;
 
-            Settings.Settings.addHint("OutcomeNote", dataRec.NoteToNumber);
-            Settings.Settings.addHint("OutcomeName", dataRec.CustName);
-            Settings.Settings.addHint("OutcomeFor", dataRec.Content);
-            Settings.Settings.addHint("OutcomeRecipient", dataRec.PayedTo);
+            //Settings.Settings.SettingsHolder.addHint("OutcomeNote", dataRec.NoteToNumber);
+            Settings.Settings.SettingsHolder.addHint("OutcomeName", dataRec.CustName);
+            Settings.Settings.SettingsHolder.addHint("OutcomeFor", dataRec.Content);
+            Settings.Settings.SettingsHolder.addHint("OutcomeRecipient", dataRec.PayedTo);
             
             return true;
         }
@@ -66,16 +66,16 @@ namespace Denik
             cbOther.Text = dataRec.PayedTo;
 
             string[] hintList;
-            hintList = Settings.Settings.getHints("OutcomeNote");
-            foreach (string item in hintList)
-                cbNoteToNumber.Items.Add(item);
-            hintList = Settings.Settings.getHints("OutcomeName");
+           // hintList = Settings.Settings.SettingsHolder.getHints("OutcomeNote");
+            //foreach (string item in hintList)
+               // cbNoteToNumber.Items.Add(item);
+            hintList = Settings.Settings.SettingsHolder.getHints("OutcomeName");
             foreach (string item in hintList)
                 cbFrom.Items.Add(item);
-            hintList = Settings.Settings.getHints("OutcomeFor");
+            hintList = Settings.Settings.SettingsHolder.getHints("OutcomeFor");
             foreach (string item in hintList)
                 cbContent.Items.Add(item);
-            hintList = Settings.Settings.getHints("OutcomeRecipient");
+            hintList = Settings.Settings.SettingsHolder.getHints("OutcomeRecipient");
             foreach (string item in hintList)
                 cbOther.Items.Add(item);
             
@@ -85,7 +85,9 @@ namespace Denik
         {
             if (finishOK() != true)
                 return;
-           
+
+            Printer printer = new Printer();
+            printer.printOutcomeOne(dataRec);
             Result = InOutFormResult.PrintOnce;
             Close();
         }
@@ -95,8 +97,9 @@ namespace Denik
         {
             if (finishOK() != true)
                 return;
-            
 
+            Printer printer = new Printer();
+            printer.printOutcomeTwiceTwoPage(dataRec);
             Result = InOutFormResult.PrintTwice;
             
             Close();

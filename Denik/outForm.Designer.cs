@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.btnPrintTwice = new System.Windows.Forms.Button();
-            this.cbNoteToNumber = new System.Windows.Forms.ComboBox();
+            this.cbNoteToNumber = new System.Windows.Forms.TextBox();
             this.cbOther = new System.Windows.Forms.ComboBox();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnStore = new System.Windows.Forms.Button();
@@ -54,7 +54,7 @@
             this.btnPrintTwice.Location = new System.Drawing.Point(94, 300);
             this.btnPrintTwice.Name = "btnPrintTwice";
             this.btnPrintTwice.Size = new System.Drawing.Size(74, 39);
-            this.btnPrintTwice.TabIndex = 39;
+            this.btnPrintTwice.TabIndex = 6;
             this.btnPrintTwice.Text = "Tisk dvakrát";
             this.btnPrintTwice.UseVisualStyleBackColor = true;
             this.btnPrintTwice.Click += new System.EventHandler(this.btnPrintTwice_Click);
@@ -63,30 +63,26 @@
             // 
             this.cbNoteToNumber.AutoCompleteCustomSource.AddRange(new string[] {
             "ddddf"});
-            this.cbNoteToNumber.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cbNoteToNumber.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cbNoteToNumber.FormattingEnabled = true;
             this.cbNoteToNumber.Location = new System.Drawing.Point(221, 41);
             this.cbNoteToNumber.Name = "cbNoteToNumber";
             this.cbNoteToNumber.Size = new System.Drawing.Size(128, 21);
-            this.cbNoteToNumber.TabIndex = 38;
+            this.cbNoteToNumber.TabIndex = 9;
             // 
             // cbOther
             // 
-            this.cbOther.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cbOther.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbOther.FormattingEnabled = true;
             this.cbOther.Location = new System.Drawing.Point(159, 268);
+            this.cbOther.MaxLength = 17;
             this.cbOther.Name = "cbOther";
             this.cbOther.Size = new System.Drawing.Size(189, 21);
-            this.cbOther.TabIndex = 37;
+            this.cbOther.TabIndex = 4;
             // 
             // btnCancel
             // 
             this.btnCancel.Location = new System.Drawing.Point(258, 300);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(91, 39);
-            this.btnCancel.TabIndex = 36;
+            this.btnCancel.TabIndex = 8;
             this.btnCancel.Text = "Zrušit";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
@@ -96,7 +92,7 @@
             this.btnStore.Location = new System.Drawing.Point(172, 300);
             this.btnStore.Name = "btnStore";
             this.btnStore.Size = new System.Drawing.Size(84, 39);
-            this.btnStore.TabIndex = 35;
+            this.btnStore.TabIndex = 7;
             this.btnStore.Text = "Uložit";
             this.btnStore.UseVisualStyleBackColor = true;
             this.btnStore.Click += new System.EventHandler(this.btnStore_Click);
@@ -106,7 +102,7 @@
             this.btnPrint.Location = new System.Drawing.Point(16, 300);
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.Size = new System.Drawing.Size(72, 39);
-            this.btnPrint.TabIndex = 34;
+            this.btnPrint.TabIndex = 5;
             this.btnPrint.Text = "Tisk";
             this.btnPrint.UseVisualStyleBackColor = true;
             this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
@@ -116,21 +112,22 @@
             this.edDate.Location = new System.Drawing.Point(116, 70);
             this.edDate.Name = "edDate";
             this.edDate.Size = new System.Drawing.Size(233, 20);
-            this.edDate.TabIndex = 33;
+            this.edDate.TabIndex = 10;
             // 
             // edMoney
             // 
             this.edMoney.Location = new System.Drawing.Point(116, 100);
             this.edMoney.Name = "edMoney";
             this.edMoney.Size = new System.Drawing.Size(233, 20);
-            this.edMoney.TabIndex = 32;
+            this.edMoney.TabIndex = 0;
             // 
             // edNote
             // 
             this.edNote.Location = new System.Drawing.Point(108, 233);
+            this.edNote.MaxLength = 10;
             this.edNote.Name = "edNote";
             this.edNote.Size = new System.Drawing.Size(241, 20);
-            this.edNote.TabIndex = 31;
+            this.edNote.TabIndex = 3;
             // 
             // label8
             // 
@@ -158,9 +155,10 @@
             this.cbContent.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbContent.FormattingEnabled = true;
             this.cbContent.Location = new System.Drawing.Point(17, 203);
+            this.cbContent.MaxLength = 45;
             this.cbContent.Name = "cbContent";
             this.cbContent.Size = new System.Drawing.Size(332, 21);
-            this.cbContent.TabIndex = 28;
+            this.cbContent.TabIndex = 2;
             // 
             // label6
             // 
@@ -178,9 +176,10 @@
             this.cbFrom.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbFrom.FormattingEnabled = true;
             this.cbFrom.Location = new System.Drawing.Point(18, 151);
+            this.cbFrom.MaxLength = 45;
             this.cbFrom.Name = "cbFrom";
             this.cbFrom.Size = new System.Drawing.Size(331, 21);
-            this.cbFrom.TabIndex = 26;
+            this.cbFrom.TabIndex = 1;
             // 
             // label5
             // 
@@ -258,6 +257,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lbHeader);
             this.Name = "outcomeForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "outForm";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -267,7 +267,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnPrintTwice;
-        private System.Windows.Forms.ComboBox cbNoteToNumber;
+        private System.Windows.Forms.TextBox cbNoteToNumber;
         private System.Windows.Forms.ComboBox cbOther;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnStore;

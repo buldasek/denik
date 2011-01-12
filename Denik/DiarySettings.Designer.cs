@@ -60,7 +60,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(201, 17);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Počet výdajových dolkadů:";
+            this.label2.Text = "Počet výdajových dokladů:";
             // 
             // label3
             // 
@@ -107,28 +107,28 @@
             this.edInitRemain.Location = new System.Drawing.Point(214, 64);
             this.edInitRemain.Name = "edInitRemain";
             this.edInitRemain.Size = new System.Drawing.Size(120, 20);
-            this.edInitRemain.TabIndex = 8;
+            this.edInitRemain.TabIndex = 2;
             // 
             // edWarnLimit
             // 
             this.edWarnLimit.Location = new System.Drawing.Point(214, 118);
             this.edWarnLimit.Name = "edWarnLimit";
             this.edWarnLimit.Size = new System.Drawing.Size(120, 20);
-            this.edWarnLimit.TabIndex = 9;
+            this.edWarnLimit.TabIndex = 4;
             // 
             // edRemainLimit
             // 
             this.edRemainLimit.Location = new System.Drawing.Point(214, 91);
             this.edRemainLimit.Name = "edRemainLimit";
             this.edRemainLimit.Size = new System.Drawing.Size(120, 20);
-            this.edRemainLimit.TabIndex = 10;
+            this.edRemainLimit.TabIndex = 3;
             // 
             // edDiaryHeader
             // 
             this.edDiaryHeader.Location = new System.Drawing.Point(14, 158);
             this.edDiaryHeader.Name = "edDiaryHeader";
             this.edDiaryHeader.Size = new System.Drawing.Size(320, 20);
-            this.edDiaryHeader.TabIndex = 11;
+            this.edDiaryHeader.TabIndex = 5;
             // 
             // ndIncomeCount
             // 
@@ -140,7 +140,7 @@
             0});
             this.ndIncomeCount.Name = "ndIncomeCount";
             this.ndIncomeCount.Size = new System.Drawing.Size(120, 20);
-            this.ndIncomeCount.TabIndex = 12;
+            this.ndIncomeCount.TabIndex = 0;
             this.ndIncomeCount.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // ndOutcomeCount
@@ -153,7 +153,7 @@
             0});
             this.ndOutcomeCount.Name = "ndOutcomeCount";
             this.ndOutcomeCount.Size = new System.Drawing.Size(120, 20);
-            this.ndOutcomeCount.TabIndex = 13;
+            this.ndOutcomeCount.TabIndex = 1;
             this.ndOutcomeCount.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // button1
@@ -161,7 +161,7 @@
             this.button1.Location = new System.Drawing.Point(158, 184);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(85, 24);
-            this.button1.TabIndex = 14;
+            this.button1.TabIndex = 6;
             this.button1.Text = "OK";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -171,7 +171,7 @@
             this.button2.Location = new System.Drawing.Point(249, 184);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(85, 24);
-            this.button2.TabIndex = 15;
+            this.button2.TabIndex = 7;
             this.button2.Text = "Zrušit";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -196,6 +196,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "DiarySettings";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Nastavení deníku";
             ((System.ComponentModel.ISupportInitialize)(this.ndIncomeCount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ndOutcomeCount)).EndInit();

@@ -10,3 +10,7 @@ D:\ProjektyZS\Denik\Denik\obj\Release\Denik.exe
 D:\ProjektyZS\Denik\Denik\obj\Release\Denik.pdb
 D:\ProjektyZS\Denik\Denik\obj\Release\Denik.incomeForm.resources
 D:\ProjektyZS\Denik\Denik\obj\Release\Denik.MainForm.resources
+D:\ProjektyZS\denik\Denik\obj\Release\Denik.AutocompleteSettingsForm.resources
+D:\ProjektyZS\denik\Denik\obj\Release\Denik.DiarySettings.resources
+D:\ProjektyZS\denik\Denik\obj\Release\Denik.ExperimentalForm.resources
+D:\ProjektyZS\denik\Denik\obj\Release\Denik.StampForm.resources

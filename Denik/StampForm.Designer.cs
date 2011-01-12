@@ -71,6 +71,7 @@
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.edStamp);
             this.Name = "StampForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Nastavení razítka";
             this.ResumeLayout(false);
             this.PerformLayout();

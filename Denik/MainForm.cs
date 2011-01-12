@@ -16,6 +16,7 @@ namespace Denik
 
         private Diary m_mainDiary;
         private int m_currentPage = 0; //TODO zapouzdrit
+        private int contextMenuRowIndex = 0;
         
         
         public MainForm()
@@ -24,6 +25,11 @@ namespace Denik
 
             Settings.Storage.init(settingsFile);
             gridHistory.Rows.Add(pageSize);
+            foreach (DataGridViewColumn column in gridHistory.Columns)
+            {
+                column.SortMode = DataGridViewColumnSortMode.NotSortable;
+            }
+            
 
             //Printer printer = new Printer();
             //printer.print();
@@ -61,17 +67,24 @@ namespace Denik
 
         private void EnsureRecordVisibility(int recordId)
         {
-            if (recordId % pageSize < m_mainDiary.PageCount && recordId % pageSize >= 0)
+            if (recordId / pageSize < m_mainDiary.PageCount && recordId % pageSize >= 0)
             {
                 setPage(recordId / pageSize);
                 gridHistory.CurrentCell = gridHistory[0, recordId % pageSize];
             }
+        }
 
-
+        private void initRecord(ref Record record)
+        {
+            DateTime dt = DateTime.Today.Date;
+            record.Date = DateTime.Today.Date.ToString("d/M.");
+            record.NoteToNumber = m_mainDiary.NoteToNumber;
         }
 
         private void UpdateCurrentPage()
         {
+            if (m_currentPage > m_mainDiary.PageCount)
+                m_currentPage = m_mainDiary.PageCount - 1;
             lbPageId.Text = "Stránka " + (m_currentPage+1).ToString() + ".";
             Record[] records = m_mainDiary.GetPage(m_currentPage);
             ClearGrid();
@@ -103,14 +116,14 @@ namespace Denik
                 if (records[i].Type == Record.RecordType.Expense)
                 {
                     cells[4] = "";
-                    cells[5] = records[i].Cost.ToString();
+                    cells[5] = MoneyConvertor.MoneyToStr(records[i].Cost)+",-";
                 }
                 else
                 {
                     cells[5] = "";
-                    cells[4] = records[i].Cost.ToString();
+                    cells[4] = MoneyConvertor.MoneyToStr(records[i].Cost) + ",-";
                 }
-                cells[6] = records[i].Remaining.ToString();
+                cells[6] = MoneyConvertor.MoneyToStr(records[i].Remaining) + ",-";
                 cells[7] = records[i].Note;
 
                 //for (int j=0; j<8; j++)
@@ -142,11 +155,11 @@ namespace Denik
             try
             {
                 OpenFileDialog dlg = new OpenFileDialog();
-                dlg.InitialDirectory = Application.StartupPath; //todo
+                dlg.InitialDirectory = Settings.Settings.SettingsHolder.DiaryDirectory; //todo
                 dlg.Filter = "Deníky (*.pkl)|*.pkl";
                 if (dlg.ShowDialog() == DialogResult.OK)
                 {
-                    newDiary = new Diary(dlg.FileName);
+                    newDiary = Diary.Load(dlg.FileName);
                     newDiary.SetPageSize(pageSize);
                 }
             }
@@ -182,6 +195,9 @@ namespace Denik
              */
             if (m_mainDiary == null)
                 return;
+            Settings.Settings.SettingsHolder.DiaryDirectory = m_mainDiary.Directory;
+            Settings.Settings.SettingsHolder.MainWindowPos = this.Bounds;
+
             Settings.Settings.Store();
 
             //Storage.addString("Directory", m_mainDiary.Directory);
@@ -193,61 +209,67 @@ namespace Denik
         {
             //string directory = Storage.readString("Directory");
             Settings.Settings.Load();
-            /* string directory = "";*/
+            Rectangle winRec = Settings.Settings.SettingsHolder.MainWindowPos;
+            Screen scr = Screen.FromRectangle(winRec);
+            Rectangle monitorBounds = scr.Bounds;
 
-             do
-             {
-               /*  directory = "";
+            if (monitorBounds.IntersectsWith(winRec) && winRec.Width > 100 && winRec.Height > 100)
+                this.Bounds = winRec;
 
-                 try
-                 {
-                     XmlReaderSettings settings = new XmlReaderSettings();
-                     using (XmlReader reader = XmlReader.Create(settingsFile, settings))
-                     {
-                         reader.ReadStartElement("DiarySettings");
-                         directory = reader.ReadElementString("Directory");
-                         reader.ReadEndElement();
-                     }
-                 }
-                 catch { }*/
+            do
+            {
+                /*  directory = "";
 
-                 if (Settings.Settings.DiaryDirectory == "")
-                 {
-                     initFailureForm fform = new initFailureForm();
-                     fform.ShowDialog();
-                     if (fform.Result == initFailureForm.InitFailureResults.Cancel)
-                     {
-                         Application.Exit();    //todo lepeji ukoncit!!
-                         return;
-                     }
-                     else if (fform.Result == initFailureForm.InitFailureResults.Open)
-                     {
-                         OpenFileDialog dlg = new OpenFileDialog();
-                         dlg.InitialDirectory = Application.StartupPath; //todo
-                         dlg.Filter = "Deníky (*.pkl)|*.pkl";
-                         if (dlg.ShowDialog() == DialogResult.OK)
-                         {
-                             Settings.Settings.DiaryDirectory = dlg.FileName;
-                         }
-                     }
-                     else
-                     {
-                         tryCreateNewDiary();
-                     }
-                 }
-                 try
-                 {
-                     m_mainDiary = new Diary(Settings.Settings.DiaryDirectory);
-                     m_mainDiary.SetPageSize(pageSize);
-                 }
-                 catch
-                 {
-                     MessageBox.Show("Zadaný deník se nepodařilo otevřít.", "Chyba");
-                     Settings.Settings.DiaryDirectory = "";
-                 }
-             } while (Settings.Settings.DiaryDirectory == "");
+                  try
+                  {
+                      XmlReaderSettings settings = new XmlReaderSettings();
+                      using (XmlReader reader = XmlReader.Create(settingsFile, settings))
+                      {
+                          reader.ReadStartElement("DiarySettings");
+                          directory = reader.ReadElementString("Directory");
+                          reader.ReadEndElement();
+                      }
+                  }
+                  catch { }*/
+
+                if (Settings.Settings.SettingsHolder.DiaryDirectory == "")
+                {
+                    initFailureForm fform = new initFailureForm();
+                    fform.ShowDialog();
+                    if (fform.Result == initFailureForm.InitFailureResults.Cancel)
+                    {
+                        Application.Exit();    //todo lepeji ukoncit!!
+                        return;
+                    }
+                    else if (fform.Result == initFailureForm.InitFailureResults.Open)
+                    {
+                        OpenFileDialog dlg = new OpenFileDialog();
+                        dlg.InitialDirectory = Settings.Settings.SettingsHolder.DiaryDirectory; //todo
+                        dlg.Filter = "Deníky (*.pkl)|*.pkl";
+                        if (dlg.ShowDialog() == DialogResult.OK)
+                        {
+                            Settings.Settings.SettingsHolder.DiaryDirectory = dlg.FileName;
+                        }
+                    }
+                    else
+                    {
+                        tryCreateNewDiary();
+                    }
+                }
+                try
+                {
+                    m_mainDiary = Diary.Load(Settings.Settings.SettingsHolder.DiaryDirectory);
+                    m_mainDiary.SetPageSize(pageSize);
+                }
+                catch
+                {
+                    MessageBox.Show("Zadaný deník se nepodařilo otevřít.", "Chyba");
+                    Settings.Settings.SettingsHolder.DiaryDirectory = "";
+                }
+            } while (Settings.Settings.SettingsHolder.DiaryDirectory == "");
             m_mainDiary.SetPageSize(pageSize);
-            
+            EnsureRecordVisibility(m_mainDiary.RecordsCount - 1);
+
             UpdateCurrentPage();
         }
 
@@ -283,9 +305,7 @@ namespace Denik
 
         private void MainForm_Shown(object sender, EventArgs e)
         {
-            LoadSettings();
-            if (m_mainDiary!=null) // todo tohle by nemelo byt nutne pokud to predtim poradne ukoncim
-                EnsureRecordVisibility(m_mainDiary.RecordsCount - 1);
+
         }
 
         private void otevřítDeníkToolStripMenuItem_Click(object sender, EventArgs e)
@@ -306,6 +326,8 @@ namespace Denik
         private void btnIncome_Click(object sender, EventArgs e)
         {
             Record newRecord = new Record();    //todo kdo nastavi defaulty?
+            initRecord(ref newRecord);
+            
             newRecord.TypeID = m_mainDiary.TypeCounts[(int)Record.RecordType.Income]+1;
             incomeForm iform = new incomeForm(newRecord);
             iform.ShowDialog();
@@ -315,18 +337,15 @@ namespace Denik
                 EnsureRecordVisibility(m_mainDiary.RecordsCount - 1);
                 UpdateCurrentPage();
             }
-            if (iform.Result == inoutParentForm.InOutFormResult.PrintOnce)
-            {
-                Printer printer = new Printer();
-                printer.PrintIncome(m_mainDiary.GetRecord(m_mainDiary.RecordsCount - 1));
-            }
-            
+                        
         }
 
         private void btnExpense_Click(object sender, EventArgs e)
         {
             Record newRecord = new Record();    //todo kdo nastavi defaulty?
-            newRecord.TypeID = m_mainDiary.TypeCounts[(int)Record.RecordType.Expense]+1;
+            initRecord(ref newRecord);
+            
+            newRecord.TypeID = m_mainDiary.TypeCounts[(int)Record.RecordType.Expense] + 1;
 
             outcomeForm oform = new outcomeForm(newRecord);
             oform.ShowDialog();
@@ -336,39 +355,35 @@ namespace Denik
                 EnsureRecordVisibility(m_mainDiary.RecordsCount - 1);
                 UpdateCurrentPage();
             }
-            if (oform.Result == inoutParentForm.InOutFormResult.PrintOnce)
-            {
-                Printer printer = new Printer();
-                printer.printOutcomeOne(m_mainDiary.GetRecord(m_mainDiary.RecordsCount-1));
-            }
-            if (oform.Result == inoutParentForm.InOutFormResult.PrintTwice)
-            {
-                Printer printer = new Printer();
-                printer.printOutcomeTwiceTwoPage(m_mainDiary.GetRecord(m_mainDiary.RecordsCount - 1));
-            }
-
         }
 
         private void gridHistory_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             int curRecord = e.RowIndex+pageSize*m_currentPage;
-            Record recordToChange = m_mainDiary.GetPage(m_currentPage)[e.RowIndex];
+            editRecord(curRecord);
+            //Record[] recordsToChange = m_mainDiary.GetPage(m_currentPage);
+            //if (e.RowIndex < 0 || recordsToChange.Length <= e.RowIndex)
+            //    return;
+            //Record recordToChange = new Record(recordsToChange[e.RowIndex]);
+            //recordToChange.Date = "asdf";
+            //if (recordToChange == null)
+            //    return;
 
-            inoutParentForm form;
-            if (recordToChange.Type == Record.RecordType.Income)
-            {
-                form = new incomeForm(recordToChange);
-            }
-            else
-            {
-                form = new outcomeForm(recordToChange);
-            }
+            //inoutParentForm form;
+            //if (recordToChange.Type == Record.RecordType.Income)
+            //{
+            //    form = new incomeForm(recordToChange);
+            //}
+            //else
+            //{
+            //    form = new outcomeForm(recordToChange);
+            //}
 
-            form.ShowDialog();
-            if (form.DialogResult == DialogResult.OK)
-            {
-                m_mainDiary.ReplaceRecord(recordToChange, curRecord);
-            }
+            //form.ShowDialog();
+            //if (form.DialogResult == DialogResult.OK)
+            //{
+            //    m_mainDiary.ReplaceRecord(recordToChange, curRecord);
+            //}
         }
 
         private void printerSettings_Click(object sender, EventArgs e)
@@ -381,7 +396,7 @@ namespace Denik
         private void nastaveníDeníkuToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DiarySettings ds = new DiarySettings(m_mainDiary);
-            ds.ShowDialog();
+            ds.ShowDialog(this);
 
             m_mainDiary.UpdateRecords();
             UpdateCurrentPage();
@@ -407,7 +422,7 @@ namespace Denik
                 try
                 {
                     m_mainDiary.Directory = saveDialogDiary.FileName;
-                    Settings.Settings.DiaryDirectory = saveDialogDiary.FileName;
+                    Settings.Settings.SettingsHolder.DiaryDirectory = saveDialogDiary.FileName;
                 }
                 catch
                 {
@@ -444,7 +459,7 @@ namespace Denik
 
             try
             {
-                newDiary = new Diary(directory);
+                newDiary = Diary.Load(directory);
                 newDiary.SetPageSize(pageSize);
             }
             catch
@@ -452,7 +467,7 @@ namespace Denik
                 return null;
             }
 
-            Settings.Settings.DiaryDirectory = directory;
+            Settings.Settings.SettingsHolder.DiaryDirectory = directory;
             return newDiary;
         }
 
@@ -465,6 +480,150 @@ namespace Denik
                 EnsureRecordVisibility(m_mainDiary.RecordsCount - 1);
                 UpdateCurrentPage();
             }
+        }
+
+        private void gridHistory_CellMouseDown(object sender, DataGridViewCellMouseEventArgs e)
+        {
+
+        }
+
+        private void editRecord(object o, EventArgs es)
+        {
+            editRecord(contextMenuRowIndex);
+        }
+
+        private void editRecord(int recordID)
+        {
+            if (recordID < 0 || m_mainDiary.RecordsCount <= recordID)
+                return;
+
+            Record recordToChange = m_mainDiary.GetRecord(recordID);
+            if (recordToChange == null)
+                return;
+
+            inoutParentForm form;
+            if (recordToChange.Type == Record.RecordType.Income)
+            {
+                form = new incomeForm(recordToChange);
+            }
+            else
+            {
+                form = new outcomeForm(recordToChange);
+            }
+
+            form.ShowDialog();
+            if (form.Result == inoutParentForm.InOutFormResult.OK)
+            {
+                m_mainDiary.ReplaceRecord(recordID, recordToChange);
+            }
+
+            UpdateCurrentPage();
+        }
+
+        private void removeRecord(object o, EventArgs ea)
+        {
+            if (MessageBox.Show("Opravdu si přejete smayat vzbraný doklad?", "Pozor!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) ==
+                DialogResult.No)
+                return;
+            m_mainDiary.RemoveRecord(contextMenuRowIndex);
+            UpdateCurrentPage();
+        }
+
+        private void insertOutcomeForm(object o, EventArgs ea)
+        {
+            Record newRecord = new Record();
+            initRecord(ref  newRecord);
+
+            int curRecord = contextMenuRowIndex;
+            int curNumber = -1;
+            while (curRecord >= 0)
+            {
+                Record rec = m_mainDiary.GetRecord(curRecord);
+                if (rec.Type == Record.RecordType.Expense)
+                {
+                    curNumber = rec.TypeID;
+                    break;
+                }
+                curRecord--;
+            }
+            if (curNumber == -1)
+                curNumber = m_mainDiary.InitTypeCounts[(int)Record.RecordType.Expense] + 1;
+            newRecord.TypeID = curNumber+1;
+
+            outcomeForm oForm = new outcomeForm(newRecord);
+            oForm.ShowDialog();
+            if (oForm.Result == inoutParentForm.InOutFormResult.OK)
+                m_mainDiary.InsertRecord(contextMenuRowIndex, newRecord);
+
+            UpdateCurrentPage();
+        }
+
+        private void insertIncomeForm(object o, EventArgs ea)
+        {
+            Record newRecord = new Record();
+            initRecord(ref newRecord);
+
+            int curRecord = contextMenuRowIndex;
+            int curNumber = -1;
+            while (curRecord >= 0)
+            {
+                Record rec = m_mainDiary.GetRecord(curRecord);
+                if (rec.Type == Record.RecordType.Income)
+                {
+                    curNumber = rec.TypeID;
+                    break;
+                }
+                curRecord--;
+            }
+            if (curNumber == -1)
+                curNumber = m_mainDiary.InitTypeCounts[(int)Record.RecordType.Income]+1;
+            newRecord.TypeID = curNumber+1;
+
+            incomeForm iForm = new incomeForm(newRecord);
+            iForm.ShowDialog();
+            if (iForm.Result == inoutParentForm.InOutFormResult.OK)
+                m_mainDiary.InsertRecord(contextMenuRowIndex, newRecord);
+
+            UpdateCurrentPage();
+        }
+        
+        private void gridHistory_CellMouseUp(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                int curRecord = e.RowIndex + pageSize * m_currentPage;
+                Record[] recordsToChange = m_mainDiary.GetPage(m_currentPage);
+                if (e.RowIndex < 0 || recordsToChange.Length <= e.RowIndex)
+                    return;
+
+                gridHistory.ClearSelection();
+                gridHistory.Rows[e.RowIndex].Selected = true;
+                contextMenuRowIndex = curRecord;
+
+                DataGridView grid = sender as DataGridView;
+                ContextMenuStrip menu = new ContextMenuStrip();
+                
+                //menu.Items.Add("Task1", null, new EventHandler(Task1_Click));
+                menu.Items.Add("Upravit doklad", null, new EventHandler(editRecord));
+                menu.Items.Add("Vložit příjmový doklad", null, new EventHandler(insertIncomeForm));
+                menu.Items.Add("Vložit výdajový doklad", null, new EventHandler(insertOutcomeForm));
+                menu.Items.Add(new ToolStripSeparator());
+                menu.Items.Add("Odstranit doklad", null, new EventHandler(removeRecord));
+                Point pt = grid.PointToClient(Control.MousePosition);
+                menu.Show(gridHistory, pt.X, pt.Y);
+            }
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            LoadSettings();
+            if (m_mainDiary != null) // todo tohle by nemelo byt nutne pokud to predtim poradne ukoncim
+                EnsureRecordVisibility(m_mainDiary.RecordsCount - 1);
+        }
+
+        private void MainForm_Move(object sender, EventArgs e)
+        {
+            //Point loc = global::Denik.Properties.Settings.Default.MainWindowPosition;
         }
 
     }

@@ -256,18 +256,18 @@ namespace Denik
             StringFormat CenterAlText = new StringFormat();
             CenterAlText.Alignment = StringAlignment.Center;
             Font stampFont = new Font(FontFamily.GenericMonospace, 9, FontStyle.Regular);
-            
-            string  [] Stamp = Settings.Settings.Stamp;
+
+            string[] Stamp = Settings.Settings.SettingsHolder.Stamp;
             for (int i = 0; i < Math.Min(6, Stamp.Length); i++)
             {
                 g.DrawString(Stamp[i], stampFont, textBrush, new PointF(130, 11+((6-Math.Min(Stamp.Length,6))/(float)2+i)*11), CenterAlText);
             }
 
-            g.DrawString("číslo " + m_recToPrint.TypeID.ToString(), defaultTextFont, textBrush, new Point(260, 45 + yOffset), LeftAlText);
+            g.DrawString("číslo " + m_recToPrint.TypeID.ToString()+m_recToPrint.NoteToNumber, defaultTextFont, textBrush, new Point(260, 45 + yOffset), LeftAlText);
             g.DrawString("ze dne " + m_recToPrint.Date, defaultTextFont, textBrush, new Point(260, 60 + yOffset), LeftAlText);
 
             g.DrawString("Vyplaceno: " + m_recToPrint.CustName, defaultTextFont, textBrush, new Point(10, 88 + yOffset), LeftAlText);
-            g.DrawString("Částka: " + m_recToPrint.Cost.ToString() + ",00", new Font(FontFamily.GenericMonospace, 13, FontStyle.Bold), 
+            g.DrawString("Částka: " + m_recToPrint.Cost.ToString() + ",00 Kč", new Font(FontFamily.GenericMonospace, 13, FontStyle.Bold), 
                             textBrush, new Point(10, 105 + yOffset), LeftAlText);
             g.DrawString("Slovy: ==" + NumberConvertor.ConvertIntToString((int)m_recToPrint.Cost)+" Kč==",
                             defaultTextFont, textBrush, new Point(10, 125 + yOffset), LeftAlText);

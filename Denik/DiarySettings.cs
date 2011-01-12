@@ -18,9 +18,9 @@ namespace Denik
 
             ndIncomeCount.Value = diary.InitTypeCounts[(int)Record.RecordType.Income];
             ndOutcomeCount.Value = diary.InitTypeCounts[(int)Record.RecordType.Expense];
-            edInitRemain.Text = diary.InitRemain.ToString();
-            edRemainLimit.Text = diary.RemainLimit.ToString();
-            edWarnLimit.Text = diary.RemainWarning.ToString();
+            edInitRemain.Text = MoneyConvertor.MoneyToStr(diary.InitRemain);
+            edRemainLimit.Text = MoneyConvertor.MoneyToStr(diary.RemainLimit);
+            edWarnLimit.Text = MoneyConvertor.MoneyToStr(diary.RemainWarning);
             edDiaryHeader.Text = diary.Name;
 
             m_diary = diary;
@@ -33,13 +33,14 @@ namespace Denik
             m_diary.Name = edDiaryHeader.Text;
             try
             {
-                m_diary.InitRemain = int.Parse(edInitRemain.Text);
-                m_diary.RemainWarning = int.Parse(edWarnLimit.Text);
-                m_diary.RemainLimit = int.Parse(edRemainLimit.Text);
+                m_diary.InitRemain = (int)MoneyConvertor.StrToMoney(edInitRemain.Text, int.MaxValue);
+                m_diary.RemainWarning = (int)MoneyConvertor.StrToMoney(edWarnLimit.Text, int.MaxValue);
+                m_diary.RemainLimit = (int)MoneyConvertor.StrToMoney(edRemainLimit.Text, int.MaxValue);
             }
             catch
             {
-                MessageBox.Show("Wrong number");
+                MessageBox.Show("Nevyhovující částky.");
+                return;
             }
 
             DialogResult = DialogResult.OK;

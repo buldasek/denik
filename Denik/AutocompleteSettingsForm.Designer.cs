@@ -67,7 +67,7 @@
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.rbOutcome);
             this.groupBox1.Controls.Add(this.rbIncome);
-            this.groupBox1.Location = new System.Drawing.Point(264, 12);
+            this.groupBox1.Location = new System.Drawing.Point(247, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(81, 71);
             this.groupBox1.TabIndex = 0;
@@ -144,15 +144,18 @@
             // 
             // tabControls
             // 
+            this.tabControls.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControls.Controls.Add(this.tabNote);
             this.tabControls.Controls.Add(this.tabName);
             this.tabControls.Controls.Add(this.tabFor);
             this.tabControls.Controls.Add(this.tabRecipient);
             this.tabControls.HotTrack = true;
-            this.tabControls.Location = new System.Drawing.Point(4, 4);
+            this.tabControls.Location = new System.Drawing.Point(0, 0);
             this.tabControls.Name = "tabControls";
             this.tabControls.SelectedIndex = 0;
-            this.tabControls.Size = new System.Drawing.Size(254, 412);
+            this.tabControls.Size = new System.Drawing.Size(237, 479);
             this.tabControls.TabIndex = 6;
             // 
             // tabNote
@@ -161,7 +164,7 @@
             this.tabNote.Location = new System.Drawing.Point(4, 22);
             this.tabNote.Name = "tabNote";
             this.tabNote.Padding = new System.Windows.Forms.Padding(3);
-            this.tabNote.Size = new System.Drawing.Size(246, 386);
+            this.tabNote.Size = new System.Drawing.Size(229, 453);
             this.tabNote.TabIndex = 0;
             this.tabNote.Text = "Poznámka";
             this.tabNote.UseVisualStyleBackColor = true;
@@ -172,7 +175,7 @@
             this.tabName.Location = new System.Drawing.Point(4, 22);
             this.tabName.Name = "tabName";
             this.tabName.Padding = new System.Windows.Forms.Padding(3);
-            this.tabName.Size = new System.Drawing.Size(246, 386);
+            this.tabName.Size = new System.Drawing.Size(229, 453);
             this.tabName.TabIndex = 1;
             this.tabName.Text = "Jméno";
             this.tabName.UseVisualStyleBackColor = true;
@@ -182,7 +185,7 @@
             this.tabFor.Controls.Add(this.gridFor);
             this.tabFor.Location = new System.Drawing.Point(4, 22);
             this.tabFor.Name = "tabFor";
-            this.tabFor.Size = new System.Drawing.Size(246, 386);
+            this.tabFor.Size = new System.Drawing.Size(229, 453);
             this.tabFor.TabIndex = 2;
             this.tabFor.Text = "Účel";
             this.tabFor.UseVisualStyleBackColor = true;
@@ -192,7 +195,7 @@
             this.tabRecipient.Controls.Add(this.gridRecipient);
             this.tabRecipient.Location = new System.Drawing.Point(4, 22);
             this.tabRecipient.Name = "tabRecipient";
-            this.tabRecipient.Size = new System.Drawing.Size(246, 386);
+            this.tabRecipient.Size = new System.Drawing.Size(229, 453);
             this.tabRecipient.TabIndex = 3;
             this.tabRecipient.Text = "Příjemce";
             this.tabRecipient.UseVisualStyleBackColor = true;
@@ -200,7 +203,7 @@
             // btnDeleteSelected
             // 
             this.btnDeleteSelected.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDeleteSelected.Location = new System.Drawing.Point(264, 89);
+            this.btnDeleteSelected.Location = new System.Drawing.Point(247, 89);
             this.btnDeleteSelected.Name = "btnDeleteSelected";
             this.btnDeleteSelected.Size = new System.Drawing.Size(81, 39);
             this.btnDeleteSelected.TabIndex = 7;
@@ -211,7 +214,7 @@
             // btnFinish
             // 
             this.btnFinish.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnFinish.Location = new System.Drawing.Point(264, 385);
+            this.btnFinish.Location = new System.Drawing.Point(247, 447);
             this.btnFinish.Name = "btnFinish";
             this.btnFinish.Size = new System.Drawing.Size(81, 24);
             this.btnFinish.TabIndex = 8;
@@ -236,7 +239,7 @@
             this.gridNote.Name = "gridNote";
             this.gridNote.RowHeadersVisible = false;
             this.gridNote.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridNote.Size = new System.Drawing.Size(240, 380);
+            this.gridNote.Size = new System.Drawing.Size(223, 447);
             this.gridNote.TabIndex = 5;
             this.gridNote.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridNote_CellContentClick);
             // 
@@ -251,18 +254,20 @@
             this.gridName.AllowUserToDeleteRows = false;
             this.gridName.AllowUserToResizeColumns = false;
             this.gridName.AllowUserToResizeRows = false;
+            this.gridName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.gridName.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridName.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridName.ColumnHeadersVisible = false;
             this.gridName.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1});
-            this.gridName.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridName.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.gridName.Location = new System.Drawing.Point(3, 3);
+            this.gridName.Location = new System.Drawing.Point(0, 0);
             this.gridName.Name = "gridName";
             this.gridName.RowHeadersVisible = false;
-            this.gridName.Size = new System.Drawing.Size(240, 380);
+            this.gridName.Size = new System.Drawing.Size(229, 457);
             this.gridName.TabIndex = 6;
+            this.gridName.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridName_CellContentClick);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -285,8 +290,9 @@
             this.gridFor.Location = new System.Drawing.Point(0, 0);
             this.gridFor.Name = "gridFor";
             this.gridFor.RowHeadersVisible = false;
-            this.gridFor.Size = new System.Drawing.Size(246, 386);
+            this.gridFor.Size = new System.Drawing.Size(229, 453);
             this.gridFor.TabIndex = 6;
+            this.gridFor.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridFor_CellContentClick);
             // 
             // dataGridViewTextBoxColumn2
             // 
@@ -309,7 +315,7 @@
             this.gridRecipient.Location = new System.Drawing.Point(0, 0);
             this.gridRecipient.Name = "gridRecipient";
             this.gridRecipient.RowHeadersVisible = false;
-            this.gridRecipient.Size = new System.Drawing.Size(246, 386);
+            this.gridRecipient.Size = new System.Drawing.Size(229, 453);
             this.gridRecipient.TabIndex = 6;
             // 
             // dataGridViewTextBoxColumn3
@@ -321,7 +327,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(351, 417);
+            this.ClientSize = new System.Drawing.Size(334, 479);
             this.Controls.Add(this.btnFinish);
             this.Controls.Add(this.btnDeleteSelected);
             this.Controls.Add(this.btnRecipient);
@@ -331,6 +337,7 @@
             this.Controls.Add(this.btnName);
             this.Controls.Add(this.groupBox1);
             this.Name = "AutocompleteSettingsForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Editace doplňování";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

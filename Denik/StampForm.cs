@@ -13,7 +13,7 @@ namespace Denik
         public StampForm()
         {
             InitializeComponent();
-            edStamp.Lines = Settings.Settings.Stamp;
+            edStamp.Lines = Settings.Settings.SettingsHolder.Stamp;
         }
 
 
@@ -30,7 +30,7 @@ namespace Denik
                     return;
             }
 
-            Settings.Settings.Stamp = edStamp.Lines;
+            Settings.Settings.SettingsHolder.Stamp = edStamp.Lines;
 
             Close();
         }

@@ -34,9 +34,9 @@ namespace Denik
             dataRec.Note = edNote.Text;
             dataRec.Type = Record.RecordType.Income;
 
-            Settings.Settings.addHint("IncomeNote", dataRec.NoteToNumber);
-            Settings.Settings.addHint("IncomeName", dataRec.CustName);
-            Settings.Settings.addHint("IncomeFor", dataRec.Content);
+            //Settings.Settings.SettingsHolder.addHint("IncomeNote", dataRec.NoteToNumber);
+            Settings.Settings.SettingsHolder.addHint("IncomeName", dataRec.CustName);
+            Settings.Settings.SettingsHolder.addHint("IncomeFor", dataRec.Content);
 
             return true; 
         }
@@ -58,13 +58,13 @@ namespace Denik
             edNote.Text = dataRec.Note;
 
             string[] hintList;
-            hintList = Settings.Settings.getHints("IncomeNote");
+            /*hintList = Settings.Settings.SettingsHolder.getHints("IncomeNote");
             foreach (string item in hintList)
-                cbNoteToNumber.Items.Add(item);
-            hintList = Settings.Settings.getHints("IncomeName");
+                cbNoteToNumber.Items.Add(item);*/
+            hintList = Settings.Settings.SettingsHolder.getHints("IncomeName");
             foreach (string item in hintList)
                 cbFrom.Items.Add(item);
-            hintList = Settings.Settings.getHints("IncomeFor");
+            hintList = Settings.Settings.SettingsHolder.getHints("IncomeFor");
             foreach (string item in hintList)
                 cbContent.Items.Add(item);
 
@@ -90,6 +90,8 @@ namespace Denik
             if (finishOK() != true)
                 return;
 
+            Printer printer = new Printer();
+            printer.PrintIncome(dataRec);
             Result = InOutFormResult.PrintOnce;
             Close();
         }
