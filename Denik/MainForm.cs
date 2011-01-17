@@ -12,7 +12,7 @@ namespace Denik
     {
         private string settingsFile = "settings.xml";
 
-        private const int pageSize = 49;
+        private const int pageSize = 50;
 
         private Diary m_mainDiary;
         private int m_currentPage = 0; //TODO zapouzdrit
@@ -83,7 +83,7 @@ namespace Denik
 
         private void UpdateCurrentPage()
         {
-            if (m_currentPage > m_mainDiary.PageCount)
+            if (m_currentPage >= m_mainDiary.PageCount)
                 m_currentPage = m_mainDiary.PageCount - 1;
             lbPageId.Text = "Stránka " + (m_currentPage+1).ToString() + ".";
             Record[] records = m_mainDiary.GetPage(m_currentPage);
@@ -160,7 +160,7 @@ namespace Denik
                 if (dlg.ShowDialog() == DialogResult.OK)
                 {
                     newDiary = Diary.Load(dlg.FileName);
-                    newDiary.SetPageSize(pageSize);
+                    newDiary.PageSize=pageSize;
                 }
             }
             catch
@@ -259,7 +259,7 @@ namespace Denik
                 try
                 {
                     m_mainDiary = Diary.Load(Settings.Settings.SettingsHolder.DiaryDirectory);
-                    m_mainDiary.SetPageSize(pageSize);
+                    m_mainDiary.PageSize = pageSize;
                 }
                 catch
                 {
@@ -267,7 +267,8 @@ namespace Denik
                     Settings.Settings.SettingsHolder.DiaryDirectory = "";
                 }
             } while (Settings.Settings.SettingsHolder.DiaryDirectory == "");
-            m_mainDiary.SetPageSize(pageSize);
+
+            m_mainDiary.PageSize = pageSize;
             EnsureRecordVisibility(m_mainDiary.RecordsCount - 1);
 
             UpdateCurrentPage();
@@ -442,7 +443,7 @@ namespace Denik
         private Diary tryCreateNewDiary()
         {
             Diary newDiary = new Diary();
-            newDiary.SetPageSize(pageSize);
+            newDiary.PageSize = pageSize;
             string directory = "";
 
             DiarySettings fds = new DiarySettings(newDiary);
@@ -460,7 +461,7 @@ namespace Denik
             try
             {
                 newDiary = Diary.Load(directory);
-                newDiary.SetPageSize(pageSize);
+                newDiary.PageSize  = pageSize;
             }
             catch
             {
@@ -512,7 +513,7 @@ namespace Denik
             }
 
             form.ShowDialog();
-            if (form.Result == inoutParentForm.InOutFormResult.OK)
+            if (form.Result != inoutParentForm.InOutFormResult.Cancel)
             {
                 m_mainDiary.ReplaceRecord(recordID, recordToChange);
             }
@@ -522,7 +523,7 @@ namespace Denik
 
         private void removeRecord(object o, EventArgs ea)
         {
-            if (MessageBox.Show("Opravdu si přejete smayat vzbraný doklad?", "Pozor!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) ==
+            if (MessageBox.Show("Opravdu si přejete vymazat vzbraný doklad?", "Pozor!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) ==
                 DialogResult.No)
                 return;
             m_mainDiary.RemoveRecord(contextMenuRowIndex);
@@ -624,6 +625,12 @@ namespace Denik
         private void MainForm_Move(object sender, EventArgs e)
         {
             //Point loc = global::Denik.Properties.Settings.Default.MainWindowPosition;
+        }
+
+        private void tiskDeníkuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Printer printer = new Printer();
+            printer.PrintDiary(m_mainDiary); //todo pridat current page
         }
 
     }

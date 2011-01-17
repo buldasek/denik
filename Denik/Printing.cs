@@ -81,7 +81,11 @@ namespace Denik
     {
         //private static PrintDialog m_printDialog = new PrintDialog();
         private static PrintDocument m_printDoc = new PrintDocument();
+        private static PrintDocument m_diaryPrintDoc = new PrintDocument();
         private Record m_recToPrint;
+        private Diary m_diaryToPrint;
+        private int m_firstPage;
+        private int m_lastPage;
         private int curPage;
 
         public PrintDocument printDoc
@@ -91,29 +95,29 @@ namespace Denik
 
         public void printOutcomeOne(Record rcToPrint)
         {
-            m_printDoc.DocumentName = "Tisk deniku...";
+            m_printDoc.DocumentName = "Tisk dokladu...";
             m_printDoc.PrintPage += new PrintPageEventHandler(OnPrintOutcome);
-            m_printDoc.DefaultPageSettings.PaperSize = new System.Drawing.Printing.PaperSize("PaperA6", 583, 827);
+            m_printDoc.DefaultPageSettings.PaperSize = new System.Drawing.Printing.PaperSize("PaperA6", 413, 583);
             m_recToPrint = rcToPrint;
             m_printDoc.DefaultPageSettings.Landscape = false;
 
             try { m_printDoc.Print(); }
-            catch (Exception) { MessageBox.Show("ajajaj printing"); }
+            catch (Exception) { MessageBox.Show("Ajajaj tisk, se nepodařil"); }
 
             m_printDoc.PrintPage -= new PrintPageEventHandler(OnPrintOutcome);
         }
 
         public void printOutcomeTwiceTwoPage(Record rcToPrint)
         {
-            m_printDoc.DocumentName = "Tisk deniku...";
+            m_printDoc.DocumentName = "Tisk dokladu...";
             m_printDoc.PrintPage += new PrintPageEventHandler(OnPrintOutcomeTwiceTwo);
-            m_printDoc.DefaultPageSettings.PaperSize = new System.Drawing.Printing.PaperSize("PaperA6", 583, 827);
+            m_printDoc.DefaultPageSettings.PaperSize = new System.Drawing.Printing.PaperSize("PaperA6", 413, 583);
             m_recToPrint = rcToPrint;
             m_printDoc.DefaultPageSettings.Landscape = false;
             curPage = 0;
 
             try { m_printDoc.Print(); }
-            catch (Exception) { MessageBox.Show("ajajaj printing"); }
+            catch (Exception) { MessageBox.Show("Ajajaj tisk, se nepodařil"); }
 
             m_printDoc.PrintPage -= new PrintPageEventHandler(OnPrintOutcomeTwiceTwo);
         }
@@ -134,21 +138,175 @@ namespace Denik
 
         public void PrintIncome(Record rcToPrint)
         {
-            m_printDoc.DocumentName = "Tisk deniku...";
+            m_diaryPrintDoc.DocumentName = "Tisk dokladu...";
             m_printDoc.PrintPage += new PrintPageEventHandler(OnPrintIncome);
-            m_printDoc.DefaultPageSettings.PaperSize = new System.Drawing.Printing.PaperSize("PaperA6", 583, 827);
+            m_printDoc.DefaultPageSettings.PaperSize = new System.Drawing.Printing.PaperSize("PaperA6", 413, 583);
             m_recToPrint = rcToPrint;
             m_printDoc.DefaultPageSettings.Landscape = false;
             curPage = 0;
 
             try { m_printDoc.Print(); }
-            catch (Exception) { MessageBox.Show("ajajaj printing"); }
+            catch (Exception) { MessageBox.Show("Ajajaj tisk, se nepodařil"); }
 
             m_printDoc.PrintPage -= new PrintPageEventHandler(OnPrintIncome);
         }
 
-        //TODO ten offset asi moc nefunguje   
-        private void PrintOutcome(Graphics g, int yOffset, int width, int height)
+        public void PrintDiary(Diary diaryToPrint)
+        {
+            Debug.Assert(diaryToPrint != null, "No diary");
+            if (diaryToPrint==null)
+                return;
+            m_diaryToPrint = diaryToPrint;
+
+            m_diaryPrintDoc.DocumentName = "Tisk deniku...";
+            m_diaryPrintDoc.PrintPage += new PrintPageEventHandler(OnPrintDiaryPage);
+            m_diaryPrintDoc.DefaultPageSettings.PaperSize = new System.Drawing.Printing.PaperSize("PaperA4", 827, 1169);
+            m_diaryPrintDoc.DefaultPageSettings.Landscape = false;
+           
+            curPage = 0;
+
+            PrintDialog pd = new PrintDialog();
+            pd.Document = inoutParentForm.printer.printDoc;
+            pd.AllowSomePages = true;
+            pd.PrinterSettings.ToPage = pd.PrinterSettings.MaximumPage = m_diaryToPrint.PageCount;
+            pd.PrinterSettings.FromPage = pd.PrinterSettings.MinimumPage = 1;
+            
+            if (pd.ShowDialog()!=DialogResult.OK)
+                return;
+            m_firstPage = m_diaryPrintDoc.PrinterSettings.FromPage;
+            m_lastPage = m_diaryPrintDoc.PrinterSettings.ToPage;
+
+            try { m_diaryPrintDoc.Print(); }
+            catch (Exception) { MessageBox.Show("Ajajaj tisk, se nepodařil"); }
+
+            m_diaryPrintDoc.PrintPage -= new PrintPageEventHandler(OnPrintDiaryPage);
+
+
+        }
+
+         private void OnPrintDiaryPage(object sender, PrintPageEventArgs ppea)
+         {
+
+             ppea.Graphics.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+             ppea.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+
+             PrintDiaryPage(ppea.Graphics, m_firstPage);
+             if (++m_firstPage <= m_lastPage)
+             {
+                 ppea.HasMorePages = true;
+             }
+             else
+                 ppea.HasMorePages = false;
+
+         }
+
+         private void PrintDiaryPage(Graphics g, int page)
+         {
+             Debug.Assert(page<=m_diaryToPrint.PageCount);
+             if (page>m_diaryToPrint.PageCount)
+                 return;
+
+             Record[] records = m_diaryToPrint.GetPage(page);
+             Debug.Assert(records.Length > 0);
+             if (records.Length <= 0)
+                 return;
+
+             g.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+             //g.TextRenderingHin
+             TextBox tb = new TextBox();
+             Font defaultTextFont = new Font("Times New Roman",12, FontStyle.Bold);
+             Font mainTextFont = new Font("Times New Roman", 18, FontStyle.Bold);
+             //mainTextFont.g
+             Brush textBrush = new SolidBrush(Color.Black);
+             
+             StringFormat RightAlText = new StringFormat();
+             RightAlText.Alignment = StringAlignment.Far;
+             StringFormat CenterAlText = new StringFormat();
+             CenterAlText.Alignment = StringAlignment.Center;
+             RightAlText.LineAlignment = CenterAlText.LineAlignment = StringAlignment.Center;
+          
+             //g.TextRenderingHint 
+             g.ResetTransform();
+             float width = (float)827;
+             float height = (float)1169;
+             int[] colBorders = { 32, 38, 53, 55, 236, 86, 86, 86, 108};
+             string[] colDescriptions = { "Poř.\nčíslo", "Datum", "Číslo\ndokladu", "Obsah zápisu", "Příjmy", 
+                                    "Výdaje", "Zůstatek", "Poznámka"};
+
+             Rectangle tableRect = new Rectangle(32, 80, 750, 1044);
+             int tableHeader = 40;
+             //g.ScaleTransform(g.VisibleClipBounds.Width/width , g.VisibleClipBounds.Height/height);
+
+             g.DrawString(m_diaryToPrint.Name, mainTextFont, textBrush, width / 2, 35, CenterAlText);
+             g.DrawString("Od: " + records[0].Date + "   Do: " + records[records.Length - 1].Date,
+                            defaultTextFont, textBrush, tableRect.Right-10, 30, RightAlText);
+             g.DrawString("Stránka: " + (page+1).ToString()+"  ",
+                                         defaultTextFont, textBrush, tableRect.Right-20, 53, RightAlText);
+
+
+             Brush borderBrush = new SolidBrush(Color.Black);
+             Pen borderPen = new Pen(borderBrush, 3);
+             Pen normalPen = new Pen(borderBrush, 1);
+
+             g.DrawRectangle(borderPen, tableRect);
+             g.DrawLine(borderPen, tableRect.Left, tableRect.Top + tableHeader, tableRect.Right, tableRect.Top+tableHeader);
+
+             float rowHeight = (tableRect.Height-tableHeader)/(float)m_diaryToPrint.PageSize;
+             int tableTop = tableHeader + tableRect.Top;
+             for (int row = 1; row <= m_diaryToPrint.PageSize; row++)
+             {
+                 g.DrawLine(normalPen, tableRect.Left, row * rowHeight + tableTop, tableRect.Right,
+                            row * rowHeight + tableTop);
+             }
+             int sumCol = tableRect.Left;
+
+             Font tableHeaderFont = new Font("Times New Roman", 10, FontStyle.Bold);
+             
+             for (int colId = 1; colId < colBorders.Length; colId++)
+             {
+                 if (colId == colBorders.Length - 1)
+                    sumCol = tableRect.Right;
+                 else
+                    sumCol += colBorders[colId];
+                 g.DrawLine(normalPen, sumCol, tableRect.Top, sumCol, tableRect.Bottom);
+                 g.DrawString(colDescriptions[colId - 1], tableHeaderFont, borderBrush,
+                            new RectangleF(sumCol - colBorders[colId], tableRect.Top, colBorders[colId], tableHeader),
+                            CenterAlText);
+             }
+
+             Font tableBodyFont = new Font("Courier New", 9, FontStyle.Regular);
+
+             for (int row = 0; row < records.Length; row++)
+             {
+                 Record record = records[row];
+                 string costIn = (record.Type==Record.RecordType.Income)?(MoneyConvertor.MoneyToStr(record.Cost) + ",-"):("");
+                 string costOut = (record.Type == Record.RecordType.Expense) ? (MoneyConvertor.MoneyToStr(record.Cost) + ",-") : ("");
+                 string remaining = MoneyConvertor.MoneyToStr(record.Remaining) + ",-";
+                 string[] rowVals = { record.OverallID.ToString(), record.Date, record.TypeID.ToString(),
+                                       record.CustName, costIn, costOut, remaining, record.Note};
+                 StringFormat[] colFormats = { RightAlText, RightAlText, RightAlText, CenterAlText, RightAlText, RightAlText, RightAlText, RightAlText, RightAlText };
+
+                 sumCol = tableRect.Left;
+                 float rowTop = tableRect.Top + tableHeader + row * rowHeight;
+                 for (int colId = 1; colId < colBorders.Length; colId++)
+                 {
+                     if (colId == colBorders.Length - 1)
+                         sumCol = tableRect.Right;
+                     else
+                         sumCol += colBorders[colId];
+                     g.DrawLine(normalPen, sumCol, tableRect.Top, sumCol, tableRect.Bottom);
+                     g.DrawString(rowVals[colId - 1], tableBodyFont, borderBrush,
+                                new RectangleF(sumCol - colBorders[colId], rowTop+2, colBorders[colId]-2, rowHeight),
+                                colFormats[colId-1]);
+                 }
+             }
+
+             //defaultTextFont.Style = FontStyle.Regular;
+
+         }
+
+         //TODO ten offset asi moc nefunguje   
+         private void PrintOutcome(Graphics g, int yOffset, int width, int height)
         {
             g.ResetTransform();
 
@@ -164,14 +322,14 @@ namespace Denik
             DrawFormat.LineAlignment = StringAlignment.Center;
 
 
-            Font defaultTextFont = new Font(FontFamily.GenericMonospace, 10, FontStyle.Bold);
+            Font defaultTextFont = new Font("Courier New", 10, FontStyle.Bold);
             Brush textBrush = new SolidBrush(Color.Black);
             StringFormat LeftAlText = new StringFormat();
             LeftAlText.Alignment = StringAlignment.Near;
             StringFormat CenterAlText = new StringFormat();
             CenterAlText.Alignment = StringAlignment.Center;
 
-            g.DrawString("Výdajový pokladní doklad", new Font(FontFamily.GenericSerif, 13, FontStyle.Bold), textBrush, new Point(260, 15 + yOffset), LeftAlText);
+            g.DrawString("Výdajový pokladní doklad", new Font("Courier New", 11, FontStyle.Bold), textBrush, new Point(260, 15 + yOffset), LeftAlText);
             PrintCommon(g, yOffset, false);            
 
             g.DrawString("Podpis pokladníka", defaultTextFont, textBrush, new Point(85, 197 + yOffset), CenterAlText);
@@ -202,14 +360,14 @@ namespace Denik
             DrawFormat.LineAlignment = StringAlignment.Center;
 
 
-            Font defaultTextFont = new Font(FontFamily.GenericMonospace, 10, FontStyle.Bold);
+            Font defaultTextFont = new Font("Courier New", 10, FontStyle.Bold);
             Brush textBrush = new SolidBrush(Color.Black);
             StringFormat LeftAlText = new StringFormat();
             LeftAlText.Alignment = StringAlignment.Near;
             StringFormat CenterAlText = new StringFormat();
             CenterAlText.Alignment = StringAlignment.Center;
 
-            g.DrawString("Příjmový pokladní doklad", new Font(FontFamily.GenericSerif, 13, FontStyle.Bold),
+            g.DrawString("Příjmový pokladní doklad", new Font("Courier New", 11, FontStyle.Bold),
                         textBrush, new Point(260, 15 + yOffset), LeftAlText);
             PrintCommon(g, yOffset, false);
             
@@ -223,24 +381,26 @@ namespace Denik
             g.ResetTransform();
             im = new Bitmap("Stvrzenka.bmp");//Prijmovydokladstabulkou.bmp Stvrzenka.bmp
             g.DrawImage(im, yOffset, 0, width + yOffset, height);
+            
             g.RotateTransform(90);
 
             g.ScaleTransform(height / (float)im.Height, width / (float)im.Width);
             g.TranslateTransform(0, -g.VisibleClipBounds.Height);
+
             
             StringFormat DrawFormat = new StringFormat();
             DrawFormat.Alignment = StringAlignment.Center;
             DrawFormat.LineAlignment = StringAlignment.Center;
 
 
-            Font defaultTextFont = new Font(FontFamily.GenericMonospace, 10, FontStyle.Bold);
+            Font defaultTextFont = new Font("Courier New", 10, FontStyle.Bold);
             Brush textBrush = new SolidBrush(Color.Black);
             StringFormat LeftAlText = new StringFormat();
             LeftAlText.Alignment = StringAlignment.Near;
             StringFormat CenterAlText = new StringFormat();
             CenterAlText.Alignment = StringAlignment.Center;
 
-            g.DrawString("Stvrzenka", new Font(FontFamily.GenericSerif, 13, FontStyle.Bold), textBrush,
+            g.DrawString("Stvrzenka", new Font("Courier New", 13, FontStyle.Bold), textBrush,
                         new Point(260, 15+ yOffset), LeftAlText);
             PrintCommon(g, yOffset, true);
 
@@ -249,13 +409,13 @@ namespace Denik
 
         private void PrintCommon(Graphics g, int yOffset, bool onlyUpper)
         {
-            Font defaultTextFont = new Font(FontFamily.GenericMonospace, 10, FontStyle.Bold);
+            Font defaultTextFont = new Font("Courier New", 9, FontStyle.Bold);
             Brush textBrush = new SolidBrush(Color.Black);
             StringFormat LeftAlText = new StringFormat();
             LeftAlText.Alignment = StringAlignment.Near;
             StringFormat CenterAlText = new StringFormat();
             CenterAlText.Alignment = StringAlignment.Center;
-            Font stampFont = new Font(FontFamily.GenericMonospace, 9, FontStyle.Regular);
+            Font stampFont = new Font("Courier New", 8, FontStyle.Bold);
 
             string[] Stamp = Settings.Settings.SettingsHolder.Stamp;
             for (int i = 0; i < Math.Min(6, Stamp.Length); i++)
@@ -267,10 +427,11 @@ namespace Denik
             g.DrawString("ze dne " + m_recToPrint.Date, defaultTextFont, textBrush, new Point(260, 60 + yOffset), LeftAlText);
 
             g.DrawString("Vyplaceno: " + m_recToPrint.CustName, defaultTextFont, textBrush, new Point(10, 88 + yOffset), LeftAlText);
-            g.DrawString("Částka: " + m_recToPrint.Cost.ToString() + ",00 Kč", new Font(FontFamily.GenericMonospace, 13, FontStyle.Bold), 
+            g.DrawString("Částka: " + m_recToPrint.Cost.ToString() + ",00 Kč", new Font("Courier New", 11, FontStyle.Bold), 
                             textBrush, new Point(10, 105 + yOffset), LeftAlText);
-            g.DrawString("Slovy: ==" + NumberConvertor.ConvertIntToString((int)m_recToPrint.Cost)+" Kč==",
-                            defaultTextFont, textBrush, new Point(10, 125 + yOffset), LeftAlText);
+
+            g.DrawString("Slovy: ", defaultTextFont, textBrush, new Point(10, 125 + yOffset), LeftAlText);
+            g.DrawString("=" + NumberConvertor.ConvertIntToString((int)m_recToPrint.Cost) + " Kč=", defaultTextFont, textBrush, new Point(75, 125 + yOffset), LeftAlText);
             g.DrawString("Účel platby: " + m_recToPrint.Content, defaultTextFont, textBrush, new Point(10, 142 + yOffset), LeftAlText);
 
             CenterAlText.LineAlignment = StringAlignment.Center;

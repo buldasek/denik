@@ -17,6 +17,8 @@ namespace Denik
             PrintTwice = 3,
         };
 
+        protected static int MaxValue = 1000000;
+
         public InOutFormResult Result { set; get; }
 
         private Record m_record;

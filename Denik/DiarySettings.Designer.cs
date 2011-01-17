@@ -126,6 +126,7 @@
             // edDiaryHeader
             // 
             this.edDiaryHeader.Location = new System.Drawing.Point(14, 158);
+            this.edDiaryHeader.MaxLength = 30;
             this.edDiaryHeader.Name = "edDiaryHeader";
             this.edDiaryHeader.Size = new System.Drawing.Size(320, 20);
             this.edDiaryHeader.TabIndex = 5;
@@ -158,7 +159,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(158, 184);
+            this.button1.Location = new System.Drawing.Point(150, 184);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(85, 24);
             this.button1.TabIndex = 6;
@@ -168,7 +169,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(249, 184);
+            this.button2.Location = new System.Drawing.Point(241, 184);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(85, 24);
             this.button2.TabIndex = 7;
@@ -195,6 +196,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "DiarySettings";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Nastavení deníku";

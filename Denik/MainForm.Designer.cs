@@ -131,6 +131,7 @@
             // 
             this.tiskDeníkuToolStripMenuItem.Name = "tiskDeníkuToolStripMenuItem";
             resources.ApplyResources(this.tiskDeníkuToolStripMenuItem, "tiskDeníkuToolStripMenuItem");
+            this.tiskDeníkuToolStripMenuItem.Click += new System.EventHandler(this.tiskDeníkuToolStripMenuItem_Click);
             // 
             // toolStripMenuItem2
             // 

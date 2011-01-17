@@ -4,6 +4,7 @@ using System.Text;
 using System.IO;
 using System.Diagnostics;
 using System.Xml.Serialization;
+using System.Windows.Forms;
 
 namespace Denik
 {
@@ -141,8 +142,6 @@ namespace Denik
 
         private List<Record> m_records = new List<Record>();
 
-        private int m_pageSize = 20;
-
         public Diary()
         {
             for (int i = 0; i < Record.TypeCount; i++)
@@ -215,6 +214,11 @@ namespace Denik
             AppendRecordNoUpdate(newRecord);
             UpdateInfoFromRecord(newRecord);
             UpdateRecords();
+            if (Records[Records.Length - 1].Remaining > RemainLimit)
+                MessageBox.Show("Překročen limit pokladny!", "Upozornění", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            else if (Records[Records.Length - 1].Remaining > RemainWarning)
+                MessageBox.Show("Blížíte se k limitu!", "Upozornění", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
 
             Store(Directory);
             /*
@@ -316,28 +320,28 @@ namespace Denik
 
         public Record[] GetPage(int pageID)
         {
-            Record[] result = new Record[m_pageSize];
-            if (pageID * m_pageSize > m_records.Count || pageID < 0)
+            List<Record> result = new List<Record>();
+            if (pageID * PageSize > m_records.Count || pageID < 0)
                 throw new Exception();
 
-            for (int i = 0; i < m_pageSize; i++)
+            for (int i = 0; i < PageSize; i++)
             {
-                if (i + pageID * m_pageSize >= m_records.Count)
+                if (i + pageID * PageSize >= m_records.Count)
                     break;
-                result[i] = m_records[pageID * m_pageSize + i];
+                result.Add(m_records[pageID * PageSize + i]);
             }
 
-            return result;
+            return result.ToArray();
         }
 
-        public void SetPageSize(int pageSize)
+        public int PageSize
         {
-            m_pageSize = pageSize;
+            set ; get;
         }
 
         public int PageCount
         {
-            get { return (Math.Max(m_records.Count - 1, 0)) / m_pageSize + 1; }
+            get { return (Math.Max(m_records.Count - 1, 0)) / PageSize + 1; }
         }
 
         public override String ToString()

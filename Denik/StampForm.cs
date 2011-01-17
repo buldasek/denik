@@ -26,8 +26,8 @@ namespace Denik
         {
             if (edStamp.Lines.Length > 6)
             {
-                if (MessageBox.Show("Razítko může mít maximálně 6 řádek.", "Pozor", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.Cancel)
-                    return;
+                MessageBox.Show("Razítko může mít maximálně 6 řádek.", "Pozor", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
             }
 
             Settings.Settings.SettingsHolder.Stamp = edStamp.Lines;

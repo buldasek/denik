@@ -20,13 +20,13 @@ namespace Denik
             try
             {
                 dataRec.Cost = Int64.Parse(edMoney.Text);        //todo kontrola konverze
-                if (dataRec.Cost < 0)
+                if (dataRec.Cost < 0 || dataRec.Cost >= MaxValue)
                     throw new Exception();
             }
             catch
             {
-                MessageBox.Show("Nesprávná částka.", "Chyba", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                
+                MessageBox.Show("Částka musí být celé číslo menší než "+(MaxValue-1).ToString()+".", "Chyba", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
                 return false;
             }
             dataRec.CustName = cbFrom.Text;

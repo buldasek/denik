@@ -70,7 +70,7 @@ namespace Denik
                     tabControls.TabPages.Add(tabRecipient);
             }
 
-            setGridContent(gridNote, "IncomeNote", "OutcomeNote");
+            //setGridContent(gridNote, "IncomeNote", "OutcomeNote");
             setGridContent(gridName, "IncomeName", "OutcomeName");
             setGridContent(gridFor, "IncomeFor", "OutcomeFor");
             setGridContent(gridRecipient, "OutcomeRecipient", "OutcomeRecipient");
@@ -108,9 +108,11 @@ namespace Denik
 
         private void btnDeleteSelected_Click(object sender, EventArgs e)
         {
-            if (tabControls.SelectedTab == tabNote)
+            /*if (tabControls.SelectedTab == tabNote)
                 deleteSelected(gridNote, "IncomeNote", "OutcomeNote");
-            else if (tabControls.SelectedTab == tabName)
+            else 
+             * */
+            if (tabControls.SelectedTab == tabName)
                 deleteSelected(gridName, "IncomeName", "OutcomeName");
             else if (tabControls.SelectedTab == tabFor)
                 deleteSelected(gridFor, "IncomeFor", "OutcomeFor");

@@ -35,16 +35,20 @@
             // 
             // edStamp
             // 
+            this.edStamp.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.edStamp.Location = new System.Drawing.Point(2, 3);
             this.edStamp.Multiline = true;
             this.edStamp.Name = "edStamp";
-            this.edStamp.Size = new System.Drawing.Size(276, 86);
+            this.edStamp.Size = new System.Drawing.Size(281, 85);
             this.edStamp.TabIndex = 0;
             this.edStamp.Text = "a\r\na\r\na\r\na\r\na\r\na";
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(150, 95);
+            this.btnOK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnOK.Location = new System.Drawing.Point(155, 94);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(55, 23);
             this.btnOK.TabIndex = 1;
@@ -54,7 +58,8 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(214, 95);
+            this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCancel.Location = new System.Drawing.Point(219, 94);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(55, 23);
             this.btnCancel.TabIndex = 2;
@@ -66,10 +71,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(281, 121);
+            this.ClientSize = new System.Drawing.Size(286, 120);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.edStamp);
+            this.MinimumSize = new System.Drawing.Size(302, 158);
             this.Name = "StampForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Nastavení razítka";
