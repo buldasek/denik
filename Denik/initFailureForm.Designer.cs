@@ -85,7 +85,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "initFailureForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Pokladna v2.0";
+            this.Text = "Pozor!";
             this.ResumeLayout(false);
             this.PerformLayout();
 

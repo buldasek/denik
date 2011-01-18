@@ -169,8 +169,8 @@ namespace Denik
         public int RemainLimit { set { m_remainLimit = value; } get { return m_remainLimit; } }
         public int InitRemain { set { m_initRemain = value; } get { return m_initRemain; } }
 
-        public int[] TypeCounts { get { return m_typeCounts; } }
-        public int[] InitTypeCounts { get { return m_typeInitCounts; } }
+        public int[] TypeCounts { get { return m_typeCounts; } set { m_typeCounts = (int[])value.Clone(); } }
+        public int[] InitTypeCounts { get { return m_typeInitCounts; } set { m_typeInitCounts = (int[])value.Clone(); } }
         public string NoteToNumber { set; get; }
 
         //just for serialization, should not be used directly, does not ensure update
@@ -459,8 +459,13 @@ namespace Denik
 
         }
 
+        public void StoreChanges()
+        {
+            Store(Directory);
+        }
+
         //throws exception
-        public void Store(String directory)
+        private void Store(String directory)
         {
             using(StreamWriter wr = new StreamWriter(directory, false, Encoding.GetEncoding(1250)))
             {

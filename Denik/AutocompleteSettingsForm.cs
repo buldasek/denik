@@ -22,8 +22,6 @@ namespace Denik
             //setGridContent("IncomeNote", "OutcomeNote");
         }
 
-        //{"IncomeNote", "IncomeName", "IncomeFor", "OutcomeNote",
-        //                                                "OutcomeName", "OutcomeFor", "OutcomeRecipient"};
         private void setGridContent(DataGridView grid, string incomeVariant, string outcomeVariant)
         {
             grid.Rows.Clear();
@@ -119,7 +117,7 @@ namespace Denik
             else if (tabControls.SelectedTab == tabRecipient)
                 deleteSelected(gridRecipient, "OutcomeRecipient", "OutcomeRecipient");
             else
-                Debug.Assert(true);
+                Debug.Assert(false);
         }
 
         private void btnFinish_Click(object sender, EventArgs e)

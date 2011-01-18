@@ -65,7 +65,7 @@
             "ddddf"});
             this.cbNoteToNumber.Location = new System.Drawing.Point(221, 41);
             this.cbNoteToNumber.Name = "cbNoteToNumber";
-            this.cbNoteToNumber.Size = new System.Drawing.Size(128, 21);
+            this.cbNoteToNumber.Size = new System.Drawing.Size(128, 20);
             this.cbNoteToNumber.TabIndex = 9;
             // 
             // cbOther
@@ -110,6 +110,7 @@
             // edDate
             // 
             this.edDate.Location = new System.Drawing.Point(116, 70);
+            this.edDate.MaxLength = 6;
             this.edDate.Name = "edDate";
             this.edDate.Size = new System.Drawing.Size(233, 20);
             this.edDate.TabIndex = 10;
@@ -155,7 +156,7 @@
             this.cbContent.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbContent.FormattingEnabled = true;
             this.cbContent.Location = new System.Drawing.Point(17, 203);
-            this.cbContent.MaxLength = 45;
+            this.cbContent.MaxLength = 32;
             this.cbContent.Name = "cbContent";
             this.cbContent.Size = new System.Drawing.Size(332, 21);
             this.cbContent.TabIndex = 2;
@@ -258,7 +259,7 @@
             this.Controls.Add(this.lbHeader);
             this.Name = "outcomeForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "outForm";
+            this.Text = "Pokladní deník 2.0";
             this.ResumeLayout(false);
             this.PerformLayout();
 

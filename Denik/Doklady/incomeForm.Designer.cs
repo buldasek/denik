@@ -114,7 +114,7 @@
             this.cbContent.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbContent.FormattingEnabled = true;
             this.cbContent.Location = new System.Drawing.Point(16, 210);
-            this.cbContent.MaxLength = 45;
+            this.cbContent.MaxLength = 32;
             this.cbContent.Name = "cbContent";
             this.cbContent.Size = new System.Drawing.Size(332, 21);
             this.cbContent.TabIndex = 2;
@@ -157,6 +157,7 @@
             // edDate
             // 
             this.edDate.Location = new System.Drawing.Point(115, 77);
+            this.edDate.MaxLength = 6;
             this.edDate.Name = "edDate";
             this.edDate.Size = new System.Drawing.Size(233, 20);
             this.edDate.TabIndex = 8;
@@ -165,7 +166,7 @@
             // 
             this.cbNoteToNumber.Location = new System.Drawing.Point(220, 48);
             this.cbNoteToNumber.Name = "cbNoteToNumber";
-            this.cbNoteToNumber.Size = new System.Drawing.Size(128, 21);
+            this.cbNoteToNumber.Size = new System.Drawing.Size(128, 20);
             this.cbNoteToNumber.TabIndex = 7;
             // 
             // btnClose
@@ -221,7 +222,7 @@
             this.Controls.Add(this.lbHeader);
             this.Name = "incomeForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = " ";
+            this.Text = " Pokladní deník 2.0";
             this.ResumeLayout(false);
             this.PerformLayout();
 

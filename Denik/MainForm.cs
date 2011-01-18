@@ -564,7 +564,7 @@ namespace Denik
             Record newRecord = new Record();
             initRecord(ref newRecord);
 
-            int curRecord = contextMenuRowIndex;
+            int curRecord = contextMenuRowIndex-1;
             int curNumber = -1;
             while (curRecord >= 0)
             {
@@ -630,7 +630,7 @@ namespace Denik
         private void tiskDeníkuToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Printer printer = new Printer();
-            printer.PrintDiary(m_mainDiary); //todo pridat current page
+            printer.PrintDiary(m_mainDiary, m_currentPage); //todo pridat current page
         }
 
     }

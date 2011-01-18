@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SettingsImpl xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <hintHolders>
+    <HintsHolder>
+      <hintItems>
+        <HintItem>
+          <m_hint>jenic</m_hint>
+          <m_counter>0</m_counter>
+        </HintItem>
+      </hintItems>
+      <Name>IncomeName</Name>
+    </HintsHolder>
+    <HintsHolder>
+      <hintItems>
+        <HintItem>
+          <m_hint>aaa</m_hint>
+          <m_counter>0</m_counter>
+        </HintItem>
+      </hintItems>
+      <Name>IncomeFor</Name>
+    </HintsHolder>
+    <HintsHolder>
+      <hintItems>
+        <HintItem>
+          <m_hint>jendulovi</m_hint>
+          <m_counter>0</m_counter>
+        </HintItem>
+      </hintItems>
+      <Name>OutcomeName</Name>
+    </HintsHolder>
+    <HintsHolder>
+      <hintItems>
+        <HintItem>
+          <m_hint>chacha</m_hint>
+          <m_counter>0</m_counter>
+        </HintItem>
+      </hintItems>
+      <Name>OutcomeFor</Name>
+    </HintsHolder>
+    <HintsHolder>
+      <hintItems>
+        <HintItem>
+          <m_hint>asdf</m_hint>
+          <m_counter>0</m_counter>
+        </HintItem>
+      </hintItems>
+      <Name>OutcomeRecipient</Name>
+    </HintsHolder>
+  </hintHolders>
+  <Stamp>
+    <string>call me so </string>
+    <string>fantastic</string>
+    <string> I have to </string>
+    <string>be rainbow high</string>
+    <string>you are not </string>
+    <string>decorating</string>
+  </Stamp>
+  <MainWindowPos>
+    <Location>
+      <X>393</X>
+      <Y>391</Y>
+    </Location>
+    <Size>
+      <Width>908</Width>
+      <Height>609</Height>
+    </Size>
+    <X>393</X>
+    <Y>391</Y>
+    <Width>908</Width>
+    <Height>609</Height>
+  </MainWindowPos>
+  <DiaryDirectory>D:\ProjektyZS\denik\data\tmp.pkl</DiaryDirectory>
+</SettingsImpl>

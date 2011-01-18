@@ -201,7 +201,7 @@
             this.tabName.Location = new System.Drawing.Point(4, 22);
             this.tabName.Name = "tabName";
             this.tabName.Padding = new System.Windows.Forms.Padding(3);
-            this.tabName.Size = new System.Drawing.Size(229, 453);
+            this.tabName.Size = new System.Drawing.Size(185, 254);
             this.tabName.TabIndex = 1;
             this.tabName.Text = "Jméno";
             this.tabName.UseVisualStyleBackColor = true;
@@ -224,6 +224,7 @@
             this.gridName.Location = new System.Drawing.Point(0, 0);
             this.gridName.Name = "gridName";
             this.gridName.RowHeadersVisible = false;
+            this.gridName.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridName.Size = new System.Drawing.Size(229, 453);
             this.gridName.TabIndex = 6;
             this.gridName.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridName_CellContentClick);
@@ -238,7 +239,7 @@
             this.tabFor.Controls.Add(this.gridFor);
             this.tabFor.Location = new System.Drawing.Point(4, 22);
             this.tabFor.Name = "tabFor";
-            this.tabFor.Size = new System.Drawing.Size(229, 453);
+            this.tabFor.Size = new System.Drawing.Size(185, 254);
             this.tabFor.TabIndex = 2;
             this.tabFor.Text = "Účel";
             this.tabFor.UseVisualStyleBackColor = true;
@@ -261,6 +262,7 @@
             this.gridFor.Location = new System.Drawing.Point(0, 0);
             this.gridFor.Name = "gridFor";
             this.gridFor.RowHeadersVisible = false;
+            this.gridFor.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridFor.Size = new System.Drawing.Size(229, 453);
             this.gridFor.TabIndex = 6;
             this.gridFor.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridFor_CellContentClick);
@@ -275,7 +277,7 @@
             this.tabRecipient.Controls.Add(this.gridRecipient);
             this.tabRecipient.Location = new System.Drawing.Point(4, 22);
             this.tabRecipient.Name = "tabRecipient";
-            this.tabRecipient.Size = new System.Drawing.Size(229, 453);
+            this.tabRecipient.Size = new System.Drawing.Size(185, 254);
             this.tabRecipient.TabIndex = 3;
             this.tabRecipient.Text = "Příjemce";
             this.tabRecipient.UseVisualStyleBackColor = true;
@@ -296,7 +298,8 @@
             this.gridRecipient.Location = new System.Drawing.Point(0, 0);
             this.gridRecipient.Name = "gridRecipient";
             this.gridRecipient.RowHeadersVisible = false;
-            this.gridRecipient.Size = new System.Drawing.Size(229, 453);
+            this.gridRecipient.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.gridRecipient.Size = new System.Drawing.Size(185, 254);
             this.gridRecipient.TabIndex = 6;
             // 
             // dataGridViewTextBoxColumn3

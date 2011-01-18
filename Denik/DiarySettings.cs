@@ -28,20 +28,30 @@ namespace Denik
 
         private void button1_Click(object sender, EventArgs e)
         {
-            m_diary.InitTypeCounts[(int)Record.RecordType.Income] = decimal.ToInt32(ndIncomeCount.Value);
-            m_diary.InitTypeCounts[(int)Record.RecordType.Expense] = decimal.ToInt32(ndOutcomeCount.Value);
-            m_diary.Name = edDiaryHeader.Text;
+            int initTypeCountsIn = decimal.ToInt32(ndIncomeCount.Value);
+            int initTypeCountsOut = decimal.ToInt32(ndOutcomeCount.Value);
+            int initRemain, remainWarning, remainLimit;
+            
             try
             {
-                m_diary.InitRemain = (int)MoneyConvertor.StrToMoney(edInitRemain.Text, int.MaxValue);
-                m_diary.RemainWarning = (int)MoneyConvertor.StrToMoney(edWarnLimit.Text, int.MaxValue);
-                m_diary.RemainLimit = (int)MoneyConvertor.StrToMoney(edRemainLimit.Text, int.MaxValue);
+                initRemain = (int)MoneyConvertor.StrToMoney(edInitRemain.Text, int.MaxValue);
+                remainWarning = (int)MoneyConvertor.StrToMoney(edWarnLimit.Text, int.MaxValue);
+                remainLimit = (int)MoneyConvertor.StrToMoney(edRemainLimit.Text, int.MaxValue);
             }
             catch
             {
                 MessageBox.Show("Nevyhovující částky.");
                 return;
             }
+
+            m_diary.InitTypeCounts[(int)Record.RecordType.Income] = initTypeCountsIn;
+            m_diary.InitTypeCounts[(int)Record.RecordType.Expense] = initTypeCountsOut;
+            m_diary.Name = edDiaryHeader.Text;
+            m_diary.InitRemain = initRemain;
+            m_diary.RemainWarning = remainWarning;
+            m_diary.RemainLimit = remainLimit;
+
+            m_diary.StoreChanges();
 
             DialogResult = DialogResult.OK;
             Close();
