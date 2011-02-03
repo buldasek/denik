@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<Diary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Nový deník</Name>
+  <RemainWarning>30000</RemainWarning>
+  <RemainLimit>35000</RemainLimit>
+  <InitRemain>0</InitRemain>
+  <TypeCounts>
+    <int>0</int>
+    <int>0</int>
+  </TypeCounts>
+  <InitTypeCounts>
+    <int>0</int>
+    <int>0</int>
+  </InitTypeCounts>
+  <NoteToNumber />
+  <Records />
+  <PageSize>0</PageSize>
+</Diary>

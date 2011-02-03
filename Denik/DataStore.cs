@@ -142,6 +142,10 @@ namespace Denik
 
         private List<Record> m_records = new List<Record>();
 
+        public delegate void OnDiaryNameChanged(string oldName, string newName);
+
+        public event OnDiaryNameChanged onNameChanged;
+
         public Diary()
         {
             for (int i = 0; i < Record.TypeCount; i++)
@@ -157,14 +161,29 @@ namespace Denik
             NoteToNumber = "";
         }
 
-       //public Diary(String directory)
-        //{
-            
-            //m_dir = directory;
-            
-        //}
+        public void Clone(Diary from)
+        {
+            Name = from.Name;
+            RemainLimit = from.RemainLimit;
+            InitRemain = from.InitRemain;
+            RemainWarning = from.RemainWarning;
+            TypeCounts = from.TypeCounts;
+            InitTypeCounts = from.InitTypeCounts;
+            Records = from.Records;
+            m_dir = from.m_dir;
+        }
 
-        public String Name { set { m_name = value; } get { return m_name; } }
+        public String Name 
+        {
+            set
+            {
+                string oldName = m_name;
+                m_name = value;
+                if (onNameChanged != null)
+                    onNameChanged(oldName, value);
+            }
+            get { return m_name; }
+        }
         public int RemainWarning { set { m_remainWarning = value; } get { return m_remainWarning; } }
         public int RemainLimit { set { m_remainLimit = value; } get { return m_remainLimit; } }
         public int InitRemain { set { m_initRemain = value; } get { return m_initRemain; } }
@@ -341,7 +360,10 @@ namespace Denik
 
         public int PageCount
         {
-            get { return (Math.Max(m_records.Count - 1, 0)) / PageSize + 1; }
+            get 
+            { 
+                return (Math.Max(m_records.Count - 1, 0)) / PageSize + 1; 
+            }
         }
 
         public override String ToString()

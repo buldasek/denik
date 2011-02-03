@@ -51,8 +51,6 @@ namespace Denik
             m_diary.RemainWarning = remainWarning;
             m_diary.RemainLimit = remainLimit;
 
-            m_diary.StoreChanges();
-
             DialogResult = DialogResult.OK;
             Close();
         }

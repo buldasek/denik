@@ -585,27 +585,35 @@ namespace Settings
         public static SettingsImpl SettingsHolder = new SettingsImpl();
         public static void Load()
         {
-            using (StreamReader sr = new StreamReader("main_settings.xml"))
+            try
             {
-                try
+                using (StreamReader sr = new StreamReader("main_settings.xml"))
                 {
                     XmlSerializer xs = new XmlSerializer(typeof(SettingsImpl));
                     SettingsHolder = (SettingsImpl)xs.Deserialize(sr);
+
                 }
-                catch 
-                {
-                    MessageBox.Show("Došlo k poškození pomocných souborů, veškerá nastavení budou ztracena.",
-                        "Chyba", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+            }
+            catch
+            {
+                MessageBox.Show("Došlo k poškození pomocných souborů, veškerá nastavení budou ztracena.",
+                    "Chyba", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         public static void Store()
         {
-            using (StreamWriter sw = new StreamWriter("main_settings.xml"))
+            try
             {
-                XmlSerializer xs = new XmlSerializer(typeof(SettingsImpl));
-                xs.Serialize(sw, SettingsHolder);
+                using (StreamWriter sw = new StreamWriter("main_settings.xml"))
+                {
+                    XmlSerializer xs = new XmlSerializer(typeof(SettingsImpl));
+                    xs.Serialize(sw, SettingsHolder);
+                }
+            }
+            catch
+            {
+                Debug.Assert(false); //silently ignores
             }
             //sw.Close();
         }

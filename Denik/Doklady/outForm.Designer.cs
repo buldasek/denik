@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(outcomeForm));
             this.btnPrintTwice = new System.Windows.Forms.Button();
             this.cbNoteToNumber = new System.Windows.Forms.TextBox();
             this.cbOther = new System.Windows.Forms.ComboBox();
@@ -125,7 +126,7 @@
             // edNote
             // 
             this.edNote.Location = new System.Drawing.Point(108, 233);
-            this.edNote.MaxLength = 10;
+            this.edNote.MaxLength = 15;
             this.edNote.Name = "edNote";
             this.edNote.Size = new System.Drawing.Size(241, 20);
             this.edNote.TabIndex = 3;
@@ -257,6 +258,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lbHeader);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "outcomeForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Pokladní deník 2.0";

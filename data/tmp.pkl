@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<Diary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Nový deník</Name>
+  <RemainWarning>25000</RemainWarning>
+  <RemainLimit>30000</RemainLimit>
+  <InitRemain>0</InitRemain>
+  <TypeCounts>
+    <int>7</int>
+    <int>3</int>
+  </TypeCounts>
+  <InitTypeCounts>
+    <int>0</int>
+    <int>0</int>
+  </InitTypeCounts>
+  <NoteToNumber>/ds/dd</NoteToNumber>
+  <Records>
+    <Record>
+      <OverallID>1</OverallID>
+      <Date>9.1.</Date>
+      <TypeID>1</TypeID>
+      <Type>Income</Type>
+      <Cost>44</Cost>
+      <Note>hohohojoho</Note>
+      <Content>jen tak </Content>
+      <Remaining>44</Remaining>
+      <PayedTo />
+      <CustName>jdaflkj</CustName>
+      <NoteToNumber />
+    </Record>
+    <Record>
+      <OverallID>2</OverallID>
+      <Date>9.1.</Date>
+      <TypeID>1</TypeID>
+      <Type>Expense</Type>
+      <Cost>111111</Cost>
+      <Note />
+      <Content>chacha</Content>
+      <Remaining>-111067</Remaining>
+      <PayedTo>asdf</PayedTo>
+      <CustName>jendulovi</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>3</OverallID>
+      <Date>9.1.</Date>
+      <TypeID>2</TypeID>
+      <Type>Income</Type>
+      <Cost>3948</Cost>
+      <Note>ee</Note>
+      <Content>aaa</Content>
+      <Remaining>-107119</Remaining>
+      <PayedTo />
+      <CustName>jenic</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>4</OverallID>
+      <Date>12.1.</Date>
+      <TypeID>3</TypeID>
+      <Type>Income</Type>
+      <Cost>140000</Cost>
+      <Note />
+      <Content />
+      <Remaining>32881</Remaining>
+      <PayedTo />
+      <CustName />
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>5</OverallID>
+      <Date>12.1.</Date>
+      <TypeID>2</TypeID>
+      <Type>Expense</Type>
+      <Cost>6000</Cost>
+      <Note />
+      <Content />
+      <Remaining>26881</Remaining>
+      <PayedTo />
+      <CustName />
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>6</OverallID>
+      <Date>13.1.</Date>
+      <TypeID>4</TypeID>
+      <Type>Income</Type>
+      <Cost>444444</Cost>
+      <Note />
+      <Content />
+      <Remaining>471325</Remaining>
+      <PayedTo />
+      <CustName />
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>7</OverallID>
+      <Date>13.1.</Date>
+      <TypeID>5</TypeID>
+      <Type>Income</Type>
+      <Cost>0</Cost>
+      <Note />
+      <Content />
+      <Remaining>471325</Remaining>
+      <PayedTo />
+      <CustName />
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>8</OverallID>
+      <Date>13.1.</Date>
+      <TypeID>6</TypeID>
+      <Type>Income</Type>
+      <Cost>444</Cost>
+      <Note />
+      <Content />
+      <Remaining>471769</Remaining>
+      <PayedTo />
+      <CustName />
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>9</OverallID>
+      <Date>13.1.</Date>
+      <TypeID>3</TypeID>
+      <Type>Expense</Type>
+      <Cost>3333</Cost>
+      <Note />
+      <Content />
+      <Remaining>468436</Remaining>
+      <PayedTo />
+      <CustName />
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>10</OverallID>
+      <Date>3.2.</Date>
+      <TypeID>7</TypeID>
+      <Type>Income</Type>
+      <Cost>444</Cost>
+      <Note>sdd</Note>
+      <Content>djkf</Content>
+      <Remaining>468880</Remaining>
+      <PayedTo />
+      <CustName>slls</CustName>
+      <NoteToNumber>/ds/dd</NoteToNumber>
+    </Record>
+  </Records>
+  <Directory>D:\ProjektyZS\denik\data\tmp.pkl</Directory>
+  <PageSize>50</PageSize>
+</Diary>

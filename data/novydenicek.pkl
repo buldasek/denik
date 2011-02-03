@@ -1,0 +1,5662 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<Diary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Základní škola rok 2010</Name>
+  <RemainWarning>330000</RemainWarning>
+  <RemainLimit>360000</RemainLimit>
+  <InitRemain>35673</InitRemain>
+  <TypeCounts>
+    <int>2436</int>
+    <int>220</int>
+  </TypeCounts>
+  <InitTypeCounts>
+    <int>2222</int>
+    <int>0</int>
+  </InitTypeCounts>
+  <NoteToNumber />
+  <Records>
+    <Record>
+      <OverallID>2223</OverallID>
+      <Date>4.1.</Date>
+      <TypeID>2223</TypeID>
+      <Type>Income</Type>
+      <Cost>180</Cost>
+      <Note />
+      <Content>školné ŠD leden - červen 2010</Content>
+      <Remaining>35853</Remaining>
+      <PayedTo />
+      <CustName>Radka Sudová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2224</OverallID>
+      <Date>4.1.</Date>
+      <TypeID>2224</TypeID>
+      <Type>Income</Type>
+      <Cost>180</Cost>
+      <Note />
+      <Content>školné ŠD leden - červen 2010</Content>
+      <Remaining>36033</Remaining>
+      <PayedTo />
+      <CustName>Jakub Lepší</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2225</OverallID>
+      <Date>5.1.</Date>
+      <TypeID>2225</TypeID>
+      <Type>Income</Type>
+      <Cost>180</Cost>
+      <Note />
+      <Content>školné ŠD leden - červen 2010</Content>
+      <Remaining>36213</Remaining>
+      <PayedTo />
+      <CustName>Miroslav Faist</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2226</OverallID>
+      <Date>5.1.</Date>
+      <TypeID>2226</TypeID>
+      <Type>Income</Type>
+      <Cost>180</Cost>
+      <Note />
+      <Content>školné ŠD leden - červen 2010</Content>
+      <Remaining>36393</Remaining>
+      <PayedTo />
+      <CustName>Jindřich Nedvěd</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2227</OverallID>
+      <Date>5.1.</Date>
+      <TypeID>2227</TypeID>
+      <Type>Income</Type>
+      <Cost>180</Cost>
+      <Note />
+      <Content>školné ŠD leden - červen 2010</Content>
+      <Remaining>36573</Remaining>
+      <PayedTo />
+      <CustName>Martina Pláničková</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2228</OverallID>
+      <Date>5.1.</Date>
+      <TypeID>2228</TypeID>
+      <Type>Income</Type>
+      <Cost>180</Cost>
+      <Note />
+      <Content>školné ŠD leden - červen 2010</Content>
+      <Remaining>36753</Remaining>
+      <PayedTo />
+      <CustName>Alexandra Herzová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2229</OverallID>
+      <Date>5.1.</Date>
+      <TypeID>2229</TypeID>
+      <Type>Income</Type>
+      <Cost>360</Cost>
+      <Note />
+      <Content>školné ŠD leden - červen 2010</Content>
+      <Remaining>37113</Remaining>
+      <PayedTo />
+      <CustName>Tereza a Petr Sládkovi</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2230</OverallID>
+      <Date>5.1.</Date>
+      <TypeID>2230</TypeID>
+      <Type>Income</Type>
+      <Cost>180</Cost>
+      <Note />
+      <Content>školné ŠD leden - červen 2010</Content>
+      <Remaining>37293</Remaining>
+      <PayedTo />
+      <CustName>Markéta Černá</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2231</OverallID>
+      <Date>6.1.</Date>
+      <TypeID>1</TypeID>
+      <Type>Expense</Type>
+      <Cost>100</Cost>
+      <Note />
+      <Content>poštovné</Content>
+      <Remaining>37193</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Česká pošta</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2232</OverallID>
+      <Date>6.1.</Date>
+      <TypeID>2231</TypeID>
+      <Type>Income</Type>
+      <Cost>180</Cost>
+      <Note />
+      <Content>školné ŠD leden - červen 2010</Content>
+      <Remaining>37373</Remaining>
+      <PayedTo />
+      <CustName>Lucie Kováříková</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2233</OverallID>
+      <Date>6.1.</Date>
+      <TypeID>2232</TypeID>
+      <Type>Income</Type>
+      <Cost>180</Cost>
+      <Note />
+      <Content>školné ŠD leden - červen 2010</Content>
+      <Remaining>37553</Remaining>
+      <PayedTo />
+      <CustName>Kateřina Dvořáková</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2234</OverallID>
+      <Date>6.1.</Date>
+      <TypeID>2233</TypeID>
+      <Type>Income</Type>
+      <Cost>180</Cost>
+      <Note />
+      <Content>školné ŠD leden - červen 2010</Content>
+      <Remaining>37733</Remaining>
+      <PayedTo />
+      <CustName>Petr Strolený</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2235</OverallID>
+      <Date>6.1.</Date>
+      <TypeID>2234</TypeID>
+      <Type>Income</Type>
+      <Cost>180</Cost>
+      <Note />
+      <Content>školné ŠD leden - červen 2010</Content>
+      <Remaining>37913</Remaining>
+      <PayedTo />
+      <CustName>David Vávra</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2236</OverallID>
+      <Date>6.1.</Date>
+      <TypeID>2235</TypeID>
+      <Type>Income</Type>
+      <Cost>7000</Cost>
+      <Note />
+      <Content>převod hotovosti z pokladny ŠJ</Content>
+      <Remaining>44913</Remaining>
+      <PayedTo />
+      <CustName>Jana Venzarová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2237</OverallID>
+      <Date>6.1.</Date>
+      <TypeID>2</TypeID>
+      <Type>Expense</Type>
+      <Cost>124</Cost>
+      <Note />
+      <Content>Katy čokoláda, pralinky </Content>
+      <Remaining>44789</Remaining>
+      <PayedTo />
+      <CustName>Kaufland ČR KT</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2238</OverallID>
+      <Date>6.1.</Date>
+      <TypeID>2236</TypeID>
+      <Type>Income</Type>
+      <Cost>180</Cost>
+      <Note />
+      <Content>školné ŠD leden - červen 2010</Content>
+      <Remaining>44969</Remaining>
+      <PayedTo />
+      <CustName>Václav Husinec</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2239</OverallID>
+      <Date>6.1.</Date>
+      <TypeID>2237</TypeID>
+      <Type>Income</Type>
+      <Cost>180</Cost>
+      <Note />
+      <Content>školné ŠD leden - červen 2010</Content>
+      <Remaining>45149</Remaining>
+      <PayedTo />
+      <CustName>Matěj Kabrt</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2240</OverallID>
+      <Date>6.1.</Date>
+      <TypeID>2238</TypeID>
+      <Type>Income</Type>
+      <Cost>180</Cost>
+      <Note />
+      <Content>školné ŠD leden - červen 2010</Content>
+      <Remaining>45329</Remaining>
+      <PayedTo />
+      <CustName>František Touš</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2241</OverallID>
+      <Date>6.1.</Date>
+      <TypeID>2239</TypeID>
+      <Type>Income</Type>
+      <Cost>180</Cost>
+      <Note />
+      <Content>školné ŠD leden - červen 2010</Content>
+      <Remaining>45509</Remaining>
+      <PayedTo />
+      <CustName>Lenka Radová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2242</OverallID>
+      <Date>6.1.</Date>
+      <TypeID>2240</TypeID>
+      <Type>Income</Type>
+      <Cost>180</Cost>
+      <Note />
+      <Content>školné ŠD leden - červen 2010</Content>
+      <Remaining>45689</Remaining>
+      <PayedTo />
+      <CustName>Martina Šímová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2243</OverallID>
+      <Date>6.1.</Date>
+      <TypeID>2241</TypeID>
+      <Type>Income</Type>
+      <Cost>180</Cost>
+      <Note />
+      <Content>školné ŠD leden - červen 2010</Content>
+      <Remaining>45869</Remaining>
+      <PayedTo />
+      <CustName>Milan Novák</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2244</OverallID>
+      <Date>6.1.</Date>
+      <TypeID>2242</TypeID>
+      <Type>Income</Type>
+      <Cost>180</Cost>
+      <Note />
+      <Content>školné ŠD leden - červen 2010</Content>
+      <Remaining>46049</Remaining>
+      <PayedTo />
+      <CustName>Nikola Forstlová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2245</OverallID>
+      <Date>6.1.</Date>
+      <TypeID>2243</TypeID>
+      <Type>Income</Type>
+      <Cost>180</Cost>
+      <Note />
+      <Content>školné ŠD leden - červen 2010</Content>
+      <Remaining>46229</Remaining>
+      <PayedTo />
+      <CustName>Petra Zadinová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2246</OverallID>
+      <Date>6.1.</Date>
+      <TypeID>2244</TypeID>
+      <Type>Income</Type>
+      <Cost>360</Cost>
+      <Note />
+      <Content>školné ŠD leden - červen 2010</Content>
+      <Remaining>46589</Remaining>
+      <PayedTo />
+      <CustName>Milan a Ondřej Novákovi</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2247</OverallID>
+      <Date>6.1.</Date>
+      <TypeID>2245</TypeID>
+      <Type>Income</Type>
+      <Cost>180</Cost>
+      <Note />
+      <Content>školné ŠD leden - červen 2010</Content>
+      <Remaining>46769</Remaining>
+      <PayedTo />
+      <CustName>Lucie Smetanová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2248</OverallID>
+      <Date>6.1.</Date>
+      <TypeID>2246</TypeID>
+      <Type>Income</Type>
+      <Cost>1431</Cost>
+      <Note />
+      <Content>nájem 12/2009</Content>
+      <Remaining>48200</Remaining>
+      <PayedTo />
+      <CustName>Lukáš Hlaváč</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2249</OverallID>
+      <Date>6.1.</Date>
+      <TypeID>2247</TypeID>
+      <Type>Income</Type>
+      <Cost>5053</Cost>
+      <Note />
+      <Content>vodné a stočné za rok 2009</Content>
+      <Remaining>53253</Remaining>
+      <PayedTo />
+      <CustName>Lukáš Hlaváč</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2250</OverallID>
+      <Date>6.1.</Date>
+      <TypeID>3</TypeID>
+      <Type>Expense</Type>
+      <Cost>23000</Cost>
+      <Note />
+      <Content>převod hotovosti na běžný účet</Content>
+      <Remaining>30253</Remaining>
+      <PayedTo />
+      <CustName>Jan Bulánek</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2251</OverallID>
+      <Date>6.1.</Date>
+      <TypeID>2248</TypeID>
+      <Type>Income</Type>
+      <Cost>180</Cost>
+      <Note />
+      <Content>školné ŠD leden - červen 2010</Content>
+      <Remaining>30433</Remaining>
+      <PayedTo />
+      <CustName>Martin Hanzlík</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2252</OverallID>
+      <Date>8.1.</Date>
+      <TypeID>2249</TypeID>
+      <Type>Income</Type>
+      <Cost>17000</Cost>
+      <Note />
+      <Content>převod hotovosti z pokladny ŠJ</Content>
+      <Remaining>47433</Remaining>
+      <PayedTo />
+      <CustName>Jana Venzarová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2253</OverallID>
+      <Date>11.1.</Date>
+      <TypeID>4</TypeID>
+      <Type>Expense</Type>
+      <Cost>99</Cost>
+      <Note />
+      <Content>kniha - Naše vlast</Content>
+      <Remaining>47334</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Levné knihy a.s.</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2254</OverallID>
+      <Date>11.1.</Date>
+      <TypeID>2250</TypeID>
+      <Type>Income</Type>
+      <Cost>360</Cost>
+      <Note />
+      <Content>školné ŠD leden - červen 2010</Content>
+      <Remaining>47694</Remaining>
+      <PayedTo />
+      <CustName>Karolína a Jiří Hrachovcovi</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2255</OverallID>
+      <Date>11.1.</Date>
+      <TypeID>2251</TypeID>
+      <Type>Income</Type>
+      <Cost>180</Cost>
+      <Note />
+      <Content>školné ŠD leden - červen 2010</Content>
+      <Remaining>47874</Remaining>
+      <PayedTo />
+      <CustName>Jakub Venzara</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2256</OverallID>
+      <Date>11.1.</Date>
+      <TypeID>2252</TypeID>
+      <Type>Income</Type>
+      <Cost>380</Cost>
+      <Note />
+      <Content>školné ŠD leden - červen 2010</Content>
+      <Remaining>48254</Remaining>
+      <PayedTo />
+      <CustName>Kristýna a Michal Kubaňovi</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2257</OverallID>
+      <Date>13.1.</Date>
+      <TypeID>5</TypeID>
+      <Type>Expense</Type>
+      <Cost>796</Cost>
+      <Note />
+      <Content>Náhradní díly-sanitární tech.</Content>
+      <Remaining>47458</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Superplast s.r.o.</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2258</OverallID>
+      <Date>13.1.</Date>
+      <TypeID>6</TypeID>
+      <Type>Expense</Type>
+      <Cost>224</Cost>
+      <Note />
+      <Content>Žárovky, nýty</Content>
+      <Remaining>47234</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>FERRUM Plzeň s.r.o.</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2259</OverallID>
+      <Date>13.1.</Date>
+      <TypeID>7</TypeID>
+      <Type>Expense</Type>
+      <Cost>2712</Cost>
+      <Note />
+      <Content>Materiál-lamino, panty, šrouby</Content>
+      <Remaining>44522</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>FOXINTERIER dřevoprodej</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2260</OverallID>
+      <Date>13.1.</Date>
+      <TypeID>2253</TypeID>
+      <Type>Income</Type>
+      <Cost>360</Cost>
+      <Note />
+      <Content>školné ŠD leden - červen 2010</Content>
+      <Remaining>44882</Remaining>
+      <PayedTo />
+      <CustName>Šimon a Anežka Peškovi</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2261</OverallID>
+      <Date>13.1.</Date>
+      <TypeID>8</TypeID>
+      <Type>Expense</Type>
+      <Cost>14</Cost>
+      <Note />
+      <Content>poštovné</Content>
+      <Remaining>44868</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Česká pošta</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2262</OverallID>
+      <Date>13.1.</Date>
+      <TypeID>9</TypeID>
+      <Type>Expense</Type>
+      <Cost>2293</Cost>
+      <Note>Brother</Note>
+      <Content>DR3100 - drum</Content>
+      <Remaining>42575</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>ProComputer, s.r.o.</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2263</OverallID>
+      <Date>14.1.</Date>
+      <TypeID>2254</TypeID>
+      <Type>Income</Type>
+      <Cost>180</Cost>
+      <Note />
+      <Content>školné ŠD leden - červen 2010</Content>
+      <Remaining>42755</Remaining>
+      <PayedTo />
+      <CustName>Vít Volf</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2264</OverallID>
+      <Date>14.1.</Date>
+      <TypeID>10</TypeID>
+      <Type>Expense</Type>
+      <Cost>12</Cost>
+      <Note />
+      <Content>vazací stuha</Content>
+      <Remaining>42743</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>ZKD Plzeň, Drogerie Nepomuk</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2265</OverallID>
+      <Date>14.1.</Date>
+      <TypeID>11</TypeID>
+      <Type>Expense</Type>
+      <Cost>26</Cost>
+      <Note />
+      <Content>poštovné</Content>
+      <Remaining>42717</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Česká pošta</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2266</OverallID>
+      <Date>14.1.</Date>
+      <TypeID>2255</TypeID>
+      <Type>Income</Type>
+      <Cost>180</Cost>
+      <Note />
+      <Content>školné ŠD leden - červen 2010</Content>
+      <Remaining>42897</Remaining>
+      <PayedTo />
+      <CustName>Pavel Venc</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2267</OverallID>
+      <Date>15.1.</Date>
+      <TypeID>2256</TypeID>
+      <Type>Income</Type>
+      <Cost>180</Cost>
+      <Note />
+      <Content>školné ŠD leden - červen 2010</Content>
+      <Remaining>43077</Remaining>
+      <PayedTo />
+      <CustName>Tomáš Mareš</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2268</OverallID>
+      <Date>18.1.</Date>
+      <TypeID>12</TypeID>
+      <Type>Expense</Type>
+      <Cost>189</Cost>
+      <Note />
+      <Content>Barva, váleček</Content>
+      <Remaining>42888</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Marcela Cuplová - barvy</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2269</OverallID>
+      <Date>18.1.</Date>
+      <TypeID>13</TypeID>
+      <Type>Expense</Type>
+      <Cost>13</Cost>
+      <Note />
+      <Content>spojovací materiál</Content>
+      <Remaining>42875</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Vrabec a Vrabec s.r.o.</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2270</OverallID>
+      <Date>18.1.</Date>
+      <TypeID>2257</TypeID>
+      <Type>Income</Type>
+      <Cost>100</Cost>
+      <Note />
+      <Content>prodej hlodavců</Content>
+      <Remaining>42975</Remaining>
+      <PayedTo />
+      <CustName>Hortai Michal</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2271</OverallID>
+      <Date>18.1.</Date>
+      <TypeID>2258</TypeID>
+      <Type>Income</Type>
+      <Cost>180</Cost>
+      <Note> gaga</Note>
+      <Content>školné ŠD leden - červen 2010</Content>
+      <Remaining>43155</Remaining>
+      <PayedTo />
+      <CustName>Michal Novák</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2272</OverallID>
+      <Date>19.1.</Date>
+      <TypeID>2259</TypeID>
+      <Type>Income</Type>
+      <Cost>180</Cost>
+      <Note />
+      <Content>školné ŠD leden - červen 2010</Content>
+      <Remaining>43335</Remaining>
+      <PayedTo />
+      <CustName>Zdeněk Pavlík</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2273</OverallID>
+      <Date>19.1.</Date>
+      <TypeID>2260</TypeID>
+      <Type>Income</Type>
+      <Cost>180</Cost>
+      <Note />
+      <Content>školné ŠD leden - červen 2010</Content>
+      <Remaining>43515</Remaining>
+      <PayedTo />
+      <CustName>Jana Hlaváčová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2274</OverallID>
+      <Date>19.1.</Date>
+      <TypeID>2261</TypeID>
+      <Type>Income</Type>
+      <Cost>180</Cost>
+      <Note />
+      <Content>školné ŠD leden - červen 2010</Content>
+      <Remaining>43695</Remaining>
+      <PayedTo />
+      <CustName>Miluše Slivoňová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2275</OverallID>
+      <Date>19.1.</Date>
+      <TypeID>2262</TypeID>
+      <Type>Income</Type>
+      <Cost>180</Cost>
+      <Note />
+      <Content>školné ŠD leden - červen 2010</Content>
+      <Remaining>43875</Remaining>
+      <PayedTo />
+      <CustName>František Hošťálek</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2276</OverallID>
+      <Date>19.1.</Date>
+      <TypeID>14</TypeID>
+      <Type>Expense</Type>
+      <Cost>356</Cost>
+      <Note />
+      <Content>vruty, sprej, pěna, slunečnice</Content>
+      <Remaining>43519</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Ferrum Plzeň spol. s.r.o.</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2277</OverallID>
+      <Date>19.1.</Date>
+      <TypeID>2263</TypeID>
+      <Type>Income</Type>
+      <Cost>72</Cost>
+      <Note />
+      <Content>slunečnice</Content>
+      <Remaining>43591</Remaining>
+      <PayedTo />
+      <CustName>Josef Toman</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2278</OverallID>
+      <Date>19.1.</Date>
+      <TypeID>2264</TypeID>
+      <Type>Income</Type>
+      <Cost>360</Cost>
+      <Note />
+      <Content>školné ŠD leden - červen 2010</Content>
+      <Remaining>43951</Remaining>
+      <PayedTo />
+      <CustName>Jakub a Nicola Štilipovi</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2279</OverallID>
+      <Date>19.1.</Date>
+      <TypeID>15</TypeID>
+      <Type>Expense</Type>
+      <Cost>266</Cost>
+      <Note />
+      <Content>montážní pěna</Content>
+      <Remaining>43685</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>FERRUM Plzeň s.r.o.</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2280</OverallID>
+      <Date>19.1.</Date>
+      <TypeID>16</TypeID>
+      <Type>Expense</Type>
+      <Cost>88</Cost>
+      <Note />
+      <Content>WC - sedátko</Content>
+      <Remaining>43597</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Vodoinstalatérství Mrázek</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2281</OverallID>
+      <Date>21.1.</Date>
+      <TypeID>2265</TypeID>
+      <Type>Income</Type>
+      <Cost>180</Cost>
+      <Note />
+      <Content>školné ŠD leden - červen 2010</Content>
+      <Remaining>43777</Remaining>
+      <PayedTo />
+      <CustName>Martin Murko</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2282</OverallID>
+      <Date>21.1.</Date>
+      <TypeID>2266</TypeID>
+      <Type>Income</Type>
+      <Cost>180</Cost>
+      <Note />
+      <Content>školné ŠD leden - červen 2010</Content>
+      <Remaining>43957</Remaining>
+      <PayedTo />
+      <CustName>Gabriela Pecháčková</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2283</OverallID>
+      <Date>21.1.</Date>
+      <TypeID>2267</TypeID>
+      <Type>Income</Type>
+      <Cost>11000</Cost>
+      <Note />
+      <Content>převod hotovosti z pokladny ŠJ</Content>
+      <Remaining>54957</Remaining>
+      <PayedTo />
+      <CustName>Jana Venzarová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2284</OverallID>
+      <Date>21.1.</Date>
+      <TypeID>17</TypeID>
+      <Type>Expense</Type>
+      <Cost>100</Cost>
+      <Note />
+      <Content>poštovné</Content>
+      <Remaining>54857</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Česká pošta</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2285</OverallID>
+      <Date>21.1.</Date>
+      <TypeID>2268</TypeID>
+      <Type>Income</Type>
+      <Cost>180</Cost>
+      <Note />
+      <Content>školné ŠD leden - červen 2010</Content>
+      <Remaining>55037</Remaining>
+      <PayedTo />
+      <CustName>Jan Boublík</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2286</OverallID>
+      <Date>22.1.</Date>
+      <TypeID>2269</TypeID>
+      <Type>Income</Type>
+      <Cost>180</Cost>
+      <Note />
+      <Content>školné ŠD leden - červen 2010</Content>
+      <Remaining>55217</Remaining>
+      <PayedTo />
+      <CustName>Matěj Suda</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2287</OverallID>
+      <Date>22.1.</Date>
+      <TypeID>2270</TypeID>
+      <Type>Income</Type>
+      <Cost>180</Cost>
+      <Note />
+      <Content>školné ŠD leden - červen 2010</Content>
+      <Remaining>55397</Remaining>
+      <PayedTo />
+      <CustName>Lucie Kubicová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2288</OverallID>
+      <Date>22.1.</Date>
+      <TypeID>2271</TypeID>
+      <Type>Income</Type>
+      <Cost>180</Cost>
+      <Note />
+      <Content>školné ŠD leden - červen 2010</Content>
+      <Remaining>55577</Remaining>
+      <PayedTo />
+      <CustName>Roman Roub</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2289</OverallID>
+      <Date>22.1.</Date>
+      <TypeID>18</TypeID>
+      <Type>Expense</Type>
+      <Cost>38</Cost>
+      <Note />
+      <Content>baterie</Content>
+      <Remaining>55539</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Petr Dio, Prům. zb. Plánice</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2290</OverallID>
+      <Date>25.1.</Date>
+      <TypeID>2272</TypeID>
+      <Type>Income</Type>
+      <Cost>180</Cost>
+      <Note />
+      <Content>školné ŠD leden - červen 2010</Content>
+      <Remaining>55719</Remaining>
+      <PayedTo />
+      <CustName>Vladislav Habada</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2291</OverallID>
+      <Date>25.1.</Date>
+      <TypeID>2273</TypeID>
+      <Type>Income</Type>
+      <Cost>30</Cost>
+      <Note />
+      <Content>školné ŠD leden 2010</Content>
+      <Remaining>55749</Remaining>
+      <PayedTo />
+      <CustName>Jan Kresl</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2292</OverallID>
+      <Date>25.1.</Date>
+      <TypeID>2274</TypeID>
+      <Type>Income</Type>
+      <Cost>60</Cost>
+      <Note />
+      <Content>školné ŠD leden - červen 2010</Content>
+      <Remaining>55809</Remaining>
+      <PayedTo />
+      <CustName>Nikola a Veronika Bulínová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2293</OverallID>
+      <Date>26.1.</Date>
+      <TypeID>2275</TypeID>
+      <Type>Income</Type>
+      <Cost>180</Cost>
+      <Note />
+      <Content>školné ŠD leden - červen 2010</Content>
+      <Remaining>55989</Remaining>
+      <PayedTo />
+      <CustName>Jaroslav Kolář</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2294</OverallID>
+      <Date>1.2.</Date>
+      <TypeID>2276</TypeID>
+      <Type>Income</Type>
+      <Cost>6350</Cost>
+      <Note>leden</Note>
+      <Content>platby doplň. činnost Tv</Content>
+      <Remaining>62339</Remaining>
+      <PayedTo />
+      <CustName>Jan Bouberle</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2295</OverallID>
+      <Date>1.2.</Date>
+      <TypeID>19</TypeID>
+      <Type>Expense</Type>
+      <Cost>18</Cost>
+      <Note />
+      <Content>poštovné</Content>
+      <Remaining>62321</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Česká pošta</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2296</OverallID>
+      <Date>1.2.</Date>
+      <TypeID>2277</TypeID>
+      <Type>Income</Type>
+      <Cost>180</Cost>
+      <Note />
+      <Content>školné ŠD leden - červen 2010</Content>
+      <Remaining>62501</Remaining>
+      <PayedTo />
+      <CustName>Kristýna Gužíková</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2297</OverallID>
+      <Date>1.2.</Date>
+      <TypeID>2278</TypeID>
+      <Type>Income</Type>
+      <Cost>180</Cost>
+      <Note />
+      <Content>školné ŠD leden - červen 2010</Content>
+      <Remaining>62681</Remaining>
+      <PayedTo />
+      <CustName>Marek Jílek</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2298</OverallID>
+      <Date>2.2.</Date>
+      <TypeID>20</TypeID>
+      <Type>Expense</Type>
+      <Cost>8000</Cost>
+      <Note />
+      <Content>ekonomické služby 1/10</Content>
+      <Remaining>54681</Remaining>
+      <PayedTo />
+      <CustName>Jana Pouzarová</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2299</OverallID>
+      <Date>2.2.</Date>
+      <TypeID>21</TypeID>
+      <Type>Expense</Type>
+      <Cost>20</Cost>
+      <Note />
+      <Content>pojistka 10 ks</Content>
+      <Remaining>54661</Remaining>
+      <PayedTo />
+      <CustName>Vladislav Toman-SATO, KT</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2300</OverallID>
+      <Date>2.2.</Date>
+      <TypeID>22</TypeID>
+      <Type>Expense</Type>
+      <Cost>397</Cost>
+      <Note />
+      <Content>drátosklo 2 ks</Content>
+      <Remaining>54264</Remaining>
+      <PayedTo />
+      <CustName>Josef Přerost, Sklenářství KT</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2301</OverallID>
+      <Date>2.2.</Date>
+      <TypeID>23</TypeID>
+      <Type>Expense</Type>
+      <Cost>201</Cost>
+      <Note />
+      <Content>dřevokyt, barva</Content>
+      <Remaining>54063</Remaining>
+      <PayedTo />
+      <CustName>Frančík s.r.o., Ústaleč</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2302</OverallID>
+      <Date>2.2.</Date>
+      <TypeID>2279</TypeID>
+      <Type>Income</Type>
+      <Cost>2900</Cost>
+      <Note />
+      <Content>platby doplň. činnost Tv</Content>
+      <Remaining>56963</Remaining>
+      <PayedTo />
+      <CustName>Margita Pražáková</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2303</OverallID>
+      <Date>3.2.</Date>
+      <TypeID>2280</TypeID>
+      <Type>Income</Type>
+      <Cost>7900</Cost>
+      <Note />
+      <Content>platby doplň. činnost Tv</Content>
+      <Remaining>64863</Remaining>
+      <PayedTo />
+      <CustName>Jaroslava Tomanová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2304</OverallID>
+      <Date>3.2.</Date>
+      <TypeID>2281</TypeID>
+      <Type>Income</Type>
+      <Cost>30000</Cost>
+      <Note />
+      <Content>převod hotovosti z pokladny ŠJ</Content>
+      <Remaining>94863</Remaining>
+      <PayedTo />
+      <CustName>Jana Venzarová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2305</OverallID>
+      <Date>3.2.</Date>
+      <TypeID>24</TypeID>
+      <Type>Expense</Type>
+      <Cost>55000</Cost>
+      <Note />
+      <Content>převod hotovosti na běžný účet</Content>
+      <Remaining>39863</Remaining>
+      <PayedTo />
+      <CustName>Mgr. Zdeňka Huspeková</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2306</OverallID>
+      <Date>3.2.</Date>
+      <TypeID>25</TypeID>
+      <Type>Expense</Type>
+      <Cost>10</Cost>
+      <Note />
+      <Content>poštovné</Content>
+      <Remaining>39853</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Česká pošta</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2307</OverallID>
+      <Date>4.2.</Date>
+      <TypeID>26</TypeID>
+      <Type>Expense</Type>
+      <Cost>14</Cost>
+      <Note />
+      <Content>poštovné</Content>
+      <Remaining>39839</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Česká pošta</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2308</OverallID>
+      <Date>5.2.</Date>
+      <TypeID>2282</TypeID>
+      <Type>Income</Type>
+      <Cost>3200</Cost>
+      <Note />
+      <Content>platby doplň. činnost Tv</Content>
+      <Remaining>43039</Remaining>
+      <PayedTo />
+      <CustName>Miroslav Zeman</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2309</OverallID>
+      <Date>8.2.</Date>
+      <TypeID>2283</TypeID>
+      <Type>Income</Type>
+      <Cost>225</Cost>
+      <Note />
+      <Content>platby doplň. činnost Tv</Content>
+      <Remaining>43264</Remaining>
+      <PayedTo />
+      <CustName>Jaroslava Tomanová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2310</OverallID>
+      <Date>9.2.</Date>
+      <TypeID>27</TypeID>
+      <Type>Expense</Type>
+      <Cost>218</Cost>
+      <Note />
+      <Content>Alex sprej na nábytek</Content>
+      <Remaining>43046</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>OBI Klatovy</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2311</OverallID>
+      <Date>10.2.</Date>
+      <TypeID>28</TypeID>
+      <Type>Expense</Type>
+      <Cost>100</Cost>
+      <Note />
+      <Content>poštovné</Content>
+      <Remaining>42946</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Česká pošta</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2312</OverallID>
+      <Date>10.2.</Date>
+      <TypeID>2284</TypeID>
+      <Type>Income</Type>
+      <Cost>6000</Cost>
+      <Note />
+      <Content>převod hotovosti z pokladny MŠ</Content>
+      <Remaining>48946</Remaining>
+      <PayedTo />
+      <CustName>Hana Procházková MŠ Plánice</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2313</OverallID>
+      <Date>15.2.</Date>
+      <TypeID>29</TypeID>
+      <Type>Expense</Type>
+      <Cost>26</Cost>
+      <Note />
+      <Content>poštovné</Content>
+      <Remaining>48920</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Česká pošta</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2314</OverallID>
+      <Date>16.2.</Date>
+      <TypeID>2285</TypeID>
+      <Type>Income</Type>
+      <Cost>44</Cost>
+      <Note />
+      <Content>prodej sešitů</Content>
+      <Remaining>48964</Remaining>
+      <PayedTo />
+      <CustName>Josef Toman</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2315</OverallID>
+      <Date>16.2.</Date>
+      <TypeID>2286</TypeID>
+      <Type>Income</Type>
+      <Cost>1431</Cost>
+      <Note />
+      <Content>nájem 1/2010</Content>
+      <Remaining>50395</Remaining>
+      <PayedTo />
+      <CustName>Lukáš Hlaváč</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2316</OverallID>
+      <Date>16.2.</Date>
+      <TypeID>30</TypeID>
+      <Type>Expense</Type>
+      <Cost>30</Cost>
+      <Note />
+      <Content>Baterie 3 V</Content>
+      <Remaining>50365</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Václav Drozda - elektro</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2317</OverallID>
+      <Date>16.2.</Date>
+      <TypeID>31</TypeID>
+      <Type>Expense</Type>
+      <Cost>169</Cost>
+      <Note />
+      <Content>Obálky C6 500 ks</Content>
+      <Remaining>50196</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Makro Plzeň</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2318</OverallID>
+      <Date>18.2.</Date>
+      <TypeID>32</TypeID>
+      <Type>Expense</Type>
+      <Cost>10</Cost>
+      <Note />
+      <Content>poštovné</Content>
+      <Remaining>50186</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Česká pošta</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2319</OverallID>
+      <Date>19.2.</Date>
+      <TypeID>33</TypeID>
+      <Type>Expense</Type>
+      <Cost>90</Cost>
+      <Note />
+      <Content>Kotouč 115x1x22</Content>
+      <Remaining>50096</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>FERRUM Plzeň s.r.o.</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2320</OverallID>
+      <Date>19.2.</Date>
+      <TypeID>34</TypeID>
+      <Type>Expense</Type>
+      <Cost>49</Cost>
+      <Note />
+      <Content>Zámek zásuvkový cr8</Content>
+      <Remaining>50047</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Šimek proficentrum s.r.o</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2321</OverallID>
+      <Date>19.2.</Date>
+      <TypeID>35</TypeID>
+      <Type>Expense</Type>
+      <Cost>405</Cost>
+      <Note />
+      <Content>Tabulová barva</Content>
+      <Remaining>49642</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Marcela Cuplová - barvy</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2322</OverallID>
+      <Date>19.2.</Date>
+      <TypeID>2287</TypeID>
+      <Type>Income</Type>
+      <Cost>15000</Cost>
+      <Note />
+      <Content>převod hotovosti z pokladny ŠJ</Content>
+      <Remaining>64642</Remaining>
+      <PayedTo />
+      <CustName>Jana Venzarová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2323</OverallID>
+      <Date>1.3.</Date>
+      <TypeID>2288</TypeID>
+      <Type>Income</Type>
+      <Cost>3750</Cost>
+      <Note />
+      <Content>platby doplň. činnost Tv</Content>
+      <Remaining>68392</Remaining>
+      <PayedTo />
+      <CustName>Jan Bouberle</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2324</OverallID>
+      <Date>1.3.</Date>
+      <TypeID>36</TypeID>
+      <Type>Expense</Type>
+      <Cost>23000</Cost>
+      <Note />
+      <Content>převod hotovosti na běžný účet</Content>
+      <Remaining>45392</Remaining>
+      <PayedTo />
+      <CustName>Mgr. Benešová Jitka</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2325</OverallID>
+      <Date>1.3.</Date>
+      <TypeID>2289</TypeID>
+      <Type>Income</Type>
+      <Cost>10050</Cost>
+      <Note />
+      <Content>platby doplň. činnost Tv</Content>
+      <Remaining>55442</Remaining>
+      <PayedTo />
+      <CustName>Jaroslava Tomanová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2326</OverallID>
+      <Date>1.3.</Date>
+      <TypeID>2290</TypeID>
+      <Type>Income</Type>
+      <Cost>3250</Cost>
+      <Note />
+      <Content>platby doplň. činnost Tv</Content>
+      <Remaining>58692</Remaining>
+      <PayedTo />
+      <CustName>Miroslav Zeman</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2327</OverallID>
+      <Date>2.3.</Date>
+      <TypeID>37</TypeID>
+      <Type>Expense</Type>
+      <Cost>131</Cost>
+      <Note />
+      <Content>brusný papír</Content>
+      <Remaining>58561</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Šimek proficentrum s.r.o</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2328</OverallID>
+      <Date>2.3.</Date>
+      <TypeID>38</TypeID>
+      <Type>Expense</Type>
+      <Cost>421</Cost>
+      <Note />
+      <Content>Barvy na tabule+váleček</Content>
+      <Remaining>58140</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Marcela Cuplová - barvy</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2329</OverallID>
+      <Date>2.3.</Date>
+      <TypeID>2291</TypeID>
+      <Type>Income</Type>
+      <Cost>1500</Cost>
+      <Note />
+      <Content>platby doplň. činnost Tv</Content>
+      <Remaining>59640</Remaining>
+      <PayedTo />
+      <CustName>Margita Pražáková</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2330</OverallID>
+      <Date>2.3.</Date>
+      <TypeID>39</TypeID>
+      <Type>Expense</Type>
+      <Cost>8000</Cost>
+      <Note />
+      <Content>ekonomické služby 2/10</Content>
+      <Remaining>51640</Remaining>
+      <PayedTo />
+      <CustName>Jana Pouzarová</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2331</OverallID>
+      <Date>2.3.</Date>
+      <TypeID>40</TypeID>
+      <Type>Expense</Type>
+      <Cost>69</Cost>
+      <Note />
+      <Content>drát</Content>
+      <Remaining>51571</Remaining>
+      <PayedTo />
+      <CustName>Prima HOBBY KT</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2332</OverallID>
+      <Date>3.3.</Date>
+      <TypeID>41</TypeID>
+      <Type>Expense</Type>
+      <Cost>18</Cost>
+      <Note />
+      <Content>poštovné</Content>
+      <Remaining>51553</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Česká pošta</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2333</OverallID>
+      <Date>3.3.</Date>
+      <TypeID>42</TypeID>
+      <Type>Expense</Type>
+      <Cost>3825</Cost>
+      <Note />
+      <Content>provedení provozních revizí PZ</Content>
+      <Remaining>47728</Remaining>
+      <PayedTo />
+      <CustName>Oldřich Sýkora</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2334</OverallID>
+      <Date>3.3.</Date>
+      <TypeID>43</TypeID>
+      <Type>Expense</Type>
+      <Cost>375</Cost>
+      <Note />
+      <Content>Bílé křídy - 5x100 ks</Content>
+      <Remaining>47353</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Dagmar Šolová - papír, hračky</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2335</OverallID>
+      <Date>4.3.</Date>
+      <TypeID>44</TypeID>
+      <Type>Expense</Type>
+      <Cost>1200</Cost>
+      <Note>bar. tisk</Note>
+      <Content>Pamět 128MB SDRAM </Content>
+      <Remaining>46153</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Josef Klouda - servis el. zaříz.</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2336</OverallID>
+      <Date>4.3.</Date>
+      <TypeID>45</TypeID>
+      <Type>Expense</Type>
+      <Cost>48</Cost>
+      <Note />
+      <Content>zásuvka</Content>
+      <Remaining>46105</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Petr Dio, Prům. zb. Plánice</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2337</OverallID>
+      <Date>5.3.</Date>
+      <TypeID>46</TypeID>
+      <Type>Expense</Type>
+      <Cost>10</Cost>
+      <Note />
+      <Content>poštovné</Content>
+      <Remaining>46095</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Česká pošta</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2338</OverallID>
+      <Date>5.3.</Date>
+      <TypeID>2292</TypeID>
+      <Type>Income</Type>
+      <Cost>100</Cost>
+      <Note />
+      <Content>prodej cvrčků</Content>
+      <Remaining>46195</Remaining>
+      <PayedTo />
+      <CustName>Karel Strnad</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2339</OverallID>
+      <Date>8.3.</Date>
+      <TypeID>47</TypeID>
+      <Type>Expense</Type>
+      <Cost>1709</Cost>
+      <Note />
+      <Content>laminovací fólie A4 10x100 ks</Content>
+      <Remaining>44486</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>IceTech s.r.o. Praha</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2340</OverallID>
+      <Date>9.3.</Date>
+      <TypeID>48</TypeID>
+      <Type>Expense</Type>
+      <Cost>286</Cost>
+      <Note>Tv</Note>
+      <Content>Toal. papír - 128 ks</Content>
+      <Remaining>44200</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>KAUFLAND s.r.o. KT</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2341</OverallID>
+      <Date>9.3.</Date>
+      <TypeID>49</TypeID>
+      <Type>Expense</Type>
+      <Cost>100</Cost>
+      <Note />
+      <Content>poštovné</Content>
+      <Remaining>44100</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Česká pošta</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2342</OverallID>
+      <Date>9.3.</Date>
+      <TypeID>50</TypeID>
+      <Type>Expense</Type>
+      <Cost>240</Cost>
+      <Note />
+      <Content>publ. Vyjm.sl., Čj a metodika</Content>
+      <Remaining>43860</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Nakl. Hanami, Miroslav</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2343</OverallID>
+      <Date>9.3.</Date>
+      <TypeID>51</TypeID>
+      <Type>Expense</Type>
+      <Cost>2145</Cost>
+      <Note />
+      <Content>mzda - daně</Content>
+      <Remaining>41715</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Rudolf Prantner</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2344</OverallID>
+      <Date>10.3.</Date>
+      <TypeID>52</TypeID>
+      <Type>Expense</Type>
+      <Cost>46</Cost>
+      <Note />
+      <Content>poštovné</Content>
+      <Remaining>41669</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Česká pošta</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2345</OverallID>
+      <Date>12.3.</Date>
+      <TypeID>2293</TypeID>
+      <Type>Income</Type>
+      <Cost>120</Cost>
+      <Note />
+      <Content>školné ŠD březen - červen 2010</Content>
+      <Remaining>41789</Remaining>
+      <PayedTo />
+      <CustName>Erika Tomanová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2346</OverallID>
+      <Date>12.3.</Date>
+      <TypeID>53</TypeID>
+      <Type>Expense</Type>
+      <Cost>155</Cost>
+      <Note />
+      <Content>zámek zadlabávací</Content>
+      <Remaining>41634</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Petr Dio, Prům. zb. Plánice</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2347</OverallID>
+      <Date>12.3.</Date>
+      <TypeID>2294</TypeID>
+      <Type>Income</Type>
+      <Cost>15000</Cost>
+      <Note />
+      <Content>převod hotovosti z pokladny ŠJ</Content>
+      <Remaining>56634</Remaining>
+      <PayedTo />
+      <CustName>Jana Venzarová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2348</OverallID>
+      <Date>12.3.</Date>
+      <TypeID>54</TypeID>
+      <Type>Expense</Type>
+      <Cost>90</Cost>
+      <Note />
+      <Content>kniha 150 her pro děti - UP</Content>
+      <Remaining>56544</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Radmil Podlaha,Distribuce a prodej knih</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2349</OverallID>
+      <Date>15.3.</Date>
+      <TypeID>55</TypeID>
+      <Type>Expense</Type>
+      <Cost>184</Cost>
+      <Note />
+      <Content>Soklové nohy a vruty</Content>
+      <Remaining>56360</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>FOXINTERIER dřevoprodej</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2350</OverallID>
+      <Date>16.3.</Date>
+      <TypeID>56</TypeID>
+      <Type>Expense</Type>
+      <Cost>525</Cost>
+      <Note />
+      <Content>Publ. Atelier ..; 2ks raznice</Content>
+      <Remaining>55835</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Jitka Horová IČ: 47564130</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2351</OverallID>
+      <Date>16.3.</Date>
+      <TypeID>57</TypeID>
+      <Type>Expense</Type>
+      <Cost>714</Cost>
+      <Note>2 doklady</Note>
+      <Content>Barva, štětce, malířské válce</Content>
+      <Remaining>55121</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Frančík s.r.o., Ústaleč</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2352</OverallID>
+      <Date>16.3.</Date>
+      <TypeID>58</TypeID>
+      <Type>Expense</Type>
+      <Cost>191</Cost>
+      <Note />
+      <Content>Vrták, vytahovač hřebíků</Content>
+      <Remaining>54930</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>INNA obch. spol. KT</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2353</OverallID>
+      <Date>17.3.</Date>
+      <TypeID>59</TypeID>
+      <Type>Expense</Type>
+      <Cost>5669</Cost>
+      <Note />
+      <Content>2 balíky - materiál na skříňky</Content>
+      <Remaining>49261</Remaining>
+      <PayedTo />
+      <CustName>Radialka SBS Kt</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2354</OverallID>
+      <Date>18.3.</Date>
+      <TypeID>60</TypeID>
+      <Type>Expense</Type>
+      <Cost>2249</Cost>
+      <Note />
+      <Content>Krimpovací kleště, UTP mater.</Content>
+      <Remaining>47012</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>JAKNAWIFI.CZ - Šumperk</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2355</OverallID>
+      <Date>18.3.</Date>
+      <TypeID>61</TypeID>
+      <Type>Expense</Type>
+      <Cost>21</Cost>
+      <Note />
+      <Content>baterie 9 V</Content>
+      <Remaining>46991</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Petr Dio, Prům. zb. Plánice</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2356</OverallID>
+      <Date>19.3.</Date>
+      <TypeID>62</TypeID>
+      <Type>Expense</Type>
+      <Cost>339</Cost>
+      <Note />
+      <Content>praní prádla ŠJ</Content>
+      <Remaining>46652</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Klatovská prádelna s.r.o.</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2357</OverallID>
+      <Date>19.3.</Date>
+      <TypeID>63</TypeID>
+      <Type>Expense</Type>
+      <Cost>56</Cost>
+      <Note />
+      <Content>Hmoždinky, podložky</Content>
+      <Remaining>46596</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Ferrum Plzeň spol. s.r.o.</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2358</OverallID>
+      <Date>19.3.</Date>
+      <TypeID>64</TypeID>
+      <Type>Expense</Type>
+      <Cost>1289</Cost>
+      <Note />
+      <Content>El. materiál</Content>
+      <Remaining>45307</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>ELFETEX Plzeň</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2359</OverallID>
+      <Date>22.3.</Date>
+      <TypeID>2295</TypeID>
+      <Type>Income</Type>
+      <Cost>13000</Cost>
+      <Note />
+      <Content>převod hotovosti z pokladny ŠJ</Content>
+      <Remaining>58307</Remaining>
+      <PayedTo />
+      <CustName>Jana Venzarová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2360</OverallID>
+      <Date>22.3.</Date>
+      <TypeID>2296</TypeID>
+      <Type>Income</Type>
+      <Cost>1165</Cost>
+      <Note />
+      <Content>Levné knihy Beránek</Content>
+      <Remaining>59472</Remaining>
+      <PayedTo />
+      <CustName>učitelé ZŠ</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2361</OverallID>
+      <Date>23.3.</Date>
+      <TypeID>2297</TypeID>
+      <Type>Income</Type>
+      <Cost>1460</Cost>
+      <Note />
+      <Content>prodej plas. víček</Content>
+      <Remaining>60932</Remaining>
+      <PayedTo />
+      <CustName>Zdeněk Kužílek</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2362</OverallID>
+      <Date>24.3.</Date>
+      <TypeID>65</TypeID>
+      <Type>Expense</Type>
+      <Cost>99</Cost>
+      <Note />
+      <Content>čistič odpadů</Content>
+      <Remaining>60833</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Petr Dio, Prům. zb. Plánice</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2363</OverallID>
+      <Date>24.3.</Date>
+      <TypeID>66</TypeID>
+      <Type>Expense</Type>
+      <Cost>633</Cost>
+      <Note />
+      <Content>Pero 8m/11mm</Content>
+      <Remaining>60200</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Ferrum Plzeň spol. s.r.o.</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2364</OverallID>
+      <Date>24.3.</Date>
+      <TypeID>67</TypeID>
+      <Type>Expense</Type>
+      <Cost>99</Cost>
+      <Note />
+      <Content>Folie 4x5m - 11ks</Content>
+      <Remaining>60101</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>OBI Klatovy</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2365</OverallID>
+      <Date>24.3.</Date>
+      <TypeID>68</TypeID>
+      <Type>Expense</Type>
+      <Cost>40</Cost>
+      <Note />
+      <Content>Nejlepší PC rady - časopis</Content>
+      <Remaining>60061</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Kaufland ČR v.o.s.</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2366</OverallID>
+      <Date>25.3.</Date>
+      <TypeID>69</TypeID>
+      <Type>Expense</Type>
+      <Cost>1860</Cost>
+      <Note />
+      <Content>Kleště na odpadky</Content>
+      <Remaining>58201</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Interpont s.r.o.</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2367</OverallID>
+      <Date>29.3.</Date>
+      <TypeID>2298</TypeID>
+      <Type>Income</Type>
+      <Cost>4500</Cost>
+      <Note />
+      <Content>platby doplň. činnost Tv</Content>
+      <Remaining>62701</Remaining>
+      <PayedTo />
+      <CustName>Jan Bouberle</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2368</OverallID>
+      <Date>30.3.</Date>
+      <TypeID>70</TypeID>
+      <Type>Expense</Type>
+      <Cost>132</Cost>
+      <Note />
+      <Content>spona A53/8 2000 ks</Content>
+      <Remaining>62569</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Šimek proficentrum s.r.o</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2369</OverallID>
+      <Date>30.3.</Date>
+      <TypeID>71</TypeID>
+      <Type>Expense</Type>
+      <Cost>293</Cost>
+      <Note />
+      <Content>El. materiál</Content>
+      <Remaining>62276</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>ELFETEX Plzeň</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2370</OverallID>
+      <Date>30.3.</Date>
+      <TypeID>72</TypeID>
+      <Type>Expense</Type>
+      <Cost>24</Cost>
+      <Note />
+      <Content>rozlišovače</Content>
+      <Remaining>62252</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Milan Vacovský - kování, zámky</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2371</OverallID>
+      <Date>30.3.</Date>
+      <TypeID>73</TypeID>
+      <Type>Expense</Type>
+      <Cost>22000</Cost>
+      <Note />
+      <Content>záloha na mzdu</Content>
+      <Remaining>40252</Remaining>
+      <PayedTo />
+      <CustName>Jan Bulánek</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2372</OverallID>
+      <Date>31.3.</Date>
+      <TypeID>2299</TypeID>
+      <Type>Income</Type>
+      <Cost>25000</Cost>
+      <Note />
+      <Content>převod hotovosti z pokladny ŠJ</Content>
+      <Remaining>65252</Remaining>
+      <PayedTo />
+      <CustName>Jana Venzarová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2373</OverallID>
+      <Date>31.3.</Date>
+      <TypeID>74</TypeID>
+      <Type>Expense</Type>
+      <Cost>18</Cost>
+      <Note />
+      <Content>poštovné</Content>
+      <Remaining>65234</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Česká pošta</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2374</OverallID>
+      <Date>6.4.</Date>
+      <TypeID>75</TypeID>
+      <Type>Expense</Type>
+      <Cost>127</Cost>
+      <Note />
+      <Content>vodoinstalační materiál</Content>
+      <Remaining>65107</Remaining>
+      <PayedTo />
+      <CustName>Superplast s.r.o.</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2375</OverallID>
+      <Date>6.4.</Date>
+      <TypeID>76</TypeID>
+      <Type>Expense</Type>
+      <Cost>20000</Cost>
+      <Note />
+      <Content>převod hotovosti na běžný účet</Content>
+      <Remaining>45107</Remaining>
+      <PayedTo />
+      <CustName>Jan Bulánek</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2376</OverallID>
+      <Date>6.4.</Date>
+      <TypeID>2300</TypeID>
+      <Type>Income</Type>
+      <Cost>7350</Cost>
+      <Note />
+      <Content>platby doplň. činnost Tv</Content>
+      <Remaining>52457</Remaining>
+      <PayedTo />
+      <CustName>Jaroslava Tomanová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2377</OverallID>
+      <Date>6.4.</Date>
+      <TypeID>2301</TypeID>
+      <Type>Income</Type>
+      <Cost>3900</Cost>
+      <Note />
+      <Content>platby doplň. činnost Tv</Content>
+      <Remaining>56357</Remaining>
+      <PayedTo />
+      <CustName>Miroslav Zeman</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2378</OverallID>
+      <Date>6.4.</Date>
+      <TypeID>2302</TypeID>
+      <Type>Income</Type>
+      <Cost>1650</Cost>
+      <Note />
+      <Content>platby doplň. činnost Tv</Content>
+      <Remaining>58007</Remaining>
+      <PayedTo />
+      <CustName>Margita Pražáková</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2379</OverallID>
+      <Date>6.4.</Date>
+      <TypeID>77</TypeID>
+      <Type>Expense</Type>
+      <Cost>8000</Cost>
+      <Note />
+      <Content>ekonomické služby 3/10</Content>
+      <Remaining>50007</Remaining>
+      <PayedTo />
+      <CustName>Jana Pouzarová</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2380</OverallID>
+      <Date>6.4.</Date>
+      <TypeID>78</TypeID>
+      <Type>Expense</Type>
+      <Cost>100</Cost>
+      <Note />
+      <Content>poštovné</Content>
+      <Remaining>49907</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Česká pošta</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2381</OverallID>
+      <Date>6.4.</Date>
+      <TypeID>79</TypeID>
+      <Type>Expense</Type>
+      <Cost>7131</Cost>
+      <Note />
+      <Content>záloha na mzdu</Content>
+      <Remaining>42776</Remaining>
+      <PayedTo />
+      <CustName>Jan Bulánek</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2382</OverallID>
+      <Date>7.4.</Date>
+      <TypeID>80</TypeID>
+      <Type>Expense</Type>
+      <Cost>70</Cost>
+      <Note />
+      <Content>razítková poduška</Content>
+      <Remaining>42706</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>JFA Reklama - Janoušek</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2383</OverallID>
+      <Date>7.4.</Date>
+      <TypeID>81</TypeID>
+      <Type>Expense</Type>
+      <Cost>48</Cost>
+      <Note />
+      <Content>poštovné</Content>
+      <Remaining>42658</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Česká pošta</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2384</OverallID>
+      <Date>9.4.</Date>
+      <TypeID>82</TypeID>
+      <Type>Expense</Type>
+      <Cost>62</Cost>
+      <Note />
+      <Content>prodl. kabel 1,5m</Content>
+      <Remaining>42596</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Petr Dio, Prům. zb. Plánice</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2385</OverallID>
+      <Date>9.4.</Date>
+      <TypeID>83</TypeID>
+      <Type>Expense</Type>
+      <Cost>82</Cost>
+      <Note />
+      <Content>poštovné</Content>
+      <Remaining>42514</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Česká pošta</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2386</OverallID>
+      <Date>12.4.</Date>
+      <TypeID>84</TypeID>
+      <Type>Expense</Type>
+      <Cost>876</Cost>
+      <Note />
+      <Content>barvy, ředidlo</Content>
+      <Remaining>41638</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>M.Cuplová,barvy,laky,nástřiky,KT</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2387</OverallID>
+      <Date>12.4.</Date>
+      <TypeID>2303</TypeID>
+      <Type>Income</Type>
+      <Cost>7598</Cost>
+      <Note />
+      <Content>doprava žáků 2.st.- Temelín</Content>
+      <Remaining>49236</Remaining>
+      <PayedTo />
+      <CustName>žáci</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2388</OverallID>
+      <Date>14.4.</Date>
+      <TypeID>85</TypeID>
+      <Type>Expense</Type>
+      <Cost>881</Cost>
+      <Note />
+      <Content>Prvouka 1.-3.r. + PL</Content>
+      <Remaining>48355</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>PhDr.P.Novotný Dialog Liberec</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2389</OverallID>
+      <Date>16.4.</Date>
+      <TypeID>2304</TypeID>
+      <Type>Income</Type>
+      <Cost>15000</Cost>
+      <Note />
+      <Content>převod hotovosti z pokladny ŠJ</Content>
+      <Remaining>63355</Remaining>
+      <PayedTo />
+      <CustName>Jana Venzarová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2390</OverallID>
+      <Date>16.4.</Date>
+      <TypeID>86</TypeID>
+      <Type>Expense</Type>
+      <Cost>77</Cost>
+      <Note />
+      <Content>poštovné</Content>
+      <Remaining>63278</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Česká pošta</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2391</OverallID>
+      <Date>19.4.</Date>
+      <TypeID>87</TypeID>
+      <Type>Expense</Type>
+      <Cost>24000</Cost>
+      <Note />
+      <Content>převod hotovosti na běžný účet</Content>
+      <Remaining>39278</Remaining>
+      <PayedTo />
+      <CustName>Mgr. Hana Procházková</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2392</OverallID>
+      <Date>20.4.</Date>
+      <TypeID>2305</TypeID>
+      <Type>Income</Type>
+      <Cost>4293</Cost>
+      <Note />
+      <Content>nájem 2,3,4/2010</Content>
+      <Remaining>43571</Remaining>
+      <PayedTo />
+      <CustName>Lukáš Hlaváč</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2393</OverallID>
+      <Date>20.4.</Date>
+      <TypeID>88</TypeID>
+      <Type>Expense</Type>
+      <Cost>457</Cost>
+      <Note />
+      <Content>spoj. materiál - šatní skříně</Content>
+      <Remaining>43114</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Vrabec a Vrabec s.r.o.</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2394</OverallID>
+      <Date>20.4.</Date>
+      <TypeID>89</TypeID>
+      <Type>Expense</Type>
+      <Cost>100</Cost>
+      <Note />
+      <Content>poštovné</Content>
+      <Remaining>43014</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Česká pošta</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2395</OverallID>
+      <Date>22.4.</Date>
+      <TypeID>2306</TypeID>
+      <Type>Income</Type>
+      <Cost>10000</Cost>
+      <Note />
+      <Content>převod hotovosti z pokladny ŠJ</Content>
+      <Remaining>53014</Remaining>
+      <PayedTo />
+      <CustName>Jana Venzarová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2396</OverallID>
+      <Date>23.4.</Date>
+      <TypeID>90</TypeID>
+      <Type>Expense</Type>
+      <Cost>1200</Cost>
+      <Note />
+      <Content>Kování (na šatní skřínky)</Content>
+      <Remaining>51814</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Jindřich Suchý železářství - elektro</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2397</OverallID>
+      <Date>23.4.</Date>
+      <TypeID>91</TypeID>
+      <Type>Expense</Type>
+      <Cost>69</Cost>
+      <Note />
+      <Content>Lepidlo PATTEX - 750g</Content>
+      <Remaining>51745</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Ferrum Plzeň spol. s.r.o.</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2398</OverallID>
+      <Date>26.4.</Date>
+      <TypeID>92</TypeID>
+      <Type>Expense</Type>
+      <Cost>18</Cost>
+      <Note />
+      <Content>poštovné</Content>
+      <Remaining>51727</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Česká pošta</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2399</OverallID>
+      <Date>27.4.</Date>
+      <TypeID>93</TypeID>
+      <Type>Expense</Type>
+      <Cost>15</Cost>
+      <Note />
+      <Content>zástrčka</Content>
+      <Remaining>51712</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Milan Vacovský - kování, zámky</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2400</OverallID>
+      <Date>27.4.</Date>
+      <TypeID>94</TypeID>
+      <Type>Expense</Type>
+      <Cost>286</Cost>
+      <Note />
+      <Content>toaletní papír</Content>
+      <Remaining>51426</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Kaufland ČR v.o.s.</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2401</OverallID>
+      <Date>28.4.</Date>
+      <TypeID>95</TypeID>
+      <Type>Expense</Type>
+      <Cost>320</Cost>
+      <Note />
+      <Content>Publikace Hry a hraní pohledem</Content>
+      <Remaining>51106</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Nakladatelství HANEX</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2402</OverallID>
+      <Date>29.4.</Date>
+      <TypeID>96</TypeID>
+      <Type>Expense</Type>
+      <Cost>43</Cost>
+      <Note />
+      <Content>poštovné</Content>
+      <Remaining>51063</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Česká pošta</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2403</OverallID>
+      <Date>30.4.</Date>
+      <TypeID>2307</TypeID>
+      <Type>Income</Type>
+      <Cost>1680</Cost>
+      <Note />
+      <Content>platby doplň. činnost Tv</Content>
+      <Remaining>52743</Remaining>
+      <PayedTo />
+      <CustName>Jan Bouberle</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2404</OverallID>
+      <Date>30.4.</Date>
+      <TypeID>97</TypeID>
+      <Type>Expense</Type>
+      <Cost>192</Cost>
+      <Note />
+      <Content>USB panel do PC skříně</Content>
+      <Remaining>52551</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>KINETIC KT</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2405</OverallID>
+      <Date>30.4.</Date>
+      <TypeID>2308</TypeID>
+      <Type>Income</Type>
+      <Cost>255</Cost>
+      <Note />
+      <Content>doplatek vodné, stočné k 30.4.</Content>
+      <Remaining>52806</Remaining>
+      <PayedTo />
+      <CustName>Lukáš Hlaváč</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2406</OverallID>
+      <Date>30.4.</Date>
+      <TypeID>98</TypeID>
+      <Type>Expense</Type>
+      <Cost>4446</Cost>
+      <Note />
+      <Content>SWITCH D-Link DGS-1024D</Content>
+      <Remaining>48360</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>ALFA Computer a.s. - Ostrava</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2407</OverallID>
+      <Date>30.4.</Date>
+      <TypeID>99</TypeID>
+      <Type>Expense</Type>
+      <Cost>30</Cost>
+      <Note />
+      <Content>klíč</Content>
+      <Remaining>48330</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Milan Vacovský - kování, zámky</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2408</OverallID>
+      <Date>30.4.</Date>
+      <TypeID>100</TypeID>
+      <Type>Expense</Type>
+      <Cost>18</Cost>
+      <Note />
+      <Content>poštovné</Content>
+      <Remaining>48312</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Česká pošta</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2409</OverallID>
+      <Date>3.5.</Date>
+      <TypeID>2309</TypeID>
+      <Type>Income</Type>
+      <Cost>1575</Cost>
+      <Note />
+      <Content>platby doplň. činnost Tv</Content>
+      <Remaining>49887</Remaining>
+      <PayedTo />
+      <CustName>Miroslav Zeman</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2410</OverallID>
+      <Date>3.5.</Date>
+      <TypeID>2310</TypeID>
+      <Type>Income</Type>
+      <Cost>5445</Cost>
+      <Note />
+      <Content>platby doplň. činnost Tv</Content>
+      <Remaining>55332</Remaining>
+      <PayedTo />
+      <CustName>Jaroslava Tomanová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2411</OverallID>
+      <Date>3.5.</Date>
+      <TypeID>2311</TypeID>
+      <Type>Income</Type>
+      <Cost>2350</Cost>
+      <Note />
+      <Content>platby doplň. činnost Tv</Content>
+      <Remaining>57682</Remaining>
+      <PayedTo />
+      <CustName>Margita Pražáková</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2412</OverallID>
+      <Date>4.5.</Date>
+      <TypeID>101</TypeID>
+      <Type>Expense</Type>
+      <Cost>2045</Cost>
+      <Note />
+      <Content>Tonerová kazeta DR3100</Content>
+      <Remaining>55637</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>MP Konekt, Bradlecká Lhota 101</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2413</OverallID>
+      <Date>4.5.</Date>
+      <TypeID>2312</TypeID>
+      <Type>Income</Type>
+      <Cost>300</Cost>
+      <Note />
+      <Content>platby doplň. činnost Tv</Content>
+      <Remaining>55937</Remaining>
+      <PayedTo />
+      <CustName>Jaroslava Tomanová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2414</OverallID>
+      <Date>4.5.</Date>
+      <TypeID>2313</TypeID>
+      <Type>Income</Type>
+      <Cost>4630</Cost>
+      <Note />
+      <Content>sešity Pierot</Content>
+      <Remaining>60567</Remaining>
+      <PayedTo />
+      <CustName>žáci 1. stupně</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2415</OverallID>
+      <Date>4.5.</Date>
+      <TypeID>102</TypeID>
+      <Type>Expense</Type>
+      <Cost>4630</Cost>
+      <Note />
+      <Content>prodej sešitů Pierot</Content>
+      <Remaining>55937</Remaining>
+      <PayedTo />
+      <CustName>Pierot Praha</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2416</OverallID>
+      <Date>4.5.</Date>
+      <TypeID>2314</TypeID>
+      <Type>Income</Type>
+      <Cost>463</Cost>
+      <Note />
+      <Content>provize z prodeje sešitů</Content>
+      <Remaining>56400</Remaining>
+      <PayedTo />
+      <CustName>Pierot Praha</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2417</OverallID>
+      <Date>4.5.</Date>
+      <TypeID>103</TypeID>
+      <Type>Expense</Type>
+      <Cost>8000</Cost>
+      <Note />
+      <Content>ekonomické služby 4/10</Content>
+      <Remaining>48400</Remaining>
+      <PayedTo />
+      <CustName>Jana Pouzarová</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2418</OverallID>
+      <Date>4.5.</Date>
+      <TypeID>104</TypeID>
+      <Type>Expense</Type>
+      <Cost>2442</Cost>
+      <Note />
+      <Content>oprava HIFI věže</Content>
+      <Remaining>45958</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Video-audio servis Praha</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2419</OverallID>
+      <Date>5.5.</Date>
+      <TypeID>105</TypeID>
+      <Type>Expense</Type>
+      <Cost>473</Cost>
+      <Note />
+      <Content>zvětšovací lupy - 17ks</Content>
+      <Remaining>45485</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Hoang Van Trung Klatovy</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2420</OverallID>
+      <Date>5.5.</Date>
+      <TypeID>106</TypeID>
+      <Type>Expense</Type>
+      <Cost>100</Cost>
+      <Note />
+      <Content>bity</Content>
+      <Remaining>45385</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Petr Dio, Prům. zb. Plánice</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2421</OverallID>
+      <Date>6.5.</Date>
+      <TypeID>107</TypeID>
+      <Type>Expense</Type>
+      <Cost>100</Cost>
+      <Note />
+      <Content>poštovné</Content>
+      <Remaining>45285</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Česká pošta</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2422</OverallID>
+      <Date>7.5.</Date>
+      <TypeID>2315</TypeID>
+      <Type>Income</Type>
+      <Cost>3915</Cost>
+      <Note />
+      <Content>přednáška Svět. rocková hudba</Content>
+      <Remaining>49200</Remaining>
+      <PayedTo />
+      <CustName>žáci ZŠ 4.-9.roč.</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2423</OverallID>
+      <Date>7.5.</Date>
+      <TypeID>108</TypeID>
+      <Type>Expense</Type>
+      <Cost>3915</Cost>
+      <Note />
+      <Content>přednáška Svět. rocková hudba</Content>
+      <Remaining>45285</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Mgr. M. Parnahaj, Nejdek</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2424</OverallID>
+      <Date>10.5.</Date>
+      <TypeID>2316</TypeID>
+      <Type>Income</Type>
+      <Cost>296</Cost>
+      <Note />
+      <Content>Levné knihy Beránek</Content>
+      <Remaining>45581</Remaining>
+      <PayedTo />
+      <CustName>učitelé ZŠ</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2425</OverallID>
+      <Date>11.5.</Date>
+      <TypeID>2317</TypeID>
+      <Type>Income</Type>
+      <Cost>10000</Cost>
+      <Note />
+      <Content>převod hotovosti z pokladny ŠJ</Content>
+      <Remaining>55581</Remaining>
+      <PayedTo />
+      <CustName>Jana Venzarová</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2426</OverallID>
+      <Date>12.5.</Date>
+      <TypeID>2318</TypeID>
+      <Type>Income</Type>
+      <Cost>675</Cost>
+      <Note />
+      <Content>platby doplň. činnost Tv</Content>
+      <Remaining>56256</Remaining>
+      <PayedTo />
+      <CustName>Jaroslava Tomanová</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2427</OverallID>
+      <Date>12.5.</Date>
+      <TypeID>2319</TypeID>
+      <Type>Income</Type>
+      <Cost>525</Cost>
+      <Note />
+      <Content>platby doplň. činnost Tv</Content>
+      <Remaining>56781</Remaining>
+      <PayedTo />
+      <CustName>Jan Bouberle</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2428</OverallID>
+      <Date>13.5.</Date>
+      <TypeID>2320</TypeID>
+      <Type>Income</Type>
+      <Cost>200</Cost>
+      <Note />
+      <Content>prodej cvrčků a hlodavců</Content>
+      <Remaining>56981</Remaining>
+      <PayedTo />
+      <CustName>ZOO Laguna KT</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2429</OverallID>
+      <Date>13.5.</Date>
+      <TypeID>2321</TypeID>
+      <Type>Income</Type>
+      <Cost>5130</Cost>
+      <Note />
+      <Content>ukázka dravců</Content>
+      <Remaining>62111</Remaining>
+      <PayedTo />
+      <CustName>žáci ZŠ a MŠ</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2430</OverallID>
+      <Date>13.5.</Date>
+      <TypeID>109</TypeID>
+      <Type>Expense</Type>
+      <Cost>5130</Cost>
+      <Note />
+      <Content>ukázka dravců</Content>
+      <Remaining>56981</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Sokolnictví, ukázky dravců M. Vondruška</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2431</OverallID>
+      <Date>14.5.</Date>
+      <TypeID>110</TypeID>
+      <Type>Expense</Type>
+      <Cost>48</Cost>
+      <Note />
+      <Content>popisovače</Content>
+      <Remaining>56933</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Jiří Valenta, Papírnictví, Klatovy</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2432</OverallID>
+      <Date>14.5.</Date>
+      <TypeID>111</TypeID>
+      <Type>Expense</Type>
+      <Cost>235</Cost>
+      <Note />
+      <Content>hrana s lep. 50 m</Content>
+      <Remaining>56698</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>FOXINTERIER dřevoprodej</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2433</OverallID>
+      <Date>14.5.</Date>
+      <TypeID>112</TypeID>
+      <Type>Expense</Type>
+      <Cost>4382</Cost>
+      <Note />
+      <Content>Sprch. baterie, hadice, sprchy</Content>
+      <Remaining>52316</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Superplast s.r.o.</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2434</OverallID>
+      <Date>14.5.</Date>
+      <TypeID>113</TypeID>
+      <Type>Expense</Type>
+      <Cost>150</Cost>
+      <Note />
+      <Content>spoj. materiál</Content>
+      <Remaining>52166</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Vrabec a Vrabec s.r.o.</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2435</OverallID>
+      <Date>15.5.</Date>
+      <TypeID>114</TypeID>
+      <Type>Expense</Type>
+      <Cost>152</Cost>
+      <Note />
+      <Content>Beton 40 kg</Content>
+      <Remaining>52014</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Betonové stavby Plánice</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2436</OverallID>
+      <Date>15.5.</Date>
+      <TypeID>115</TypeID>
+      <Type>Expense</Type>
+      <Cost>795</Cost>
+      <Note />
+      <Content>Dlaždice, lepidlo, zálivka</Content>
+      <Remaining>51219</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Milan Plánička, Plánice 41, OČ</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2437</OverallID>
+      <Date>17.5.</Date>
+      <TypeID>116</TypeID>
+      <Type>Expense</Type>
+      <Cost>99</Cost>
+      <Note />
+      <Content>Spojovačka kabelů</Content>
+      <Remaining>51120</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>OBI Klatovy</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2438</OverallID>
+      <Date>18.5.</Date>
+      <TypeID>117</TypeID>
+      <Type>Expense</Type>
+      <Cost>850</Cost>
+      <Note />
+      <Content>vložka,pouzdro,mont.a demontáž</Content>
+      <Remaining>50270</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Mountfield a.s. KT</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2439</OverallID>
+      <Date>18.5.</Date>
+      <TypeID>118</TypeID>
+      <Type>Expense</Type>
+      <Cost>457</Cost>
+      <Note />
+      <Content>vrtáky, kleště</Content>
+      <Remaining>49813</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>INNA obch. spol. KT</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2440</OverallID>
+      <Date>19.5.</Date>
+      <TypeID>119</TypeID>
+      <Type>Expense</Type>
+      <Cost>30</Cost>
+      <Note />
+      <Content>sádra</Content>
+      <Remaining>49783</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Petr Dio, Prům. zb. Plánice</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2441</OverallID>
+      <Date>20.5.</Date>
+      <TypeID>120</TypeID>
+      <Type>Expense</Type>
+      <Cost>70</Cost>
+      <Note />
+      <Content>úhelník 7 ks (šatní skříňky)</Content>
+      <Remaining>49713</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Jindřich Suchý železářství - elektro</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2442</OverallID>
+      <Date>20.5.</Date>
+      <TypeID>121</TypeID>
+      <Type>Expense</Type>
+      <Cost>560</Cost>
+      <Note />
+      <Content>Vruty (šatní skříňky)</Content>
+      <Remaining>49153</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Vrabec a Vrabec s.r.o.</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2443</OverallID>
+      <Date>24.5.</Date>
+      <TypeID>122</TypeID>
+      <Type>Expense</Type>
+      <Cost>191</Cost>
+      <Note />
+      <Content>benzín do sekačky</Content>
+      <Remaining>48962</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>G.A.S. Petroleum - Plánice</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2444</OverallID>
+      <Date>24.5.</Date>
+      <TypeID>123</TypeID>
+      <Type>Expense</Type>
+      <Cost>330</Cost>
+      <Note />
+      <Content>Telefonní zásuvky 2 ks</Content>
+      <Remaining>48632</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Commatel d.r.o. Praha</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2445</OverallID>
+      <Date>24.5.</Date>
+      <TypeID>124</TypeID>
+      <Type>Expense</Type>
+      <Cost>704</Cost>
+      <Note />
+      <Content>prací prášek Tide 22 ks</Content>
+      <Remaining>47928</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>FERRUM Plzeň s.r.o.</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2446</OverallID>
+      <Date>24.5.</Date>
+      <TypeID>125</TypeID>
+      <Type>Expense</Type>
+      <Cost>86</Cost>
+      <Note />
+      <Content>Násada, páska, hák</Content>
+      <Remaining>47842</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>FERRUM Plzeň s.r.o.</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2447</OverallID>
+      <Date>25.5.</Date>
+      <TypeID>2322</TypeID>
+      <Type>Income</Type>
+      <Cost>1300</Cost>
+      <Note />
+      <Content>platby doplň. činnost Tv</Content>
+      <Remaining>49142</Remaining>
+      <PayedTo />
+      <CustName>Jan Bouberle</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2448</OverallID>
+      <Date>25.5.</Date>
+      <TypeID>2323</TypeID>
+      <Type>Income</Type>
+      <Cost>900</Cost>
+      <Note />
+      <Content>záloha na šat. zámky (18x50,-)</Content>
+      <Remaining>50042</Remaining>
+      <PayedTo />
+      <CustName>ing. Jana Mantlová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2449</OverallID>
+      <Date>25.5.</Date>
+      <TypeID>2324</TypeID>
+      <Type>Income</Type>
+      <Cost>750</Cost>
+      <Note />
+      <Content>záloha na šat. zámky (15x50,-)</Content>
+      <Remaining>50792</Remaining>
+      <PayedTo />
+      <CustName>Jitka Bulánková</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2450</OverallID>
+      <Date>25.5.</Date>
+      <TypeID>126</TypeID>
+      <Type>Expense</Type>
+      <Cost>39</Cost>
+      <Note />
+      <Content>prací prášek 1 ks</Content>
+      <Remaining>50753</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Kompas-rollo Plánice</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2451</OverallID>
+      <Date>25.5.</Date>
+      <TypeID>127</TypeID>
+      <Type>Expense</Type>
+      <Cost>133</Cost>
+      <Note />
+      <Content>zámek, panty, podložky</Content>
+      <Remaining>50620</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Šimek proficentrum s.r.o</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2452</OverallID>
+      <Date>25.5.</Date>
+      <TypeID>128</TypeID>
+      <Type>Expense</Type>
+      <Cost>153</Cost>
+      <Note />
+      <Content>podložky - 500ks</Content>
+      <Remaining>50467</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Vrabec a Vrabec s.r.o.</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2453</OverallID>
+      <Date>25.5.</Date>
+      <TypeID>129</TypeID>
+      <Type>Expense</Type>
+      <Cost>332</Cost>
+      <Note />
+      <Content>barvy</Content>
+      <Remaining>50135</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Marcela Cuplová - barvy</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2454</OverallID>
+      <Date>26.5.</Date>
+      <TypeID>130</TypeID>
+      <Type>Expense</Type>
+      <Cost>56</Cost>
+      <Note />
+      <Content>šrouby</Content>
+      <Remaining>50079</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Petr Dio, Prům. zb. Plánice</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2455</OverallID>
+      <Date>26.5.</Date>
+      <TypeID>2325</TypeID>
+      <Type>Income</Type>
+      <Cost>750</Cost>
+      <Note />
+      <Content>záloha-šat.zámky(11x50,8x25)</Content>
+      <Remaining>50829</Remaining>
+      <PayedTo />
+      <CustName>Miroslava Hošťálková</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2456</OverallID>
+      <Date>26.5.</Date>
+      <TypeID>131</TypeID>
+      <Type>Expense</Type>
+      <Cost>495</Cost>
+      <Note />
+      <Content>Zámková vložka,8 klíčů</Content>
+      <Remaining>50334</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Milan Vacovský - kování, zámky</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2457</OverallID>
+      <Date>27.5.</Date>
+      <TypeID>132</TypeID>
+      <Type>Expense</Type>
+      <Cost>40</Cost>
+      <Note />
+      <Content>odkl. mapa - 10 ks</Content>
+      <Remaining>50294</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>AUKLAND s.r.o. papír hračky KT</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2458</OverallID>
+      <Date>28.5.</Date>
+      <TypeID>133</TypeID>
+      <Type>Expense</Type>
+      <Cost>7000</Cost>
+      <Note />
+      <Content>Tlakové čištění vnitřní kanal.</Content>
+      <Remaining>43294</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Anna Šafrová </CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2459</OverallID>
+      <Date>31.5.</Date>
+      <TypeID>134</TypeID>
+      <Type>Expense</Type>
+      <Cost>18</Cost>
+      <Note />
+      <Content>poštovné</Content>
+      <Remaining>43276</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Česká pošta</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2460</OverallID>
+      <Date>31.5.</Date>
+      <TypeID>2326</TypeID>
+      <Type>Income</Type>
+      <Cost>750</Cost>
+      <Note />
+      <Content>záloha na šat. zámky (15x50,-)</Content>
+      <Remaining>44026</Remaining>
+      <PayedTo />
+      <CustName>Mgr. Jitka Dufková</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2461</OverallID>
+      <Date>1.6.</Date>
+      <TypeID>135</TypeID>
+      <Type>Expense</Type>
+      <Cost>12</Cost>
+      <Note />
+      <Content>poštovné</Content>
+      <Remaining>44014</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Česká pošta</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2462</OverallID>
+      <Date>1.6.</Date>
+      <TypeID>2327</TypeID>
+      <Type>Income</Type>
+      <Cost>3570</Cost>
+      <Note />
+      <Content>platby doplň. činnost Tv</Content>
+      <Remaining>47584</Remaining>
+      <PayedTo />
+      <CustName>Jaroslava Tomanová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2463</OverallID>
+      <Date>1.6.</Date>
+      <TypeID>2328</TypeID>
+      <Type>Income</Type>
+      <Cost>1800</Cost>
+      <Note />
+      <Content>platby doplň. činnost Tv</Content>
+      <Remaining>49384</Remaining>
+      <PayedTo />
+      <CustName>Miroslav Zeman</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2464</OverallID>
+      <Date>1.6.</Date>
+      <TypeID>136</TypeID>
+      <Type>Expense</Type>
+      <Cost>8000</Cost>
+      <Note />
+      <Content>ekonomické služby 5/10</Content>
+      <Remaining>41384</Remaining>
+      <PayedTo />
+      <CustName>Jana Pouzarová</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2465</OverallID>
+      <Date>1.6.</Date>
+      <TypeID>2329</TypeID>
+      <Type>Income</Type>
+      <Cost>8676</Cost>
+      <Note />
+      <Content>fotografie</Content>
+      <Remaining>50060</Remaining>
+      <PayedTo />
+      <CustName>učitelé ZŠ</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2466</OverallID>
+      <Date>1.6.</Date>
+      <TypeID>137</TypeID>
+      <Type>Expense</Type>
+      <Cost>8676</Cost>
+      <Note />
+      <Content>fotografie</Content>
+      <Remaining>41384</Remaining>
+      <PayedTo />
+      <CustName>Kodak Express Klatovy</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2467</OverallID>
+      <Date>1.6.</Date>
+      <TypeID>138</TypeID>
+      <Type>Expense</Type>
+      <Cost>60</Cost>
+      <Note />
+      <Content>2 klíče</Content>
+      <Remaining>41324</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Milan Vacovský - kování, zámky</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2468</OverallID>
+      <Date>1.6.</Date>
+      <TypeID>139</TypeID>
+      <Type>Expense</Type>
+      <Cost>122</Cost>
+      <Note />
+      <Content>Lano ocelové 14 m</Content>
+      <Remaining>41202</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Vrabec a Vrabec s.r.o.</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2469</OverallID>
+      <Date>2.6.</Date>
+      <TypeID>2330</TypeID>
+      <Type>Income</Type>
+      <Cost>4125</Cost>
+      <Note />
+      <Content>platby doplň. činnost Tv</Content>
+      <Remaining>45327</Remaining>
+      <PayedTo />
+      <CustName>Margita Pražáková</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2470</OverallID>
+      <Date>2.6.</Date>
+      <TypeID>2331</TypeID>
+      <Type>Income</Type>
+      <Cost>10000</Cost>
+      <Note />
+      <Content>převod hotovosti z pokladny ŠJ</Content>
+      <Remaining>55327</Remaining>
+      <PayedTo />
+      <CustName>Jana Venzarová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2471</OverallID>
+      <Date>3.6.</Date>
+      <TypeID>2332</TypeID>
+      <Type>Income</Type>
+      <Cost>29000</Cost>
+      <Note />
+      <Content>převod hotovosti z pokladny ŠJ</Content>
+      <Remaining>84327</Remaining>
+      <PayedTo />
+      <CustName>Jana Venzarová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2472</OverallID>
+      <Date>3.6.</Date>
+      <TypeID>140</TypeID>
+      <Type>Expense</Type>
+      <Cost>20000</Cost>
+      <Note />
+      <Content>převod hotovosti na běžný účet</Content>
+      <Remaining>64327</Remaining>
+      <PayedTo />
+      <CustName>Mgr. Benešová Jitka</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2473</OverallID>
+      <Date>3.6.</Date>
+      <TypeID>141</TypeID>
+      <Type>Expense</Type>
+      <Cost>35</Cost>
+      <Note />
+      <Content>klíč</Content>
+      <Remaining>64292</Remaining>
+      <PayedTo />
+      <CustName>Milan Vacovský - kování, zámky</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2474</OverallID>
+      <Date>4.6.</Date>
+      <TypeID>142</TypeID>
+      <Type>Expense</Type>
+      <Cost>18</Cost>
+      <Note />
+      <Content>poštovné</Content>
+      <Remaining>64274</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Česká pošta</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2475</OverallID>
+      <Date>4.6.</Date>
+      <TypeID>2333</TypeID>
+      <Type>Income</Type>
+      <Cost>5085</Cost>
+      <Note />
+      <Content>fotografie</Content>
+      <Remaining>69359</Remaining>
+      <PayedTo />
+      <CustName>učitelé ZŠ</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2476</OverallID>
+      <Date>4.6.</Date>
+      <TypeID>143</TypeID>
+      <Type>Expense</Type>
+      <Cost>5085</Cost>
+      <Note />
+      <Content>fotografie</Content>
+      <Remaining>64274</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Kodak Express Klatovy</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2477</OverallID>
+      <Date>4.6.</Date>
+      <TypeID>144</TypeID>
+      <Type>Expense</Type>
+      <Cost>418</Cost>
+      <Note />
+      <Content>praní prádla</Content>
+      <Remaining>63856</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Klatovská prádelna s.r.o.</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2478</OverallID>
+      <Date>7.6.</Date>
+      <TypeID>145</TypeID>
+      <Type>Expense</Type>
+      <Cost>10</Cost>
+      <Note />
+      <Content>poštovné</Content>
+      <Remaining>63846</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Česká pošta</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2479</OverallID>
+      <Date>7.6.</Date>
+      <TypeID>146</TypeID>
+      <Type>Expense</Type>
+      <Cost>89</Cost>
+      <Note />
+      <Content>kryt klín. řemene - sekačka</Content>
+      <Remaining>63757</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Mountfield a.s. KT</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2480</OverallID>
+      <Date>8.6.</Date>
+      <TypeID>147</TypeID>
+      <Type>Expense</Type>
+      <Cost>22008</Cost>
+      <Note />
+      <Content>mzda 5/2010</Content>
+      <Remaining>41749</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>zaměstnanci ZŠ</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2481</OverallID>
+      <Date>8.6.</Date>
+      <TypeID>2334</TypeID>
+      <Type>Income</Type>
+      <Cost>10000</Cost>
+      <Note />
+      <Content>převod hotovosti z pokladny MŠ</Content>
+      <Remaining>51749</Remaining>
+      <PayedTo />
+      <CustName>Hana Procházková</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2482</OverallID>
+      <Date>8.6.</Date>
+      <TypeID>148</TypeID>
+      <Type>Expense</Type>
+      <Cost>100</Cost>
+      <Note />
+      <Content>poštovné</Content>
+      <Remaining>51649</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Česká pošta</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2483</OverallID>
+      <Date>10.6.</Date>
+      <TypeID>149</TypeID>
+      <Type>Expense</Type>
+      <Cost>470</Cost>
+      <Note />
+      <Content>vysklení a zasklení okna</Content>
+      <Remaining>51179</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Král Josef, Plánice</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2484</OverallID>
+      <Date>10.6.</Date>
+      <TypeID>150</TypeID>
+      <Type>Expense</Type>
+      <Cost>441</Cost>
+      <Note />
+      <Content>vodoinst. materiál</Content>
+      <Remaining>50738</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Superplast s.r.o.</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2485</OverallID>
+      <Date>10.6.</Date>
+      <TypeID>151</TypeID>
+      <Type>Expense</Type>
+      <Cost>229</Cost>
+      <Note />
+      <Content>olej motorový (sekačka)</Content>
+      <Remaining>50509</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Mountfield a.s. KT</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2486</OverallID>
+      <Date>14.6.</Date>
+      <TypeID>2335</TypeID>
+      <Type>Income</Type>
+      <Cost>1551</Cost>
+      <Note />
+      <Content>doprava žáků MŠ - Nepomuk</Content>
+      <Remaining>52060</Remaining>
+      <PayedTo />
+      <CustName>Sdružení rodičů MŠ</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2487</OverallID>
+      <Date>14.6.</Date>
+      <TypeID>152</TypeID>
+      <Type>Expense</Type>
+      <Cost>45</Cost>
+      <Note />
+      <Content>šrouby</Content>
+      <Remaining>52015</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Petr Dio, Prům. zb. Plánice</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2488</OverallID>
+      <Date>15.6.</Date>
+      <TypeID>2336</TypeID>
+      <Type>Income</Type>
+      <Cost>16000</Cost>
+      <Note />
+      <Content>převod hotovosti z pokladny ŠJ</Content>
+      <Remaining>68015</Remaining>
+      <PayedTo />
+      <CustName>Jana Venzarová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2489</OverallID>
+      <Date>17.6.</Date>
+      <TypeID>153</TypeID>
+      <Type>Expense</Type>
+      <Cost>20</Cost>
+      <Note />
+      <Content>poštovné</Content>
+      <Remaining>67995</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Česká pošta</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2490</OverallID>
+      <Date>17.6.</Date>
+      <TypeID>154</TypeID>
+      <Type>Expense</Type>
+      <Cost>432</Cost>
+      <Note />
+      <Content>Nýtovací kleště, gola imbus</Content>
+      <Remaining>67563</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>INNA obch. spol. KT</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2491</OverallID>
+      <Date>18.6.</Date>
+      <TypeID>155</TypeID>
+      <Type>Expense</Type>
+      <Cost>146</Cost>
+      <Note />
+      <Content>vruty</Content>
+      <Remaining>67417</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Šimek proficentrum s.r.o</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2492</OverallID>
+      <Date>21.6.</Date>
+      <TypeID>2337</TypeID>
+      <Type>Income</Type>
+      <Cost>15023</Cost>
+      <Note />
+      <Content>doprava žáků 2.st.-Jižní Čechy</Content>
+      <Remaining>82440</Remaining>
+      <PayedTo />
+      <CustName>Jitka Bulánková</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2493</OverallID>
+      <Date>21.6.</Date>
+      <TypeID>156</TypeID>
+      <Type>Expense</Type>
+      <Cost>24000</Cost>
+      <Note />
+      <Content>převod hotovosti na běžný účet</Content>
+      <Remaining>58440</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Mgr. Benešová Jitka</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2494</OverallID>
+      <Date>21.6.</Date>
+      <TypeID>2338</TypeID>
+      <Type>Income</Type>
+      <Cost>340</Cost>
+      <Note />
+      <Content>část.úhrada nákl. na šk.časop.</Content>
+      <Remaining>58780</Remaining>
+      <PayedTo />
+      <CustName>žáci ZŠ</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2495</OverallID>
+      <Date>21.6.</Date>
+      <TypeID>2339</TypeID>
+      <Type>Income</Type>
+      <Cost>1224</Cost>
+      <Note />
+      <Content>doprava žáků MŠ - Nalž. H.</Content>
+      <Remaining>60004</Remaining>
+      <PayedTo />
+      <CustName>Sdružení rodičů MŠ</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2496</OverallID>
+      <Date>21.6.</Date>
+      <TypeID>157</TypeID>
+      <Type>Expense</Type>
+      <Cost>112</Cost>
+      <Note />
+      <Content>Připínáčky nást. 8 bal.</Content>
+      <Remaining>59892</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Poprokan s.r.o.</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2497</OverallID>
+      <Date>21.6.</Date>
+      <TypeID>158</TypeID>
+      <Type>Expense</Type>
+      <Cost>408</Cost>
+      <Note />
+      <Content>špendlíky, lepící hmota</Content>
+      <Remaining>59484</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>AUKLAND s.r.o. papír hračky KT</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2498</OverallID>
+      <Date>21.6.</Date>
+      <TypeID>159</TypeID>
+      <Type>Expense</Type>
+      <Cost>145</Cost>
+      <Note />
+      <Content>špendlíky na nástěnku</Content>
+      <Remaining>59339</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Papírnictví Semerád KT </CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2499</OverallID>
+      <Date>22.6.</Date>
+      <TypeID>160</TypeID>
+      <Type>Expense</Type>
+      <Cost>24</Cost>
+      <Note />
+      <Content>aranž. hmota</Content>
+      <Remaining>59315</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Petr Dio, Prům. zb. Plánice</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2500</OverallID>
+      <Date>23.6.</Date>
+      <TypeID>2340</TypeID>
+      <Type>Income</Type>
+      <Cost>2558</Cost>
+      <Note />
+      <Content>doprava žáků 1. st. - Nepomuk</Content>
+      <Remaining>61873</Remaining>
+      <PayedTo />
+      <CustName>žáci 1. stupně</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2501</OverallID>
+      <Date>23.6.</Date>
+      <TypeID>2341</TypeID>
+      <Type>Income</Type>
+      <Cost>228</Cost>
+      <Note />
+      <Content>část.úhrada nákl. na šk.časop.</Content>
+      <Remaining>62101</Remaining>
+      <PayedTo />
+      <CustName>žáci ZŠ</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2502</OverallID>
+      <Date>23.6.</Date>
+      <TypeID>2342</TypeID>
+      <Type>Income</Type>
+      <Cost>1685</Cost>
+      <Note />
+      <Content>doprava žáků 1. st.- Krůtěnice</Content>
+      <Remaining>63786</Remaining>
+      <PayedTo />
+      <CustName>Sdružení rodičů MŠ</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2503</OverallID>
+      <Date>24.6.</Date>
+      <TypeID>2343</TypeID>
+      <Type>Income</Type>
+      <Cost>50</Cost>
+      <Note />
+      <Content>poškozené učebnice Čj, Aj</Content>
+      <Remaining>63836</Remaining>
+      <PayedTo />
+      <CustName>Mgr. Zdeňka Huspeková</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2504</OverallID>
+      <Date>24.6.</Date>
+      <TypeID>161</TypeID>
+      <Type>Expense</Type>
+      <Cost>53</Cost>
+      <Note />
+      <Content>lepící guma</Content>
+      <Remaining>63783</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Petr Dio, Prům. zb. Plánice</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2505</OverallID>
+      <Date>24.6.</Date>
+      <TypeID>162</TypeID>
+      <Type>Expense</Type>
+      <Cost>90</Cost>
+      <Note />
+      <Content>napínáčky</Content>
+      <Remaining>63693</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Petr Dio, Prům. zb. Plánice</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2506</OverallID>
+      <Date>24.6.</Date>
+      <TypeID>2344</TypeID>
+      <Type>Income</Type>
+      <Cost>4</Cost>
+      <Note />
+      <Content>část.úhrada nákl. na šk.časop.</Content>
+      <Remaining>63697</Remaining>
+      <PayedTo />
+      <CustName>žáci ZŠ</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2507</OverallID>
+      <Date>24.6.</Date>
+      <TypeID>163</TypeID>
+      <Type>Expense</Type>
+      <Cost>145</Cost>
+      <Note />
+      <Content>špendlíky</Content>
+      <Remaining>63552</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Papírnictví Semerád KT </CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2508</OverallID>
+      <Date>25.6.</Date>
+      <TypeID>164</TypeID>
+      <Type>Expense</Type>
+      <Cost>750</Cost>
+      <Note>3 kusy</Note>
+      <Content>Publikace "Škola v Plánici..."</Content>
+      <Remaining>62802</Remaining>
+      <PayedTo />
+      <CustName>Mgr. Dušan Kučera</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2509</OverallID>
+      <Date>25.6.</Date>
+      <TypeID>165</TypeID>
+      <Type>Expense</Type>
+      <Cost>124</Cost>
+      <Note />
+      <Content>lepicí guma bílá</Content>
+      <Remaining>62678</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Poprokan s.r.o. KT</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2510</OverallID>
+      <Date>28.6.</Date>
+      <TypeID>2345</TypeID>
+      <Type>Income</Type>
+      <Cost>2700</Cost>
+      <Note />
+      <Content>platby doplň. činnost Tv</Content>
+      <Remaining>65378</Remaining>
+      <PayedTo />
+      <CustName>Jan Bouberle</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2511</OverallID>
+      <Date>28.6.</Date>
+      <TypeID>2346</TypeID>
+      <Type>Income</Type>
+      <Cost>780</Cost>
+      <Note />
+      <Content>sponz. příspěvky chov. kr.</Content>
+      <Remaining>66158</Remaining>
+      <PayedTo />
+      <CustName>návštěvníci školní výstavy</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2512</OverallID>
+      <Date>28.6.</Date>
+      <TypeID>2347</TypeID>
+      <Type>Income</Type>
+      <Cost>3500</Cost>
+      <Note />
+      <Content>ubytování Zátoň (výlet)</Content>
+      <Remaining>69658</Remaining>
+      <PayedTo />
+      <CustName>žáci ZŠ</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2513</OverallID>
+      <Date>28.6.</Date>
+      <TypeID>2348</TypeID>
+      <Type>Income</Type>
+      <Cost>300</Cost>
+      <Note />
+      <Content>ubytování Zátoň (výlet)</Content>
+      <Remaining>69958</Remaining>
+      <PayedTo />
+      <CustName>učitelé ZŠ</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2514</OverallID>
+      <Date>28.6.</Date>
+      <TypeID>2349</TypeID>
+      <Type>Income</Type>
+      <Cost>4226</Cost>
+      <Note />
+      <Content>doprava žáků 4.-6.- Techmánie</Content>
+      <Remaining>74184</Remaining>
+      <PayedTo />
+      <CustName>žáci ZŠ</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2515</OverallID>
+      <Date>28.6.</Date>
+      <TypeID>2350</TypeID>
+      <Type>Income</Type>
+      <Cost>12000</Cost>
+      <Note />
+      <Content>převod hotovosti z pokladny ŠJ</Content>
+      <Remaining>86184</Remaining>
+      <PayedTo />
+      <CustName>Jana Venzarová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2516</OverallID>
+      <Date>28.6.</Date>
+      <TypeID>166</TypeID>
+      <Type>Expense</Type>
+      <Cost>40000</Cost>
+      <Note />
+      <Content>převod hotovosti na běžný účet</Content>
+      <Remaining>46184</Remaining>
+      <PayedTo />
+      <CustName>Mgr. Zdeňka Huspeková</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2517</OverallID>
+      <Date>28.6.</Date>
+      <TypeID>2351</TypeID>
+      <Type>Income</Type>
+      <Cost>3802</Cost>
+      <Note />
+      <Content>doprava žáků 1. st.- Zoo Plzeň</Content>
+      <Remaining>49986</Remaining>
+      <PayedTo />
+      <CustName>žáci 1.-3. třídy</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2518</OverallID>
+      <Date>29.6.</Date>
+      <TypeID>2352</TypeID>
+      <Type>Income</Type>
+      <Cost>10</Cost>
+      <Note />
+      <Content>poškozená učebnice M 3/3</Content>
+      <Remaining>49996</Remaining>
+      <PayedTo />
+      <CustName>Mgr. Jitka Benešová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2519</OverallID>
+      <Date>29.6.</Date>
+      <TypeID>167</TypeID>
+      <Type>Expense</Type>
+      <Cost>50</Cost>
+      <Note />
+      <Content>vrácení zálohy na šatní zámek </Content>
+      <Remaining>49946</Remaining>
+      <PayedTo />
+      <CustName>Karolína Votýpková</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2520</OverallID>
+      <Date>30.6.</Date>
+      <TypeID>2353</TypeID>
+      <Type>Income</Type>
+      <Cost>23900</Cost>
+      <Note />
+      <Content>převod hotovosti z pokladny ŠJ</Content>
+      <Remaining>73846</Remaining>
+      <PayedTo />
+      <CustName>Jana Venzarová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2521</OverallID>
+      <Date>30.6.</Date>
+      <TypeID>168</TypeID>
+      <Type>Expense</Type>
+      <Cost>20000</Cost>
+      <Note />
+      <Content>převod hotovosti na běžný účet</Content>
+      <Remaining>53846</Remaining>
+      <PayedTo />
+      <CustName>Jan Bulánek</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2522</OverallID>
+      <Date>30.6.</Date>
+      <TypeID>2354</TypeID>
+      <Type>Income</Type>
+      <Cost>57</Cost>
+      <Note />
+      <Content>poškozené učebnice Hv 4 (3 ks)</Content>
+      <Remaining>53903</Remaining>
+      <PayedTo />
+      <CustName>Mgr. Jolana Kloudová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2523</OverallID>
+      <Date>30.6.</Date>
+      <TypeID>2355</TypeID>
+      <Type>Income</Type>
+      <Cost>5000</Cost>
+      <Note />
+      <Content>převod hotovosti z pokladny MŠ</Content>
+      <Remaining>58903</Remaining>
+      <PayedTo />
+      <CustName>Hana Procházková</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2524</OverallID>
+      <Date>30.6.</Date>
+      <TypeID>2356</TypeID>
+      <Type>Income</Type>
+      <Cost>570</Cost>
+      <Note />
+      <Content>platby doplň. činnost Tv</Content>
+      <Remaining>59473</Remaining>
+      <PayedTo />
+      <CustName>Margita Pražáková</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2525</OverallID>
+      <Date>30.6.</Date>
+      <TypeID>169</TypeID>
+      <Type>Expense</Type>
+      <Cost>39</Cost>
+      <Note />
+      <Content>mucholapky 8 ks</Content>
+      <Remaining>59434</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Frančík s.r.o., Ústaleč</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2526</OverallID>
+      <Date>30.6.</Date>
+      <TypeID>170</TypeID>
+      <Type>Expense</Type>
+      <Cost>180</Cost>
+      <Note />
+      <Content>Chip CS - odb. lit.</Content>
+      <Remaining>59254</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Kaufland ČR v.o.s.</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2527</OverallID>
+      <Date>30.6.</Date>
+      <TypeID>2357</TypeID>
+      <Type>Income</Type>
+      <Cost>4550</Cost>
+      <Note />
+      <Content>platby doplň. činnost Tv</Content>
+      <Remaining>63804</Remaining>
+      <PayedTo />
+      <CustName>Jaroslava Tomanová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2528</OverallID>
+      <Date>1.7.</Date>
+      <TypeID>171</TypeID>
+      <Type>Expense</Type>
+      <Cost>100</Cost>
+      <Note />
+      <Content>poštovné</Content>
+      <Remaining>63704</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Česká pošta</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2529</OverallID>
+      <Date>2.7.</Date>
+      <TypeID>172</TypeID>
+      <Type>Expense</Type>
+      <Cost>16000</Cost>
+      <Note />
+      <Content>ekonomické služby 6,7/10</Content>
+      <Remaining>47704</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Jana Pouzarová</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2530</OverallID>
+      <Date>2.7.</Date>
+      <TypeID>2358</TypeID>
+      <Type>Income</Type>
+      <Cost>642</Cost>
+      <Note />
+      <Content>prodej sešitů</Content>
+      <Remaining>48346</Remaining>
+      <PayedTo />
+      <CustName>Josef Toman</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2531</OverallID>
+      <Date>2.7.</Date>
+      <TypeID>173</TypeID>
+      <Type>Expense</Type>
+      <Cost>26</Cost>
+      <Note />
+      <Content>poštovné</Content>
+      <Remaining>48320</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Česká pošta</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2532</OverallID>
+      <Date>8.7.</Date>
+      <TypeID>174</TypeID>
+      <Type>Expense</Type>
+      <Cost>200</Cost>
+      <Note />
+      <Content>benzín do sekačky</Content>
+      <Remaining>48120</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>G.A.S. Petroleum - Plánice</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2533</OverallID>
+      <Date>11.7.</Date>
+      <TypeID>175</TypeID>
+      <Type>Expense</Type>
+      <Cost>218</Cost>
+      <Note />
+      <Content>spray na nábytek</Content>
+      <Remaining>47902</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>OBI Klatovy</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2534</OverallID>
+      <Date>15.7.</Date>
+      <TypeID>176</TypeID>
+      <Type>Expense</Type>
+      <Cost>2547</Cost>
+      <Note />
+      <Content>mzda 6/2010</Content>
+      <Remaining>45355</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>zaměstnanci ZŠ</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2535</OverallID>
+      <Date>15.7.</Date>
+      <TypeID>177</TypeID>
+      <Type>Expense</Type>
+      <Cost>220</Cost>
+      <Note />
+      <Content>krmivo pro činčily</Content>
+      <Remaining>45135</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Fink výroba krm. směsí Nezvěstice</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2536</OverallID>
+      <Date>23.7.</Date>
+      <TypeID>178</TypeID>
+      <Type>Expense</Type>
+      <Cost>409</Cost>
+      <Note />
+      <Content>lešť. pasta na podlahu</Content>
+      <Remaining>44726</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Drogerie SAVITA, KT</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2537</OverallID>
+      <Date>23.7.</Date>
+      <TypeID>179</TypeID>
+      <Type>Expense</Type>
+      <Cost>1155</Cost>
+      <Note />
+      <Content>lešť. pasta na podlahu</Content>
+      <Remaining>43571</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>drogerie PRAMYKO, KT</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2538</OverallID>
+      <Date>23.7.</Date>
+      <TypeID>180</TypeID>
+      <Type>Expense</Type>
+      <Cost>78</Cost>
+      <Note />
+      <Content>pokladní doklady - tiskopisy</Content>
+      <Remaining>43493</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Poprokan s.r.o.</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2539</OverallID>
+      <Date>23.7.</Date>
+      <TypeID>181</TypeID>
+      <Type>Expense</Type>
+      <Cost>124</Cost>
+      <Note />
+      <Content>Kotouče řezné na nerez</Content>
+      <Remaining>43369</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>INNA obch. spol. KT</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2540</OverallID>
+      <Date>30.7.</Date>
+      <TypeID>182</TypeID>
+      <Type>Expense</Type>
+      <Cost>92</Cost>
+      <Note />
+      <Content>Trubice 18 W - 2 ks</Content>
+      <Remaining>43277</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>ELFETEX Plzeň</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2541</OverallID>
+      <Date>10.8.</Date>
+      <TypeID>2359</TypeID>
+      <Type>Income</Type>
+      <Cost>2930</Cost>
+      <Note />
+      <Content>platby doplň. činnost Tv</Content>
+      <Remaining>46207</Remaining>
+      <PayedTo />
+      <CustName>Jaroslava Tomanová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2542</OverallID>
+      <Date>10.8.</Date>
+      <TypeID>2360</TypeID>
+      <Type>Income</Type>
+      <Cost>1620</Cost>
+      <Note />
+      <Content>platby doplň. činnost Tv</Content>
+      <Remaining>47827</Remaining>
+      <PayedTo />
+      <CustName>Jan Bouberle</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2543</OverallID>
+      <Date>10.8.</Date>
+      <TypeID>2361</TypeID>
+      <Type>Income</Type>
+      <Cost>13000</Cost>
+      <Note />
+      <Content>převod hotovosti z pokladny ŠJ</Content>
+      <Remaining>60827</Remaining>
+      <PayedTo />
+      <CustName>Jana Venzarová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2544</OverallID>
+      <Date>10.8.</Date>
+      <TypeID>2362</TypeID>
+      <Type>Income</Type>
+      <Cost>2925</Cost>
+      <Note />
+      <Content>platby doplň. činnost Tv</Content>
+      <Remaining>63752</Remaining>
+      <PayedTo />
+      <CustName>Margita Pražáková</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2545</OverallID>
+      <Date>10.8.</Date>
+      <TypeID>183</TypeID>
+      <Type>Expense</Type>
+      <Cost>475</Cost>
+      <Note />
+      <Content>toal. papír (48 ks)</Content>
+      <Remaining>63277</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Kaufland ČR v.o.s.</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2546</OverallID>
+      <Date>10.8.</Date>
+      <TypeID>2363</TypeID>
+      <Type>Income</Type>
+      <Cost>180</Cost>
+      <Note />
+      <Content>platby doplň. činnost Tv</Content>
+      <Remaining>63457</Remaining>
+      <PayedTo />
+      <CustName>Jaroslava Tomanová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2547</OverallID>
+      <Date>10.8.</Date>
+      <TypeID>184</TypeID>
+      <Type>Expense</Type>
+      <Cost>14</Cost>
+      <Note />
+      <Content>poštovné</Content>
+      <Remaining>63443</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Česká pošta</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2548</OverallID>
+      <Date>13.8.</Date>
+      <TypeID>185</TypeID>
+      <Type>Expense</Type>
+      <Cost>165</Cost>
+      <Note />
+      <Content>Spoj. material</Content>
+      <Remaining>63278</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Vrabec a Vrabec s.r.o.</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2549</OverallID>
+      <Date>18.8.</Date>
+      <TypeID>186</TypeID>
+      <Type>Expense</Type>
+      <Cost>67</Cost>
+      <Note />
+      <Content>Trhací nýty</Content>
+      <Remaining>63211</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Vrabec a Vrabec s.r.o.</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2550</OverallID>
+      <Date>18.8.</Date>
+      <TypeID>187</TypeID>
+      <Type>Expense</Type>
+      <Cost>183</Cost>
+      <Note />
+      <Content>kabel a zásuvky</Content>
+      <Remaining>63028</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Václav Drozda - elektro</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2551</OverallID>
+      <Date>24.8.</Date>
+      <TypeID>188</TypeID>
+      <Type>Expense</Type>
+      <Cost>459</Cost>
+      <Note />
+      <Content>Mop, hrábě, šroubovák ...</Content>
+      <Remaining>62569</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>FERRUM Plzeň s.r.o.</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2552</OverallID>
+      <Date>26.8.</Date>
+      <TypeID>189</TypeID>
+      <Type>Expense</Type>
+      <Cost>289</Cost>
+      <Note />
+      <Content>kronika</Content>
+      <Remaining>62280</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Papírnictví Semerád KT </CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2553</OverallID>
+      <Date>26.8.</Date>
+      <TypeID>2364</TypeID>
+      <Type>Income</Type>
+      <Cost>372</Cost>
+      <Note />
+      <Content>železný odpad</Content>
+      <Remaining>62652</Remaining>
+      <PayedTo />
+      <CustName>Kovošrot Nepomuk s.r.o.</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2554</OverallID>
+      <Date>26.8.</Date>
+      <TypeID>2365</TypeID>
+      <Type>Income</Type>
+      <Cost>100</Cost>
+      <Note />
+      <Content>prodej cvrčků a hlodavců</Content>
+      <Remaining>62752</Remaining>
+      <PayedTo />
+      <CustName>ZOO Laguna KT</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2555</OverallID>
+      <Date>27.8.</Date>
+      <TypeID>190</TypeID>
+      <Type>Expense</Type>
+      <Cost>1000</Cost>
+      <Note />
+      <Content>Látka na závěsy</Content>
+      <Remaining>61752</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Hien Dang Xuan, Mnich. Hradiště</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2556</OverallID>
+      <Date>30.8.</Date>
+      <TypeID>191</TypeID>
+      <Type>Expense</Type>
+      <Cost>22000</Cost>
+      <Note />
+      <Content>převod hotovosti na běžný účet</Content>
+      <Remaining>39752</Remaining>
+      <PayedTo />
+      <CustName>Mgr. Zdeňka Huspeková</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2557</OverallID>
+      <Date>30.8.</Date>
+      <TypeID>2366</TypeID>
+      <Type>Income</Type>
+      <Cost>16000</Cost>
+      <Note />
+      <Content>převod hotovosti z pokladny ŠJ</Content>
+      <Remaining>55752</Remaining>
+      <PayedTo />
+      <CustName>Jana Venzarová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2558</OverallID>
+      <Date>31.8.</Date>
+      <TypeID>192</TypeID>
+      <Type>Expense</Type>
+      <Cost>65</Cost>
+      <Note />
+      <Content>obal 13 ks</Content>
+      <Remaining>55687</Remaining>
+      <PayedTo />
+      <CustName>Poprokan s.r.o.</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2559</OverallID>
+      <Date>1.9.</Date>
+      <TypeID>2367</TypeID>
+      <Type>Income</Type>
+      <Cost>120</Cost>
+      <Note />
+      <Content>školné ŠD září - prosinec 2010</Content>
+      <Remaining>55807</Remaining>
+      <PayedTo />
+      <CustName>Radka Sudová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2560</OverallID>
+      <Date>1.9.</Date>
+      <TypeID>2368</TypeID>
+      <Type>Income</Type>
+      <Cost>930</Cost>
+      <Note />
+      <Content>platby doplň. činnost Tv</Content>
+      <Remaining>56737</Remaining>
+      <PayedTo />
+      <CustName>Martina Šindelářová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2561</OverallID>
+      <Date>1.9.</Date>
+      <TypeID>2369</TypeID>
+      <Type>Income</Type>
+      <Cost>5724</Cost>
+      <Note />
+      <Content>nájem 6,7,8,9/2010</Content>
+      <Remaining>62461</Remaining>
+      <PayedTo />
+      <CustName>Martina Šindelářová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2562</OverallID>
+      <Date>1.9.</Date>
+      <TypeID>2370</TypeID>
+      <Type>Income</Type>
+      <Cost>120</Cost>
+      <Note />
+      <Content>školné ŠD září - prosinec 2010</Content>
+      <Remaining>62581</Remaining>
+      <PayedTo />
+      <CustName>Zdeněk Pavlík</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2563</OverallID>
+      <Date>1.9.</Date>
+      <TypeID>2371</TypeID>
+      <Type>Income</Type>
+      <Cost>120</Cost>
+      <Note />
+      <Content>školné ŠD září - prosinec 2010</Content>
+      <Remaining>62701</Remaining>
+      <PayedTo />
+      <CustName>Pavel Venc</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2564</OverallID>
+      <Date>1.9.</Date>
+      <TypeID>2372</TypeID>
+      <Type>Income</Type>
+      <Cost>120</Cost>
+      <Note />
+      <Content>školné ŠD září - prosinec 2010</Content>
+      <Remaining>62821</Remaining>
+      <PayedTo />
+      <CustName>Matyáš Bareš</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2565</OverallID>
+      <Date>1.9.</Date>
+      <TypeID>2373</TypeID>
+      <Type>Income</Type>
+      <Cost>120</Cost>
+      <Note />
+      <Content>školné ŠD září - prosinec 2010</Content>
+      <Remaining>62941</Remaining>
+      <PayedTo />
+      <CustName>Matěj Frána</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2566</OverallID>
+      <Date>1.9.</Date>
+      <TypeID>2374</TypeID>
+      <Type>Income</Type>
+      <Cost>120</Cost>
+      <Note />
+      <Content>školné ŠD září - prosinec 2010</Content>
+      <Remaining>63061</Remaining>
+      <PayedTo />
+      <CustName>Valerie Brožíková</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2567</OverallID>
+      <Date>1.9.</Date>
+      <TypeID>2375</TypeID>
+      <Type>Income</Type>
+      <Cost>120</Cost>
+      <Note />
+      <Content>školné ŠD září - prosinec 2010</Content>
+      <Remaining>63181</Remaining>
+      <PayedTo />
+      <CustName>Markéta Černá</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2568</OverallID>
+      <Date>1.9.</Date>
+      <TypeID>2376</TypeID>
+      <Type>Income</Type>
+      <Cost>120</Cost>
+      <Note />
+      <Content>školné ŠD září - prosinec 2010</Content>
+      <Remaining>63301</Remaining>
+      <PayedTo />
+      <CustName>Aneta Apolínová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2569</OverallID>
+      <Date>1.9.</Date>
+      <TypeID>193</TypeID>
+      <Type>Expense</Type>
+      <Cost>41</Cost>
+      <Note />
+      <Content>Svař. elektrody, řez. kotouč</Content>
+      <Remaining>63260</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Petr Dio, Prům. zb. Plánice</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2570</OverallID>
+      <Date>1.9.</Date>
+      <TypeID>2377</TypeID>
+      <Type>Income</Type>
+      <Cost>2190</Cost>
+      <Note />
+      <Content>platby doplň. činnost Tv</Content>
+      <Remaining>65450</Remaining>
+      <PayedTo />
+      <CustName>Margita Pražáková</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2571</OverallID>
+      <Date>1.9.</Date>
+      <TypeID>2378</TypeID>
+      <Type>Income</Type>
+      <Cost>240</Cost>
+      <Note />
+      <Content>školné ŠD září - prosinec 2010</Content>
+      <Remaining>65690</Remaining>
+      <PayedTo />
+      <CustName>Tomáš a Petr Marešovi</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2572</OverallID>
+      <Date>2.9.</Date>
+      <TypeID>2379</TypeID>
+      <Type>Income</Type>
+      <Cost>120</Cost>
+      <Note />
+      <Content>školné ŠD září - prosinec 2010</Content>
+      <Remaining>65810</Remaining>
+      <PayedTo />
+      <CustName>David Novák</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2573</OverallID>
+      <Date>2.9.</Date>
+      <TypeID>2380</TypeID>
+      <Type>Income</Type>
+      <Cost>120</Cost>
+      <Note />
+      <Content>školné ŠD září - prosinec 2010</Content>
+      <Remaining>65930</Remaining>
+      <PayedTo />
+      <CustName>Šimon Havlík</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2574</OverallID>
+      <Date>2.9.</Date>
+      <TypeID>2381</TypeID>
+      <Type>Income</Type>
+      <Cost>120</Cost>
+      <Note />
+      <Content>školné ŠD září - prosinec 2010</Content>
+      <Remaining>66050</Remaining>
+      <PayedTo />
+      <CustName>Vít Volf</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2575</OverallID>
+      <Date>2.9.</Date>
+      <TypeID>2382</TypeID>
+      <Type>Income</Type>
+      <Cost>120</Cost>
+      <Note />
+      <Content>školné ŠD září - prosinec 2010</Content>
+      <Remaining>66170</Remaining>
+      <PayedTo />
+      <CustName>Lucie Kováříková</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2576</OverallID>
+      <Date>2.9.</Date>
+      <TypeID>2383</TypeID>
+      <Type>Income</Type>
+      <Cost>120</Cost>
+      <Note />
+      <Content>školné ŠD září - prosinec 2010</Content>
+      <Remaining>66290</Remaining>
+      <PayedTo />
+      <CustName>Petr Sládek</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2577</OverallID>
+      <Date>2.9.</Date>
+      <TypeID>2384</TypeID>
+      <Type>Income</Type>
+      <Cost>120</Cost>
+      <Note />
+      <Content>školné ŠD září - prosinec 2010</Content>
+      <Remaining>66410</Remaining>
+      <PayedTo />
+      <CustName>Adéla Majerová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2578</OverallID>
+      <Date>2.9.</Date>
+      <TypeID>2385</TypeID>
+      <Type>Income</Type>
+      <Cost>1665</Cost>
+      <Note />
+      <Content>platby doplň. činnost Tv</Content>
+      <Remaining>68075</Remaining>
+      <PayedTo />
+      <CustName>Jan Bouberle</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2579</OverallID>
+      <Date>2.9.</Date>
+      <TypeID>2386</TypeID>
+      <Type>Income</Type>
+      <Cost>120</Cost>
+      <Note />
+      <Content>školné ŠD září - prosinec 2010</Content>
+      <Remaining>68195</Remaining>
+      <PayedTo />
+      <CustName>Jakub Venzara</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2580</OverallID>
+      <Date>2.9.</Date>
+      <TypeID>2387</TypeID>
+      <Type>Income</Type>
+      <Cost>13880</Cost>
+      <Note />
+      <Content>platby doplň. činnost Tv</Content>
+      <Remaining>82075</Remaining>
+      <PayedTo />
+      <CustName>Jaroslava Tomanová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2581</OverallID>
+      <Date>2.9.</Date>
+      <TypeID>2388</TypeID>
+      <Type>Income</Type>
+      <Cost>50</Cost>
+      <Note />
+      <Content>záloha na šat. zámek</Content>
+      <Remaining>82125</Remaining>
+      <PayedTo />
+      <CustName>Terezie Vítková</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2582</OverallID>
+      <Date>2.9.</Date>
+      <TypeID>194</TypeID>
+      <Type>Expense</Type>
+      <Cost>24000</Cost>
+      <Note />
+      <Content>převod hotovosti na běžný účet</Content>
+      <Remaining>58125</Remaining>
+      <PayedTo />
+      <CustName>Jaroslava Tomanová</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2583</OverallID>
+      <Date>2.9.</Date>
+      <TypeID>195</TypeID>
+      <Type>Expense</Type>
+      <Cost>100</Cost>
+      <Note />
+      <Content>poštovné</Content>
+      <Remaining>58025</Remaining>
+      <PayedTo />
+      <CustName>Česká pošta</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2584</OverallID>
+      <Date>2.9.</Date>
+      <TypeID>2389</TypeID>
+      <Type>Income</Type>
+      <Cost>120</Cost>
+      <Note />
+      <Content>školné ŠD září - prosinec 2010</Content>
+      <Remaining>58145</Remaining>
+      <PayedTo />
+      <CustName>Jakub Lepší</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2585</OverallID>
+      <Date>2.9.</Date>
+      <TypeID>2390</TypeID>
+      <Type>Income</Type>
+      <Cost>120</Cost>
+      <Note />
+      <Content>školné ŠD září - prosinec 2010</Content>
+      <Remaining>58265</Remaining>
+      <PayedTo />
+      <CustName>Jindřich Nedvěd</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2586</OverallID>
+      <Date>2.9.</Date>
+      <TypeID>196</TypeID>
+      <Type>Expense</Type>
+      <Cost>35</Cost>
+      <Note />
+      <Content>klíč</Content>
+      <Remaining>58230</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Milan Vacovský - kování, zámky</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2587</OverallID>
+      <Date>3.9.</Date>
+      <TypeID>2391</TypeID>
+      <Type>Income</Type>
+      <Cost>120</Cost>
+      <Note />
+      <Content>školné ŠD září - prosinec 2010</Content>
+      <Remaining>58350</Remaining>
+      <PayedTo />
+      <CustName>Petra Ouředníková</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2588</OverallID>
+      <Date>3.9.</Date>
+      <TypeID>2392</TypeID>
+      <Type>Income</Type>
+      <Cost>120</Cost>
+      <Note />
+      <Content>školné ŠD září - prosinec 2010</Content>
+      <Remaining>58470</Remaining>
+      <PayedTo />
+      <CustName>Nicol Štilipová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2589</OverallID>
+      <Date>3.9.</Date>
+      <TypeID>2393</TypeID>
+      <Type>Income</Type>
+      <Cost>120</Cost>
+      <Note />
+      <Content>školné ŠD září - prosinec 2010</Content>
+      <Remaining>58590</Remaining>
+      <PayedTo />
+      <CustName>Jakub Štilip</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2590</OverallID>
+      <Date>3.9.</Date>
+      <TypeID>2394</TypeID>
+      <Type>Income</Type>
+      <Cost>120</Cost>
+      <Note />
+      <Content>školné ŠD září - prosinec 2010</Content>
+      <Remaining>58710</Remaining>
+      <PayedTo />
+      <CustName>Pavel Sládek</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2591</OverallID>
+      <Date>3.9.</Date>
+      <TypeID>2395</TypeID>
+      <Type>Income</Type>
+      <Cost>14000</Cost>
+      <Note />
+      <Content>převod hotovosti z pokladny ŠJ</Content>
+      <Remaining>72710</Remaining>
+      <PayedTo />
+      <CustName>Jana Venzarová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2592</OverallID>
+      <Date>3.9.</Date>
+      <TypeID>197</TypeID>
+      <Type>Expense</Type>
+      <Cost>24000</Cost>
+      <Note />
+      <Content>převod hotovosti na běžný účet</Content>
+      <Remaining>48710</Remaining>
+      <PayedTo />
+      <CustName>Mgr. Zdeňka Huspeková</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2593</OverallID>
+      <Date>3.9.</Date>
+      <TypeID>198</TypeID>
+      <Type>Expense</Type>
+      <Cost>58</Cost>
+      <Note />
+      <Content>poštovné</Content>
+      <Remaining>48652</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Česká pošta</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2594</OverallID>
+      <Date>6.9.</Date>
+      <TypeID>199</TypeID>
+      <Type>Expense</Type>
+      <Cost>110</Cost>
+      <Note />
+      <Content>výroba klíčů</Content>
+      <Remaining>48542</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Botex Křivoklát</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2595</OverallID>
+      <Date>6.9.</Date>
+      <TypeID>200</TypeID>
+      <Type>Expense</Type>
+      <Cost>125</Cost>
+      <Note />
+      <Content>náboj lepící</Content>
+      <Remaining>48417</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>OBI Plzeň</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2596</OverallID>
+      <Date>6.9.</Date>
+      <TypeID>2396</TypeID>
+      <Type>Income</Type>
+      <Cost>240</Cost>
+      <Note />
+      <Content>školné ŠD září - prosinec 2010</Content>
+      <Remaining>48657</Remaining>
+      <PayedTo />
+      <CustName>Nikola a Eva Forstlová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2597</OverallID>
+      <Date>6.9.</Date>
+      <TypeID>2397</TypeID>
+      <Type>Income</Type>
+      <Cost>120</Cost>
+      <Note />
+      <Content>školné ŠD září - prosinec 2010</Content>
+      <Remaining>48777</Remaining>
+      <PayedTo />
+      <CustName>Michaela Soběhartová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2598</OverallID>
+      <Date>6.9.</Date>
+      <TypeID>2398</TypeID>
+      <Type>Income</Type>
+      <Cost>120</Cost>
+      <Note />
+      <Content>školné ŠD září - prosinec 2010</Content>
+      <Remaining>48897</Remaining>
+      <PayedTo />
+      <CustName>Anežka Pešková</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2599</OverallID>
+      <Date>6.9.</Date>
+      <TypeID>2399</TypeID>
+      <Type>Income</Type>
+      <Cost>700</Cost>
+      <Note>3. tř.</Note>
+      <Content>záloha na šat. zámek</Content>
+      <Remaining>49597</Remaining>
+      <PayedTo />
+      <CustName>Mgr. Renata Pelešková</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2600</OverallID>
+      <Date>6.9.</Date>
+      <TypeID>201</TypeID>
+      <Type>Expense</Type>
+      <Cost>184</Cost>
+      <Note />
+      <Content>benzin Natural 95</Content>
+      <Remaining>49413</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>G.A.S. Petroleum - Plánice</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2601</OverallID>
+      <Date>6.9.</Date>
+      <TypeID>2400</TypeID>
+      <Type>Income</Type>
+      <Cost>120</Cost>
+      <Note />
+      <Content>školné ŠD září - prosinec 2010</Content>
+      <Remaining>49533</Remaining>
+      <PayedTo />
+      <CustName>Lucie Smetanová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2602</OverallID>
+      <Date>6.9.</Date>
+      <TypeID>2401</TypeID>
+      <Type>Income</Type>
+      <Cost>300</Cost>
+      <Note />
+      <Content>záloha na šat. zámek</Content>
+      <Remaining>49833</Remaining>
+      <PayedTo />
+      <CustName>Mgr. Zdeňka Huspeková</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2603</OverallID>
+      <Date>6.9.</Date>
+      <TypeID>2402</TypeID>
+      <Type>Income</Type>
+      <Cost>120</Cost>
+      <Note />
+      <Content>školné ŠD září - prosinec 2010</Content>
+      <Remaining>49953</Remaining>
+      <PayedTo />
+      <CustName>Vojtěch Maňhal</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2604</OverallID>
+      <Date>6.9.</Date>
+      <TypeID>2403</TypeID>
+      <Type>Income</Type>
+      <Cost>120</Cost>
+      <Note />
+      <Content>školné ŠD září - prosinec 2010</Content>
+      <Remaining>50073</Remaining>
+      <PayedTo />
+      <CustName>František Touš</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2605</OverallID>
+      <Date>7.9.</Date>
+      <TypeID>2404</TypeID>
+      <Type>Income</Type>
+      <Cost>120</Cost>
+      <Note />
+      <Content>školné ŠD září - prosinec 2010</Content>
+      <Remaining>50193</Remaining>
+      <PayedTo />
+      <CustName>Marek Jílek</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2606</OverallID>
+      <Date>7.9.</Date>
+      <TypeID>202</TypeID>
+      <Type>Expense</Type>
+      <Cost>8000</Cost>
+      <Note />
+      <Content>ekonomické služby 8/10</Content>
+      <Remaining>42193</Remaining>
+      <PayedTo />
+      <CustName>Jana Pouzarová</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2607</OverallID>
+      <Date>8.9.</Date>
+      <TypeID>2405</TypeID>
+      <Type>Income</Type>
+      <Cost>12000</Cost>
+      <Note />
+      <Content>plavecký výcvik žáků 3. třídy</Content>
+      <Remaining>54193</Remaining>
+      <PayedTo />
+      <CustName>Mgr. Renata Pelešková</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2608</OverallID>
+      <Date>8.9.</Date>
+      <TypeID>2406</TypeID>
+      <Type>Income</Type>
+      <Cost>12800</Cost>
+      <Note />
+      <Content>plavecký výcvik žáků 4. třídy</Content>
+      <Remaining>66993</Remaining>
+      <PayedTo />
+      <CustName>Mgr. Jitka Benešová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2609</OverallID>
+      <Date>8.9.</Date>
+      <TypeID>2407</TypeID>
+      <Type>Income</Type>
+      <Cost>240</Cost>
+      <Note />
+      <Content>školné ŠD září - prosinec 2010</Content>
+      <Remaining>67233</Remaining>
+      <PayedTo />
+      <CustName>Karolína a Jiří Hrachovcovi</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2610</OverallID>
+      <Date>8.9.</Date>
+      <TypeID>2408</TypeID>
+      <Type>Income</Type>
+      <Cost>120</Cost>
+      <Note />
+      <Content>školné ŠD září - prosinec 2010</Content>
+      <Remaining>67353</Remaining>
+      <PayedTo />
+      <CustName>Lenka Radová</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2611</OverallID>
+      <Date>8.9.</Date>
+      <TypeID>2409</TypeID>
+      <Type>Income</Type>
+      <Cost>120</Cost>
+      <Note />
+      <Content>školné ŠD září - prosinec 2010</Content>
+      <Remaining>67473</Remaining>
+      <PayedTo />
+      <CustName>Kateřina Dvořáková</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2612</OverallID>
+      <Date>8.9.</Date>
+      <TypeID>2410</TypeID>
+      <Type>Income</Type>
+      <Cost>120</Cost>
+      <Note />
+      <Content>školné ŠD září - prosinec 2010</Content>
+      <Remaining>67593</Remaining>
+      <PayedTo />
+      <CustName>Ondřej Novák</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2613</OverallID>
+      <Date>8.9.</Date>
+      <TypeID>203</TypeID>
+      <Type>Expense</Type>
+      <Cost>24000</Cost>
+      <Note />
+      <Content>převod hotovosti na běžný účet</Content>
+      <Remaining>43593</Remaining>
+      <PayedTo />
+      <CustName>Jan Bulánek</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2614</OverallID>
+      <Date>8.9.</Date>
+      <TypeID>204</TypeID>
+      <Type>Expense</Type>
+      <Cost>147</Cost>
+      <Note />
+      <Content>Vystřihovánky - 3 sady</Content>
+      <Remaining>43446</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>Trifoil - Karel Novotný</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2615</OverallID>
+      <Date>9.9.</Date>
+      <TypeID>2411</TypeID>
+      <Type>Income</Type>
+      <Cost>120</Cost>
+      <Note />
+      <Content>školné ŠD září - prosinec 2010</Content>
+      <Remaining>43566</Remaining>
+      <PayedTo />
+      <CustName>Václav Husinec</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2616</OverallID>
+      <Date>9.9.</Date>
+      <TypeID>2412</TypeID>
+      <Type>Income</Type>
+      <Cost>240</Cost>
+      <Note />
+      <Content>školné ŠD září - prosinec 2010</Content>
+      <Remaining>43806</Remaining>
+      <PayedTo />
+      <CustName>Michal a Kristýna Kubaňovi</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2617</OverallID>
+      <Date>9.9.</Date>
+      <TypeID>2413</TypeID>
+      <Type>Income</Type>
+      <Cost>120</Cost>
+      <Note />
+      <Content>školné ŠD září - prosinec 2010</Content>
+      <Remaining>43926</Remaining>
+      <PayedTo />
+      <CustName>Vladislav Habada</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2618</OverallID>
+      <Date>9.9.</Date>
+      <TypeID>2414</TypeID>
+      <Type>Income</Type>
+      <Cost>900</Cost>
+      <Note> asdf</Note>
+      <Content>záloha na šat. zámky</Content>
+      <Remaining>44826</Remaining>
+      <PayedTo />
+      <CustName>Edita Černá</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2619</OverallID>
+      <Date>9.9.</Date>
+      <TypeID>2415</TypeID>
+      <Type>Income</Type>
+      <Cost>120</Cost>
+      <Note />
+      <Content>školné ŠD září - prosinec 2010</Content>
+      <Remaining>44946</Remaining>
+      <PayedTo />
+      <CustName>Matěj Suda</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2620</OverallID>
+      <Date>10.9.</Date>
+      <TypeID>2416</TypeID>
+      <Type>Income</Type>
+      <Cost>160</Cost>
+      <Note />
+      <Content>školné ŠD září - prosinec 2010</Content>
+      <Remaining>45106</Remaining>
+      <PayedTo />
+      <CustName>Miroslav Faist</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2621</OverallID>
+      <Date>10.9.</Date>
+      <TypeID>2417</TypeID>
+      <Type>Income</Type>
+      <Cost>850</Cost>
+      <Note> afds</Note>
+      <Content>záloha na šat. zámky (17x50,-)</Content>
+      <Remaining>45956</Remaining>
+      <PayedTo />
+      <CustName>Mgr. Miroslava Hošťálková</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2622</OverallID>
+      <Date>10.9.</Date>
+      <TypeID>205</TypeID>
+      <Type>Expense</Type>
+      <Cost>1243</Cost>
+      <Note>asdf</Note>
+      <Content>s</Content>
+      <Remaining>44713</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>dad</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2623</OverallID>
+      <Date>10.9.</Date>
+      <TypeID>2418</TypeID>
+      <Type>Income</Type>
+      <Cost>123</Cost>
+      <Note>ffff</Note>
+      <Content>123</Content>
+      <Remaining>44836</Remaining>
+      <PayedTo />
+      <CustName>ffff</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2624</OverallID>
+      <Date>10.9.</Date>
+      <TypeID>206</TypeID>
+      <Type>Expense</Type>
+      <Cost>1234</Cost>
+      <Note>poznamka</Note>
+      <Content>UCelicek</Content>
+      <Remaining>43602</Remaining>
+      <PayedTo>Prijemce</PayedTo>
+      <CustName>Jendula</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2625</OverallID>
+      <Date>23.12.</Date>
+      <TypeID>2419</TypeID>
+      <Type>Income</Type>
+      <Cost>3000</Cost>
+      <Note />
+      <Content>ahsnd</Content>
+      <Remaining>46602</Remaining>
+      <PayedTo />
+      <CustName>afsd</CustName>
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2626</OverallID>
+      <Date>23.12.</Date>
+      <TypeID>207</TypeID>
+      <Type>Expense</Type>
+      <Cost>22</Cost>
+      <Note />
+      <Content>22aaa</Content>
+      <Remaining>46580</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>aa</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2627</OverallID>
+      <Date>23.12.</Date>
+      <TypeID>2420</TypeID>
+      <Type>Income</Type>
+      <Cost>222</Cost>
+      <Note />
+      <Content />
+      <Remaining>46802</Remaining>
+      <PayedTo />
+      <CustName />
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2628</OverallID>
+      <Date>23.12.</Date>
+      <TypeID>2421</TypeID>
+      <Type>Income</Type>
+      <Cost>12</Cost>
+      <Note />
+      <Content />
+      <Remaining>46814</Remaining>
+      <PayedTo />
+      <CustName />
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2629</OverallID>
+      <Date>23.12.</Date>
+      <TypeID>208</TypeID>
+      <Type>Expense</Type>
+      <Cost>444444</Cost>
+      <Note />
+      <Content />
+      <Remaining>-397630</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName />
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2630</OverallID>
+      <Date>23.12.</Date>
+      <TypeID>209</TypeID>
+      <Type>Expense</Type>
+      <Cost>40000</Cost>
+      <Note />
+      <Content />
+      <Remaining>-437630</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName />
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2631</OverallID>
+      <Date>23.12.</Date>
+      <TypeID>210</TypeID>
+      <Type>Expense</Type>
+      <Cost>40000</Cost>
+      <Note>ss</Note>
+      <Content>d</Content>
+      <Remaining>-477630</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>aa</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2632</OverallID>
+      <Date>23.12.</Date>
+      <TypeID>211</TypeID>
+      <Type>Expense</Type>
+      <Cost>33</Cost>
+      <Note />
+      <Content />
+      <Remaining>-477663</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName />
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2633</OverallID>
+      <Date>23.12.</Date>
+      <TypeID>212</TypeID>
+      <Type>Expense</Type>
+      <Cost>222</Cost>
+      <Note>aa</Note>
+      <Content>aa</Content>
+      <Remaining>-477885</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName>aa</CustName>
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2634</OverallID>
+      <Date>23.12.</Date>
+      <TypeID>2422</TypeID>
+      <Type>Income</Type>
+      <Cost>111</Cost>
+      <Note />
+      <Content />
+      <Remaining>-477774</Remaining>
+      <PayedTo />
+      <CustName />
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2635</OverallID>
+      <Date>23.12.</Date>
+      <TypeID>213</TypeID>
+      <Type>Expense</Type>
+      <Cost>3333</Cost>
+      <Note />
+      <Content />
+      <Remaining>-481107</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName />
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2636</OverallID>
+      <Date>23.12.</Date>
+      <TypeID>2423</TypeID>
+      <Type>Income</Type>
+      <Cost>3</Cost>
+      <Note />
+      <Content />
+      <Remaining>-481104</Remaining>
+      <PayedTo />
+      <CustName />
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2637</OverallID>
+      <Date>25.12.</Date>
+      <TypeID>214</TypeID>
+      <Type>Expense</Type>
+      <Cost>14</Cost>
+      <Note>ff</Note>
+      <Content>ddd</Content>
+      <Remaining>-481118</Remaining>
+      <PayedTo>asdf</PayedTo>
+      <CustName>sss</CustName>
+      <NoteToNumber>zz</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2638</OverallID>
+      <Date>25.12.</Date>
+      <TypeID>215</TypeID>
+      <Type>Expense</Type>
+      <Cost>1000</Cost>
+      <Note>asdffffff</Note>
+      <Content />
+      <Remaining>-482118</Remaining>
+      <PayedTo>asdf</PayedTo>
+      <CustName />
+      <NoteToNumber>zz</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2639</OverallID>
+      <Date>25.12.</Date>
+      <TypeID>216</TypeID>
+      <Type>Expense</Type>
+      <Cost>111111</Cost>
+      <Note>a</Note>
+      <Content>fff</Content>
+      <Remaining>-593229</Remaining>
+      <PayedTo>asdf</PayedTo>
+      <CustName>ddddd</CustName>
+      <NoteToNumber>zz</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2640</OverallID>
+      <Date>25.12.</Date>
+      <TypeID>217</TypeID>
+      <Type>Expense</Type>
+      <Cost>123</Cost>
+      <Note>af</Note>
+      <Content>asdf</Content>
+      <Remaining>-593352</Remaining>
+      <PayedTo>asdf</PayedTo>
+      <CustName>asdf</CustName>
+      <NoteToNumber>zz</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2641</OverallID>
+      <Date>25.12.</Date>
+      <TypeID>218</TypeID>
+      <Type>Expense</Type>
+      <Cost>1</Cost>
+      <Note />
+      <Content />
+      <Remaining>-593353</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName />
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2642</OverallID>
+      <Date>25.12.</Date>
+      <TypeID>219</TypeID>
+      <Type>Expense</Type>
+      <Cost>1002</Cost>
+      <Note />
+      <Content />
+      <Remaining>-594355</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName />
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2643</OverallID>
+      <Date>8.1.</Date>
+      <TypeID>2424</TypeID>
+      <Type>Income</Type>
+      <Cost>3333</Cost>
+      <Note />
+      <Content />
+      <Remaining>-591022</Remaining>
+      <PayedTo />
+      <CustName>abcdefghij</CustName>
+      <NoteToNumber />
+    </Record>
+    <Record>
+      <OverallID>2644</OverallID>
+      <Date>9.1.</Date>
+      <TypeID>2425</TypeID>
+      <Type>Income</Type>
+      <Cost>299</Cost>
+      <Note>ddd</Note>
+      <Content>s</Content>
+      <Remaining>-590723</Remaining>
+      <PayedTo />
+      <CustName>ad</CustName>
+      <NoteToNumber>/10/zs</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2645</OverallID>
+      <Date>12.1.</Date>
+      <TypeID>2426</TypeID>
+      <Type>Income</Type>
+      <Cost>444444</Cost>
+      <Note />
+      <Content />
+      <Remaining>-146279</Remaining>
+      <PayedTo />
+      <CustName />
+      <NoteToNumber>/10/zs</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2646</OverallID>
+      <Date>12.1.</Date>
+      <TypeID>2427</TypeID>
+      <Type>Income</Type>
+      <Cost>100000</Cost>
+      <Note />
+      <Content />
+      <Remaining>-46279</Remaining>
+      <PayedTo />
+      <CustName />
+      <NoteToNumber>/10/zs</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2647</OverallID>
+      <Date>12.1.</Date>
+      <TypeID>220</TypeID>
+      <Type>Expense</Type>
+      <Cost>500000</Cost>
+      <Note />
+      <Content />
+      <Remaining>-546279</Remaining>
+      <PayedTo>viz. příloha</PayedTo>
+      <CustName />
+      <NoteToNumber>/10/ZŠ</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2648</OverallID>
+      <Date>13.1.</Date>
+      <TypeID>2428</TypeID>
+      <Type>Income</Type>
+      <Cost>33</Cost>
+      <Note />
+      <Content />
+      <Remaining>-546246</Remaining>
+      <PayedTo />
+      <CustName />
+      <NoteToNumber>/10/zs</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2649</OverallID>
+      <Date>18.1.</Date>
+      <TypeID>2429</TypeID>
+      <Type>Income</Type>
+      <Cost>33</Cost>
+      <Note />
+      <Content />
+      <Remaining>-546213</Remaining>
+      <PayedTo />
+      <CustName />
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2650</OverallID>
+      <Date>18.1.</Date>
+      <TypeID>2430</TypeID>
+      <Type>Income</Type>
+      <Cost>3</Cost>
+      <Note />
+      <Content />
+      <Remaining>-546210</Remaining>
+      <PayedTo />
+      <CustName />
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2651</OverallID>
+      <Date>31.1.</Date>
+      <TypeID>2431</TypeID>
+      <Type>Income</Type>
+      <Cost>123</Cost>
+      <Note />
+      <Content />
+      <Remaining>-546087</Remaining>
+      <PayedTo />
+      <CustName />
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2652</OverallID>
+      <Date>31.1.</Date>
+      <TypeID>2432</TypeID>
+      <Type>Income</Type>
+      <Cost>444</Cost>
+      <Note />
+      <Content />
+      <Remaining>-545643</Remaining>
+      <PayedTo />
+      <CustName />
+      <NoteToNumber>/10/ZŠ </NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2653</OverallID>
+      <Date>2.2.</Date>
+      <TypeID>2433</TypeID>
+      <Type>Income</Type>
+      <Cost>200</Cost>
+      <Note>ads</Note>
+      <Content>jklfdsad</Content>
+      <Remaining>-545443</Remaining>
+      <PayedTo />
+      <CustName>Buldasek</CustName>
+      <NoteToNumber>utrpeni/2/</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2654</OverallID>
+      <Date>3.2.</Date>
+      <TypeID>2434</TypeID>
+      <Type>Income</Type>
+      <Cost>0</Cost>
+      <Note>dlouha poznamka</Note>
+      <Content />
+      <Remaining>-545443</Remaining>
+      <PayedTo />
+      <CustName />
+      <NoteToNumber />
+    </Record>
+    <Record>
+      <OverallID>2655</OverallID>
+      <Date>3.2.</Date>
+      <TypeID>2435</TypeID>
+      <Type>Income</Type>
+      <Cost>444</Cost>
+      <Note />
+      <Content />
+      <Remaining>-544999</Remaining>
+      <PayedTo />
+      <CustName />
+      <NoteToNumber />
+    </Record>
+    <Record>
+      <OverallID>2656</OverallID>
+      <Date>3.2.</Date>
+      <TypeID>2436</TypeID>
+      <Type>Income</Type>
+      <Cost>0</Cost>
+      <Note>aaaaaaaaaaaaaaa</Note>
+      <Content />
+      <Remaining>-544999</Remaining>
+      <PayedTo />
+      <CustName />
+      <NoteToNumber />
+    </Record>
+  </Records>
+  <Directory>D:\ProjektyZS\denik\data\novydenicek.pkl</Directory>
+  <PageSize>50</PageSize>
+</Diary>

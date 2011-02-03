@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<Diary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Nový deník</Name>
+  <RemainWarning>30000</RemainWarning>
+  <RemainLimit>35000</RemainLimit>
+  <InitRemain>3</InitRemain>
+  <TypeCounts>
+    <int>3</int>
+    <int>1</int>
+  </TypeCounts>
+  <InitTypeCounts>
+    <int>0</int>
+    <int>0</int>
+  </InitTypeCounts>
+  <NoteToNumber>ZS/10/</NoteToNumber>
+  <Records>
+    <Record>
+      <OverallID>1</OverallID>
+      <Date>2.2.</Date>
+      <TypeID>1</TypeID>
+      <Type>Expense</Type>
+      <Cost>1</Cost>
+      <Note />
+      <Content>gloglo</Content>
+      <Remaining>2</Remaining>
+      <PayedTo />
+      <CustName>adsf</CustName>
+      <NoteToNumber />
+    </Record>
+    <Record>
+      <OverallID>2</OverallID>
+      <Date>2.2.</Date>
+      <TypeID>1</TypeID>
+      <Type>Income</Type>
+      <Cost>33</Cost>
+      <Note>asflo</Note>
+      <Content>jupi</Content>
+      <Remaining>35</Remaining>
+      <PayedTo />
+      <CustName>jenda</CustName>
+      <NoteToNumber />
+    </Record>
+    <Record>
+      <OverallID>3</OverallID>
+      <Date>2.2.</Date>
+      <TypeID>2</TypeID>
+      <Type>Income</Type>
+      <Cost>33</Cost>
+      <Note />
+      <Content>jklfdsad</Content>
+      <Remaining>68</Remaining>
+      <PayedTo />
+      <CustName>hlohlo</CustName>
+      <NoteToNumber>ZS/10/</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>4</OverallID>
+      <Date>2.2.</Date>
+      <TypeID>3</TypeID>
+      <Type>Income</Type>
+      <Cost>0</Cost>
+      <Note />
+      <Content />
+      <Remaining>68</Remaining>
+      <PayedTo />
+      <CustName />
+      <NoteToNumber>ZS/10/</NoteToNumber>
+    </Record>
+  </Records>
+  <Directory>D:\ProjektyZS\denik\data\zaver3.pkl</Directory>
+  <PageSize>50</PageSize>
+</Diary>

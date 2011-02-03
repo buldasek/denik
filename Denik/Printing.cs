@@ -12,12 +12,15 @@ using System.Diagnostics;
 namespace Denik
 {
     
-    
 
     public class Printer
     {
         static private string footerText = "Vytvořeno v programu Pokladni Denik 2.0";
         Font m_footerFont = new Font("Times New Roman", 8, FontStyle.Italic);
+
+        static private string picturePath = "images/";
+
+        static PaperSize PaperA6 = new PaperSize("Paper A6", 413, 583);
 
         static StringFormat LeftTopAlign;// = new StringFormat();
         static StringFormat CenterTopAlign;// = new StringFormat();
@@ -28,6 +31,7 @@ namespace Denik
 
         static Brush TextBrush = new SolidBrush(Color.Black);
 
+        private bool m_isSizeCorrect;
         //private static PrintDialog m_printDialog = new PrintDialog();
         private static PrintDocument m_printDoc = new PrintDocument();
         private static PrintDocument m_diaryPrintDoc = new PrintDocument();
@@ -125,13 +129,15 @@ namespace Denik
             m_diaryPrintDoc.DocumentName = "Tisk deniku...";
             m_diaryPrintDoc.PrintPage += new PrintPageEventHandler(OnPrintDiaryPage);
             m_diaryPrintDoc.DefaultPageSettings.PaperSize = new System.Drawing.Printing.PaperSize("PaperA4", 827, 1169);
+            
             m_diaryPrintDoc.DefaultPageSettings.Landscape = false;
-           
+                       
             curPage = 0;
 
             PrintDialog pd = new PrintDialog();
-            pd.Document = inoutParentForm.printer.printDoc;
+            pd.Document = m_diaryPrintDoc;
             pd.AllowSomePages = true;
+            pd.PrinterSettings.PrintRange = PrintRange.SomePages;
             pd.PrinterSettings.MaximumPage = m_diaryToPrint.PageCount;
             pd.PrinterSettings.MinimumPage = 1;
             pd.PrinterSettings.FromPage = pd.PrinterSettings.ToPage = currentPage+1;
@@ -180,8 +186,8 @@ namespace Denik
                  return;
 
              Record[] records = m_diaryToPrint.GetPage(page);
-             Debug.Assert(records.Length > 0);
-             if (records.Length <= 0)
+             Debug.Assert(records.Length >= 0);
+             if (records.Length < 0)
                  return;
 
              g.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
@@ -190,18 +196,24 @@ namespace Denik
              Font mainTextFont = new Font("Times New Roman", 18, FontStyle.Bold);
              
              g.ResetTransform();
+             g.ScaleTransform((g.VisibleClipBounds.Width - 8) / 827,
+                              (g.VisibleClipBounds.Height - 8) / 1169);  
              float width = (float)827;
+
              int[] colBorders = { 32, 50, 55, 55, 266, 83, 83, 101, 84};
              string[] colDescriptions = { "Poř.\nčíslo", "Datum", "Číslo\ndokladu", "Obsah zápisu", "Příjmy", 
                                     "Výdaje", "Zůstatek", "Poznámka"};
 
-             Rectangle tableRect = new Rectangle(22, 80, 782, 1044);
+             Rectangle tableRect = new Rectangle(5, 80, 817, 1064);
              int tableHeader = 40;
              //g.ScaleTransform(g.VisibleClipBounds.Width/width , g.VisibleClipBounds.Height/height);
 
              g.DrawString(m_diaryToPrint.Name, mainTextFont, TextBrush, width / 2, 35, CenterCenterAlign);
-             g.DrawString("Od: " + records[0].Date + "   Do: " + records[records.Length - 1].Date,
-                            defaultTextFont, TextBrush, width / 2, 60, CenterCenterAlign);
+             if (records.Length > 0)
+             {
+                 g.DrawString("Od: " + records[0].Date + "   Do: " + records[records.Length - 1].Date,
+                                 defaultTextFont, TextBrush, width / 2, 60, CenterCenterAlign);
+             }
              g.DrawString("Stránka: " + (page+1).ToString()+".  ",
                                          defaultTextFont, TextBrush, tableRect.Right-20, 35, RightCenterAlign);
 
@@ -227,9 +239,12 @@ namespace Denik
              for (int colId = 1; colId < colBorders.Length; colId++)
              {
                  if (colId == colBorders.Length - 1)
-                    sumCol = tableRect.Right;
+                 {
+                     colBorders[colId] = tableRect.Right - sumCol;
+                     sumCol = tableRect.Right;
+                 }
                  else
-                    sumCol += colBorders[colId];
+                     sumCol += colBorders[colId];
                  g.DrawLine(normalPen, sumCol, tableRect.Top, sumCol, tableRect.Bottom);
                  g.DrawString(colDescriptions[colId - 1], tableHeaderFont, TextBrush,
                             new RectangleF(sumCol - colBorders[colId], tableRect.Top, colBorders[colId], tableHeader),
@@ -237,7 +252,7 @@ namespace Denik
              }
 
              Font tableBodyFont = new Font("Courier New", 9, FontStyle.Regular);
-
+             
              for (int row = 0; row < records.Length; row++)
              {
                  Record record = records[row];
@@ -246,19 +261,22 @@ namespace Denik
                  string remaining = MoneyConvertor.MoneyToStr(record.Remaining) + ",-";
                  string[] rowVals = { record.OverallID.ToString(), record.Date, record.TypeID.ToString(),
                                        record.Content, costIn, costOut, remaining, record.Note};
-                 StringFormat[] colFormats = { RightCenterAlign, RightCenterAlign, RightCenterAlign, RightCenterAlign, RightCenterAlign, RightCenterAlign, RightCenterAlign, RightCenterAlign, RightCenterAlign };
+                 StringFormat[] colFormats = { RightCenterAlign, RightCenterAlign, RightCenterAlign, LeftCenterAlign, RightCenterAlign, RightCenterAlign, RightCenterAlign, LeftCenterAlign, LeftCenterAlign };
 
                  sumCol = tableRect.Left;
                  float rowTop = tableRect.Top + tableHeader + row * rowHeight;
                  for (int colId = 1; colId < colBorders.Length; colId++)
                  {
                      if (colId == colBorders.Length - 1)
+                     {
+                         colBorders[colId] = tableRect.Right - sumCol;
                          sumCol = tableRect.Right;
+                     }
                      else
                          sumCol += colBorders[colId];
-                     g.DrawLine(normalPen, sumCol, tableRect.Top, sumCol, tableRect.Bottom);
+                    // g.DrawLine(normalPen, sumCol, tableRect.Top, sumCol, tableRect.Bottom);
                      g.DrawString(rowVals[colId - 1], tableBodyFont, TextBrush,
-                                new RectangleF(sumCol - colBorders[colId], rowTop+2, colBorders[colId]-2, rowHeight),
+                                new RectangleF(sumCol - colBorders[colId]+2, rowTop+2, colBorders[colId]-2, rowHeight),
                                 colFormats[colId-1]);
                  }
              }
@@ -271,26 +289,37 @@ namespace Denik
          {
              g.ResetTransform();
              Bitmap im;
+             float marginX = (float)(m_printDoc.DefaultPageSettings.HardMarginX);
+             float marginY = (float)(m_printDoc.DefaultPageSettings.HardMarginY);
              try
              {
-                 im = new Bitmap(BackgroundName + "a");
+                 im = new Bitmap(BackgroundName);
              }
              catch
              {
                  throw new MissingMyFileException(BackgroundName);
              }
 
-             g.DrawImage(im, -yOffset + g.VisibleClipBounds.Width - width, 0, width, height);
+             /*if (m_isSizeCorrect)
+                 g.DrawImage(im, -yOffset + g.VisibleClipBounds.Width - width, 0, width, height);
+             else*/
+                 g.DrawImage(im, -yOffset + g.VisibleClipBounds.Width/2 - width/2+marginX, 0, width-2*marginX, height-2*marginY);
 
              g.RotateTransform(90);
 
-             g.TranslateTransform(0, -g.VisibleClipBounds.Height + yOffset);
-             g.ScaleTransform((height) / (float)im.Height, (width) / (float)im.Width);
+             if (m_isSizeCorrect)
+                 g.TranslateTransform(0, -g.VisibleClipBounds.Height + yOffset + marginX);
+             else
+                 g.TranslateTransform(0, -g.VisibleClipBounds.Height / 2 - width / 2 + yOffset + marginX);
+             // g.TranslateTransform(-g.VisibleClipBounds.Width+width, -g.VisibleClipBounds.Height + yOffset);
+
+             g.ScaleTransform((height - 2 * marginY) / (float)im.Height,
+                 (width - 2 * marginX) / (float)im.Width);
          }
 
          private void PrintOutcome(Graphics g, int yOffset, int width, int height)
          {
-            DrawBackgroundAndSetGraphics("dokladstabulkou.bmp", g, yOffset, width, height);
+            DrawBackgroundAndSetGraphics(picturePath+"dokladstabulkou.bmp", g, yOffset, width, height);
 
             Font defaultTextFont = new Font("Courier New", 10, FontStyle.Bold);
 
@@ -309,7 +338,7 @@ namespace Denik
         private void PrintIncome(Graphics g, int yOffset, int width, int height)
         {
 
-            DrawBackgroundAndSetGraphics("Prijmovydokladstabulkou.bmp", g, yOffset, width, height);
+            DrawBackgroundAndSetGraphics(picturePath+"Prijmovydokladstabulkou.bmp", g, yOffset, width, height);
 
             Font defaultTextFont = new Font("Courier New", 10, FontStyle.Bold);
 
@@ -323,7 +352,7 @@ namespace Denik
 
         private void printIncomeReceipt(Graphics g, int yOffset, int width, int height)
         {
-            DrawBackgroundAndSetGraphics("Stvrzenka.bmp", g, yOffset, width, height);
+            DrawBackgroundAndSetGraphics(picturePath+"Stvrzenka.bmp", g, yOffset, width, height);
             
             Font defaultTextFont = new Font("Courier New", 10, FontStyle.Bold);
 
@@ -370,15 +399,27 @@ namespace Denik
             g.DrawString(footerText, m_footerFont, TextBrush, 500, 325, RightTopAlign);
         }
 
+        private SizeF paperA6PrintSize
+        {
+            get
+            {
+                SizeF size = new SizeF(PaperA6.Width, PaperA6.Height);
+                size.Width -= 5;// +2 * m_printDoc.DefaultPageSettings.HardMarginX / 100f;
+                //size.Height;// -= 2 * m_printDoc.DefaultPageSettings.HardMarginY / 100f;
+
+                return size;
+            }
+        }
+
         private void OnPrintOutcome(object sender, PrintPageEventArgs ppea)
         {
-            PrintOutcome(ppea.Graphics, -5, (int)ppea.Graphics.VisibleClipBounds.Width-5, (int)ppea.Graphics.VisibleClipBounds.Height);
+            PrintOutcome(ppea.Graphics, -5, (int)paperA6PrintSize.Width, (int)paperA6PrintSize.Height);
         }
 
         private void OnPrintOutcomeTwiceTwo(object sender, PrintPageEventArgs ppea)
         {
             //todo nejak lepe udelat pocitani stranek
-            PrintOutcome(ppea.Graphics, -5, (int)ppea.Graphics.VisibleClipBounds.Width-5, (int)ppea.Graphics.VisibleClipBounds.Height);
+            PrintOutcome(ppea.Graphics, -5, (int)paperA6PrintSize.Width, (int)paperA6PrintSize.Height);
             if (curPage==0)
             {
                 ppea.HasMorePages = true;
@@ -392,11 +433,10 @@ namespace Denik
             {
                 curPage = 1;
                 ppea.HasMorePages = true;
-                PrintIncome(ppea.Graphics, -5, (int)ppea.Graphics.VisibleClipBounds.Width-5, (int)ppea.Graphics.VisibleClipBounds.Height);
+                PrintIncome(ppea.Graphics, -5, (int)paperA6PrintSize.Width, (int)paperA6PrintSize.Height);
             }
             else
-                printIncomeReceipt(ppea.Graphics, -5, (int)ppea.Graphics.VisibleClipBounds.Width-5
-                    , (int)ppea.Graphics.VisibleClipBounds.Height);
+                printIncomeReceipt(ppea.Graphics, -5, (int)paperA6PrintSize.Width, (int)paperA6PrintSize.Height);
         }
 
         private void printDocumentSafely(PrintDocument pd)
@@ -415,7 +455,26 @@ namespace Denik
         private void prepareDocumentA6(PrintDocument pd)
         {
             m_printDoc.DocumentName = "Tisk dokladu...";
-            m_printDoc.DefaultPageSettings.PaperSize = new System.Drawing.Printing.PaperSize("PaperA6", 413, 583);
+            //m_printDoc.PrinterSettings.PaperSizes
+            m_isSizeCorrect = false;
+            foreach (PaperSize ps in m_printDoc.PrinterSettings.PaperSizes)
+                if (ps.Width == PaperA6.Width && ps.Height == PaperA6.Height)
+                {
+                    m_isSizeCorrect = true;
+                    break;
+                }
+            if (m_isSizeCorrect)
+                m_printDoc.DefaultPageSettings.PaperSize = new System.Drawing.Printing.PaperSize("PaperA6", PaperA6.Width, PaperA6.Height);
+            else
+                m_printDoc.DefaultPageSettings.PaperSize = new System.Drawing.Printing.PaperSize("PaperA6", 827, 1169);
+
+            m_printDoc.DefaultPageSettings.Landscape = false;
+        }
+
+        private void prepareDocumentA4(PrintDocument pd)
+        {
+            m_printDoc.DocumentName = "Tisk dokladu...";
+            m_printDoc.DefaultPageSettings.PaperSize = new System.Drawing.Printing.PaperSize("PaperA4", 827, 1169);
             m_printDoc.DefaultPageSettings.Landscape = false;
         }
 

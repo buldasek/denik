@@ -8,7 +8,7 @@
           <m_counter>0</m_counter>
         </HintItem>
         <HintItem>
-          <m_hint>slls</m_hint>
+          <m_hint>asdf</m_hint>
           <m_counter>0</m_counter>
         </HintItem>
       </hintItems>
@@ -17,11 +17,19 @@
     <HintsHolder>
       <hintItems>
         <HintItem>
+          <m_hint>sfd</m_hint>
+          <m_counter>0</m_counter>
+        </HintItem>
+        <HintItem>
+          <m_hint>jen tak</m_hint>
+          <m_counter>0</m_counter>
+        </HintItem>
+        <HintItem>
           <m_hint>aaa</m_hint>
           <m_counter>0</m_counter>
         </HintItem>
         <HintItem>
-          <m_hint>djkf</m_hint>
+          <m_hint>asdf</m_hint>
           <m_counter>0</m_counter>
         </HintItem>
       </hintItems>
@@ -30,27 +38,19 @@
     <HintsHolder>
       <hintItems>
         <HintItem>
+          <m_hint>abcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghij</m_hint>
+          <m_counter>0</m_counter>
+        </HintItem>
+        <HintItem>
+          <m_hint>abcdefghijabcdefghijabcdefghijabcdefghijabcde</m_hint>
+          <m_counter>0</m_counter>
+        </HintItem>
+        <HintItem>
           <m_hint>jendulovi</m_hint>
           <m_counter>0</m_counter>
         </HintItem>
         <HintItem>
-          <m_hint>afsd</m_hint>
-          <m_counter>0</m_counter>
-        </HintItem>
-        <HintItem>
-          <m_hint>asdf</m_hint>
-          <m_counter>0</m_counter>
-        </HintItem>
-        <HintItem>
-          <m_hint>Jaroslava Tomanová</m_hint>
-          <m_counter>0</m_counter>
-        </HintItem>
-        <HintItem>
-          <m_hint>Česká pošta</m_hint>
-          <m_counter>0</m_counter>
-        </HintItem>
-        <HintItem>
-          <m_hint>Mgr. Zdeňka Huspeková</m_hint>
+          <m_hint>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</m_hint>
           <m_counter>0</m_counter>
         </HintItem>
       </hintItems>
@@ -59,19 +59,19 @@
     <HintsHolder>
       <hintItems>
         <HintItem>
+          <m_hint>abcdefghijabcdefghijabcdefghijabcdefghijabcde</m_hint>
+          <m_counter>0</m_counter>
+        </HintItem>
+        <HintItem>
           <m_hint>chacha</m_hint>
           <m_counter>0</m_counter>
         </HintItem>
         <HintItem>
-          <m_hint>fdddd</m_hint>
+          <m_hint>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</m_hint>
           <m_counter>0</m_counter>
         </HintItem>
         <HintItem>
-          <m_hint>převod hotovosti na běžný účet</m_hint>
-          <m_counter>0</m_counter>
-        </HintItem>
-        <HintItem>
-          <m_hint>poštovné</m_hint>
+          <m_hint>aaaaaaaaaaaaaaaaaaaaaaaddddddddd</m_hint>
           <m_counter>0</m_counter>
         </HintItem>
       </hintItems>
@@ -80,15 +80,15 @@
     <HintsHolder>
       <hintItems>
         <HintItem>
+          <m_hint>abcdefghijabcdefghijabcdefghijabcdefghijabcde</m_hint>
+          <m_counter>0</m_counter>
+        </HintItem>
+        <HintItem>
           <m_hint>asdf</m_hint>
           <m_counter>0</m_counter>
         </HintItem>
         <HintItem>
-          <m_hint>sssssssssssssssss</m_hint>
-          <m_counter>0</m_counter>
-        </HintItem>
-        <HintItem>
-          <m_hint>viz. příloha</m_hint>
+          <m_hint>aaaaaaaaaaaaaaaaa</m_hint>
           <m_counter>0</m_counter>
         </HintItem>
       </hintItems>
@@ -96,25 +96,26 @@
     </HintsHolder>
   </hintHolders>
   <Stamp>
-    <string>call me so </string>
-    <string>fantastic</string>
-    <string> I have to </string>
-    <string>be rainbow high</string>
-    <string>you are not </string>
-    <string>decorating</string>
+    <string>Zs Plánice</string>
+    <string>jen tak </string>
+    <string>ts</string>
+    <string>aaaaaaaaaaaaaaaaaa</string>
+    <string>gadsga</string>
+    <string>agsaagd</string>
+    <string>55555</string>
   </Stamp>
   <MainWindowPos>
     <Location>
-      <X>107</X>
-      <Y>64</Y>
+      <X>399</X>
+      <Y>122</Y>
     </Location>
     <Size>
-      <Width>738</Width>
+      <Width>908</Width>
       <Height>608</Height>
     </Size>
-    <X>107</X>
-    <Y>64</Y>
-    <Width>738</Width>
+    <X>399</X>
+    <Y>122</Y>
+    <Width>908</Width>
     <Height>608</Height>
   </MainWindowPos>
   <DiaryDirectory>D:\ProjektyZS\denik\data\novydenicek.pkl</DiaryDirectory>

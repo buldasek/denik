@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<Diary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Nový deník</Name>
+  <RemainWarning>30000</RemainWarning>
+  <RemainLimit>35000</RemainLimit>
+  <InitRemain>0</InitRemain>
+  <TypeCounts>
+    <int>0</int>
+    <int>1</int>
+  </TypeCounts>
+  <InitTypeCounts>
+    <int>0</int>
+    <int>0</int>
+  </InitTypeCounts>
+  <NoteToNumber>/ds/dd</NoteToNumber>
+  <Records>
+    <Record>
+      <OverallID>1</OverallID>
+      <Date>3.2.</Date>
+      <TypeID>1</TypeID>
+      <Type>Expense</Type>
+      <Cost>0</Cost>
+      <Note />
+      <Content>fdddd</Content>
+      <Remaining>0</Remaining>
+      <PayedTo>sssssssssssssssss</PayedTo>
+      <CustName>afsd</CustName>
+      <NoteToNumber>/ds/dd</NoteToNumber>
+    </Record>
+  </Records>
+  <Directory>D:\ProjektyZS\denik\data\zaver.pkl</Directory>
+  <PageSize>50</PageSize>
+</Diary>
