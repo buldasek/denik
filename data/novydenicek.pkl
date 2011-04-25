@@ -5,8 +5,8 @@
   <RemainLimit>360000</RemainLimit>
   <InitRemain>35673</InitRemain>
   <TypeCounts>
-    <int>2436</int>
-    <int>220</int>
+    <int>2437</int>
+    <int>221</int>
   </TypeCounts>
   <InitTypeCounts>
     <int>2222</int>
@@ -5623,7 +5623,7 @@
       <TypeID>2434</TypeID>
       <Type>Income</Type>
       <Cost>0</Cost>
-      <Note>dlouha poznamka</Note>
+      <Note>dlouha poznamk</Note>
       <Content />
       <Remaining>-545443</Remaining>
       <PayedTo />
@@ -5655,6 +5655,32 @@
       <PayedTo />
       <CustName />
       <NoteToNumber />
+    </Record>
+    <Record>
+      <OverallID>2657</OverallID>
+      <Date>22.4.</Date>
+      <TypeID>2437</TypeID>
+      <Type>Income</Type>
+      <Cost>0</Cost>
+      <Note />
+      <Content />
+      <Remaining>-544999</Remaining>
+      <PayedTo />
+      <CustName />
+      <NoteToNumber>utrpeni/2/</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2658</OverallID>
+      <Date>25.24.2011</Date>
+      <TypeID>221</TypeID>
+      <Type>Expense</Type>
+      <Cost>323</Cost>
+      <Note />
+      <Content />
+      <Remaining>-545322</Remaining>
+      <PayedTo />
+      <CustName>cely</CustName>
+      <NoteToNumber>2</NoteToNumber>
     </Record>
   </Records>
   <Directory>D:\ProjektyZS\denik\data\novydenicek.pkl</Directory>

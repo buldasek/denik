@@ -1,67 +1,98 @@
-5
-0
-0
-0
-Nový deník
-35000
-30000
-1
-1
-0
-0
-0
-date
-date
-poznd
-prij
-ucel
-note
-
-2
-2
-0
-0
-0
-date
-date
-pozn k cislu
-ja
-ucel
-poznanmka
-
-3
-1
-0
-0
-1
-date
-date
-čtrnáct
-komu
-ucel
-note
-prijemce
-4
-2
-0
-0
-1
-
-
-
-
-
-
-
-5
-3
-0
-0
-0
-
-
-
-
-
-
-
+<?xml version="1.0" encoding="windows-1250"?>
+<Diary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Nový deník</Name>
+  <RemainWarning>3000</RemainWarning>
+  <RemainLimit>3500</RemainLimit>
+  <InitRemain>0</InitRemain>
+  <TypeCounts>
+    <int>3</int>
+    <int>3</int>
+  </TypeCounts>
+  <InitTypeCounts>
+    <int>0</int>
+    <int>0</int>
+  </InitTypeCounts>
+  <NoteToNumber />
+  <Records>
+    <Record>
+      <OverallID>1</OverallID>
+      <Date>date</Date>
+      <TypeID>1</TypeID>
+      <Type>Income</Type>
+      <Cost>0</Cost>
+      <Note>note</Note>
+      <Content>ucel</Content>
+      <Remaining>0</Remaining>
+      <PayedTo />
+      <CustName>prij</CustName>
+      <NoteToNumber>poznd</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2</OverallID>
+      <Date>date</Date>
+      <TypeID>2</TypeID>
+      <Type>Income</Type>
+      <Cost>0</Cost>
+      <Note>poznanmka</Note>
+      <Content>ucel</Content>
+      <Remaining>0</Remaining>
+      <PayedTo />
+      <CustName>ja</CustName>
+      <NoteToNumber>pozn k cislu</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>3</OverallID>
+      <Date>date</Date>
+      <TypeID>1</TypeID>
+      <Type>Expense</Type>
+      <Cost>0</Cost>
+      <Note>note</Note>
+      <Content>ucel</Content>
+      <Remaining>0</Remaining>
+      <PayedTo>prijemce</PayedTo>
+      <CustName>komu</CustName>
+      <NoteToNumber>čtrnáct</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>4</OverallID>
+      <Date />
+      <TypeID>2</TypeID>
+      <Type>Expense</Type>
+      <Cost>0</Cost>
+      <Note />
+      <Content />
+      <Remaining>0</Remaining>
+      <PayedTo />
+      <CustName />
+      <NoteToNumber />
+    </Record>
+    <Record>
+      <OverallID>5</OverallID>
+      <Date />
+      <TypeID>3</TypeID>
+      <Type>Income</Type>
+      <Cost>0</Cost>
+      <Note />
+      <Content />
+      <Remaining>0</Remaining>
+      <PayedTo />
+      <CustName />
+      <NoteToNumber />
+    </Record>
+    <Record>
+      <OverallID>6</OverallID>
+      <Date>22.4.</Date>
+      <TypeID>3</TypeID>
+      <Type>Expense</Type>
+      <Cost>0</Cost>
+      <Note />
+      <Content />
+      <Remaining>0</Remaining>
+      <PayedTo />
+      <CustName />
+      <NoteToNumber />
+    </Record>
+  </Records>
+  <Directory>D:\ProjektyZS\denik\data\dva.pkl</Directory>
+  <PageSize>50</PageSize>
+</Diary>

@@ -81,6 +81,17 @@ namespace Denik
 
         public int OverallID { set { m_overallID = value; } get { return m_overallID; } }
         public String Date { set { m_date = value; } get { return m_date; } }
+        public String DateDiary {
+            get { 
+                int i = m_date.Length-1;
+                while(i>=0 && m_date[i]!='.')
+                    i--;
+                if (i < 0)
+                    return "";
+                String shortDate = m_date.Substring(0, i+1);
+                return shortDate;
+            }
+        }
         public int TypeID { set { m_typeID = value; } get { return m_typeID; } }
         public RecordType Type { set { m_type = value; } get { return m_type; } }
         public Int64 Cost { set { m_cost = value; } get { return m_cost; } }
@@ -119,7 +130,7 @@ namespace Denik
             Cost = int.Parse(words[2]) / 10;
             Remaining = int.Parse(words[3]) / 10;
             Type = (Record.RecordType)(int.Parse(words[4]));
-            Date = words[5];
+            Date = words[6];
             NoteToNumber = words[7];
             CustName = words[8];
             Content = words[9];

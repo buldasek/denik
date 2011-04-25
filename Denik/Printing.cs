@@ -74,7 +74,7 @@ namespace Denik
             if (rcToPrint == null)
                 return;
 
-            prepareDocumentA6(m_printDoc);
+            prepareDocumentA4(m_printDoc);
             m_recToPrint = rcToPrint;
 
             m_printDoc.PrintPage += new PrintPageEventHandler(OnPrintOutcome);
@@ -90,7 +90,7 @@ namespace Denik
             if (rcToPrint == null)
                 return;
             
-            prepareDocumentA6(m_printDoc);
+            prepareDocumentA4(m_printDoc);
             m_recToPrint = rcToPrint;
 
             m_printDoc.PrintPage += new PrintPageEventHandler(OnPrintOutcomeTwiceTwo);
@@ -107,7 +107,7 @@ namespace Denik
             if (rcToPrint == null)
                 return;
 
-            prepareDocumentA6(m_printDoc);
+            prepareDocumentA4(m_printDoc);
             m_recToPrint = rcToPrint;
             
             m_printDoc.PrintPage += new PrintPageEventHandler(OnPrintIncome);
@@ -195,12 +195,15 @@ namespace Denik
              Font defaultTextFont = new Font("Times New Roman",12, FontStyle.Bold);
              Font mainTextFont = new Font("Times New Roman", 18, FontStyle.Bold);
              
+             //Tisk razitka
+             printStamp(g, 130, 6);
+
              g.ResetTransform();
              g.ScaleTransform((g.VisibleClipBounds.Width - 8) / 827,
                               (g.VisibleClipBounds.Height - 8) / 1169);  
              float width = (float)827;
 
-             int[] colBorders = { 32, 50, 55, 55, 266, 83, 83, 101, 84};
+             int[] colBorders = { 32, 50, 57, 55, 266, 83, 83, 101, 84};
              string[] colDescriptions = { "Poř.\nčíslo", "Datum", "Číslo\ndokladu", "Obsah zápisu", "Příjmy", 
                                     "Výdaje", "Zůstatek", "Poznámka"};
 
@@ -211,7 +214,7 @@ namespace Denik
              g.DrawString(m_diaryToPrint.Name, mainTextFont, TextBrush, width / 2, 35, CenterCenterAlign);
              if (records.Length > 0)
              {
-                 g.DrawString("Od: " + records[0].Date + "   Do: " + records[records.Length - 1].Date,
+                 g.DrawString("Od: " + records[0].DateDiary + "   Do: " + records[records.Length - 1].DateDiary,
                                  defaultTextFont, TextBrush, width / 2, 60, CenterCenterAlign);
              }
              g.DrawString("Stránka: " + (page+1).ToString()+".  ",
@@ -251,7 +254,7 @@ namespace Denik
                             CenterCenterAlign);
              }
 
-             Font tableBodyFont = new Font("Courier New", 9, FontStyle.Regular);
+             Font tableBodyFont = new Font("Courier New", 9, FontStyle.Bold);
              
              for (int row = 0; row < records.Length; row++)
              {
@@ -259,7 +262,7 @@ namespace Denik
                  string costIn = (record.Type==Record.RecordType.Income)?(MoneyConvertor.MoneyToStr(record.Cost) + ",-"):("");
                  string costOut = (record.Type == Record.RecordType.Expense) ? (MoneyConvertor.MoneyToStr(record.Cost) + ",-") : ("");
                  string remaining = MoneyConvertor.MoneyToStr(record.Remaining) + ",-";
-                 string[] rowVals = { record.OverallID.ToString(), record.Date, record.TypeID.ToString(),
+                 string[] rowVals = { record.OverallID.ToString(), record.DateDiary, record.TypeID.ToString(),
                                        record.Content, costIn, costOut, remaining, record.Note};
                  StringFormat[] colFormats = { RightCenterAlign, RightCenterAlign, RightCenterAlign, LeftCenterAlign, RightCenterAlign, RightCenterAlign, RightCenterAlign, LeftCenterAlign, LeftCenterAlign };
 
@@ -276,7 +279,7 @@ namespace Denik
                          sumCol += colBorders[colId];
                     // g.DrawLine(normalPen, sumCol, tableRect.Top, sumCol, tableRect.Bottom);
                      g.DrawString(rowVals[colId - 1], tableBodyFont, TextBrush,
-                                new RectangleF(sumCol - colBorders[colId]+2, rowTop+2, colBorders[colId]-2, rowHeight),
+                                new RectangleF(sumCol - colBorders[colId]+2, rowTop+2, colBorders[colId]-5, rowHeight),
                                 colFormats[colId-1]);
                  }
              }
@@ -363,16 +366,28 @@ namespace Denik
             g.DrawString("Podpis pokladníka", defaultTextFont, TextBrush, new Point(423, 197+ yOffset), CenterTopAlign);
         }
 
-        private void PrintCommon(Graphics g, int yOffset, bool onlyUpper)
+        private void printStamp(Graphics g, float Xmiddle, float Ytop)
         {
-            Font defaultTextFont = new Font("Courier New", 9, FontStyle.Bold);
-            Font stampFont = new Font("Courier New", 8, FontStyle.Bold);
+            Font stampFont = new Font("Courier New", 7, FontStyle.Bold);
 
             string[] Stamp = Settings.Settings.SettingsHolder.Stamp;
             for (int i = 0; i < Math.Min(6, Stamp.Length); i++)
             {
-                g.DrawString(Stamp[i], stampFont, TextBrush, new PointF(130, 11+((6-Math.Min(Stamp.Length,6))/(float)2+i)*11), CenterTopAlign);
+                g.DrawString(Stamp[i], stampFont, TextBrush, new PointF(Xmiddle, Ytop+((6-Math.Min(Stamp.Length,6))/(float)2+i)*11), CenterTopAlign);
             }
+        }
+
+        private void PrintCommon(Graphics g, int yOffset, bool onlyUpper)
+        {
+            Font defaultTextFont = new Font("Courier New", 9, FontStyle.Bold);
+            printStamp(g, 130, 11);
+            //Font stampFont = new Font("Courier New", 7, FontStyle.Bold);
+
+            //string[] Stamp = Settings.Settings.SettingsHolder.Stamp;
+            //for (int i = 0; i < Math.Min(6, Stamp.Length); i++)
+            //{
+            //    g.DrawString(Stamp[i], stampFont, TextBrush, new PointF(130, 11+((6-Math.Min(Stamp.Length,6))/(float)2+i)*11), CenterTopAlign);
+            //}
 
             g.DrawString("číslo " + m_recToPrint.TypeID.ToString()+m_recToPrint.NoteToNumber, defaultTextFont, TextBrush, new Point(260, 45), LeftTopAlign);
             g.DrawString("ze dne " + m_recToPrint.Date, defaultTextFont, TextBrush, new Point(260, 60), LeftTopAlign);

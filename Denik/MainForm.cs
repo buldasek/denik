@@ -78,7 +78,7 @@ namespace Denik
         private void initRecord(ref Record record)
         {
             DateTime dt = DateTime.Today.Date;
-            record.Date = DateTime.Today.Date.ToString("d/M.");
+            record.Date = DateTime.Today.Date.ToString("d.M.yyyy");
             record.NoteToNumber = m_mainDiary.NoteToNumber;
         }
 

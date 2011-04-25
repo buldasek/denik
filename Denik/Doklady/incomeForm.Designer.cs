@@ -143,7 +143,7 @@
             // edNote
             // 
             this.edNote.Location = new System.Drawing.Point(107, 240);
-            this.edNote.MaxLength = 15;
+            this.edNote.MaxLength = 14;
             this.edNote.Name = "edNote";
             this.edNote.Size = new System.Drawing.Size(241, 20);
             this.edNote.TabIndex = 3;
@@ -158,7 +158,7 @@
             // edDate
             // 
             this.edDate.Location = new System.Drawing.Point(115, 77);
-            this.edDate.MaxLength = 6;
+            this.edDate.MaxLength = 10;
             this.edDate.Name = "edDate";
             this.edDate.Size = new System.Drawing.Size(233, 20);
             this.edDate.TabIndex = 8;
