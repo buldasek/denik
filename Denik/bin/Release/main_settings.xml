@@ -15,6 +15,10 @@
           <m_hint>Buldasek</m_hint>
           <m_counter>0</m_counter>
         </HintItem>
+        <HintItem>
+          <m_hint>afsd</m_hint>
+          <m_counter>0</m_counter>
+        </HintItem>
       </hintItems>
       <Name>IncomeName</Name>
     </HintsHolder>
@@ -30,6 +34,10 @@
         </HintItem>
         <HintItem>
           <m_hint>jklfdsad</m_hint>
+          <m_counter>0</m_counter>
+        </HintItem>
+        <HintItem>
+          <m_hint>ahsnd</m_hint>
           <m_counter>0</m_counter>
         </HintItem>
       </hintItems>
@@ -115,17 +123,27 @@
   </Stamp>
   <MainWindowPos>
     <Location>
-      <X>390</X>
-      <Y>172</Y>
+      <X>486</X>
+      <Y>21</Y>
     </Location>
     <Size>
-      <Width>671</Width>
-      <Height>695</Height>
+      <Width>615</Width>
+      <Height>1066</Height>
     </Size>
-    <X>390</X>
-    <Y>172</Y>
-    <Width>671</Width>
-    <Height>695</Height>
+    <X>486</X>
+    <Y>21</Y>
+    <Width>615</Width>
+    <Height>1066</Height>
   </MainWindowPos>
-  <DiaryDirectory>D:\ProjektyZS\denik\data\novydenicek.pkl</DiaryDirectory>
+  <ColumnsWidths>
+    <float>50</float>
+    <float>60</float>
+    <float>70</float>
+    <float>300</float>
+    <float>80</float>
+    <float>80</float>
+    <float>90</float>
+    <float>150</float>
+  </ColumnsWidths>
+  <DiaryDirectory>D:\ProjektyZS\deniky\denik\data\novydenicek.pkl</DiaryDirectory>
 </SettingsImpl>

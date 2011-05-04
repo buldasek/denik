@@ -142,6 +142,7 @@ namespace Denik
 
     public class Diary
     {
+        //In case of adding new property rewrtie Clone!!!
         private string m_name;
         private string m_dir;
 
@@ -182,8 +183,10 @@ namespace Denik
             InitTypeCounts = from.InitTypeCounts;
             Records = from.Records;
             m_dir = from.m_dir;
+            NoteToNumber = from.NoteToNumber;
         }
 
+        //In case of adding new property rewrtie Clone!!!
         public String Name 
         {
             set

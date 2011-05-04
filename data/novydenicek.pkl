@@ -5,14 +5,14 @@
   <RemainLimit>360000</RemainLimit>
   <InitRemain>35673</InitRemain>
   <TypeCounts>
-    <int>2437</int>
-    <int>221</int>
+    <int>2443</int>
+    <int>223</int>
   </TypeCounts>
   <InitTypeCounts>
     <int>2222</int>
     <int>0</int>
   </InitTypeCounts>
-  <NoteToNumber />
+  <NoteToNumber>aaaaaaaaaaf</NoteToNumber>
   <Records>
     <Record>
       <OverallID>2223</OverallID>
@@ -5682,7 +5682,111 @@
       <CustName>cely</CustName>
       <NoteToNumber>2</NoteToNumber>
     </Record>
+    <Record>
+      <OverallID>2659</OverallID>
+      <Date>3.5.2011</Date>
+      <TypeID>2438</TypeID>
+      <Type>Income</Type>
+      <Cost>0</Cost>
+      <Note />
+      <Content />
+      <Remaining>-545322</Remaining>
+      <PayedTo />
+      <CustName />
+      <NoteToNumber>/sdf/123</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2660</OverallID>
+      <Date>3.5.2011</Date>
+      <TypeID>2439</TypeID>
+      <Type>Income</Type>
+      <Cost>100000</Cost>
+      <Note />
+      <Content />
+      <Remaining>-445322</Remaining>
+      <PayedTo />
+      <CustName />
+      <NoteToNumber>/sdf/123</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2661</OverallID>
+      <Date>3.5.2011</Date>
+      <TypeID>2440</TypeID>
+      <Type>Income</Type>
+      <Cost>100000</Cost>
+      <Note />
+      <Content />
+      <Remaining>-345322</Remaining>
+      <PayedTo />
+      <CustName />
+      <NoteToNumber>/sdf/123</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2662</OverallID>
+      <Date>3.5.2011</Date>
+      <TypeID>2441</TypeID>
+      <Type>Income</Type>
+      <Cost>40000</Cost>
+      <Note />
+      <Content />
+      <Remaining>-305322</Remaining>
+      <PayedTo />
+      <CustName />
+      <NoteToNumber>/sdf/123</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2663</OverallID>
+      <Date>3.5.2011</Date>
+      <TypeID>222</TypeID>
+      <Type>Expense</Type>
+      <Cost>0</Cost>
+      <Note />
+      <Content />
+      <Remaining>-305322</Remaining>
+      <PayedTo />
+      <CustName />
+      <NoteToNumber>aaaaaaaaaaf</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2664</OverallID>
+      <Date>3.5.2011</Date>
+      <TypeID>223</TypeID>
+      <Type>Expense</Type>
+      <Cost>55555</Cost>
+      <Note />
+      <Content />
+      <Remaining>-360877</Remaining>
+      <PayedTo />
+      <CustName />
+      <NoteToNumber>aaaaaaaaaaf</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2665</OverallID>
+      <Date>3.5.2011</Date>
+      <TypeID>2442</TypeID>
+      <Type>Income</Type>
+      <Cost>25322</Cost>
+      <Note />
+      <Content />
+      <Remaining>-335555</Remaining>
+      <PayedTo />
+      <CustName />
+      <NoteToNumber>aaaaaaaaaaf</NoteToNumber>
+    </Record>
+    <Record>
+      <OverallID>2666</OverallID>
+      <Date>3.5.2011</Date>
+      <TypeID>2443</TypeID>
+      <Type>Income</Type>
+      <Cost>222265</Cost>
+      <Note />
+      <Content />
+      <Remaining>-113290</Remaining>
+      <PayedTo />
+      <CustName />
+      <NoteToNumber>aaaaaaaaaaf</NoteToNumber>
+    </Record>
   </Records>
-  <Directory>D:\ProjektyZS\denik\data\novydenicek.pkl</Directory>
+  <Directory>D:\ProjektyZS\deniky\denik\data\novydenicek.pkl</Directory>
   <PageSize>50</PageSize>
 </Diary>

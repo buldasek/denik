@@ -393,10 +393,10 @@ namespace Denik
             g.DrawString("ze dne " + m_recToPrint.Date, defaultTextFont, TextBrush, new Point(260, 60), LeftTopAlign);
 
             g.DrawString("Vyplaceno: " + m_recToPrint.CustName, defaultTextFont, TextBrush, new Point(10, 88), LeftTopAlign);
-            g.DrawString("Částka: " + m_recToPrint.Cost.ToString() + ",00 Kč", new Font("Courier New", 11, FontStyle.Bold), 
+            g.DrawString("Částka: " + MoneyConvertor.MoneyToStr(m_recToPrint.Cost) + ",00 Kč", new Font("Courier New", 11, FontStyle.Bold), 
                             TextBrush, new Point(10, 105), LeftTopAlign);
 
-            string castkaSlovy = "Slovy: " + "=" + NumberConvertor.ConvertIntToString((int)m_recToPrint.Cost) + " Kč=";
+            string castkaSlovy = "Slovy: " + "=" + NumberConvertor.ConvertIntToWord((int)m_recToPrint.Cost) + " Kč=";
             g.DrawString(castkaSlovy, defaultTextFont, TextBrush, new Point(10, 125), LeftTopAlign);
             g.DrawString("Účel platby: " + m_recToPrint.Content, defaultTextFont, TextBrush, new Point(10, 142), LeftTopAlign);
 

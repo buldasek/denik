@@ -75,11 +75,12 @@ namespace Denik
             }
         }
 
-        private void initRecord(ref Record record)
+        private void initRecord(ref Record record, Diary diary)
         {
             DateTime dt = DateTime.Today.Date;
             record.Date = DateTime.Today.Date.ToString("d.M.yyyy");
             record.NoteToNumber = m_mainDiary.NoteToNumber;
+            record.NoteToNumber = diary.NoteToNumber;
         }
 
         private void UpdateCurrentPage()
@@ -201,6 +202,14 @@ namespace Denik
             Settings.Settings.SettingsHolder.DiaryDirectory = m_mainDiary.Directory;
             Settings.Settings.SettingsHolder.MainWindowPos = this.Bounds;
 
+            float[] columnsWidth = new float[gridHistory.ColumnCount];
+            if (columnsWidth.Length == gridHistory.ColumnCount)
+            {
+                for (int col = 0; col < gridHistory.ColumnCount; col++)
+                    columnsWidth[col] = gridHistory.Columns[col].FillWeight;
+            }
+            Settings.Settings.SettingsHolder.ColumnsWidths = columnsWidth;
+
             Settings.Settings.Store();
 
             //Storage.addString("Directory", m_mainDiary.Directory);
@@ -221,6 +230,16 @@ namespace Denik
             if (monitorBounds.IntersectsWith(winRec) && winRec.Width > 100 && winRec.Height > 100)
                 this.Bounds = winRec;
 
+            //Should be done after setting correct width of the window
+            float[] columnsWidth = Settings.Settings.SettingsHolder.ColumnsWidths;
+            if (columnsWidth!=null && columnsWidth.Length == gridHistory.ColumnCount)
+            {
+                for (int col = 0; col < gridHistory.ColumnCount; col++)
+                    if (columnsWidth[col] > 0)
+                        gridHistory.Columns[col].FillWeight = columnsWidth[col];
+            }
+
+            
             do
             {
                 /*  directory = "";
@@ -327,7 +346,7 @@ namespace Denik
         private void btnIncome_Click(object sender, EventArgs e)
         {
             Record newRecord = new Record();    //todo kdo nastavi defaulty?
-            initRecord(ref newRecord);
+            initRecord(ref newRecord, m_mainDiary);
             
             newRecord.TypeID = m_mainDiary.TypeCounts[(int)Record.RecordType.Income]+1;
             incomeForm iform = new incomeForm(newRecord);
@@ -344,7 +363,7 @@ namespace Denik
         private void btnExpense_Click(object sender, EventArgs e)
         {
             Record newRecord = new Record();    //todo kdo nastavi defaulty?
-            initRecord(ref newRecord);
+            initRecord(ref newRecord, m_mainDiary);
             
             newRecord.TypeID = m_mainDiary.TypeCounts[(int)Record.RecordType.Expense] + 1;
 
@@ -499,7 +518,7 @@ namespace Denik
         private void insertOutcomeForm(object o, EventArgs ea)
         {
             Record newRecord = new Record();
-            initRecord(ref  newRecord);
+            initRecord(ref  newRecord, m_mainDiary);
 
             int curRecord = contextMenuRowIndex;
             int curNumber = -1;
@@ -528,7 +547,7 @@ namespace Denik
         private void insertIncomeForm(object o, EventArgs ea)
         {
             Record newRecord = new Record();
-            initRecord(ref newRecord);
+            initRecord(ref newRecord, m_mainDiary);
 
             int curRecord = contextMenuRowIndex-1;
             int curNumber = -1;

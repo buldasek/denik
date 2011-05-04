@@ -90,7 +90,7 @@ namespace Denik
 
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
-            this.label1.Text = NumberConvertor.ConvertIntToString(decimal.ToInt32(this.numericUpDown1.Value));
+            this.label1.Text = NumberConvertor.ConvertIntToWord(decimal.ToInt32(this.numericUpDown1.Value));
         }
     }
 }

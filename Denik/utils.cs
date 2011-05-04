@@ -29,9 +29,11 @@ namespace Denik
             string input = value.ToString();
             StringBuilder result = new StringBuilder(input);
 
-            for (int i = input.Length - 3; i > 0;  i -= 3) 
-                result.Insert(i, ' ');            
-
+            for (int i = input.Length - 3; i > 0; i -= 3)
+            {
+                if (!((i > 0) && (result[i - 1] == '-')))   //kvuli zapornym cislu, delalo to tecku pred -
+                    result.Insert(i, '.');
+            }
             return result.ToString();
         }
     }
@@ -47,7 +49,7 @@ namespace Denik
         static private string[] numberHundreds = {"", "sto", "dvěstě", "třista", "čtyřista", "pětset", "šestset",
                                                   "sedmset", "osmset", "devětset"};
 
-        static public string ConvertIntToString(int value)
+        static public string ConvertIntToWord(int value)
         {
             Debug.Assert(value < 1000000);
 

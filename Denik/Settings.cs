@@ -538,6 +538,12 @@ namespace Settings
             get;
         }
 
+        public float[] ColumnsWidths
+        {
+            set;
+            get;
+        }
+
         public string DiaryDirectory
         {
             set { m_diaryDirectory = value; }

@@ -19,7 +19,7 @@ namespace Denik
             dataRec.Date = edDate.Text;
             try
             {
-                dataRec.Cost = Int64.Parse(edMoney.Text);        //todo kontrola konverze
+                dataRec.Cost = MoneyConvertor.StrToMoney(edMoney.Text, MaxValue-1);        //todo kontrola konverze
                 if (dataRec.Cost < 0 || dataRec.Cost >= MaxValue)
                     throw new Exception();
             }
@@ -52,7 +52,7 @@ namespace Denik
             dataRec = dataRecord;
             cbNoteToNumber.Text = dataRec.NoteToNumber;
             edDate.Text = dataRec.Date;
-            edMoney.Text = dataRec.Cost.ToString();        //todo kontrola konverze
+            edMoney.Text = MoneyConvertor.MoneyToStr(dataRec.Cost);        //todo kontrola konverze
             cbFrom.Text = dataRec.CustName;
             cbContent.Text = dataRec.Content;
             edNote.Text = dataRec.Note;
