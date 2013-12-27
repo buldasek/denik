@@ -38,28 +38,28 @@
             this.btnRecipient = new System.Windows.Forms.Button();
             this.tabControls = new System.Windows.Forms.TabControl();
             this.tabNote = new System.Windows.Forms.TabPage();
-            this.tabName = new System.Windows.Forms.TabPage();
-            this.tabFor = new System.Windows.Forms.TabPage();
-            this.tabRecipient = new System.Windows.Forms.TabPage();
-            this.btnDeleteSelected = new System.Windows.Forms.Button();
-            this.btnFinish = new System.Windows.Forms.Button();
             this.gridNote = new Denik.FastDataGridView();
             this.hint = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabName = new System.Windows.Forms.TabPage();
             this.gridName = new Denik.FastDataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabFor = new System.Windows.Forms.TabPage();
             this.gridFor = new Denik.FastDataGridView();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabRecipient = new System.Windows.Forms.TabPage();
             this.gridRecipient = new Denik.FastDataGridView();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnDeleteSelected = new System.Windows.Forms.Button();
+            this.btnFinish = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.tabControls.SuspendLayout();
             this.tabNote.SuspendLayout();
-            this.tabName.SuspendLayout();
-            this.tabFor.SuspendLayout();
-            this.tabRecipient.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridNote)).BeginInit();
+            this.tabName.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridName)).BeginInit();
+            this.tabFor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridFor)).BeginInit();
+            this.tabRecipient.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridRecipient)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,7 +68,7 @@
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.rbOutcome);
             this.groupBox1.Controls.Add(this.rbIncome);
-            this.groupBox1.Location = new System.Drawing.Point(198, 12);
+            this.groupBox1.Location = new System.Drawing.Point(398, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(81, 71);
             this.groupBox1.TabIndex = 0;
@@ -153,10 +153,10 @@
             this.tabControls.Controls.Add(this.tabFor);
             this.tabControls.Controls.Add(this.tabRecipient);
             this.tabControls.HotTrack = true;
-            this.tabControls.Location = new System.Drawing.Point(0, 0);
+            this.tabControls.Location = new System.Drawing.Point(0, 8);
             this.tabControls.Name = "tabControls";
             this.tabControls.SelectedIndex = 0;
-            this.tabControls.Size = new System.Drawing.Size(193, 280);
+            this.tabControls.Size = new System.Drawing.Size(384, 447);
             this.tabControls.TabIndex = 6;
             // 
             // tabNote
@@ -165,63 +165,10 @@
             this.tabNote.Location = new System.Drawing.Point(4, 22);
             this.tabNote.Name = "tabNote";
             this.tabNote.Padding = new System.Windows.Forms.Padding(3);
-            this.tabNote.Size = new System.Drawing.Size(185, 254);
+            this.tabNote.Size = new System.Drawing.Size(376, 421);
             this.tabNote.TabIndex = 0;
             this.tabNote.Text = "Poznámka";
             this.tabNote.UseVisualStyleBackColor = true;
-            // 
-            // tabName
-            // 
-            this.tabName.Controls.Add(this.gridName);
-            this.tabName.Location = new System.Drawing.Point(4, 22);
-            this.tabName.Name = "tabName";
-            this.tabName.Padding = new System.Windows.Forms.Padding(3);
-            this.tabName.Size = new System.Drawing.Size(185, 254);
-            this.tabName.TabIndex = 1;
-            this.tabName.Text = "Jméno";
-            this.tabName.UseVisualStyleBackColor = true;
-            // 
-            // tabFor
-            // 
-            this.tabFor.Controls.Add(this.gridFor);
-            this.tabFor.Location = new System.Drawing.Point(4, 22);
-            this.tabFor.Name = "tabFor";
-            this.tabFor.Size = new System.Drawing.Size(185, 254);
-            this.tabFor.TabIndex = 2;
-            this.tabFor.Text = "Účel";
-            this.tabFor.UseVisualStyleBackColor = true;
-            // 
-            // tabRecipient
-            // 
-            this.tabRecipient.Controls.Add(this.gridRecipient);
-            this.tabRecipient.Location = new System.Drawing.Point(4, 22);
-            this.tabRecipient.Name = "tabRecipient";
-            this.tabRecipient.Size = new System.Drawing.Size(185, 254);
-            this.tabRecipient.TabIndex = 3;
-            this.tabRecipient.Text = "Příjemce";
-            this.tabRecipient.UseVisualStyleBackColor = true;
-            // 
-            // btnDeleteSelected
-            // 
-            this.btnDeleteSelected.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDeleteSelected.Location = new System.Drawing.Point(198, 89);
-            this.btnDeleteSelected.Name = "btnDeleteSelected";
-            this.btnDeleteSelected.Size = new System.Drawing.Size(81, 39);
-            this.btnDeleteSelected.TabIndex = 7;
-            this.btnDeleteSelected.Text = "Smazat vybrané";
-            this.btnDeleteSelected.UseVisualStyleBackColor = true;
-            this.btnDeleteSelected.Click += new System.EventHandler(this.btnDeleteSelected_Click);
-            // 
-            // btnFinish
-            // 
-            this.btnFinish.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnFinish.Location = new System.Drawing.Point(198, 135);
-            this.btnFinish.Name = "btnFinish";
-            this.btnFinish.Size = new System.Drawing.Size(81, 24);
-            this.btnFinish.TabIndex = 8;
-            this.btnFinish.Text = "Ukončit";
-            this.btnFinish.UseVisualStyleBackColor = true;
-            this.btnFinish.Click += new System.EventHandler(this.btnFinish_Click);
             // 
             // gridNote
             // 
@@ -240,7 +187,7 @@
             this.gridNote.Name = "gridNote";
             this.gridNote.RowHeadersVisible = false;
             this.gridNote.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridNote.Size = new System.Drawing.Size(179, 248);
+            this.gridNote.Size = new System.Drawing.Size(370, 415);
             this.gridNote.TabIndex = 5;
             this.gridNote.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridNote_CellContentClick);
             // 
@@ -248,6 +195,17 @@
             // 
             this.hint.HeaderText = "";
             this.hint.Name = "hint";
+            // 
+            // tabName
+            // 
+            this.tabName.Controls.Add(this.gridName);
+            this.tabName.Location = new System.Drawing.Point(4, 22);
+            this.tabName.Name = "tabName";
+            this.tabName.Padding = new System.Windows.Forms.Padding(3);
+            this.tabName.Size = new System.Drawing.Size(376, 421);
+            this.tabName.TabIndex = 1;
+            this.tabName.Text = "Jméno";
+            this.tabName.UseVisualStyleBackColor = true;
             // 
             // gridName
             // 
@@ -264,11 +222,11 @@
             this.gridName.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1});
             this.gridName.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.gridName.Location = new System.Drawing.Point(0, 0);
+            this.gridName.Location = new System.Drawing.Point(3, 3);
             this.gridName.Name = "gridName";
             this.gridName.RowHeadersVisible = false;
             this.gridName.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridName.Size = new System.Drawing.Size(229, 453);
+            this.gridName.Size = new System.Drawing.Size(370, 415);
             this.gridName.TabIndex = 6;
             this.gridName.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridName_CellContentClick);
             // 
@@ -276,6 +234,16 @@
             // 
             this.dataGridViewTextBoxColumn1.HeaderText = "";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // tabFor
+            // 
+            this.tabFor.Controls.Add(this.gridFor);
+            this.tabFor.Location = new System.Drawing.Point(4, 22);
+            this.tabFor.Name = "tabFor";
+            this.tabFor.Size = new System.Drawing.Size(376, 421);
+            this.tabFor.TabIndex = 2;
+            this.tabFor.Text = "Účel";
+            this.tabFor.UseVisualStyleBackColor = true;
             // 
             // gridFor
             // 
@@ -292,11 +260,11 @@
             this.gridFor.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn2});
             this.gridFor.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.gridFor.Location = new System.Drawing.Point(0, 0);
+            this.gridFor.Location = new System.Drawing.Point(3, 3);
             this.gridFor.Name = "gridFor";
             this.gridFor.RowHeadersVisible = false;
             this.gridFor.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridFor.Size = new System.Drawing.Size(229, 453);
+            this.gridFor.Size = new System.Drawing.Size(370, 415);
             this.gridFor.TabIndex = 6;
             this.gridFor.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridFor_CellContentClick);
             // 
@@ -304,6 +272,16 @@
             // 
             this.dataGridViewTextBoxColumn2.HeaderText = "";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // tabRecipient
+            // 
+            this.tabRecipient.Controls.Add(this.gridRecipient);
+            this.tabRecipient.Location = new System.Drawing.Point(4, 22);
+            this.tabRecipient.Name = "tabRecipient";
+            this.tabRecipient.Size = new System.Drawing.Size(376, 421);
+            this.tabRecipient.TabIndex = 3;
+            this.tabRecipient.Text = "Příjemce";
+            this.tabRecipient.UseVisualStyleBackColor = true;
             // 
             // gridRecipient
             // 
@@ -322,7 +300,7 @@
             this.gridRecipient.Name = "gridRecipient";
             this.gridRecipient.RowHeadersVisible = false;
             this.gridRecipient.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridRecipient.Size = new System.Drawing.Size(185, 254);
+            this.gridRecipient.Size = new System.Drawing.Size(376, 421);
             this.gridRecipient.TabIndex = 6;
             // 
             // dataGridViewTextBoxColumn3
@@ -330,11 +308,33 @@
             this.dataGridViewTextBoxColumn3.HeaderText = "";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
+            // btnDeleteSelected
+            // 
+            this.btnDeleteSelected.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDeleteSelected.Location = new System.Drawing.Point(398, 89);
+            this.btnDeleteSelected.Name = "btnDeleteSelected";
+            this.btnDeleteSelected.Size = new System.Drawing.Size(81, 39);
+            this.btnDeleteSelected.TabIndex = 7;
+            this.btnDeleteSelected.Text = "Smazat vybrané";
+            this.btnDeleteSelected.UseVisualStyleBackColor = true;
+            this.btnDeleteSelected.Click += new System.EventHandler(this.btnDeleteSelected_Click);
+            // 
+            // btnFinish
+            // 
+            this.btnFinish.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnFinish.Location = new System.Drawing.Point(398, 135);
+            this.btnFinish.Name = "btnFinish";
+            this.btnFinish.Size = new System.Drawing.Size(81, 24);
+            this.btnFinish.TabIndex = 8;
+            this.btnFinish.Text = "Ukončit";
+            this.btnFinish.UseVisualStyleBackColor = true;
+            this.btnFinish.Click += new System.EventHandler(this.btnFinish_Click);
+            // 
             // AutocompleteSettingsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(298, 289);
+            this.ClientSize = new System.Drawing.Size(498, 464);
             this.Controls.Add(this.btnFinish);
             this.Controls.Add(this.btnDeleteSelected);
             this.Controls.Add(this.btnRecipient);
@@ -344,6 +344,8 @@
             this.Controls.Add(this.btnName);
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(306, 318);
             this.Name = "AutocompleteSettingsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
@@ -352,12 +354,12 @@
             this.groupBox1.PerformLayout();
             this.tabControls.ResumeLayout(false);
             this.tabNote.ResumeLayout(false);
-            this.tabName.ResumeLayout(false);
-            this.tabFor.ResumeLayout(false);
-            this.tabRecipient.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridNote)).EndInit();
+            this.tabName.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridName)).EndInit();
+            this.tabFor.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridFor)).EndInit();
+            this.tabRecipient.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridRecipient)).EndInit();
             this.ResumeLayout(false);
 

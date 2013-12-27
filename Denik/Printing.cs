@@ -41,6 +41,11 @@ namespace Denik
         private int m_lastPage;
         private int curPage;
 
+        enum FormType {
+            Income,
+            Outcome,
+        }
+
 
         private StringFormat stringFormatFactory(StringAlignment horizontal, StringAlignment vertical)
         {
@@ -328,7 +333,7 @@ namespace Denik
 
             g.DrawString("Výdajový pokladní doklad", new Font("Courier New", 11, FontStyle.Bold), TextBrush, 
                         new Point(260, 15), LeftTopAlign);
-            PrintCommon(g, yOffset, false);            
+            PrintCommon(g, yOffset, false, FormType.Outcome);            
 
             g.DrawString("Podpis pokladníka", defaultTextFont, TextBrush, new Point(85, 197), CenterTopAlign);
             g.DrawString("Podpis příjemce", defaultTextFont, TextBrush, new Point(250, 197), CenterTopAlign);
@@ -347,7 +352,7 @@ namespace Denik
 
             g.DrawString("Příjmový pokladní doklad", new Font("Courier New", 11, FontStyle.Bold),
                         TextBrush, new Point(260, 15), LeftTopAlign);
-            PrintCommon(g, 0, false);
+            PrintCommon(g, 0, false, FormType.Income);
 
             g.DrawString("Podpis pokladníka", defaultTextFont, TextBrush, new Point(423, 197), CenterTopAlign);
 
@@ -361,7 +366,7 @@ namespace Denik
 
             g.DrawString("Stvrzenka", new Font("Courier New", 13, FontStyle.Bold), TextBrush,
                         new Point(260, 15+ yOffset), LeftTopAlign);
-            PrintCommon(g, yOffset, true);
+            PrintCommon(g, yOffset, true, FormType.Income);
 
             g.DrawString("Podpis pokladníka", defaultTextFont, TextBrush, new Point(423, 197+ yOffset), CenterTopAlign);
         }
@@ -377,7 +382,7 @@ namespace Denik
             }
         }
 
-        private void PrintCommon(Graphics g, int yOffset, bool onlyUpper)
+        private void PrintCommon(Graphics g, int yOffset, bool onlyUpper, FormType formType)
         {
             Font defaultTextFont = new Font("Courier New", 9, FontStyle.Bold);
             printStamp(g, 130, 11);
@@ -392,7 +397,14 @@ namespace Denik
             g.DrawString("číslo " + m_recToPrint.TypeID.ToString()+m_recToPrint.NoteToNumber, defaultTextFont, TextBrush, new Point(260, 45), LeftTopAlign);
             g.DrawString("ze dne " + m_recToPrint.Date, defaultTextFont, TextBrush, new Point(260, 60), LeftTopAlign);
 
-            g.DrawString("Vyplaceno: " + m_recToPrint.CustName, defaultTextFont, TextBrush, new Point(10, 88), LeftTopAlign);
+            if (formType == FormType.Income)
+            {
+                g.DrawString("Přijato od: " + m_recToPrint.CustName, defaultTextFont, TextBrush, new Point(10, 88), LeftTopAlign);
+            }
+            else
+            {
+                g.DrawString("Vyplaceno: " + m_recToPrint.CustName, defaultTextFont, TextBrush, new Point(10, 88), LeftTopAlign);
+            }
             g.DrawString("Částka: " + MoneyConvertor.MoneyToStr(m_recToPrint.Cost) + ",00 Kč", new Font("Courier New", 11, FontStyle.Bold), 
                             TextBrush, new Point(10, 105), LeftTopAlign);
 

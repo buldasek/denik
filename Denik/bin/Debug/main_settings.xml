@@ -4,7 +4,11 @@
     <HintsHolder>
       <hintItems>
         <HintItem>
-          <m_hint>aaa</m_hint>
+          <m_hint>jenic</m_hint>
+          <m_counter>0</m_counter>
+        </HintItem>
+        <HintItem>
+          <m_hint>slls</m_hint>
           <m_counter>0</m_counter>
         </HintItem>
         <HintItem>
@@ -12,11 +16,7 @@
           <m_counter>0</m_counter>
         </HintItem>
         <HintItem>
-          <m_hint>jenda</m_hint>
-          <m_counter>0</m_counter>
-        </HintItem>
-        <HintItem>
-          <m_hint>hlohlo</m_hint>
+          <m_hint>afsd</m_hint>
           <m_counter>0</m_counter>
         </HintItem>
       </hintItems>
@@ -25,7 +25,11 @@
     <HintsHolder>
       <hintItems>
         <HintItem>
-          <m_hint>ds</m_hint>
+          <m_hint>aaa</m_hint>
+          <m_counter>0</m_counter>
+        </HintItem>
+        <HintItem>
+          <m_hint>djkf</m_hint>
           <m_counter>0</m_counter>
         </HintItem>
         <HintItem>
@@ -33,7 +37,7 @@
           <m_counter>0</m_counter>
         </HintItem>
         <HintItem>
-          <m_hint>jupi</m_hint>
+          <m_hint>ahsnd</m_hint>
           <m_counter>0</m_counter>
         </HintItem>
       </hintItems>
@@ -42,23 +46,55 @@
     <HintsHolder>
       <hintItems>
         <HintItem>
+          <m_hint>jendulovi</m_hint>
+          <m_counter>0</m_counter>
+        </HintItem>
+        <HintItem>
+          <m_hint>afsd</m_hint>
+          <m_counter>0</m_counter>
+        </HintItem>
+        <HintItem>
           <m_hint>asdf</m_hint>
           <m_counter>0</m_counter>
         </HintItem>
         <HintItem>
-          <m_hint>asdfddd</m_hint>
+          <m_hint>Jaroslava Tomanová</m_hint>
           <m_counter>0</m_counter>
         </HintItem>
         <HintItem>
-          <m_hint>sss</m_hint>
+          <m_hint>Česká pošta</m_hint>
           <m_counter>0</m_counter>
         </HintItem>
         <HintItem>
-          <m_hint>Fink výroba krm. směsí Nezvěstice</m_hint>
+          <m_hint>Mgr. Zdeňka Huspeková</m_hint>
           <m_counter>0</m_counter>
         </HintItem>
         <HintItem>
-          <m_hint>adsf</m_hint>
+          <m_hint>cely</m_hint>
+          <m_counter>0</m_counter>
+        </HintItem>
+        <HintItem>
+          <m_hint>q</m_hint>
+          <m_counter>0</m_counter>
+        </HintItem>
+        <HintItem>
+          <m_hint>12</m_hint>
+          <m_counter>0</m_counter>
+        </HintItem>
+        <HintItem>
+          <m_hint>3]</m_hint>
+          <m_counter>0</m_counter>
+        </HintItem>
+        <HintItem>
+          <m_hint>4</m_hint>
+          <m_counter>0</m_counter>
+        </HintItem>
+        <HintItem>
+          <m_hint>5</m_hint>
+          <m_counter>0</m_counter>
+        </HintItem>
+        <HintItem>
+          <m_hint>6</m_hint>
           <m_counter>0</m_counter>
         </HintItem>
       </hintItems>
@@ -67,23 +103,19 @@
     <HintsHolder>
       <hintItems>
         <HintItem>
-          <m_hint>ddddd</m_hint>
+          <m_hint>chacha</m_hint>
           <m_counter>0</m_counter>
         </HintItem>
         <HintItem>
-          <m_hint>ddddddddffff</m_hint>
+          <m_hint>fdddd</m_hint>
           <m_counter>0</m_counter>
         </HintItem>
         <HintItem>
-          <m_hint>shd</m_hint>
+          <m_hint>převod hotovosti na běžný účet</m_hint>
           <m_counter>0</m_counter>
         </HintItem>
         <HintItem>
-          <m_hint>krmivo pro činčilyzz</m_hint>
-          <m_counter>0</m_counter>
-        </HintItem>
-        <HintItem>
-          <m_hint>gloglo</m_hint>
+          <m_hint>poštovné</m_hint>
           <m_counter>0</m_counter>
         </HintItem>
       </hintItems>
@@ -96,6 +128,10 @@
           <m_counter>0</m_counter>
         </HintItem>
         <HintItem>
+          <m_hint>sssssssssssssssss</m_hint>
+          <m_counter>0</m_counter>
+        </HintItem>
+        <HintItem>
           <m_hint>viz. příloha</m_hint>
           <m_counter>0</m_counter>
         </HintItem>
@@ -104,25 +140,34 @@
     </HintsHolder>
   </hintHolders>
   <Stamp>
-    <string>Tramtarara</string>
-    <string>zs planice</string>
-    <string>afd</string>
-    <string>gsalkj</string>
-    <string>dsaglkj</string>
+    <string>Základní škola Dr. Ing. Frantiska</string>
+    <string> Křižíka sadlfkjsaldkfjsa</string>
+    <string>dsalkfjdsalfkjads</string>
+    <string>dsalkjdsalfkdjsa</string>
   </Stamp>
   <MainWindowPos>
     <Location>
-      <X>445</X>
-      <Y>25</Y>
+      <X>65</X>
+      <Y>-8</Y>
     </Location>
     <Size>
-      <Width>883</Width>
-      <Height>797</Height>
+      <Width>1543</Width>
+      <Height>912</Height>
     </Size>
-    <X>445</X>
-    <Y>25</Y>
-    <Width>883</Width>
-    <Height>797</Height>
+    <X>65</X>
+    <Y>-8</Y>
+    <Width>1543</Width>
+    <Height>912</Height>
   </MainWindowPos>
-  <DiaryDirectory>D:\ProjektyZS\denik\data\novydenicek.pkl</DiaryDirectory>
+  <ColumnsWidths>
+    <float>50</float>
+    <float>60</float>
+    <float>70</float>
+    <float>300</float>
+    <float>80</float>
+    <float>80</float>
+    <float>90</float>
+    <float>150</float>
+  </ColumnsWidths>
+  <DiaryDirectory>C:\Users\bulda\Desktop\tmp.pkl</DiaryDirectory>
 </SettingsImpl>

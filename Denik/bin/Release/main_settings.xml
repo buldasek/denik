@@ -73,6 +73,30 @@
           <m_hint>cely</m_hint>
           <m_counter>0</m_counter>
         </HintItem>
+        <HintItem>
+          <m_hint>q</m_hint>
+          <m_counter>0</m_counter>
+        </HintItem>
+        <HintItem>
+          <m_hint>12</m_hint>
+          <m_counter>0</m_counter>
+        </HintItem>
+        <HintItem>
+          <m_hint>3]</m_hint>
+          <m_counter>0</m_counter>
+        </HintItem>
+        <HintItem>
+          <m_hint>4</m_hint>
+          <m_counter>0</m_counter>
+        </HintItem>
+        <HintItem>
+          <m_hint>5</m_hint>
+          <m_counter>0</m_counter>
+        </HintItem>
+        <HintItem>
+          <m_hint>6</m_hint>
+          <m_counter>0</m_counter>
+        </HintItem>
       </hintItems>
       <Name>OutcomeName</Name>
     </HintsHolder>
@@ -123,17 +147,17 @@
   </Stamp>
   <MainWindowPos>
     <Location>
-      <X>486</X>
-      <Y>21</Y>
+      <X>65</X>
+      <Y>-8</Y>
     </Location>
     <Size>
-      <Width>615</Width>
-      <Height>1066</Height>
+      <Width>1543</Width>
+      <Height>916</Height>
     </Size>
-    <X>486</X>
-    <Y>21</Y>
-    <Width>615</Width>
-    <Height>1066</Height>
+    <X>65</X>
+    <Y>-8</Y>
+    <Width>1543</Width>
+    <Height>916</Height>
   </MainWindowPos>
   <ColumnsWidths>
     <float>50</float>
@@ -145,5 +169,5 @@
     <float>90</float>
     <float>150</float>
   </ColumnsWidths>
-  <DiaryDirectory>D:\ProjektyZS\deniky\denik\data\novydenicek.pkl</DiaryDirectory>
+  <DiaryDirectory>C:\Users\bulda\Desktop\tmp.pkl</DiaryDirectory>
 </SettingsImpl>

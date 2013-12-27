@@ -430,7 +430,7 @@
     <value>0, 62</value>
   </data>
   <data name="gridHistory.Size" type="System.Drawing.Size, System.Drawing">
-    <value>692, 349</value>
+    <value>692, 339</value>
   </data>
   <data name="gridHistory.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -6627,6 +6627,9 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzNzAwNzA=
 </value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>550, 300</value>

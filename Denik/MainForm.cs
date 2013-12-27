@@ -387,7 +387,8 @@ namespace Denik
         {
             PrintDialog pd = new PrintDialog();
             pd.Document = inoutParentForm.printer.printDoc;
-            pd.ShowDialog();
+            pd.UseEXDialog = true;
+            DialogResult rs = pd.ShowDialog();
         }
 
         private void nastaveníDeníkuToolStripMenuItem_Click(object sender, EventArgs e)

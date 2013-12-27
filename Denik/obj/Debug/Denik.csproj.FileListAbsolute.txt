@@ -14,3 +14,19 @@ D:\ProjektyZS\Denik\Denik\obj\Debug\Denik.ExperimentalForm.resources
 D:\ProjektyZS\denik\Denik\obj\Debug\Denik.DiarySettings.resources
 D:\ProjektyZS\denik\Denik\obj\Debug\Denik.StampForm.resources
 D:\ProjektyZS\denik\Denik\obj\Debug\Denik.AutocompleteSettingsForm.resources
+d:\skolni projekty\denik\Denik\bin\Debug\Denik.exe.config
+d:\skolni projekty\denik\Denik\obj\Debug\Denik.exe
+d:\skolni projekty\denik\Denik\obj\Debug\Denik.pdb
+d:\skolni projekty\denik\Denik\bin\Debug\Denik.exe
+d:\skolni projekty\denik\Denik\bin\Debug\Denik.pdb
+d:\skolni projekty\denik\Denik\obj\Debug\ResolveAssemblyReference.cache
+d:\skolni projekty\denik\Denik\obj\Debug\Denik.AutocompleteSettingsForm.resources
+d:\skolni projekty\denik\Denik\obj\Debug\Denik.DiarySettings.resources
+d:\skolni projekty\denik\Denik\obj\Debug\Denik.ExperimentalForm.resources
+d:\skolni projekty\denik\Denik\obj\Debug\Denik.incomeForm.resources
+d:\skolni projekty\denik\Denik\obj\Debug\Denik.initFailureForm.resources
+d:\skolni projekty\denik\Denik\obj\Debug\Denik.MainForm.resources
+d:\skolni projekty\denik\Denik\obj\Debug\Denik.outcomeForm.resources
+d:\skolni projekty\denik\Denik\obj\Debug\Denik.Properties.Resources.resources
+d:\skolni projekty\denik\Denik\obj\Debug\Denik.StampForm.resources
+d:\skolni projekty\denik\Denik\obj\Debug\Denik.csproj.GenerateResource.Cache

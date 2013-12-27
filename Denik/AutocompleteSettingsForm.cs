@@ -72,6 +72,26 @@ namespace Denik
             setGridContent(gridName, "IncomeName", "OutcomeName");
             setGridContent(gridFor, "IncomeFor", "OutcomeFor");
             setGridContent(gridRecipient, "OutcomeRecipient", "OutcomeRecipient");
+            gridName.KeyUp += new KeyEventHandler(gridKeyUpHandler);
+            gridFor.KeyUp += new KeyEventHandler(gridKeyUpHandler);
+            gridRecipient.KeyUp += new KeyEventHandler(gridKeyUpHandler);
+        }
+
+        private void gridKeyUpHandler(object sender, System.Windows.Forms.KeyEventArgs e)
+        {
+            if (!(sender is FastDataGridView))
+            {
+                return;
+            }
+            FastDataGridView grid = (FastDataGridView)sender;
+            char c = Convert.ToChar(e.KeyCode); 
+            for (int i = 0; i < grid.RowCount; i++)
+            {
+                if (grid[0, i].Value.ToString().StartsWith(c.ToString(), StringComparison.CurrentCultureIgnoreCase)) {
+                    grid.CurrentCell = grid[0, i];
+                    break;
+                }
+            }
         }
 
         private void btnNote_Click(object sender, EventArgs e)

@@ -77,6 +77,8 @@
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.edStamp);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(302, 158);
             this.Name = "StampForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
