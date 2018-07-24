@@ -70,7 +70,13 @@ namespace Denik
 
         public PrintDocument printDoc
         {
-            get { return m_printDoc; }
+            get {
+                if (Settings.Settings.SettingsHolder.PrinterName != "")
+                {
+                    m_printDoc.PrinterSettings.PrinterName = Settings.Settings.SettingsHolder.PrinterName;
+                }
+                return m_printDoc; 
+            }
         }
 
         public void printOutcomeOne(Record rcToPrint)
@@ -79,14 +85,14 @@ namespace Denik
             if (rcToPrint == null)
                 return;
 
-            prepareDocumentA4(m_printDoc);
+            prepareDocumentA4(printDoc);
             m_recToPrint = rcToPrint;
 
-            m_printDoc.PrintPage += new PrintPageEventHandler(OnPrintOutcome);
+            printDoc.PrintPage += new PrintPageEventHandler(OnPrintOutcome);
 
-            printDocumentSafely(m_printDoc);
+            printDocumentSafely(printDoc);
 
-            m_printDoc.PrintPage -= new PrintPageEventHandler(OnPrintOutcome);
+            printDoc.PrintPage -= new PrintPageEventHandler(OnPrintOutcome);
         }
 
         public void printOutcomeTwiceTwoPage(Record rcToPrint)
@@ -95,15 +101,15 @@ namespace Denik
             if (rcToPrint == null)
                 return;
             
-            prepareDocumentA4(m_printDoc);
+            prepareDocumentA4(printDoc);
             m_recToPrint = rcToPrint;
 
-            m_printDoc.PrintPage += new PrintPageEventHandler(OnPrintOutcomeTwiceTwo);
+            printDoc.PrintPage += new PrintPageEventHandler(OnPrintOutcomeTwiceTwo);
             curPage = 0;
 
-            printDocumentSafely(m_printDoc);
+            printDocumentSafely(printDoc);
 
-            m_printDoc.PrintPage -= new PrintPageEventHandler(OnPrintOutcomeTwiceTwo);
+            printDoc.PrintPage -= new PrintPageEventHandler(OnPrintOutcomeTwiceTwo);
         }
 
         public void PrintIncome(Record rcToPrint)
@@ -112,15 +118,15 @@ namespace Denik
             if (rcToPrint == null)
                 return;
 
-            prepareDocumentA4(m_printDoc);
+            prepareDocumentA4(printDoc);
             m_recToPrint = rcToPrint;
             
-            m_printDoc.PrintPage += new PrintPageEventHandler(OnPrintIncome);
+            printDoc.PrintPage += new PrintPageEventHandler(OnPrintIncome);
             curPage = 0;
 
-            printDocumentSafely(m_printDoc);
+            printDocumentSafely(printDoc);
 
-            m_printDoc.PrintPage -= new PrintPageEventHandler(OnPrintIncome);
+            printDoc.PrintPage -= new PrintPageEventHandler(OnPrintIncome);
         }
 
         public void PrintDiary(Diary diaryToPrint, int currentPage)
@@ -146,9 +152,13 @@ namespace Denik
             pd.PrinterSettings.MaximumPage = m_diaryToPrint.PageCount;
             pd.PrinterSettings.MinimumPage = 1;
             pd.PrinterSettings.FromPage = pd.PrinterSettings.ToPage = currentPage+1;
-            
-            if (pd.ShowDialog()!=DialogResult.OK)
+            pd.UseEXDialog = true;
+            Settings.Settings.SettingsHolder.PrinterName = pd.PrinterSettings.PrinterName;
+            if (pd.ShowDialog() != DialogResult.OK)
+            {
+                Debug.Assert(false);
                 return;
+            }
 
             if (pd.PrinterSettings.PrintRange == PrintRange.AllPages)
             {
@@ -297,8 +307,8 @@ namespace Denik
          {
              g.ResetTransform();
              Bitmap im;
-             float marginX = (float)(m_printDoc.DefaultPageSettings.HardMarginX);
-             float marginY = (float)(m_printDoc.DefaultPageSettings.HardMarginY);
+             float marginX = (float)(printDoc.DefaultPageSettings.HardMarginX);
+             float marginY = (float)(printDoc.DefaultPageSettings.HardMarginY);
              try
              {
                  im = new Bitmap(BackgroundName);
@@ -431,8 +441,8 @@ namespace Denik
             get
             {
                 SizeF size = new SizeF(PaperA6.Width, PaperA6.Height);
-                size.Width -= 5;// +2 * m_printDoc.DefaultPageSettings.HardMarginX / 100f;
-                //size.Height;// -= 2 * m_printDoc.DefaultPageSettings.HardMarginY / 100f;
+                size.Width -= 5;// +2 * printDoc.DefaultPageSettings.HardMarginX / 100f;
+                //size.Height;// -= 2 * printDoc.DefaultPageSettings.HardMarginY / 100f;
 
                 return size;
             }
@@ -471,38 +481,46 @@ namespace Denik
             try { pd.Print(); }
             catch (Exception e)
             {
-                ExceptionWithMessageBox em = (ExceptionWithMessageBox)e;
-                if (em == null)
-                    MessageBox.Show("Došlo k neznámé chybě při tisku.");
-                else
+                InvalidPrinterException ipe = e as InvalidPrinterException;
+                if (ipe != null)
+                {
+                    MessageBox.Show("Na uloženou tiskárnu není možno tisknout. Zvolte jinou.");
+                    return;
+                }
+                ExceptionWithMessageBox em = e as ExceptionWithMessageBox;
+                if (em != null) 
+                {                    
                     em.ShowMessage();
+                    return;
+                }
+                MessageBox.Show("Došlo k neznámé chybě při tisku.");
             }
         }
 
         private void prepareDocumentA6(PrintDocument pd)
         {
-            m_printDoc.DocumentName = "Tisk dokladu...";
-            //m_printDoc.PrinterSettings.PaperSizes
+            printDoc.DocumentName = "Tisk dokladu...";
+            //printDoc.PrinterSettings.PaperSizes
             m_isSizeCorrect = false;
-            foreach (PaperSize ps in m_printDoc.PrinterSettings.PaperSizes)
+            foreach (PaperSize ps in printDoc.PrinterSettings.PaperSizes)
                 if (ps.Width == PaperA6.Width && ps.Height == PaperA6.Height)
                 {
                     m_isSizeCorrect = true;
                     break;
                 }
             if (m_isSizeCorrect)
-                m_printDoc.DefaultPageSettings.PaperSize = new System.Drawing.Printing.PaperSize("PaperA6", PaperA6.Width, PaperA6.Height);
+                printDoc.DefaultPageSettings.PaperSize = new System.Drawing.Printing.PaperSize("PaperA6", PaperA6.Width, PaperA6.Height);
             else
-                m_printDoc.DefaultPageSettings.PaperSize = new System.Drawing.Printing.PaperSize("PaperA6", 827, 1169);
+                printDoc.DefaultPageSettings.PaperSize = new System.Drawing.Printing.PaperSize("PaperA6", 827, 1169);
 
-            m_printDoc.DefaultPageSettings.Landscape = false;
+            printDoc.DefaultPageSettings.Landscape = false;
         }
 
         private void prepareDocumentA4(PrintDocument pd)
         {
-            m_printDoc.DocumentName = "Tisk dokladu...";
-            m_printDoc.DefaultPageSettings.PaperSize = new System.Drawing.Printing.PaperSize("PaperA4", 827, 1169);
-            m_printDoc.DefaultPageSettings.Landscape = false;
+            printDoc.DocumentName = "Tisk dokladu...";
+            printDoc.DefaultPageSettings.PaperSize = new System.Drawing.Printing.PaperSize("PaperA4", 827, 1169);
+            printDoc.DefaultPageSettings.Landscape = false;
         }
 
     }

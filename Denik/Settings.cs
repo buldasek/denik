@@ -397,22 +397,26 @@ namespace Settings
         }
 
         private string m_name;
-
+        private string m_lastHint;
         private List<HintItem> m_items;
 
         public HintsHolder() 
         {
             m_name = "";
             m_items = new List<HintItem>();
+            m_lastHint = "";
         }
+
         public HintsHolder(string name)
         {
             m_name = name;
             m_items = new List<HintItem>();
+            m_lastHint = "";
         }
 
         public void appendHint(string hint)
-        {  
+        {
+            m_lastHint = hint;
             for (int i = 0; i < m_items.Count; i++)
                 if (hint.CompareTo(m_items[i].m_hint) == 0)
                 {
@@ -427,6 +431,9 @@ namespace Settings
             for (int i = 0; i < m_items.Count; i++)
                 if (hint.CompareTo(m_items[i].m_hint) == 0)
                     m_items.RemoveAt(i);
+
+            if (m_lastHint == hint)
+                m_lastHint = "";
         }
 
 
@@ -440,6 +447,8 @@ namespace Settings
 
             return result.ToArray();
         }
+
+
 
         /// <summary>
         /// Should not be accessed directly, just for serialization
@@ -472,12 +481,20 @@ namespace Settings
             set { m_name = value; }
             get { return m_name; }
         }
+
+        public string LastHint
+        {
+            set { m_lastHint = value; }
+            get { return m_lastHint; }
+        }
+
     }
 
     public class SettingsImpl
     {
         private string[] m_stamp = new string[0];
         private string m_diaryDirectory = "";
+        private string m_preferredPrinter = "";
 
         private Dictionary<string, HintsHolder> m_hints = new Dictionary<string,HintsHolder>();
 
@@ -532,6 +549,12 @@ namespace Settings
             get { return m_stamp; }
         }
 
+        public string PrinterName
+        {
+            set { m_preferredPrinter = value; }
+            get { return m_preferredPrinter; }
+        }
+
         public Rectangle MainWindowPos
         {
             set;
@@ -584,6 +607,17 @@ namespace Settings
             else
                 return new string[0];
         }
+
+        public string getLastHint(string hintClass)
+        {
+            Debug.Assert(Array.IndexOf(m_hintClasses, hintClass) != -1, "Wrong hintClass");
+            HintsHolder hi;
+            if (m_hints.TryGetValue(hintClass, out hi))
+                return hi.LastHint;
+            else
+                return "";
+        }
+
     }
 
     public static class Settings

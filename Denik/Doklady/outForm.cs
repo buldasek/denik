@@ -79,6 +79,7 @@ namespace Denik
             hintList = Settings.Settings.SettingsHolder.getHints("OutcomeRecipient");
             foreach (string item in hintList)
                 cbOther.Items.Add(item);
+            cbOther.Text = Settings.Settings.SettingsHolder.getLastHint("OutcomeRecipient");
             
         }
 

@@ -389,6 +389,10 @@ namespace Denik
             pd.Document = inoutParentForm.printer.printDoc;
             pd.UseEXDialog = true;
             DialogResult rs = pd.ShowDialog();
+            if (rs == DialogResult.OK)
+            {
+            Settings.Settings.SettingsHolder.PrinterName = pd.PrinterSettings.PrinterName;
+            }
         }
 
         private void nastaveníDeníkuToolStripMenuItem_Click(object sender, EventArgs e)
