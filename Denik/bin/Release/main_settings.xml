@@ -21,6 +21,7 @@
         </HintItem>
       </hintItems>
       <Name>IncomeName</Name>
+      <LastHint />
     </HintsHolder>
     <HintsHolder>
       <hintItems>
@@ -42,6 +43,7 @@
         </HintItem>
       </hintItems>
       <Name>IncomeFor</Name>
+      <LastHint />
     </HintsHolder>
     <HintsHolder>
       <hintItems>
@@ -97,8 +99,13 @@
           <m_hint>6</m_hint>
           <m_counter>0</m_counter>
         </HintItem>
+        <HintItem>
+          <m_hint>asldkfjalsdkfj</m_hint>
+          <m_counter>0</m_counter>
+        </HintItem>
       </hintItems>
       <Name>OutcomeName</Name>
+      <LastHint>asldkfjalsdkfj</LastHint>
     </HintsHolder>
     <HintsHolder>
       <hintItems>
@@ -118,8 +125,13 @@
           <m_hint>poštovné</m_hint>
           <m_counter>0</m_counter>
         </HintItem>
+        <HintItem>
+          <m_hint>asdffff</m_hint>
+          <m_counter>0</m_counter>
+        </HintItem>
       </hintItems>
       <Name>OutcomeFor</Name>
+      <LastHint>asdffff</LastHint>
     </HintsHolder>
     <HintsHolder>
       <hintItems>
@@ -137,6 +149,7 @@
         </HintItem>
       </hintItems>
       <Name>OutcomeRecipient</Name>
+      <LastHint>asdf</LastHint>
     </HintsHolder>
   </hintHolders>
   <Stamp>
@@ -145,19 +158,20 @@
     <string>dsalkfjdsalfkjads</string>
     <string>dsalkjdsalfkdjsa</string>
   </Stamp>
+  <PrinterName>Bullzip PDF Printer</PrinterName>
   <MainWindowPos>
     <Location>
-      <X>65</X>
-      <Y>-8</Y>
+      <X>392</X>
+      <Y>40</Y>
     </Location>
     <Size>
-      <Width>1543</Width>
-      <Height>916</Height>
+      <Width>766</Width>
+      <Height>900</Height>
     </Size>
-    <X>65</X>
-    <Y>-8</Y>
-    <Width>1543</Width>
-    <Height>916</Height>
+    <X>392</X>
+    <Y>40</Y>
+    <Width>766</Width>
+    <Height>900</Height>
   </MainWindowPos>
   <ColumnsWidths>
     <float>50</float>
@@ -169,5 +183,5 @@
     <float>90</float>
     <float>150</float>
   </ColumnsWidths>
-  <DiaryDirectory>C:\Users\bulda\Desktop\tmp.pkl</DiaryDirectory>
+  <DiaryDirectory>C:\Users\bulda\Desktop\asdfas.pkl</DiaryDirectory>
 </SettingsImpl>

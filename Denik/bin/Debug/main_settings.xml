@@ -147,17 +147,17 @@
   </Stamp>
   <MainWindowPos>
     <Location>
-      <X>65</X>
-      <Y>-8</Y>
+      <X>834</X>
+      <Y>0</Y>
     </Location>
     <Size>
-      <Width>1543</Width>
-      <Height>912</Height>
+      <Width>766</Width>
+      <Height>900</Height>
     </Size>
-    <X>65</X>
-    <Y>-8</Y>
-    <Width>1543</Width>
-    <Height>912</Height>
+    <X>834</X>
+    <Y>0</Y>
+    <Width>766</Width>
+    <Height>900</Height>
   </MainWindowPos>
   <ColumnsWidths>
     <float>50</float>
@@ -169,5 +169,5 @@
     <float>90</float>
     <float>150</float>
   </ColumnsWidths>
-  <DiaryDirectory>C:\Users\bulda\Desktop\tmp.pkl</DiaryDirectory>
+  <DiaryDirectory>C:\Users\bulda\Desktop\asdfas.pkl</DiaryDirectory>
 </SettingsImpl>

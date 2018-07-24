@@ -1,2 +1,5 @@
-bin\**
-obj\**
+Denik/bin/**
+Denik/obj/**
+*.exe
+Denik/bin/Debug/main_settings.xml
+Denik/bin/Release/Denik.ex_
