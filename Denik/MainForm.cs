@@ -4,6 +4,7 @@ using System.Xml;
 using System.Windows.Forms;
 using Settings;
 using System.Diagnostics;
+using System.Collections.Generic;
 
 
 namespace Denik
@@ -147,8 +148,7 @@ namespace Denik
                 }
                 gridHistory.Rows[i].SetValues(cells);
             }
-            
-            //gridHistory.DataSource = dataSource;
+           //gridHistory.DataSource = dataSource;
         }
 
         private void LoadDiary()
@@ -217,7 +217,35 @@ namespace Denik
 
         }
 
-        private void LoadSettings()
+
+        void TemplateButtonClick(object sender, MouseEventArgs e)
+        {
+            Button button = sender as Button;
+            if (button == null) 
+            {
+                return;
+            }
+            int buttonTag = (int)button.Tag;
+            if (e.Button == MouseButtons.Left)
+            {
+                Record record = Settings.Settings.SettingsHolder.incomeTemplates()[buttonTag].m_values;
+                Record newRecord = insertIncomeForm(record);
+                if (newRecord != null)
+                {
+                    m_mainDiary.AppendRecord(newRecord);
+                    EnsureRecordVisibility(m_mainDiary.RecordsCount - 1);
+                    UpdateCurrentPage();
+                }
+            }
+            if (e.Button == MouseButtons.Right)
+            {
+                Settings.Settings.SettingsHolder.deleteTemplate(buttonTag);
+                Settings.Settings.Store();
+                LoadSettings();
+            }
+        }
+
+        public void LoadSettings()
         {
             //string directory = Storage.readString("Directory");
             Settings.Settings.Load();
@@ -237,6 +265,19 @@ namespace Denik
                 for (int col = 0; col < gridHistory.ColumnCount; col++)
                     if (columnsWidth[col] > 0)
                         gridHistory.Columns[col].FillWeight = columnsWidth[col];
+            }
+            List<IncomeTemplatesHolder.Template> incomeTemplates = Settings.Settings.SettingsHolder.incomeTemplates();
+            templatesPanel.Controls.Clear();
+            ToolTip ttip = new ToolTip();
+            for (int i = 0; i < incomeTemplates.Count; i++)
+            {
+                Button btn = new Button();
+                btn.Text = incomeTemplates[i].m_name.Replace(" ", " ");
+                btn.Tag = i;
+                btn.Width = 100;
+                btn.MouseUp += new MouseEventHandler(TemplateButtonClick);
+                ttip.SetToolTip(btn, "Klikněte pravým tlačítkem pro smazání " + btn.Text);
+                templatesPanel.Controls.Add(btn);
             }
 
             
@@ -293,8 +334,6 @@ namespace Denik
 
             m_mainDiary.Clone(newDiary);
             EnsureRecordVisibility(m_mainDiary.RecordsCount - 1);
-
-            UpdateCurrentPage();
         }
 
 
@@ -349,11 +388,11 @@ namespace Denik
             initRecord(ref newRecord, m_mainDiary);
             
             newRecord.TypeID = m_mainDiary.TypeCounts[(int)Record.RecordType.Income]+1;
-            incomeForm iform = new incomeForm(newRecord);
+            incomeForm iform = new incomeForm(newRecord, this);
             iform.ShowDialog();
             if (iform.Result != inoutParentForm.InOutFormResult.Cancel)
             {
-                m_mainDiary.AppendRecord(newRecord);
+                m_mainDiary.AppendRecord(iform.getDataRec());
                 EnsureRecordVisibility(m_mainDiary.RecordsCount - 1);
                 UpdateCurrentPage();
             }
@@ -495,7 +534,7 @@ namespace Denik
             inoutParentForm form;
             if (recordToChange.Type == Record.RecordType.Income)
             {
-                form = new incomeForm(recordToChange);
+                form = new incomeForm(recordToChange, this);
             }
             else
             {
@@ -549,12 +588,9 @@ namespace Denik
             UpdateCurrentPage();
         }
 
-        private void insertIncomeForm(object o, EventArgs ea)
+        private Record insertIncomeForm(Record record)
         {
-            Record newRecord = new Record();
-            initRecord(ref newRecord, m_mainDiary);
-
-            int curRecord = contextMenuRowIndex-1;
+            int curRecord = contextMenuRowIndex - 1;
             int curNumber = -1;
             while (curRecord >= 0)
             {
@@ -567,14 +603,26 @@ namespace Denik
                 curRecord--;
             }
             if (curNumber == -1)
-                curNumber = m_mainDiary.InitTypeCounts[(int)Record.RecordType.Income]+1;
-            newRecord.TypeID = curNumber+1;
+                curNumber = m_mainDiary.TypeCounts[(int)Record.RecordType.Income];
+            record.TypeID = curNumber + 1;
 
-            incomeForm iForm = new incomeForm(newRecord);
+            incomeForm iForm = new incomeForm(record, this);
             iForm.ShowDialog();
             if (iForm.Result == inoutParentForm.InOutFormResult.OK)
-                m_mainDiary.InsertRecord(contextMenuRowIndex, newRecord);
+                return iForm.getDataRec();
+            return null;            
+        }
 
+        private void insertIncomeFormHandler(object o, EventArgs ea)
+        {
+            Record newRecord = new Record();
+            initRecord(ref newRecord, m_mainDiary);
+
+            Denik.Record record = insertIncomeForm(newRecord);
+            if (record != null)
+            {
+                m_mainDiary.InsertRecord(contextMenuRowIndex, record);
+            }
             UpdateCurrentPage();
         }
         
@@ -596,7 +644,7 @@ namespace Denik
                 
                 //menu.Items.Add("Task1", null, new EventHandler(Task1_Click));
                 menu.Items.Add("Upravit doklad", null, new EventHandler(editRecord));
-                menu.Items.Add("Vložit příjmový doklad", null, new EventHandler(insertIncomeForm));
+                menu.Items.Add("Vložit příjmový doklad", null, new EventHandler(insertIncomeFormHandler));
                 menu.Items.Add("Vložit výdajový doklad", null, new EventHandler(insertOutcomeForm));
                 menu.Items.Add(new ToolStripSeparator());
                 menu.Items.Add("Odstranit doklad", null, new EventHandler(removeRecord));
@@ -617,6 +665,7 @@ namespace Denik
             m_mainDiary.onNameChanged += new Diary.OnDiaryNameChanged(OnNameChanged);
 
             LoadSettings();
+            UpdateCurrentPage();
 
             if (m_mainDiary != null) // todo tohle by nemelo byt nutne pokud to predtim poradne ukoncim
                 EnsureRecordVisibility(m_mainDiary.RecordsCount - 1);

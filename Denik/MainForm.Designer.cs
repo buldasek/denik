@@ -64,6 +64,9 @@
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.saveDialogDiary = new System.Windows.Forms.SaveFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.templatesPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.gridHistory = new Denik.FastDataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -74,6 +77,7 @@
             this.remain = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.note = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mainMenu.SuspendLayout();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridHistory)).BeginInit();
             this.SuspendLayout();
             // 
@@ -218,6 +222,22 @@
             // 
             resources.ApplyResources(this.saveDialogDiary, "saveDialogDiary");
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.lbPageId);
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Name = "panel1";
+            // 
+            // flowLayoutPanel1
+            // 
+            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            // 
+            // templatesPanel
+            // 
+            resources.ApplyResources(this.templatesPanel, "templatesPanel");
+            this.templatesPanel.Name = "templatesPanel";
+            // 
             // gridHistory
             // 
             this.gridHistory.AllowUserToAddRows = false;
@@ -344,13 +364,15 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.templatesPanel);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.mainMenu);
             this.Controls.Add(this.btnExpense);
-            this.Controls.Add(this.lbPageId);
             this.Controls.Add(this.btnIncome);
             this.Controls.Add(this.btnPrevPage);
             this.Controls.Add(this.btnNextPage);
             this.Controls.Add(this.gridHistory);
+            this.Controls.Add(this.panel1);
             this.MainMenuStrip = this.mainMenu;
             this.Name = "MainForm";
             this.Load += new System.EventHandler(this.MainForm_Load);
@@ -358,6 +380,7 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.mainMenu.ResumeLayout(false);
             this.mainMenu.PerformLayout();
+            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridHistory)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -399,6 +422,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn expenses;
         private System.Windows.Forms.DataGridViewTextBoxColumn remain;
         private System.Windows.Forms.DataGridViewTextBoxColumn note;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel templatesPanel;
 
     }
 }

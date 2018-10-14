@@ -10,29 +10,40 @@ namespace Denik
 {
     public partial class incomeForm : inoutParentForm
     {
+        MainForm m_parentMain;
        // private Record m_record;
-
-        private bool finishOK()
-        {
-            //todo pridat do seznamu
-            dataRec.NoteToNumber = cbNoteToNumber.Text;
-            dataRec.Date = edDate.Text;
+        private Denik.Record createDataRec() {
+                        //todo pridat do seznamu
+            Denik.Record result = new Denik.Record();
+            result.NoteToNumber = cbNoteToNumber.Text;
+            result.Date = edDate.Text;
             try
             {
-                dataRec.Cost = MoneyConvertor.StrToMoney(edMoney.Text, MaxValue-1);        //todo kontrola konverze
-                if (dataRec.Cost < 0 || dataRec.Cost >= MaxValue)
+                result.Cost = MoneyConvertor.StrToMoney(edMoney.Text, MaxValue-1);        //todo kontrola konverze
+                if (result.Cost < 0 || result.Cost >= MaxValue)
                     throw new Exception();
             }
             catch
             {
                 MessageBox.Show("Částka musí být celé číslo menší než "+(MaxValue-1).ToString()+".", "Chyba", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return null;
+            }
+            result.CustName = cbFrom.Text;
+            result.Content = cbContent.Text;
+            result.Note = edNote.Text;
+            result.Type = Record.RecordType.Income;
+            return result;
+        }
 
+
+        private bool finishOK()
+        {
+            Denik.Record record = createDataRec();
+            if (record == null)
+            {
                 return false;
             }
-            dataRec.CustName = cbFrom.Text;
-            dataRec.Content = cbContent.Text;
-            dataRec.Note = edNote.Text;
-            dataRec.Type = Record.RecordType.Income;
+            dataRec = record;
 
             //Settings.Settings.SettingsHolder.addHint("IncomeNote", dataRec.NoteToNumber);
             Settings.Settings.SettingsHolder.addHint("IncomeName", dataRec.CustName);
@@ -41,9 +52,10 @@ namespace Denik
             return true; 
         }
 
-        public incomeForm(Record dataRecord)
+        public incomeForm(Record dataRecord, MainForm parentMain)
         {
             InitializeComponent();
+            m_parentMain = parentMain;
 
             Result = InOutFormResult.Cancel;
 
@@ -103,7 +115,21 @@ namespace Denik
             Close();
         }
 
+        private void asTemplate_Click(object sender, EventArgs e)
+        {
+            InputBox inputBox = new InputBox();
+            inputBox.ShowDialog();
+            if (inputBox.Result != DialogResult.OK)
+            {
+                return;
+            }
+            Denik.Record template = createDataRec();
+            if (template != null)
+            {
+                Settings.Settings.SettingsHolder.addTemplate(inputBox.InputText, template);
+            }
+            Settings.Settings.Store();
+            m_parentMain.LoadSettings();
+        }
     }
-
-
 }

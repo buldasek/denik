@@ -45,6 +45,7 @@
             this.btnClose = new System.Windows.Forms.Button();
             this.btnStore = new System.Windows.Forms.Button();
             this.btnPrint = new System.Windows.Forms.Button();
+            this.asTemplate = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbHeader
@@ -172,9 +173,9 @@
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(254, 276);
+            this.btnClose.Location = new System.Drawing.Point(264, 276);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(94, 39);
+            this.btnClose.Size = new System.Drawing.Size(84, 39);
             this.btnClose.TabIndex = 6;
             this.btnClose.Text = "Zrušit";
             this.btnClose.UseVisualStyleBackColor = true;
@@ -182,9 +183,9 @@
             // 
             // btnStore
             // 
-            this.btnStore.Location = new System.Drawing.Point(153, 276);
+            this.btnStore.Location = new System.Drawing.Point(102, 276);
             this.btnStore.Name = "btnStore";
-            this.btnStore.Size = new System.Drawing.Size(95, 39);
+            this.btnStore.Size = new System.Drawing.Size(75, 39);
             this.btnStore.TabIndex = 5;
             this.btnStore.Text = "Uložit";
             this.btnStore.UseVisualStyleBackColor = true;
@@ -194,17 +195,28 @@
             // 
             this.btnPrint.Location = new System.Drawing.Point(15, 276);
             this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(132, 39);
+            this.btnPrint.Size = new System.Drawing.Size(82, 39);
             this.btnPrint.TabIndex = 4;
             this.btnPrint.Text = "Tisk";
             this.btnPrint.UseVisualStyleBackColor = true;
             this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
+            // 
+            // asTemplate
+            // 
+            this.asTemplate.Location = new System.Drawing.Point(183, 276);
+            this.asTemplate.Name = "asTemplate";
+            this.asTemplate.Size = new System.Drawing.Size(75, 39);
+            this.asTemplate.TabIndex = 9;
+            this.asTemplate.Text = "Jako šablonu";
+            this.asTemplate.UseVisualStyleBackColor = true;
+            this.asTemplate.Click += new System.EventHandler(this.asTemplate_Click);
             // 
             // incomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(358, 331);
+            this.Controls.Add(this.asTemplate);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnStore);
             this.Controls.Add(this.btnPrint);
@@ -252,5 +264,6 @@
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnStore;
         private System.Windows.Forms.Button btnPrint;
+        private System.Windows.Forms.Button asTemplate;
     }
 }

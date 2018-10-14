@@ -341,6 +341,43 @@ namespace Settings
     }
 
 
+    public class IncomeTemplatesHolder
+    {
+        public class Template
+        {
+            public Template() { }
+            public Template(string name, Denik.Record values)
+            {
+                m_name = name;
+                m_values = values;
+            }
+            public string m_name;
+            public Denik.Record m_values;
+        }
+
+        public IncomeTemplatesHolder()
+        {
+            m_templates = new List<Template>();
+        }
+        public List<Template> m_templates;
+
+        public Template[] Templates
+        {
+            get
+            {
+                return m_templates.ToArray();
+            }
+            set
+            {
+                m_templates.Clear();
+                for (int i = 0; i < value.Length; i++)
+                {
+                    m_templates.Add(value[i]);
+                }
+            }
+        }
+    }
+
 
     public class HintsHolder
     {
@@ -498,6 +535,8 @@ namespace Settings
 
         private Dictionary<string, HintsHolder> m_hints = new Dictionary<string,HintsHolder>();
 
+        private IncomeTemplatesHolder m_incomeTemplatesHolder = new IncomeTemplatesHolder();
+
         private static string [] m_hintClasses = {"IncomeName", "IncomeFor", "OutcomeName", "OutcomeFor", "OutcomeRecipient"};
 
         public SettingsImpl()
@@ -508,6 +547,28 @@ namespace Settings
             }
 
             MainWindowPos = new Rectangle(0, 0, 0,0);            
+        }
+
+        public IncomeTemplatesHolder incomeTemplatesHolder{
+            get{
+                return m_incomeTemplatesHolder;
+            }
+            set {
+                m_incomeTemplatesHolder = value;
+            }
+        }
+
+        public void addTemplate(string name, Denik.Record template)
+        {
+            m_incomeTemplatesHolder.m_templates.Add(new IncomeTemplatesHolder.Template(name, template));
+        }
+        public List<IncomeTemplatesHolder.Template> incomeTemplates()
+        {
+            return m_incomeTemplatesHolder.m_templates;
+        }
+        public void deleteTemplate(int i)
+        {
+            m_incomeTemplatesHolder.m_templates.RemoveAt(i);
         }
 
         //Should not be access directly, just for serialization
@@ -630,16 +691,31 @@ namespace Settings
                 using (StreamReader sr = new StreamReader("main_settings.xml"))
                 {
                     XmlSerializer xs = new XmlSerializer(typeof(SettingsImpl));
+                    xs.UnknownNode += new XmlNodeEventHandler(serializer_UnknownNode);
+                    xs.UnknownAttribute += new XmlAttributeEventHandler(serializer_UnknownAttribute);
                     SettingsHolder = (SettingsImpl)xs.Deserialize(sr);
 
                 }
             }
-            catch
+            catch (Exception e)
             {
-                MessageBox.Show("Došlo k poškození pomocných souborů, veškerá nastavení budou ztracena.",
+                MessageBox.Show("Došlo k poškození pomocných souborů, veškerá nastavení budou ztracena." +e.Message,
                     "Chyba", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        public static void serializer_UnknownNode
+(object sender, XmlNodeEventArgs e)
+        {
+            Console.WriteLine("Unknown Node:" + e.Name + "\t" + e.Text);
+        }
+
+        public static void serializer_UnknownAttribute
+        (object sender, XmlAttributeEventArgs e)
+        {
+            System.Xml.XmlAttribute attr = e.Attr;
+            Console.WriteLine("Unknown attribute " +
+            attr.Name + "='" + attr.Value + "'");
+        } 
 
         public static void Store()
         {
