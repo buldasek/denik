@@ -39,7 +39,7 @@ namespace Denik
         private Diary m_diaryToPrint;
         private int m_firstPage;
         private int m_lastPage;
-        private int curPage;
+        private int m_curPage;
 
         enum FormType {
             Income,
@@ -105,7 +105,7 @@ namespace Denik
             m_recToPrint = rcToPrint;
 
             printDoc.PrintPage += new PrintPageEventHandler(OnPrintOutcomeTwiceTwo);
-            curPage = 0;
+            m_curPage = 0;
 
             printDocumentSafely(printDoc);
 
@@ -122,7 +122,7 @@ namespace Denik
             m_recToPrint = rcToPrint;
             
             printDoc.PrintPage += new PrintPageEventHandler(OnPrintIncome);
-            curPage = 0;
+            m_curPage = 0;
 
             printDocumentSafely(printDoc);
 
@@ -143,7 +143,7 @@ namespace Denik
             
             m_diaryPrintDoc.DefaultPageSettings.Landscape = false;
                        
-            curPage = 0;
+            m_curPage = 0;
 
             PrintDialog pd = new PrintDialog();
             pd.Document = m_diaryPrintDoc;
@@ -457,23 +457,25 @@ namespace Denik
         {
             //todo nejak lepe udelat pocitani stranek
             PrintOutcome(ppea.Graphics, -5, (int)paperA6PrintSize.Width, (int)paperA6PrintSize.Height);
-            if (curPage==0)
+            if (m_curPage==0)
             {
                 ppea.HasMorePages = true;
-                curPage = 1;
+                m_curPage = 1;
             }
         }
 
         private void OnPrintIncome(object sender, PrintPageEventArgs ppea)
         {
-            if (curPage == 0)
+            if (m_curPage == 0)
             {
-                curPage = 1;
+                m_curPage = 1;
                 ppea.HasMorePages = true;
-                PrintIncome(ppea.Graphics, -5, (int)paperA6PrintSize.Width, (int)paperA6PrintSize.Height);
+                printIncomeReceipt(ppea.Graphics, -5, (int)paperA6PrintSize.Width, (int)paperA6PrintSize.Height);
             }
             else
-                printIncomeReceipt(ppea.Graphics, -5, (int)paperA6PrintSize.Width, (int)paperA6PrintSize.Height);
+            {
+                PrintIncome(ppea.Graphics, -5, (int)paperA6PrintSize.Width, (int)paperA6PrintSize.Height);
+            }  
         }
 
         private void printDocumentSafely(PrintDocument pd)

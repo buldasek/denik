@@ -19,9 +19,13 @@
           <m_hint>afsd</m_hint>
           <m_counter>0</m_counter>
         </HintItem>
+        <HintItem>
+          <m_hint>adf</m_hint>
+          <m_counter>0</m_counter>
+        </HintItem>
       </hintItems>
       <Name>IncomeName</Name>
-      <LastHint />
+      <LastHint>adf</LastHint>
     </HintsHolder>
     <HintsHolder>
       <hintItems>
@@ -41,9 +45,13 @@
           <m_hint>ahsnd</m_hint>
           <m_counter>0</m_counter>
         </HintItem>
+        <HintItem>
+          <m_hint>ads</m_hint>
+          <m_counter>0</m_counter>
+        </HintItem>
       </hintItems>
       <Name>IncomeFor</Name>
-      <LastHint />
+      <LastHint>ads</LastHint>
     </HintsHolder>
     <HintsHolder>
       <hintItems>
@@ -161,17 +169,17 @@
   <PrinterName>Bullzip PDF Printer</PrinterName>
   <MainWindowPos>
     <Location>
-      <X>392</X>
-      <Y>40</Y>
+      <X>59</X>
+      <Y>-8</Y>
     </Location>
     <Size>
-      <Width>766</Width>
-      <Height>900</Height>
+      <Width>1549</Width>
+      <Height>916</Height>
     </Size>
-    <X>392</X>
-    <Y>40</Y>
-    <Width>766</Width>
-    <Height>900</Height>
+    <X>59</X>
+    <Y>-8</Y>
+    <Width>1549</Width>
+    <Height>916</Height>
   </MainWindowPos>
   <ColumnsWidths>
     <float>50</float>
@@ -183,5 +191,5 @@
     <float>90</float>
     <float>150</float>
   </ColumnsWidths>
-  <DiaryDirectory>C:\Users\bulda\Desktop\asdfas.pkl</DiaryDirectory>
+  <DiaryDirectory>C:\Users\bulda\Desktop\denik.pkl</DiaryDirectory>
 </SettingsImpl>
