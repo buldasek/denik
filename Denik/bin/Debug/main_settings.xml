@@ -25,7 +25,7 @@
         </HintItem>
       </hintItems>
       <Name>IncomeName</Name>
-      <LastHint>adsf</LastHint>
+      <LastHint>Buldasek</LastHint>
     </HintsHolder>
     <HintsHolder>
       <hintItems>
@@ -47,7 +47,7 @@
         </HintItem>
       </hintItems>
       <Name>IncomeFor</Name>
-      <LastHint />
+      <LastHint>aaa</LastHint>
     </HintsHolder>
     <HintsHolder>
       <hintItems>
@@ -105,7 +105,7 @@
         </HintItem>
       </hintItems>
       <Name>OutcomeName</Name>
-      <LastHint />
+      <LastHint>Mgr. Zdeňka Huspeková</LastHint>
     </HintsHolder>
     <HintsHolder>
       <hintItems>
@@ -125,9 +125,13 @@
           <m_hint>poštovné</m_hint>
           <m_counter>0</m_counter>
         </HintItem>
+        <HintItem>
+          <m_hint>asdf</m_hint>
+          <m_counter>0</m_counter>
+        </HintItem>
       </hintItems>
       <Name>OutcomeFor</Name>
-      <LastHint />
+      <LastHint>asdf</LastHint>
     </HintsHolder>
     <HintsHolder>
       <hintItems>
@@ -154,20 +158,20 @@
     <string>dsalkfjdsalfkjads</string>
     <string>dsalkjdsalfkdjsa</string>
   </Stamp>
-  <PrinterName />
+  <PrinterName>Bullzip PDF Printer</PrinterName>
   <MainWindowPos>
     <Location>
-      <X>59</X>
-      <Y>-8</Y>
+      <X>61</X>
+      <Y>2</Y>
     </Location>
     <Size>
       <Width>1549</Width>
-      <Height>916</Height>
+      <Height>912</Height>
     </Size>
-    <X>59</X>
-    <Y>-8</Y>
+    <X>61</X>
+    <Y>2</Y>
     <Width>1549</Width>
-    <Height>916</Height>
+    <Height>912</Height>
   </MainWindowPos>
   <ColumnsWidths>
     <float>50</float>

@@ -126,7 +126,7 @@ namespace Denik
                     cells[4] = MoneyConvertor.MoneyToStr(records[i].Cost) + ",-";
                 }
                 cells[6] = MoneyConvertor.MoneyToStr(records[i].Remaining) + ",-";
-                cells[7] = records[i].Note;
+                cells[7] = records[i].Note.Equals("") ? records[i].CustName : records[i].Note;
 
                 //for (int j=0; j<8; j++)
                 //    dataSource[i*8+j] = cells[j];

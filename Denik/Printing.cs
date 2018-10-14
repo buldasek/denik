@@ -218,8 +218,8 @@ namespace Denik
                               (g.VisibleClipBounds.Height - 8) / 1169);  
              float width = (float)827;
 
-             int[] colBorders = { 32, 50, 57, 55, 266, 83, 83, 101, 84};
-             string[] colDescriptions = { "Poř.\nčíslo", "Datum", "Číslo\ndokladu", "Obsah zápisu", "Příjmy", 
+             int[] colBorders = { 32, 50, 57, 266, 83, 83, 101, 138};
+             string[] colDescriptions = { "Poř.\nčíslo", "Datum", "Obsah zápisu", "Příjmy", 
                                     "Výdaje", "Zůstatek", "Poznámka"};
 
              Rectangle tableRect = new Rectangle(5, 80, 817, 1064);
@@ -277,9 +277,10 @@ namespace Denik
                  string costIn = (record.Type==Record.RecordType.Income)?(MoneyConvertor.MoneyToStr(record.Cost) + ",-"):("");
                  string costOut = (record.Type == Record.RecordType.Expense) ? (MoneyConvertor.MoneyToStr(record.Cost) + ",-") : ("");
                  string remaining = MoneyConvertor.MoneyToStr(record.Remaining) + ",-";
-                 string[] rowVals = { record.OverallID.ToString(), record.DateDiary, record.TypeID.ToString(),
-                                       record.Content, costIn, costOut, remaining, record.Note};
-                 StringFormat[] colFormats = { RightCenterAlign, RightCenterAlign, RightCenterAlign, LeftCenterAlign, RightCenterAlign, RightCenterAlign, RightCenterAlign, LeftCenterAlign, LeftCenterAlign };
+                 string note = record.Note.Equals("") ? record.CustName : record.Note;
+                 string[] rowVals = { record.OverallID.ToString(), record.DateDiary.ToString(),
+                                       record.Content, costIn, costOut, remaining, note};
+                 StringFormat[] colFormats = { RightCenterAlign, RightCenterAlign, LeftCenterAlign, RightCenterAlign, RightCenterAlign, RightCenterAlign, LeftCenterAlign, LeftCenterAlign };
 
                  sumCol = tableRect.Left;
                  float rowTop = tableRect.Top + tableHeader + row * rowHeight;
