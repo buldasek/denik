@@ -1,0 +1,48 @@
+D:\ProjektyZS\Denik\Denik\obj\Release\ResolveAssemblyReference.cache
+D:\ProjektyZS\Denik\Denik\obj\Release\Denik.outcomeForm.resources
+D:\ProjektyZS\Denik\Denik\obj\Release\Denik.initFailureForm.resources
+D:\ProjektyZS\Denik\Denik\obj\Release\Denik.Properties.Resources.resources
+D:\ProjektyZS\Denik\Denik\obj\Release\Denik.csproj.GenerateResource.Cache
+D:\ProjektyZS\Denik\Denik\bin\Release\Denik.exe.config
+D:\ProjektyZS\Denik\Denik\bin\Release\Denik.exe
+D:\ProjektyZS\Denik\Denik\bin\Release\Denik.pdb
+D:\ProjektyZS\Denik\Denik\obj\Release\Denik.exe
+D:\ProjektyZS\Denik\Denik\obj\Release\Denik.pdb
+D:\ProjektyZS\Denik\Denik\obj\Release\Denik.incomeForm.resources
+D:\ProjektyZS\Denik\Denik\obj\Release\Denik.MainForm.resources
+D:\ProjektyZS\denik\Denik\obj\Release\Denik.AutocompleteSettingsForm.resources
+D:\ProjektyZS\denik\Denik\obj\Release\Denik.DiarySettings.resources
+D:\ProjektyZS\denik\Denik\obj\Release\Denik.ExperimentalForm.resources
+D:\ProjektyZS\denik\Denik\obj\Release\Denik.StampForm.resources
+D:\ProjektyZS\deniky\denik\Denik\bin\Release\Denik.exe.config
+D:\ProjektyZS\deniky\denik\Denik\obj\Release\Denik.exe
+D:\ProjektyZS\deniky\denik\Denik\obj\Release\Denik.pdb
+D:\ProjektyZS\deniky\denik\Denik\bin\Release\Denik.exe
+D:\ProjektyZS\deniky\denik\Denik\bin\Release\Denik.pdb
+D:\ProjektyZS\deniky\denik\Denik\obj\Release\ResolveAssemblyReference.cache
+D:\ProjektyZS\deniky\denik\Denik\obj\Release\Denik.AutocompleteSettingsForm.resources
+D:\ProjektyZS\deniky\denik\Denik\obj\Release\Denik.DiarySettings.resources
+D:\ProjektyZS\deniky\denik\Denik\obj\Release\Denik.ExperimentalForm.resources
+D:\ProjektyZS\deniky\denik\Denik\obj\Release\Denik.incomeForm.resources
+D:\ProjektyZS\deniky\denik\Denik\obj\Release\Denik.initFailureForm.resources
+D:\ProjektyZS\deniky\denik\Denik\obj\Release\Denik.MainForm.resources
+D:\ProjektyZS\deniky\denik\Denik\obj\Release\Denik.outcomeForm.resources
+D:\ProjektyZS\deniky\denik\Denik\obj\Release\Denik.Properties.Resources.resources
+D:\ProjektyZS\deniky\denik\Denik\obj\Release\Denik.StampForm.resources
+D:\ProjektyZS\deniky\denik\Denik\obj\Release\Denik.csproj.GenerateResource.Cache
+d:\skolni projekty\denik\Denik\bin\Release\Denik.exe.config
+d:\skolni projekty\denik\Denik\obj\Release\Denik.exe
+d:\skolni projekty\denik\Denik\obj\Release\Denik.pdb
+d:\skolni projekty\denik\Denik\bin\Release\Denik.exe
+d:\skolni projekty\denik\Denik\bin\Release\Denik.pdb
+d:\skolni projekty\denik\Denik\obj\Release\ResolveAssemblyReference.cache
+d:\skolni projekty\denik\Denik\obj\Release\Denik.AutocompleteSettingsForm.resources
+d:\skolni projekty\denik\Denik\obj\Release\Denik.DiarySettings.resources
+d:\skolni projekty\denik\Denik\obj\Release\Denik.ExperimentalForm.resources
+d:\skolni projekty\denik\Denik\obj\Release\Denik.incomeForm.resources
+d:\skolni projekty\denik\Denik\obj\Release\Denik.initFailureForm.resources
+d:\skolni projekty\denik\Denik\obj\Release\Denik.MainForm.resources
+d:\skolni projekty\denik\Denik\obj\Release\Denik.outcomeForm.resources
+d:\skolni projekty\denik\Denik\obj\Release\Denik.Properties.Resources.resources
+d:\skolni projekty\denik\Denik\obj\Release\Denik.StampForm.resources
+d:\skolni projekty\denik\Denik\obj\Release\Denik.csproj.GenerateResource.Cache

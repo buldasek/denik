@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DiarySettings>
+  <pokus>
+    <hint>hihi</hint>
+    <counter>5</counter>
+  </pokus>
+  <OutcomeNote0>
+    <hint>d</hint>
+    <counter>0</counter>
+  </OutcomeNote0>
+  <OutcomeName0>
+    <hint>Buldacek</hint>
+    <counter>0</counter>
+  </OutcomeName0>
+  <OutcomeName1>
+    <hint>jjs</hint>
+    <counter>0</counter>
+  </OutcomeName1>
+  <OutcomeFor0>
+    <hint>Za sexik</hint>
+    <counter>0</counter>
+  </OutcomeFor0>
+  <OutcomeFor1>
+    <hint>fdsagagg</hint>
+    <counter>0</counter>
+  </OutcomeFor1>
+  <OutcomeRecipient0>
+    <hint>Petruska</hint>
+    <counter>0</counter>
+  </OutcomeRecipient0>
+  <OutcomeRecipient1>
+    <hint>ads</hint>
+    <counter>0</counter>
+  </OutcomeRecipient1>
+  <Stamp0>Jen jedna řádka</Stamp0>
+  <Stamp1>ad</Stamp1>
+  <Stamp2>dd</Stamp2>
+  <Stamp3>gggggggggggggg</Stamp3>
+  <Stamp4>OOOOOOOOOOO</Stamp4>
+  <Stamp5>sagssssssssssssss</Stamp5>
+  <DiaryDirectory>D:\ProjektyZS\denik\data\tmp.pkl</DiaryDirectory>
+</DiarySettings>

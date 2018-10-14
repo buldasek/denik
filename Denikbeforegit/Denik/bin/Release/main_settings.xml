@@ -1,107 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SettingsImpl xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <incomeTemplatesHolder>
-    <m_templates>
-      <Template>
-        <m_name>sablona2</m_name>
-        <m_values>
-          <OverallID>0</OverallID>
-          <Date>14.10.2018</Date>
-          <TypeID>10</TypeID>
-          <Type>Income</Type>
-          <Cost>12322</Cost>
-          <Note>sabole2</Note>
-          <Content>djkf</Content>
-          <Remaining>0</Remaining>
-          <PayedTo />
-          <CustName>adsf</CustName>
-          <NoteToNumber />
-        </m_values>
-      </Template>
-      <Template>
-        <m_name>Jméno šablony</m_name>
-        <m_values>
-          <OverallID>0</OverallID>
-          <Date>14.10.2018</Date>
-          <TypeID>0</TypeID>
-          <Type>Income</Type>
-          <Cost>12434</Cost>
-          <Note>asdffff</Note>
-          <Content />
-          <Remaining>0</Remaining>
-          <PayedTo />
-          <CustName>adsf</CustName>
-          <NoteToNumber />
-        </m_values>
-      </Template>
-      <Template>
-        <m_name>sdff</m_name>
-        <m_values>
-          <OverallID>0</OverallID>
-          <Date>14.10.2018</Date>
-          <TypeID>0</TypeID>
-          <Type>Income</Type>
-          <Cost>213</Cost>
-          <Note>df</Note>
-          <Content>aaa</Content>
-          <Remaining>0</Remaining>
-          <PayedTo />
-          <CustName>jenic</CustName>
-          <NoteToNumber />
-        </m_values>
-      </Template>
-    </m_templates>
-    <Templates>
-      <Template>
-        <m_name>sablona2</m_name>
-        <m_values>
-          <OverallID>0</OverallID>
-          <Date>14.10.2018</Date>
-          <TypeID>10</TypeID>
-          <Type>Income</Type>
-          <Cost>12322</Cost>
-          <Note>sabole2</Note>
-          <Content>djkf</Content>
-          <Remaining>0</Remaining>
-          <PayedTo />
-          <CustName>adsf</CustName>
-          <NoteToNumber />
-        </m_values>
-      </Template>
-      <Template>
-        <m_name>Jméno šablony</m_name>
-        <m_values>
-          <OverallID>0</OverallID>
-          <Date>14.10.2018</Date>
-          <TypeID>0</TypeID>
-          <Type>Income</Type>
-          <Cost>12434</Cost>
-          <Note>asdffff</Note>
-          <Content />
-          <Remaining>0</Remaining>
-          <PayedTo />
-          <CustName>adsf</CustName>
-          <NoteToNumber />
-        </m_values>
-      </Template>
-      <Template>
-        <m_name>sdff</m_name>
-        <m_values>
-          <OverallID>0</OverallID>
-          <Date>14.10.2018</Date>
-          <TypeID>0</TypeID>
-          <Type>Income</Type>
-          <Cost>213</Cost>
-          <Note>df</Note>
-          <Content>aaa</Content>
-          <Remaining>0</Remaining>
-          <PayedTo />
-          <CustName>jenic</CustName>
-          <NoteToNumber />
-        </m_values>
-      </Template>
-    </Templates>
-  </incomeTemplatesHolder>
   <hintHolders>
     <HintsHolder>
       <hintItems>
@@ -122,12 +20,12 @@
           <m_counter>0</m_counter>
         </HintItem>
         <HintItem>
-          <m_hint>adsf</m_hint>
+          <m_hint>adf</m_hint>
           <m_counter>0</m_counter>
         </HintItem>
       </hintItems>
       <Name>IncomeName</Name>
-      <LastHint>Buldasek</LastHint>
+      <LastHint>adf</LastHint>
     </HintsHolder>
     <HintsHolder>
       <hintItems>
@@ -147,9 +45,13 @@
           <m_hint>ahsnd</m_hint>
           <m_counter>0</m_counter>
         </HintItem>
+        <HintItem>
+          <m_hint>ads</m_hint>
+          <m_counter>0</m_counter>
+        </HintItem>
       </hintItems>
       <Name>IncomeFor</Name>
-      <LastHint>aaa</LastHint>
+      <LastHint>ads</LastHint>
     </HintsHolder>
     <HintsHolder>
       <hintItems>
@@ -205,9 +107,13 @@
           <m_hint>6</m_hint>
           <m_counter>0</m_counter>
         </HintItem>
+        <HintItem>
+          <m_hint>asldkfjalsdkfj</m_hint>
+          <m_counter>0</m_counter>
+        </HintItem>
       </hintItems>
       <Name>OutcomeName</Name>
-      <LastHint>Mgr. Zdeňka Huspeková</LastHint>
+      <LastHint>asldkfjalsdkfj</LastHint>
     </HintsHolder>
     <HintsHolder>
       <hintItems>
@@ -228,12 +134,12 @@
           <m_counter>0</m_counter>
         </HintItem>
         <HintItem>
-          <m_hint>asdf</m_hint>
+          <m_hint>asdffff</m_hint>
           <m_counter>0</m_counter>
         </HintItem>
       </hintItems>
       <Name>OutcomeFor</Name>
-      <LastHint>asdf</LastHint>
+      <LastHint>asdffff</LastHint>
     </HintsHolder>
     <HintsHolder>
       <hintItems>
@@ -251,7 +157,7 @@
         </HintItem>
       </hintItems>
       <Name>OutcomeRecipient</Name>
-      <LastHint />
+      <LastHint>asdf</LastHint>
     </HintsHolder>
   </hintHolders>
   <Stamp>
@@ -260,20 +166,20 @@
     <string>dsalkfjdsalfkjads</string>
     <string>dsalkjdsalfkdjsa</string>
   </Stamp>
-  <PrinterName>Send To OneNote 2010</PrinterName>
+  <PrinterName>Bullzip PDF Printer</PrinterName>
   <MainWindowPos>
     <Location>
       <X>59</X>
-      <Y>-2</Y>
+      <Y>-8</Y>
     </Location>
     <Size>
       <Width>1549</Width>
-      <Height>912</Height>
+      <Height>916</Height>
     </Size>
     <X>59</X>
-    <Y>-2</Y>
+    <Y>-8</Y>
     <Width>1549</Width>
-    <Height>912</Height>
+    <Height>916</Height>
   </MainWindowPos>
   <ColumnsWidths>
     <float>50</float>
@@ -285,5 +191,5 @@
     <float>90</float>
     <float>150</float>
   </ColumnsWidths>
-  <DiaryDirectory>C:\Users\bulda\Desktop\asdf.pkl</DiaryDirectory>
+  <DiaryDirectory>C:\Users\bulda\Desktop\denik.pkl</DiaryDirectory>
 </SettingsImpl>

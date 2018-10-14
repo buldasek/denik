@@ -671,6 +671,11 @@ namespace Denik
                 EnsureRecordVisibility(m_mainDiary.RecordsCount - 1);
         }
 
+        private void MainForm_Move(object sender, EventArgs e)
+        {
+            //Point loc = global::Denik.Properties.Settings.Default.MainWindowPosition;
+        }
+
         private void tiskDeníkuToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Printer printer = new Printer();

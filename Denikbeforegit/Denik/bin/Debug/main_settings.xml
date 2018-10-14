@@ -264,16 +264,16 @@
   <MainWindowPos>
     <Location>
       <X>59</X>
-      <Y>-2</Y>
+      <Y>-8</Y>
     </Location>
     <Size>
       <Width>1549</Width>
-      <Height>912</Height>
+      <Height>916</Height>
     </Size>
     <X>59</X>
-    <Y>-2</Y>
+    <Y>-8</Y>
     <Width>1549</Width>
-    <Height>912</Height>
+    <Height>916</Height>
   </MainWindowPos>
   <ColumnsWidths>
     <float>50</float>
