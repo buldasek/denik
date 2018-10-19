@@ -12,11 +12,10 @@ namespace Denik
     {
         MainForm m_parentMain;
        // private Record m_record;
-        private Denik.Record createDataRec() {
+        private Denik.Record createDataRec(Denik.Record initRecord) {
                         //todo pridat do seznamu
-            Denik.Record result = new Denik.Record();
-            result.NoteToNumber = cbNoteToNumber.Text;
-            result.Date = edDate.Text;
+            Denik.Record result = initRecord;
+          
             try
             {
                 result.Cost = MoneyConvertor.StrToMoney(edMoney.Text, MaxValue-1);        //todo kontrola konverze
@@ -28,6 +27,8 @@ namespace Denik
                 MessageBox.Show("Částka musí být celé číslo menší než "+(MaxValue-1).ToString()+".", "Chyba", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return null;
             }
+            result.NoteToNumber = cbNoteToNumber.Text;
+            result.Date = edDate.Text;
             result.CustName = cbFrom.Text;
             result.Content = cbContent.Text;
             result.Note = edNote.Text;
@@ -38,7 +39,7 @@ namespace Denik
 
         private bool finishOK()
         {
-            Denik.Record record = createDataRec();
+            Denik.Record record = createDataRec(dataRec);
             if (record == null)
             {
                 return false;
@@ -59,7 +60,7 @@ namespace Denik
 
             Result = InOutFormResult.Cancel;
 
-            lbHeader.Text = lbHeader.Text + " " + dataRecord.TypeID.ToString();
+            lbHeader.Text = lbHeader.Text + " " + dataRecord.OverallID.ToString();
 
             dataRec = dataRecord;
             cbNoteToNumber.Text = dataRec.NoteToNumber;
@@ -123,7 +124,7 @@ namespace Denik
             {
                 return;
             }
-            Denik.Record template = createDataRec();
+            Denik.Record template = createDataRec(dataRec);
             if (template != null)
             {
                 Settings.Settings.SettingsHolder.addTemplate(inputBox.InputText, template);

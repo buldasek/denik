@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SettingsImpl xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <incomeTemplatesHolder>
+    <m_templates />
+    <Templates />
+  </incomeTemplatesHolder>
   <hintHolders>
     <HintsHolder>
       <hintItems>
@@ -170,21 +174,20 @@
   <MainWindowPos>
     <Location>
       <X>59</X>
-      <Y>-8</Y>
+      <Y>-2</Y>
     </Location>
     <Size>
       <Width>1549</Width>
-      <Height>916</Height>
+      <Height>912</Height>
     </Size>
     <X>59</X>
-    <Y>-8</Y>
+    <Y>-2</Y>
     <Width>1549</Width>
-    <Height>916</Height>
+    <Height>912</Height>
   </MainWindowPos>
   <ColumnsWidths>
     <float>50</float>
     <float>60</float>
-    <float>70</float>
     <float>300</float>
     <float>80</float>
     <float>80</float>

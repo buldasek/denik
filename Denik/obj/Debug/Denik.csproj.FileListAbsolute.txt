@@ -31,3 +31,7 @@ d:\skolni projekty\denik\Denik\obj\Debug\Denik.Properties.Resources.resources
 d:\skolni projekty\denik\Denik\obj\Debug\Denik.StampForm.resources
 d:\skolni projekty\denik\Denik\obj\Debug\Denik.csproj.GenerateResource.Cache
 d:\skolni projekty\denik\Denik\obj\Debug\Denik.InputBox.resources
+d:\skolni projekty\denik\Denik\bin\Debug\Denik.exe.manifest
+d:\skolni projekty\denik\Denik\bin\Debug\Denik.application
+d:\skolni projekty\denik\Denik\obj\Debug\Denik.exe.manifest
+d:\skolni projekty\denik\Denik\obj\Debug\Denik.application

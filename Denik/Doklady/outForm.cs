@@ -56,7 +56,7 @@ namespace Denik
 
             dataRec = dataRecord;
 
-            lbHeader.Text = lbHeader.Text + " " + dataRecord.TypeID.ToString();
+            lbHeader.Text = lbHeader.Text + " " + dataRecord.OverallID.ToString();
 
             cbNoteToNumber.Text = dataRec.NoteToNumber;
             edDate.Text = dataRec.Date;

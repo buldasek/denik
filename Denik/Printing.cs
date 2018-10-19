@@ -405,7 +405,7 @@ namespace Denik
             //    g.DrawString(Stamp[i], stampFont, TextBrush, new PointF(130, 11+((6-Math.Min(Stamp.Length,6))/(float)2+i)*11), CenterTopAlign);
             //}
 
-            g.DrawString("číslo " + m_recToPrint.TypeID.ToString()+m_recToPrint.NoteToNumber, defaultTextFont, TextBrush, new Point(260, 45), LeftTopAlign);
+            g.DrawString("číslo " + m_recToPrint.OverallID.ToString()+m_recToPrint.NoteToNumber, defaultTextFont, TextBrush, new Point(260, 45), LeftTopAlign);
             g.DrawString("ze dne " + m_recToPrint.Date, defaultTextFont, TextBrush, new Point(260, 60), LeftTopAlign);
 
             if (formType == FormType.Income)

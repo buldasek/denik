@@ -5,14 +5,14 @@
       <Template>
         <m_name>sablona2</m_name>
         <m_values>
-          <OverallID>0</OverallID>
-          <Date>14.10.2018</Date>
-          <TypeID>10</TypeID>
+          <OverallID>11</OverallID>
+          <Date>19.10.2018</Date>
+          <TypeID>7</TypeID>
           <Type>Income</Type>
           <Cost>12322</Cost>
           <Note>sabole2</Note>
           <Content>djkf</Content>
-          <Remaining>0</Remaining>
+          <Remaining>24644</Remaining>
           <PayedTo />
           <CustName>adsf</CustName>
           <NoteToNumber />
@@ -21,14 +21,14 @@
       <Template>
         <m_name>Jméno šablony</m_name>
         <m_values>
-          <OverallID>0</OverallID>
-          <Date>14.10.2018</Date>
-          <TypeID>0</TypeID>
+          <OverallID>12</OverallID>
+          <Date>19.10.2018</Date>
+          <TypeID>8</TypeID>
           <Type>Income</Type>
           <Cost>12434</Cost>
           <Note>asdffff</Note>
           <Content />
-          <Remaining>0</Remaining>
+          <Remaining>37078</Remaining>
           <PayedTo />
           <CustName>adsf</CustName>
           <NoteToNumber />
@@ -37,9 +37,9 @@
       <Template>
         <m_name>sdff</m_name>
         <m_values>
-          <OverallID>0</OverallID>
+          <OverallID>11</OverallID>
           <Date>14.10.2018</Date>
-          <TypeID>0</TypeID>
+          <TypeID>7</TypeID>
           <Type>Income</Type>
           <Cost>213</Cost>
           <Note>df</Note>
@@ -55,14 +55,14 @@
       <Template>
         <m_name>sablona2</m_name>
         <m_values>
-          <OverallID>0</OverallID>
-          <Date>14.10.2018</Date>
-          <TypeID>10</TypeID>
+          <OverallID>11</OverallID>
+          <Date>19.10.2018</Date>
+          <TypeID>7</TypeID>
           <Type>Income</Type>
           <Cost>12322</Cost>
           <Note>sabole2</Note>
           <Content>djkf</Content>
-          <Remaining>0</Remaining>
+          <Remaining>24644</Remaining>
           <PayedTo />
           <CustName>adsf</CustName>
           <NoteToNumber />
@@ -71,14 +71,14 @@
       <Template>
         <m_name>Jméno šablony</m_name>
         <m_values>
-          <OverallID>0</OverallID>
-          <Date>14.10.2018</Date>
-          <TypeID>0</TypeID>
+          <OverallID>12</OverallID>
+          <Date>19.10.2018</Date>
+          <TypeID>8</TypeID>
           <Type>Income</Type>
           <Cost>12434</Cost>
           <Note>asdffff</Note>
           <Content />
-          <Remaining>0</Remaining>
+          <Remaining>37078</Remaining>
           <PayedTo />
           <CustName>adsf</CustName>
           <NoteToNumber />
@@ -87,9 +87,9 @@
       <Template>
         <m_name>sdff</m_name>
         <m_values>
-          <OverallID>0</OverallID>
+          <OverallID>11</OverallID>
           <Date>14.10.2018</Date>
-          <TypeID>0</TypeID>
+          <TypeID>7</TypeID>
           <Type>Income</Type>
           <Cost>213</Cost>
           <Note>df</Note>
@@ -127,7 +127,7 @@
         </HintItem>
       </hintItems>
       <Name>IncomeName</Name>
-      <LastHint>Buldasek</LastHint>
+      <LastHint>adsf</LastHint>
     </HintsHolder>
     <HintsHolder>
       <hintItems>
@@ -149,7 +149,7 @@
         </HintItem>
       </hintItems>
       <Name>IncomeFor</Name>
-      <LastHint>aaa</LastHint>
+      <LastHint>djkf</LastHint>
     </HintsHolder>
     <HintsHolder>
       <hintItems>
@@ -260,7 +260,7 @@
     <string>dsalkfjdsalfkjads</string>
     <string>dsalkjdsalfkdjsa</string>
   </Stamp>
-  <PrinterName>Send To OneNote 2010</PrinterName>
+  <PrinterName>Bullzip PDF Printer</PrinterName>
   <MainWindowPos>
     <Location>
       <X>59</X>
@@ -278,7 +278,6 @@
   <ColumnsWidths>
     <float>50</float>
     <float>60</float>
-    <float>70</float>
     <float>300</float>
     <float>80</float>
     <float>80</float>

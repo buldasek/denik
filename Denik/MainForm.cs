@@ -91,7 +91,7 @@ namespace Denik
             lbPageId.Text = "Stránka " + (m_currentPage+1).ToString() + ".";
             Record[] records = m_mainDiary.GetPage(m_currentPage);
             ClearGrid();
-            String [] cells = new String[8];
+            String [] cells = new String[7];
             
             for (int i = 0; i < records.Length && records[i]!=null; i++)
             {
@@ -114,20 +114,19 @@ namespace Denik
                 gridHistory.Rows[i].Cells[7].Value = records[i].Note;*/
                 cells[0] = records[i].OverallID.ToString();
                 cells[1] = records[i].Date;
-                cells[2] = records[i].TypeID.ToString();
-                cells[3] = records[i].Content;
+                cells[2] = records[i].Content;
                 if (records[i].Type == Record.RecordType.Expense)
                 {
-                    cells[4] = "";
-                    cells[5] = MoneyConvertor.MoneyToStr(records[i].Cost)+",-";
+                    cells[3] = "";
+                    cells[4] = MoneyConvertor.MoneyToStr(records[i].Cost)+",-";
                 }
                 else
                 {
-                    cells[5] = "";
-                    cells[4] = MoneyConvertor.MoneyToStr(records[i].Cost) + ",-";
+                    cells[4] = "";
+                    cells[3] = MoneyConvertor.MoneyToStr(records[i].Cost) + ",-";
                 }
-                cells[6] = MoneyConvertor.MoneyToStr(records[i].Remaining) + ",-";
-                cells[7] = records[i].Note.Equals("") ? records[i].CustName : records[i].Note;
+                cells[5] = MoneyConvertor.MoneyToStr(records[i].Remaining) + ",-";
+                cells[6] = records[i].Note.Equals("") ? records[i].CustName : records[i].Note;
 
                 //for (int j=0; j<8; j++)
                 //    dataSource[i*8+j] = cells[j];
@@ -229,6 +228,7 @@ namespace Denik
             if (e.Button == MouseButtons.Left)
             {
                 Record record = Settings.Settings.SettingsHolder.incomeTemplates()[buttonTag].m_values;
+                record.Date = DateTime.Today.Date.ToString("d.M.yyyy");
                 Record newRecord = insertIncomeForm(record);
                 if (newRecord != null)
                 {
@@ -388,6 +388,8 @@ namespace Denik
             initRecord(ref newRecord, m_mainDiary);
             
             newRecord.TypeID = m_mainDiary.TypeCounts[(int)Record.RecordType.Income]+1;
+            newRecord.OverallID = m_mainDiary.TypeCounts[(int)Record.RecordType.Income] 
+                + m_mainDiary.TypeCounts[(int)Record.RecordType.Expense] + 1;
             incomeForm iform = new incomeForm(newRecord, this);
             iform.ShowDialog();
             if (iform.Result != inoutParentForm.InOutFormResult.Cancel)
@@ -405,6 +407,8 @@ namespace Denik
             initRecord(ref newRecord, m_mainDiary);
             
             newRecord.TypeID = m_mainDiary.TypeCounts[(int)Record.RecordType.Expense] + 1;
+            newRecord.OverallID = m_mainDiary.TypeCounts[(int)Record.RecordType.Income]
+                + m_mainDiary.TypeCounts[(int)Record.RecordType.Expense] + 1;
 
             outcomeForm oform = new outcomeForm(newRecord);
             oform.ShowDialog();
@@ -566,9 +570,14 @@ namespace Denik
 
             int curRecord = contextMenuRowIndex;
             int curNumber = -1;
+            int curOverallNumber = -1;
             while (curRecord >= 0)
             {
                 Record rec = m_mainDiary.GetRecord(curRecord);
+                if (curOverallNumber == -1)
+                {
+                    curOverallNumber = rec.OverallID;
+                }
                 if (rec.Type == Record.RecordType.Expense)
                 {
                     curNumber = rec.TypeID;
@@ -577,12 +586,19 @@ namespace Denik
                 curRecord--;
             }
             if (curNumber == -1)
-                curNumber = m_mainDiary.InitTypeCounts[(int)Record.RecordType.Expense] + 1;
+                curNumber = m_mainDiary.InitTypeCounts[(int)Record.RecordType.Expense];
+            if (curOverallNumber == -1)
+            {
+                curOverallNumber = m_mainDiary.TypeCounts[(int)Record.RecordType.Income]
+                    + m_mainDiary.TypeCounts[(int)Record.RecordType.Expense];
+            }
+            
             newRecord.TypeID = curNumber+1;
+            newRecord.OverallID = curOverallNumber + 1;
 
             outcomeForm oForm = new outcomeForm(newRecord);
             oForm.ShowDialog();
-            if (oForm.Result == inoutParentForm.InOutFormResult.OK)
+            if (oForm.Result != inoutParentForm.InOutFormResult.Cancel)
                 m_mainDiary.InsertRecord(contextMenuRowIndex, newRecord);
 
             UpdateCurrentPage();
@@ -592,9 +608,16 @@ namespace Denik
         {
             int curRecord = contextMenuRowIndex - 1;
             int curNumber = -1;
+            int curOverallNumber = -1;
+
             while (curRecord >= 0)
             {
                 Record rec = m_mainDiary.GetRecord(curRecord);
+                if (curOverallNumber == -1)
+                {
+                    curOverallNumber = rec.OverallID;
+                }
+
                 if (rec.Type == Record.RecordType.Income)
                 {
                     curNumber = rec.TypeID;
@@ -604,11 +627,17 @@ namespace Denik
             }
             if (curNumber == -1)
                 curNumber = m_mainDiary.TypeCounts[(int)Record.RecordType.Income];
+            if (curOverallNumber == -1)
+            {
+                curOverallNumber = m_mainDiary.TypeCounts[(int)Record.RecordType.Income]
+                    + m_mainDiary.TypeCounts[(int)Record.RecordType.Expense];
+            }
+            record.OverallID = curOverallNumber + 1;
             record.TypeID = curNumber + 1;
 
             incomeForm iForm = new incomeForm(record, this);
             iForm.ShowDialog();
-            if (iForm.Result == inoutParentForm.InOutFormResult.OK)
+            if (iForm.Result != inoutParentForm.InOutFormResult.Cancel)
                 return iForm.getDataRec();
             return null;            
         }
@@ -675,6 +704,11 @@ namespace Denik
         {
             Printer printer = new Printer();
             printer.PrintDiary(m_mainDiary, m_currentPage); //todo pridat current page
+        }
+
+        private void gridHistory_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
 
     }
